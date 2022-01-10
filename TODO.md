@@ -2,4 +2,6 @@
 
 - data naar CSV
 - data inladen in classes
-- display voor rooster
+- visualisatie voor rooster
+- random oplossing regelen
+- functie maken voor berekenen maluspunten
