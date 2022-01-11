@@ -5,8 +5,8 @@ times = [9, 11, 13, 15]
 days = ["ma", "di", "wo", "do", "vr"]
 
 
-""" Function to load in all needed data """
 def load(file_name_rooms, file_name_courses):
+    """ Function to load in all needed data """
     try:
         file_rooms = open(file_name_rooms, 'r')
         file_courses = open(file_name_courses, 'r')
