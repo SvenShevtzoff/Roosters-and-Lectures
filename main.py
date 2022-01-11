@@ -1,10 +1,11 @@
-from classes import Room, Zaalslot, Lecture, Tutorial, Practicum
+from classes import Room, Roomslot, Lecture, Tutorial, Practicum
+from load import load
+from algorithms import *
+
+activities, roomslots = load("data/rooms.csv", "data/courses.csv")
+
+random_schedule = random_schedule(roomslots, activities)
+for slot in random_schedule:
+    print(slot)
 
 
-# zaalsloten = []
-# for day in ["ma", "di", "wo", "do", "vr"]:
-#     for time in [9, 11, 13, 15]:
-#         for room in ["A1.04", "A1.06", "A1.08", "A1.10", "B0.201", "C0.110", "C1.112"]:
-#             zaalsloten.append(Zaalslot(day, time, room))
-
-# print(zaalsloten[1].get_activity())
