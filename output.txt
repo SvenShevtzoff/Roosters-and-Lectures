@@ -1,2 +1,212 @@
-[<classes.Roomslot object at 0x7fedd23db2e0>, <classes.Roomslot object at 0x7fedd23d6b80>, <classes.Roomslot object at 0x7fedd23d9640>, <classes.Roomslot object at 0x7fedd23d9100>, <classes.Roomslot object at 0x7fedd23db1c0>, <classes.Roomslot object at 0x7fedd23d9d00>, <classes.Roomslot object at 0x7fedd23d9d60>, <classes.Roomslot object at 0x7fedd23d6d00>, <classes.Roomslot object at 0x7fedd23d9820>, <classes.Roomslot object at 0x7fedd23d8a60>, <classes.Roomslot object at 0x7fedd23db580>, <classes.Roomslot object at 0x7fedd23d8760>, <classes.Roomslot object at 0x7fedd23d6760>, <classes.Roomslot object at 0x7fedd23d91c0>, <classes.Roomslot object at 0x7fedd23d9580>, <classes.Roomslot object at 0x7fedd23d90a0>, <classes.Roomslot object at 0x7fedd23d8b20>, <classes.Roomslot object at 0x7fedd23db760>, <classes.Roomslot object at 0x7fedd23db940>, <classes.Roomslot object at 0x7fedd23db280>, <classes.Roomslot object at 0x7fedd23db700>, <classes.Roomslot object at 0x7fedd23db100>, <classes.Roomslot object at 0x7fedd23d6c40>, <classes.Roomslot object at 0x7fedd23d8460>, <classes.Roomslot object at 0x7fedd23d80a0>, <classes.Roomslot object at 0x7fedd23d81c0>, <classes.Roomslot object at 0x7fedd23dbac0>, <classes.Roomslot object at 0x7fedd23d8160>, <classes.Roomslot object at 0x7fedd23d8e80>, <classes.Roomslot object at 0x7fedd23d9dc0>, <classes.Roomslot object at 0x7fedd23d9340>, <classes.Roomslot object at 0x7fedd23d6880>, <classes.Roomslot object at 0x7fedd23d9700>, <classes.Roomslot object at 0x7fedd23d8640>, <classes.Roomslot object at 0x7fedd23d9460>, <classes.Roomslot object at 0x7fedd23d9220>, <classes.Roomslot object at 0x7fedd23dba00>, <classes.Roomslot object at 0x7fedd23d8580>, <classes.Roomslot object at 0x7fedd23db820>, <classes.Roomslot object at 0x7fedd23db160>, <classes.Roomslot object at 0x7fedd23d66a0>, <classes.Roomslot object at 0x7fedd23d8820>, <classes.Roomslot object at 0x7fedd23d9b20>, <classes.Roomslot object at 0x7fedd23d82e0>, <classes.Roomslot object at 0x7fedd23d9ac0>, <classes.Roomslot object at 0x7fedd23d94c0>, <classes.Roomslot object at 0x7fedd23d68e0>, <classes.Roomslot object at 0x7fedd23d8040>, <classes.Roomslot object at 0x7fedd23d99a0>, <classes.Roomslot object at 0x7fedd23d8340>, <classes.Roomslot object at 0x7fedd23d9940>, <classes.Roomslot object at 0x7fedd23dbb20>, <classes.Roomslot object at 0x7fedd23d8520>, <classes.Roomslot object at 0x7fedd23d9e20>, <classes.Roomslot object at 0x7fedd23d8ee0>, <classes.Roomslot object at 0x7fedd23db460>, <classes.Roomslot object at 0x7fedd23db880>, <classes.Roomslot object at 0x7fedd23d8fa0>, <classes.Roomslot object at 0x7fedd23db220>, <classes.Roomslot object at 0x7fedd23d92e0>, <classes.Roomslot object at 0x7fedd23d6be0>, <classes.Roomslot object at 0x7fedd23db5e0>, <classes.Roomslot object at 0x7fedd23d8880>, <classes.Roomslot object at 0x7fedd23d67c0>, <classes.Roomslot object at 0x7fedd23d9be0>, <classes.Roomslot object at 0x7fedd23d69a0>, <classes.Roomslot object at 0x7fedd23d9760>, <classes.Roomslot object at 0x7fedd23d6b20>, <classes.Roomslot object at 0x7fedd23db040>, <classes.Roomslot object at 0x7fedd23d9ee0>, <classes.Roomslot object at 0x7fedd23db0a0>, <classes.Roomslot object at 0x7fedd23db400>]
-[<classes.Roomslot object at 0x7fedd23d66a0>, <classes.Roomslot object at 0x7fedd23d6700>, <classes.Roomslot object at 0x7fedd23d6760>, <classes.Roomslot object at 0x7fedd23d67c0>, <classes.Roomslot object at 0x7fedd23d6820>, <classes.Roomslot object at 0x7fedd23d6880>, <classes.Roomslot object at 0x7fedd23d68e0>, <classes.Roomslot object at 0x7fedd23d6940>, <classes.Roomslot object at 0x7fedd23d69a0>, <classes.Roomslot object at 0x7fedd23d6a00>, <classes.Roomslot object at 0x7fedd23d6a60>, <classes.Roomslot object at 0x7fedd23d6ac0>, <classes.Roomslot object at 0x7fedd23d6b20>, <classes.Roomslot object at 0x7fedd23d6b80>, <classes.Roomslot object at 0x7fedd23d6be0>, <classes.Roomslot object at 0x7fedd23d6c40>, <classes.Roomslot object at 0x7fedd23d6ca0>, <classes.Roomslot object at 0x7fedd23d6d00>, <classes.Roomslot object at 0x7fedd23d6d60>, <classes.Roomslot object at 0x7fedd23d6dc0>, <classes.Roomslot object at 0x7fedd23d6e20>, <classes.Roomslot object at 0x7fedd23d6e80>, <classes.Roomslot object at 0x7fedd23d6ee0>, <classes.Roomslot object at 0x7fedd23d6f40>, <classes.Roomslot object at 0x7fedd23d6fa0>, <classes.Roomslot object at 0x7fedd23d8040>, <classes.Roomslot object at 0x7fedd23d80a0>, <classes.Roomslot object at 0x7fedd23d8100>, <classes.Roomslot object at 0x7fedd23d8160>, <classes.Roomslot object at 0x7fedd23d81c0>, <classes.Roomslot object at 0x7fedd23d8220>, <classes.Roomslot object at 0x7fedd23d8280>, <classes.Roomslot object at 0x7fedd23d82e0>, <classes.Roomslot object at 0x7fedd23d8340>, <classes.Roomslot object at 0x7fedd23d83a0>, <classes.Roomslot object at 0x7fedd23d8400>, <classes.Roomslot object at 0x7fedd23d8460>, <classes.Roomslot object at 0x7fedd23d84c0>, <classes.Roomslot object at 0x7fedd23d8520>, <classes.Roomslot object at 0x7fedd23d8580>, <classes.Roomslot object at 0x7fedd23d85e0>, <classes.Roomslot object at 0x7fedd23d8640>, <classes.Roomslot object at 0x7fedd23d86a0>, <classes.Roomslot object at 0x7fedd23d8700>, <classes.Roomslot object at 0x7fedd23d8760>, <classes.Roomslot object at 0x7fedd23d87c0>, <classes.Roomslot object at 0x7fedd23d8820>, <classes.Roomslot object at 0x7fedd23d8880>, <classes.Roomslot object at 0x7fedd23d88e0>, <classes.Roomslot object at 0x7fedd23d8940>, <classes.Roomslot object at 0x7fedd23d89a0>, <classes.Roomslot object at 0x7fedd23d8a00>, <classes.Roomslot object at 0x7fedd23d8a60>, <classes.Roomslot object at 0x7fedd23d8ac0>, <classes.Roomslot object at 0x7fedd23d8b20>, <classes.Roomslot object at 0x7fedd23d8b80>, <classes.Roomslot object at 0x7fedd23d8be0>, <classes.Roomslot object at 0x7fedd23d8c40>, <classes.Roomslot object at 0x7fedd23d8ca0>, <classes.Roomslot object at 0x7fedd23d8d00>, <classes.Roomslot object at 0x7fedd23d8d60>, <classes.Roomslot object at 0x7fedd23d8dc0>, <classes.Roomslot object at 0x7fedd23d8e20>, <classes.Roomslot object at 0x7fedd23d8e80>, <classes.Roomslot object at 0x7fedd23d8ee0>, <classes.Roomslot object at 0x7fedd23d8f40>, <classes.Roomslot object at 0x7fedd23d8fa0>, <classes.Roomslot object at 0x7fedd23d9040>, <classes.Roomslot object at 0x7fedd23d90a0>, <classes.Roomslot object at 0x7fedd23d9100>, <classes.Roomslot object at 0x7fedd23d9160>, <classes.Roomslot object at 0x7fedd23d91c0>, <classes.Roomslot object at 0x7fedd23d9220>, <classes.Roomslot object at 0x7fedd23d9280>, <classes.Roomslot object at 0x7fedd23d92e0>, <classes.Roomslot object at 0x7fedd23d9340>, <classes.Roomslot object at 0x7fedd23d93a0>, <classes.Roomslot object at 0x7fedd23d9400>, <classes.Roomslot object at 0x7fedd23d9460>, <classes.Roomslot object at 0x7fedd23d94c0>, <classes.Roomslot object at 0x7fedd23d9520>, <classes.Roomslot object at 0x7fedd23d9580>, <classes.Roomslot object at 0x7fedd23d95e0>, <classes.Roomslot object at 0x7fedd23d9640>, <classes.Roomslot object at 0x7fedd23d96a0>, <classes.Roomslot object at 0x7fedd23d9700>, <classes.Roomslot object at 0x7fedd23d9760>, <classes.Roomslot object at 0x7fedd23d97c0>, <classes.Roomslot object at 0x7fedd23d9820>, <classes.Roomslot object at 0x7fedd23d9880>, <classes.Roomslot object at 0x7fedd23d98e0>, <classes.Roomslot object at 0x7fedd23d9940>, <classes.Roomslot object at 0x7fedd23d99a0>, <classes.Roomslot object at 0x7fedd23d9a00>, <classes.Roomslot object at 0x7fedd23d9a60>, <classes.Roomslot object at 0x7fedd23d9ac0>, <classes.Roomslot object at 0x7fedd23d9b20>, <classes.Roomslot object at 0x7fedd23d9b80>, <classes.Roomslot object at 0x7fedd23d9be0>, <classes.Roomslot object at 0x7fedd23d9c40>, <classes.Roomslot object at 0x7fedd23d9ca0>, <classes.Roomslot object at 0x7fedd23d9d00>, <classes.Roomslot object at 0x7fedd23d9d60>, <classes.Roomslot object at 0x7fedd23d9dc0>, <classes.Roomslot object at 0x7fedd23d9e20>, <classes.Roomslot object at 0x7fedd23d9e80>, <classes.Roomslot object at 0x7fedd23d9ee0>, <classes.Roomslot object at 0x7fedd23d9f40>, <classes.Roomslot object at 0x7fedd23d9fa0>, <classes.Roomslot object at 0x7fedd23db040>, <classes.Roomslot object at 0x7fedd23db0a0>, <classes.Roomslot object at 0x7fedd23db100>, <classes.Roomslot object at 0x7fedd23db160>, <classes.Roomslot object at 0x7fedd23db1c0>, <classes.Roomslot object at 0x7fedd23db220>, <classes.Roomslot object at 0x7fedd23db280>, <classes.Roomslot object at 0x7fedd23db2e0>, <classes.Roomslot object at 0x7fedd23db340>, <classes.Roomslot object at 0x7fedd23db3a0>, <classes.Roomslot object at 0x7fedd23db400>, <classes.Roomslot object at 0x7fedd23db460>, <classes.Roomslot object at 0x7fedd23db4c0>, <classes.Roomslot object at 0x7fedd23db520>, <classes.Roomslot object at 0x7fedd23db580>, <classes.Roomslot object at 0x7fedd23db5e0>, <classes.Roomslot object at 0x7fedd23db640>, <classes.Roomslot object at 0x7fedd23db6a0>, <classes.Roomslot object at 0x7fedd23db700>, <classes.Roomslot object at 0x7fedd23db760>, <classes.Roomslot object at 0x7fedd23db7c0>, <classes.Roomslot object at 0x7fedd23db820>, <classes.Roomslot object at 0x7fedd23db880>, <classes.Roomslot object at 0x7fedd23db8e0>, <classes.Roomslot object at 0x7fedd23db940>, <classes.Roomslot object at 0x7fedd23db9a0>, <classes.Roomslot object at 0x7fedd23dba00>, <classes.Roomslot object at 0x7fedd23dba60>, <classes.Roomslot object at 0x7fedd23dbac0>, <classes.Roomslot object at 0x7fedd23dbb20>, <classes.Roomslot object at 0x7fedd23dbb80>]
+Day: ma, time: 9, room: A1.04, activity: Practicum Netwerken en systeembeveiliging
+Room capacity: 41 and maximum students: 20
+Day: ma, time: 9, room: A1.06, activity: None
+Day: ma, time: 9, room: A1.08, activity: None
+Day: ma, time: 9, room: A1.10, activity: None
+Day: ma, time: 9, room: B0.201, activity: None
+Day: ma, time: 9, room: C0.110, activity: Lecture Lineaire Algebra
+Room capacity: 117 and maximum students: 50
+Day: ma, time: 9, room: C1.112, activity: Lecture Webprogrammeren en databases
+Room capacity: 60 and maximum students: 46
+Day: ma, time: 11, room: A1.04, activity: None
+Day: ma, time: 11, room: A1.06, activity: None
+Day: ma, time: 11, room: A1.08, activity: None
+Day: ma, time: 11, room: A1.10, activity: None
+Day: ma, time: 11, room: B0.201, activity: None
+Day: ma, time: 11, room: C0.110, activity: Lecture Databases 2
+Room capacity: 117 and maximum students: 69
+Day: ma, time: 11, room: C1.112, activity: Tutorial Software engineering
+Room capacity: 60 and maximum students: 40
+Day: ma, time: 13, room: A1.04, activity: Practicum Algoritmen en complexiteit
+Room capacity: 41 and maximum students: 25
+Day: ma, time: 13, room: A1.06, activity: None
+Day: ma, time: 13, room: A1.08, activity: None
+Day: ma, time: 13, room: A1.10, activity: None
+Day: ma, time: 13, room: B0.201, activity: None
+Day: ma, time: 13, room: C0.110, activity: Lecture Collectieve Intelligentie
+Room capacity: 117 and maximum students: 65
+Day: ma, time: 13, room: C1.112, activity: None
+Day: ma, time: 15, room: A1.04, activity: Lecture Advanced Heuristics
+Room capacity: 41 and maximum students: 22
+Day: ma, time: 15, room: A1.06, activity: Practicum Project Genetic Algorithms
+Room capacity: 22 and maximum students: 15
+Day: ma, time: 15, room: A1.08, activity: None
+Day: ma, time: 15, room: A1.10, activity: None
+Day: ma, time: 15, room: B0.201, activity: Practicum Collectieve Intelligentie
+Room capacity: 48 and maximum students: 20
+Day: ma, time: 15, room: C0.110, activity: Lecture Software engineering
+Room capacity: 117 and maximum students: 75
+Day: ma, time: 15, room: C1.112, activity: Lecture Lineaire Algebra
+Room capacity: 60 and maximum students: 50
+Day: di, time: 9, room: A1.04, activity: None
+Day: di, time: 9, room: A1.06, activity: None
+Day: di, time: 9, room: A1.08, activity: None
+Day: di, time: 9, room: A1.10, activity: Lecture Heuristieken 1
+Room capacity: 56 and maximum students: 44
+Day: di, time: 9, room: B0.201, activity: None
+Day: di, time: 9, room: C0.110, activity: Lecture Compilerbouw
+Room capacity: 117 and maximum students: 70
+Day: di, time: 9, room: C1.112, activity: Lecture Analysemethoden en -technieken
+Room capacity: 60 and maximum students: 60
+Day: di, time: 11, room: A1.04, activity: None
+Day: di, time: 11, room: A1.06, activity: None
+Day: di, time: 11, room: A1.08, activity: None
+Day: di, time: 11, room: A1.10, activity: Lecture Bioinformatica
+Room capacity: 56 and maximum students: 40
+Day: di, time: 11, room: B0.201, activity: None
+Day: di, time: 11, room: C0.110, activity: None
+Day: di, time: 11, room: C1.112, activity: Lecture Moderne Databases
+Room capacity: 60 and maximum students: 60
+Day: di, time: 13, room: A1.04, activity: Tutorial Bioinformatica
+Room capacity: 41 and maximum students: 20
+Day: di, time: 13, room: A1.06, activity: Tutorial Informatie- en organisatieontwerp
+Room capacity: 22 and maximum students: 15
+Day: di, time: 13, room: A1.08, activity: Practicum Autonomous Agents 2
+Room capacity: 20 and maximum students: 10
+Day: di, time: 13, room: A1.10, activity: Lecture Interactie-ontwerp
+Room capacity: 56 and maximum students: 31
+Day: di, time: 13, room: B0.201, activity: Tutorial Heuristieken 1
+Room capacity: 48 and maximum students: 25
+Day: di, time: 13, room: C0.110, activity: Practicum Compilerbouw
+Room capacity: 117 and maximum students: 40
+Day: di, time: 13, room: C1.112, activity: None
+Day: di, time: 15, room: A1.04, activity: None
+Day: di, time: 15, room: A1.06, activity: None
+Day: di, time: 15, room: A1.08, activity: Lecture Architectuur en computerorganisatie
+Room capacity: 20 and maximum students: 19
+Day: di, time: 15, room: A1.10, activity: Lecture Informatie- en organisatieontwerp
+Room capacity: 56 and maximum students: 40
+Day: di, time: 15, room: B0.201, activity: None
+Day: di, time: 15, room: C0.110, activity: None
+Day: di, time: 15, room: C1.112, activity: Practicum Data Mining
+Room capacity: 60 and maximum students: 10
+Day: wo, time: 9, room: A1.04, activity: None
+Day: wo, time: 9, room: A1.06, activity: None
+Day: wo, time: 9, room: A1.08, activity: None
+Day: wo, time: 9, room: A1.10, activity: Lecture Technology for games
+Room capacity: 56 and maximum students: 50
+Day: wo, time: 9, room: B0.201, activity: None
+Day: wo, time: 9, room: C0.110, activity: Tutorial Moderne Databases
+Room capacity: 117 and maximum students: 20
+Day: wo, time: 9, room: C1.112, activity: None
+Day: wo, time: 11, room: A1.04, activity: None
+Day: wo, time: 11, room: A1.06, activity: Tutorial Data Mining
+Room capacity: 22 and maximum students: 10
+Day: wo, time: 11, room: A1.08, activity: None
+Day: wo, time: 11, room: A1.10, activity: None
+Day: wo, time: 11, room: B0.201, activity: None
+Day: wo, time: 11, room: C0.110, activity: None
+Day: wo, time: 11, room: C1.112, activity: None
+Day: wo, time: 13, room: A1.04, activity: Tutorial Calculus 2
+Room capacity: 41 and maximum students: 40
+Day: wo, time: 13, room: A1.06, activity: Practicum Webprogrammeren en databases
+Room capacity: 22 and maximum students: 20
+Day: wo, time: 13, room: A1.08, activity: None
+Day: wo, time: 13, room: A1.10, activity: Practicum Zoeken sturen en bewegen
+Room capacity: 56 and maximum students: 15
+Day: wo, time: 13, room: B0.201, activity: None
+Day: wo, time: 13, room: C0.110, activity: Lecture Kansrekenen 2
+Room capacity: 117 and maximum students: 70
+Day: wo, time: 13, room: C1.112, activity: Lecture Reflectie op de digitale cultuur
+Room capacity: 60 and maximum students: 53
+Day: wo, time: 15, room: A1.04, activity: None
+Day: wo, time: 15, room: A1.06, activity: Practicum Compilerbouw (practicum)
+Room capacity: 22 and maximum students: 15
+Day: wo, time: 15, room: A1.08, activity: Practicum Informatie- en organisatieontwerp
+Room capacity: 20 and maximum students: 15
+Day: wo, time: 15, room: A1.10, activity: None
+Day: wo, time: 15, room: B0.201, activity: Tutorial Collectieve Intelligentie
+Room capacity: 48 and maximum students: 20
+Day: wo, time: 15, room: C0.110, activity: Practicum Bioinformatica
+Room capacity: 117 and maximum students: 20
+Day: wo, time: 15, room: C1.112, activity: None
+Day: do, time: 9, room: A1.04, activity: Lecture Bioinformatica
+Room capacity: 41 and maximum students: 40
+Day: do, time: 9, room: A1.06, activity: None
+Day: do, time: 9, room: A1.08, activity: None
+Day: do, time: 9, room: A1.10, activity: Practicum Advanced Heuristics
+Room capacity: 56 and maximum students: 10
+Day: do, time: 9, room: B0.201, activity: Lecture Heuristieken 2
+Room capacity: 48 and maximum students: 30
+Day: do, time: 9, room: C0.110, activity: Lecture Collectieve Intelligentie
+Room capacity: 117 and maximum students: 65
+Day: do, time: 9, room: C1.112, activity: Lecture Technology for games
+Room capacity: 60 and maximum students: 50
+Day: do, time: 11, room: A1.04, activity: None
+Day: do, time: 11, room: A1.06, activity: None
+Day: do, time: 11, room: A1.08, activity: None
+Day: do, time: 11, room: A1.10, activity: Lecture Machine Learning
+Room capacity: 56 and maximum students: 25
+Day: do, time: 11, room: B0.201, activity: Lecture Algoritmen en complexiteit
+Room capacity: 48 and maximum students: 47
+Day: do, time: 11, room: C0.110, activity: None
+Day: do, time: 11, room: C1.112, activity: Lecture Reflectie op de digitale cultuur
+Room capacity: 60 and maximum students: 53
+Day: do, time: 13, room: A1.04, activity: None
+Day: do, time: 13, room: A1.06, activity: None
+Day: do, time: 13, room: A1.08, activity: Lecture Autonomous Agents 2
+Room capacity: 20 and maximum students: 19
+Day: do, time: 13, room: A1.10, activity: Tutorial Databases 2
+Room capacity: 56 and maximum students: 40
+Day: do, time: 13, room: B0.201, activity: Lecture Data Mining
+Room capacity: 48 and maximum students: 30
+Day: do, time: 13, room: C0.110, activity: Lecture Bioinformatica
+Room capacity: 117 and maximum students: 40
+Day: do, time: 13, room: C1.112, activity: Lecture Informatie- en organisatieontwerp
+Room capacity: 60 and maximum students: 40
+Day: do, time: 15, room: A1.04, activity: Tutorial Algoritmen en complexiteit
+Room capacity: 41 and maximum students: 25
+Day: do, time: 15, room: A1.06, activity: Practicum Moderne Databases
+Room capacity: 22 and maximum students: 20
+Day: do, time: 15, room: A1.08, activity: None
+Day: do, time: 15, room: A1.10, activity: Practicum Project Numerical Recipes
+Room capacity: 56 and maximum students: 15
+Day: do, time: 15, room: B0.201, activity: None
+Day: do, time: 15, room: C0.110, activity: Lecture Compilerbouw
+Room capacity: 117 and maximum students: 70
+Day: do, time: 15, room: C1.112, activity: None
+Day: vr, time: 9, room: A1.04, activity: Lecture Machine Learning
+Room capacity: 41 and maximum students: 25
+Day: vr, time: 9, room: A1.06, activity: None
+Day: vr, time: 9, room: A1.08, activity: None
+Day: vr, time: 9, room: A1.10, activity: None
+Day: vr, time: 9, room: B0.201, activity: None
+Day: vr, time: 9, room: C0.110, activity: Lecture Collectieve Intelligentie
+Room capacity: 117 and maximum students: 65
+Day: vr, time: 9, room: C1.112, activity: Lecture Data Mining
+Room capacity: 60 and maximum students: 30
+Day: vr, time: 11, room: A1.04, activity: Tutorial Autonomous Agents 2
+Room capacity: 41 and maximum students: 10
+Day: vr, time: 11, room: A1.06, activity: None
+Day: vr, time: 11, room: A1.08, activity: Practicum Programmeren in Java 2
+Room capacity: 20 and maximum students: 20
+Day: vr, time: 11, room: A1.10, activity: Tutorial Heuristieken 2
+Room capacity: 56 and maximum students: 20
+Day: vr, time: 11, room: B0.201, activity: Tutorial Webprogrammeren en databases
+Room capacity: 48 and maximum students: 20
+Day: vr, time: 11, room: C0.110, activity: Lecture Calculus 2
+Room capacity: 117 and maximum students: 90
+Day: vr, time: 11, room: C1.112, activity: Lecture Interactie-ontwerp
+Room capacity: 60 and maximum students: 31
+Day: vr, time: 13, room: A1.04, activity: None
+Day: vr, time: 13, room: A1.06, activity: None
+Day: vr, time: 13, room: A1.08, activity: None
+Day: vr, time: 13, room: A1.10, activity: Lecture Webprogrammeren en databases
+Room capacity: 56 and maximum students: 46
+Day: vr, time: 13, room: B0.201, activity: Lecture Architectuur en computerorganisatie
+Room capacity: 48 and maximum students: 19
+Day: vr, time: 13, room: C0.110, activity: Lecture Kansrekenen 2
+Room capacity: 117 and maximum students: 70
+Day: vr, time: 13, room: C1.112, activity: Tutorial Compilerbouw
+Room capacity: 60 and maximum students: 40
+Day: vr, time: 15, room: A1.04, activity: None
+Day: vr, time: 15, room: A1.06, activity: None
+Day: vr, time: 15, room: A1.08, activity: Tutorial Reflectie op de digitale cultuur
+Room capacity: 20 and maximum students: 20
+Day: vr, time: 15, room: A1.10, activity: Lecture Autonomous Agents 2
+Room capacity: 56 and maximum students: 19
+Day: vr, time: 15, room: B0.201, activity: Tutorial Technology for games
+Room capacity: 48 and maximum students: 20
+Day: vr, time: 15, room: C0.110, activity: Practicum Software engineering
+Room capacity: 117 and maximum students: 40
+Day: vr, time: 15, room: C1.112, activity: None

@@ -1,4 +1,4 @@
-from classes import Room, Roomslot, Lecture, Tutorial, Practicum
+from classes import Room, Roomslot, Activity
 import csv, sys
 
 times = [9, 11, 13, 15]
@@ -31,11 +31,11 @@ def load(file_name_rooms, file_name_courses):
             # creating Lecture, Tutorial and Practicum objects
             course_name = row[0]
             for i in range(int(row[1])):
-                activities.append(Lecture(course_name, row[6]))
+                activities.append(Activity("Lecture", course_name, int(row[6])))
             for i in range(int(row[2])):
-                activities.append(Tutorial(course_name, row[3]))
+                activities.append(Activity("Tutorial", course_name, int(row[3])))
             for i in range(int(row[4])):
-                activities.append(Practicum(course_name, row[5]))
+                activities.append(Activity("Practicum", course_name, int(row[5])))
 
     # creating Roomslot objects
     unique_id = 0

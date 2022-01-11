@@ -11,34 +11,26 @@ class Room:
         return self._roomnumber
 
 
-class Lecture:
+class Activity:
     
-    def __init__(self, course, e_stud=0):
+    def __init__(self, kind, course, max_stud=0):
+        self._kind = kind
         self._course = course
-        self._e_stud = e_stud
-    
+        self._max_stud = max_stud
+        self._roomslot = None
+
+    def get_roomslot(self):
+        return self._roomslot
+
+    def set_roomslot(self, slot):
+        slot.set_activity(self)
+        self._roomslot = slot
+
+    def get_max_stud(self):
+        return self._max_stud
+
     def __str__(self):
-        return f"Lecture {self._course}"
-
-
-class Tutorial:
-    
-    def __init__(self, course, max_stud=0):
-        self._course = course
-        self._e_stud = max_stud
-    
-    def __str__(self):
-        return f"Tutorial {self._course}"
-
-
-class Practicum:
-    
-    def __init__(self, course, max_stud=0):
-        self._course = course
-        self._e_stud = max_stud
-    
-    def __str__(self):
-        return f"Practicum {self._course}"
+        return f"{self._kind} {self._course}"
 
 
 class Roomslot:
@@ -52,6 +44,9 @@ class Roomslot:
     
     def get_unique_id(self):
         return self._unique_id
+
+    def get_room(self):
+        return self._room
 
     def get_activity(self):
         return self._activity
