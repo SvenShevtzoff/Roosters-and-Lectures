@@ -40,7 +40,7 @@ class Practicum:
 
 class Zaalslot:
 
-    def __init__(self, day, time, room, activity="empty"):
+    def __init__(self, day, time, room, activity=None):
         self._day = day
         self._time = time
         self._room = room
