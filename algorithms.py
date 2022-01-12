@@ -6,9 +6,9 @@ from load import load
 def random_schedule(roomslots, activities):
     """ Creates a random schedule, not taking into account roomsizes. """
     n = len(activities)
-    random_slots = random.sample(roomslots, n)
+    random_slots = random.sample(roomslots.keys(), n)
     for i in range(n):
-        random_slots[i].set_activity(activities[i])
+        roomslots[random_slots[i]].set_activity(list(activities.values())[i])
     return roomslots
 
 
@@ -48,9 +48,10 @@ def random_schedule_three(roomslots, activities):
 def schedule_with_students(roomslots, activities, students, courses):
     df_students_count = pd.DataFrame(columns = ["Course name", "Student count"])
     for course in courses:
-        df_students_count = df_students_count.append({"Course name": course.get_name(), "Student count": course.get_num_of_students()}, ignore_index=True)
+        df_students_count = df_students_count.append({"Course name": course, "Student count": courses[course].get_num_of_students()}, ignore_index=True)
     print(df_students_count.sort_values("Student count", ascending=False))
 
 courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
+
 
 schedule_with_students(roomslots, activities, students, courses)

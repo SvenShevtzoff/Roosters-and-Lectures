@@ -2,9 +2,11 @@
 import sys
 from load import load
 from algorithms import *
+
+from fitness import *
+
 import pandas as pd
-from IPython.display import display
-from fitness import list_to_df
+
 
 # checking if algorithm is specified
 if len(sys.argv) < 2:
@@ -26,14 +28,4 @@ else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-# # printing schedule
-# for slot in schedule:
-#     print(slot)
-#     # if slot.get_activity():
-#     #     print(f"Room capacity: {slot.get_room().get_capacity()} and maximum students: {slot.get_activity().get_max_stud()}")
-
-# df = list_to_df(schedule)
-
-
-
-# df.to_csv('schedule.csv', index=False)
+print(schedule)
