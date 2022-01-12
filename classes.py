@@ -89,6 +89,9 @@ class Roomslot:
     
     def __str__(self):
         return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
+    
+    def __repr__(self):
+        return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
 
 
 class Student:
