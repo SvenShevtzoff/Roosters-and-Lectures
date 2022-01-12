@@ -38,12 +38,10 @@ def load(file_name_rooms, file_name_courses):
                 activities.append(Activity("Practicum", course_name, int(row[5])))
 
     # creating Roomslot objects
-    unique_id = 0
     roomslots = []
     for day in days:
         for time in times:
             for room in rooms:
-                roomslots.append(Roomslot(unique_id, day, time, room))
-                unique_id += 1
+                roomslots.append(Roomslot(day, time, room))
 
     return activities, roomslots
