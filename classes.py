@@ -4,6 +4,9 @@ class Room:
         self._roomnumber = roomnumber
         self._capacity = capacity
     
+    def get_roomnumber(self):
+        return self._roomnumber
+
     def get_capacity(self):
         return self._capacity
 
