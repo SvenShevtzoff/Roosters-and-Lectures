@@ -24,24 +24,26 @@ def random_schedule_two(roomslots, activities):
 
     return roomslots
 
+
 def random_schedule_three(roomslots, activities):
     """ Creates a random schedule, taking into account roomsizes and E(studenten) """
     activities = sorted(activities, key=lambda x: x.get_max_stud(), reverse=True)
     for ac in activities:
         print(ac)
     for activity in activities:
-        # print("1")
         while not activity.get_roomslot():
-            # print("2")
             slot = random.choice(roomslots)
             if slot.get_activity():
-                # print("3")
                 continue
             elif slot.get_room().get_capacity() < activity.get_max_stud():
-                # print("4")
                 continue
             else:
-                # print("5")
                 activity.set_roomslot(slot)
 
     return roomslots
+
+
+# def schedule_with_students(roomslots, activities, students):
+
+
+

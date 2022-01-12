@@ -11,6 +11,24 @@ class Room:
         return self._roomnumber
 
 
+class Course:
+
+    def __init__(self, name, num_of_students=0):
+        self._name = name
+        self._num_of_students = num_of_students
+
+    def get_name(self):
+        return self._name
+
+    def get_num_of_students(self):
+        return self._num_of_students
+
+    def add_student(self):
+        self._num_of_students += 1
+
+    def __str__(self):
+        return f"{self._name}: {self._num_of_students} student(s)"
+
 class Activity:
     
     def __init__(self, kind, course, max_stud=0):
