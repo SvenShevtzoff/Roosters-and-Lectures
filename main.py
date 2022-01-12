@@ -13,10 +13,8 @@ activities, roomslots = load("data/rooms.csv", "data/courses.csv")
 # checking which algorithm is selected and making a schedule accordingly
 if sys.argv[1] == "random_schedule":
     schedule = random_schedule(roomslots, activities)
-    print("1")
 elif sys.argv[1] == "random_schedule_two":
     schedule = random_schedule_two(roomslots, activities)
-    print("2")
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
