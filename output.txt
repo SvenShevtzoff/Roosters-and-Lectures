@@ -1,0 +1,129 @@
+Lecture Calculus 2 90
+Lecture Software engineering 75
+Lecture Compilerbouw 70
+Lecture Compilerbouw 70
+Lecture Kansrekenen 2 70
+Lecture Kansrekenen 2 70
+Lecture Databases 2 69
+Lecture Collectieve Intelligentie 65
+Lecture Collectieve Intelligentie 65
+Lecture Collectieve Intelligentie 65
+Lecture Analysemethoden en -technieken 60
+Lecture Moderne Databases 60
+Lecture Reflectie op de digitale cultuur 53
+Lecture Reflectie op de digitale cultuur 53
+Lecture Lineaire Algebra 50
+Lecture Lineaire Algebra 50
+Lecture Technology for games 50
+Lecture Technology for games 50
+Lecture Algoritmen en complexiteit 47
+Lecture Webprogrammeren en databases 46
+Lecture Webprogrammeren en databases 46
+Lecture Heuristieken 1 44
+Lecture Bioinformatica 40
+Lecture Bioinformatica 40
+Lecture Bioinformatica 40
+Tutorial Calculus 2 40
+Tutorial Calculus 2 40
+Tutorial Calculus 2 40
+Tutorial Compilerbouw 40
+Tutorial Compilerbouw 40
+Practicum Compilerbouw 40
+Practicum Compilerbouw 40
+Tutorial Databases 2 40
+Tutorial Databases 2 40
+Lecture Informatie- en organisatieontwerp 40
+Lecture Informatie- en organisatieontwerp 40
+Tutorial Software engineering 40
+Tutorial Software engineering 40
+Practicum Software engineering 40
+Practicum Software engineering 40
+Lecture Interactie-ontwerp 31
+Lecture Interactie-ontwerp 31
+Lecture Data Mining 30
+Lecture Data Mining 30
+Lecture Heuristieken 2 30
+Tutorial Algoritmen en complexiteit 25
+Tutorial Algoritmen en complexiteit 25
+Practicum Algoritmen en complexiteit 25
+Practicum Algoritmen en complexiteit 25
+Tutorial Heuristieken 1 25
+Tutorial Heuristieken 1 25
+Lecture Machine Learning 25
+Lecture Machine Learning 25
+Lecture Advanced Heuristics 22
+Tutorial Bioinformatica 20
+Tutorial Bioinformatica 20
+Practicum Bioinformatica 20
+Practicum Bioinformatica 20
+Tutorial Collectieve Intelligentie 20
+Tutorial Collectieve Intelligentie 20
+Tutorial Collectieve Intelligentie 20
+Tutorial Collectieve Intelligentie 20
+Practicum Collectieve Intelligentie 20
+Practicum Collectieve Intelligentie 20
+Practicum Collectieve Intelligentie 20
+Practicum Collectieve Intelligentie 20
+Tutorial Heuristieken 2 20
+Tutorial Heuristieken 2 20
+Tutorial Moderne Databases 20
+Tutorial Moderne Databases 20
+Tutorial Moderne Databases 20
+Practicum Moderne Databases 20
+Practicum Moderne Databases 20
+Practicum Moderne Databases 20
+Practicum Netwerken en systeembeveiliging 20
+Practicum Netwerken en systeembeveiliging 20
+Practicum Netwerken en systeembeveiliging 20
+Practicum Programmeren in Java 2 20
+Practicum Programmeren in Java 2 20
+Practicum Programmeren in Java 2 20
+Practicum Programmeren in Java 2 20
+Practicum Programmeren in Java 2 20
+Tutorial Reflectie op de digitale cultuur 20
+Tutorial Reflectie op de digitale cultuur 20
+Tutorial Reflectie op de digitale cultuur 20
+Tutorial Technology for games 20
+Tutorial Technology for games 20
+Tutorial Technology for games 20
+Tutorial Webprogrammeren en databases 20
+Tutorial Webprogrammeren en databases 20
+Tutorial Webprogrammeren en databases 20
+Practicum Webprogrammeren en databases 20
+Practicum Webprogrammeren en databases 20
+Practicum Webprogrammeren en databases 20
+Lecture Architectuur en computerorganisatie 19
+Lecture Architectuur en computerorganisatie 19
+Lecture Autonomous Agents 2 19
+Lecture Autonomous Agents 2 19
+Practicum Compilerbouw (practicum) 15
+Practicum Compilerbouw (practicum) 15
+Practicum Compilerbouw (practicum) 15
+Tutorial Informatie- en organisatieontwerp 15
+Tutorial Informatie- en organisatieontwerp 15
+Tutorial Informatie- en organisatieontwerp 15
+Practicum Informatie- en organisatieontwerp 15
+Practicum Informatie- en organisatieontwerp 15
+Practicum Informatie- en organisatieontwerp 15
+Practicum Project Genetic Algorithms 15
+Practicum Project Genetic Algorithms 15
+Practicum Project Genetic Algorithms 15
+Practicum Project Numerical Recipes 15
+Practicum Project Numerical Recipes 15
+Practicum Project Numerical Recipes 15
+Practicum Zoeken sturen en bewegen 15
+Practicum Zoeken sturen en bewegen 15
+Practicum Zoeken sturen en bewegen 15
+Practicum Advanced Heuristics 10
+Practicum Advanced Heuristics 10
+Practicum Advanced Heuristics 10
+Tutorial Autonomous Agents 2 10
+Tutorial Autonomous Agents 2 10
+Practicum Autonomous Agents 2 10
+Practicum Autonomous Agents 2 10
+Tutorial Data Mining 10
+Tutorial Data Mining 10
+Tutorial Data Mining 10
+Practicum Data Mining 10
+Practicum Data Mining 10
+Practicum Data Mining 10

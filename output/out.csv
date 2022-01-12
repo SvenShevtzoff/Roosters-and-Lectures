@@ -1,0 +1,141 @@
+day,time,room,activity
+ma,9,A1.04,
+ma,9,A1.06,
+ma,9,A1.08,
+ma,9,A1.10,Tutorial Reflectie op de digitale cultuur
+ma,9,B0.201,
+ma,9,C0.110,
+ma,9,C1.112,
+ma,11,A1.04,
+ma,11,A1.06,Lecture Autonomous Agents 2
+ma,11,A1.08,
+ma,11,A1.10,
+ma,11,B0.201,Practicum Algoritmen en complexiteit
+ma,11,C0.110,Lecture Collectieve Intelligentie
+ma,11,C1.112,Practicum Zoeken sturen en bewegen
+ma,13,A1.04,
+ma,13,A1.06,
+ma,13,A1.08,
+ma,13,A1.10,Lecture Machine Learning
+ma,13,B0.201,Lecture Bioinformatica
+ma,13,C0.110,Lecture Collectieve Intelligentie
+ma,13,C1.112,
+ma,15,A1.04,Lecture Autonomous Agents 2
+ma,15,A1.06,
+ma,15,A1.08,
+ma,15,A1.10,Lecture Heuristieken 1
+ma,15,B0.201,
+ma,15,C0.110,Lecture Bioinformatica
+ma,15,C1.112,Lecture Informatie- en organisatieontwerp
+di,9,A1.04,Lecture Interactie-ontwerp
+di,9,A1.06,
+di,9,A1.08,Practicum Collectieve Intelligentie
+di,9,A1.10,Tutorial Software engineering
+di,9,B0.201,Lecture Data Mining
+di,9,C0.110,Lecture Data Mining
+di,9,C1.112,
+di,11,A1.04,Tutorial Collectieve Intelligentie
+di,11,A1.06,
+di,11,A1.08,Tutorial Informatie- en organisatieontwerp
+di,11,A1.10,Practicum Autonomous Agents 2
+di,11,B0.201,
+di,11,C0.110,Lecture Kansrekenen 2
+di,11,C1.112,Lecture Webprogrammeren en databases
+di,13,A1.04,
+di,13,A1.06,
+di,13,A1.08,Lecture Architectuur en computerorganisatie
+di,13,A1.10,Practicum Bioinformatica
+di,13,B0.201,
+di,13,C0.110,Lecture Collectieve Intelligentie
+di,13,C1.112,Practicum Project Numerical Recipes
+di,15,A1.04,Lecture Heuristieken 2
+di,15,A1.06,
+di,15,A1.08,
+di,15,A1.10,Lecture Advanced Heuristics
+di,15,B0.201,
+di,15,C0.110,Lecture Compilerbouw
+di,15,C1.112,Practicum Software engineering
+wo,9,A1.04,Tutorial Moderne Databases
+wo,9,A1.06,Practicum Netwerken en systeembeveiliging
+wo,9,A1.08,
+wo,9,A1.10,Practicum Project Genetic Algorithms
+wo,9,B0.201,Practicum Informatie- en organisatieontwerp
+wo,9,C0.110,Lecture Kansrekenen 2
+wo,9,C1.112,Lecture Technology for games
+wo,11,A1.04,Lecture Architectuur en computerorganisatie
+wo,11,A1.06,
+wo,11,A1.08,Tutorial Data Mining
+wo,11,A1.10,Tutorial Heuristieken 1
+wo,11,B0.201,
+wo,11,C0.110,Lecture Moderne Databases
+wo,11,C1.112,Practicum Data Mining
+wo,13,A1.04,
+wo,13,A1.06,
+wo,13,A1.08,
+wo,13,A1.10,Lecture Reflectie op de digitale cultuur
+wo,13,B0.201,
+wo,13,C0.110,Lecture Compilerbouw
+wo,13,C1.112,Lecture Lineaire Algebra
+wo,15,A1.04,
+wo,15,A1.06,Practicum Moderne Databases
+wo,15,A1.08,
+wo,15,A1.10,
+wo,15,B0.201,Tutorial Databases 2
+wo,15,C0.110,Lecture Databases 2
+wo,15,C1.112,
+do,9,A1.04,
+do,9,A1.06,
+do,9,A1.08,Tutorial Heuristieken 2
+do,9,A1.10,
+do,9,B0.201,
+do,9,C0.110,
+do,9,C1.112,Tutorial Compilerbouw
+do,11,A1.04,
+do,11,A1.06,
+do,11,A1.08,
+do,11,A1.10,Lecture Webprogrammeren en databases
+do,11,B0.201,Practicum Advanced Heuristics
+do,11,C0.110,
+do,11,C1.112,Tutorial Bioinformatica
+do,13,A1.04,
+do,13,A1.06,Practicum Compilerbouw (practicum)
+do,13,A1.08,
+do,13,A1.10,Lecture Algoritmen en complexiteit
+do,13,B0.201,Tutorial Calculus 2
+do,13,C0.110,Lecture Calculus 2
+do,13,C1.112,Lecture Analysemethoden en -technieken
+do,15,A1.04,
+do,15,A1.06,
+do,15,A1.08,
+do,15,A1.10,
+do,15,B0.201,
+do,15,C0.110,Practicum Compilerbouw
+do,15,C1.112,Lecture Lineaire Algebra
+vr,9,A1.04,
+vr,9,A1.06,
+vr,9,A1.08,
+vr,9,A1.10,
+vr,9,B0.201,
+vr,9,C0.110,Lecture Interactie-ontwerp
+vr,9,C1.112,Tutorial Autonomous Agents 2
+vr,11,A1.04,Practicum Webprogrammeren en databases
+vr,11,A1.06,Tutorial Technology for games
+vr,11,A1.08,
+vr,11,A1.10,Lecture Technology for games
+vr,11,B0.201,
+vr,11,C0.110,Lecture Software engineering
+vr,11,C1.112,Lecture Machine Learning
+vr,13,A1.04,Tutorial Algoritmen en complexiteit
+vr,13,A1.06,
+vr,13,A1.08,
+vr,13,A1.10,Practicum Programmeren in Java 2
+vr,13,B0.201,Tutorial Webprogrammeren en databases
+vr,13,C0.110,
+vr,13,C1.112,Lecture Informatie- en organisatieontwerp
+vr,15,A1.04,
+vr,15,A1.06,
+vr,15,A1.08,
+vr,15,A1.10,
+vr,15,B0.201,Lecture Bioinformatica
+vr,15,C0.110,Lecture Reflectie op de digitale cultuur
+vr,15,C1.112,

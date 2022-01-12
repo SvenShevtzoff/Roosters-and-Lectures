@@ -1,5 +1,5 @@
 from classes import Room, Roomslot, Activity
-import csv, sys
+import csv, sys, math
 
 times = [9, 11, 13, 15]
 days = ["ma", "di", "wo", "do", "vr"]
@@ -32,10 +32,12 @@ def load(file_name_rooms, file_name_courses):
             course_name = row[0]
             for i in range(int(row[1])):
                 activities.append(Activity("Lecture", course_name, int(row[6])))
-            for i in range(int(row[2])):
-                activities.append(Activity("Tutorial", course_name, int(row[3])))
-            for i in range(int(row[4])):
-                activities.append(Activity("Practicum", course_name, int(row[5])))
+            if row[3] != "nvt":
+                for i in range(int(row[2]) * math.ceil(int(row[6]) / int(row[3]))):
+                    activities.append(Activity("Tutorial", course_name, int(row[3])))
+            if row[5] != "nvt":
+                for i in range(int(row[4]) * math.ceil(int(row[6]) / int(row[5]))):
+                    activities.append(Activity("Practicum", course_name, int(row[5])))
 
     # creating Roomslot objects
     roomslots = []
