@@ -1,4 +1,6 @@
 import random
+import pandas as pd
+from load import load
 
 
 def random_schedule(roomslots, activities):
@@ -43,7 +45,12 @@ def random_schedule_three(roomslots, activities):
     return roomslots
 
 
-# def schedule_with_students(roomslots, activities, students):
+def schedule_with_students(roomslots, activities, students, courses):
+    df_students_count = pd.DataFrame(columns = ["Course name", "Student count"])
+    for course in courses:
+        df_students_count = df_students_count.append({"Course name": course.get_name(), "Student count": course.get_num_of_students()}, ignore_index=True)
+    print(df_students_count.sort_values("Student count", ascending=False))
 
+courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
 
-
+schedule_with_students(roomslots, activities, students, courses)

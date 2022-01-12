@@ -63,6 +63,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                 else:
                     break
             students.append(Student(row[0], row[1], row[2], courses))
+    
     for course in courses:
         print(course)
 
