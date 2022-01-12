@@ -82,12 +82,17 @@ class Roomslot:
         return self._activity
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     def get_day(self):
         return self._day
     
     def get_time(self):
         return self._time
 
+=======
+    def get_course(self):
+        return self._activity.get_course()
+>>>>>>> 955b19f495e23434b6fa4b239d9d6e65d6f10053
 =======
     def get_course(self):
         return self._activity.get_course()
