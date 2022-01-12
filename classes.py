@@ -35,15 +35,11 @@ class Activity:
 
 class Roomslot:
 
-    def __init__(self, unique_id, day, time, room, activity=None):
-        self._unique_id = unique_id
+    def __init__(self, day, time, room, activity=None):
         self._day = day
         self._time = time
         self._room = room
         self._activity = activity
-    
-    def get_unique_id(self):
-        return self._unique_id
 
     def get_room(self):
         return self._room
