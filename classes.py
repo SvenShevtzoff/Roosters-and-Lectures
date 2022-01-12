@@ -11,6 +11,24 @@ class Room:
         return self._roomnumber
 
 
+class Course:
+
+    def __init__(self, name, num_of_students=0):
+        self._name = name
+        self._num_of_students = num_of_students
+
+    def get_name(self):
+        return self._name
+
+    def get_num_of_students(self):
+        return self._num_of_students
+
+    def add_student(self):
+        self._num_of_students += 1
+
+    def __str__(self):
+        return f"{self._name}: {self._num_of_students} student(s)"
+
 class Activity:
     
     def __init__(self, kind, course, max_stud=0):
@@ -18,6 +36,7 @@ class Activity:
         self._course = course
         self._max_stud = max_stud
         self._roomslot = None
+        self._students = []
 
     def get_roomslot(self):
         return self._roomslot
@@ -28,9 +47,18 @@ class Activity:
 
     def get_max_stud(self):
         return self._max_stud
+    
+    def get_course(self):
+        return self._course
+    
+    def get_students(self):
+        return self._students
+    
+    def add_student(self, student):
+        self._students.append(student)
 
     def __str__(self):
-        return f"{self._kind} {self._course}"
+        return f"{self._kind} {self._course} {self._max_stud}"
 
 
 class Roomslot:
@@ -41,21 +69,44 @@ class Roomslot:
         self._room = room
         self._activity = activity
 
-    def get_room(self):
-        return self._room
-
-    def get_activity(self):
-        return self._activity
-    
     def get_day(self):
         return self._day
     
     def get_time(self):
         return self._time
 
+    def get_room(self):
+        return self._room
+
+    def get_activity(self):
+        return self._activity
+    
+<<<<<<< HEAD
+    def get_day(self):
+        return self._day
+    
+    def get_time(self):
+        return self._time
+
+=======
+    def get_course(self):
+        return self._activity.get_course()
+>>>>>>> 955b19f495e23434b6fa4b239d9d6e65d6f10053
     
     def set_activity(self, activity):
         self._activity = activity
     
     def __str__(self):
         return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
+    
+    def __repr__(self):
+        return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
+
+
+class Student:
+
+    def __init__(self, last_name, first_name, student_number, courses):
+        self._last_name = last_name
+        self._first_name = first_name
+        self._student_number = student_number
+        self._courses = courses
