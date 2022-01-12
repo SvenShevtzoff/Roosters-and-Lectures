@@ -84,6 +84,12 @@ class Roomslot:
     def get_activity(self):
         return self._activity
     
+    def get_day(self):
+        return self._day
+    
+    def get_time(self):
+        return self._time
+
     def get_course(self):
         return self._activity.get_course()
     

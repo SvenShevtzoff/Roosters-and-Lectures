@@ -2,9 +2,11 @@
 import sys
 from load import load
 from algorithms import *
+
+from fitness import *
+
 import pandas as pd
-from IPython.display import display
-from fitness import list_to_df
+
 
 # checking if algorithm is specified
 if len(sys.argv) < 2:
