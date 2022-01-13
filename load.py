@@ -60,7 +60,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
     # creating Roomslot objects
     roomslots = {}
     for day in days:
-        for room in list(rooms.values()):
+        for room in rooms.get_list():
             if room.get_roomnumber() != "C0.110":
                 times2 = times[0:4]
             else:
@@ -80,7 +80,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             students_courses = []
             for i in range(3, 8):
                 if row[i]:
-                    students_courses.append(courses[row[i]])
+                    students_courses.append(courses.get_single(row[i]))
                 else:
                     break
             new_student = Student(row[0], row[1], row[2], students_courses)

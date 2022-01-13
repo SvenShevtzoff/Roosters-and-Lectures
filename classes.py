@@ -19,13 +19,13 @@ class Rooms:
     def __init__(self, rooms):
         self._rooms_dict = rooms
 
-    def get_rooms_dict(self):
+    def get_dict(self):
         return self._rooms_dict
 
-    def get_rooms_list(self):
+    def get_list(self):
         self._rooms_list = []
-        for room in list(self._rooms.values()):
-            self._all_rooms.append(room)
+        for room in list(self._rooms_dict.values()):
+            self._rooms_list.append(room)
         return self._rooms_list
 
 
@@ -63,14 +63,17 @@ class Courses:
     def __init__(self, courses):
         self._courses_dict = courses
 
-    def get_courses_dict(self):
+    def get_dict(self):
         return self._courses_dict
 
-    def get_courses_list(self):
+    def get_list(self):
         self._courses_list = []
-        for course in list(self._courses.values()):
-            self._all_courses.append(course)
+        for course in list(self._courses_dict.values()):
+            self._courses_list.append(course)
         return self._courses_list
+    
+    def get_single(self, course):
+        return self._courses_dict[course]
 
 
 class Activity:
@@ -103,14 +106,17 @@ class Activities:
     def __init__(self, activities):
         self._activities_dict = activities
 
-    def get_activities_dict(self):
+    def get_dict(self):
         return self._activities_dict
 
-    def get_activities_list(self):
+    def get_list(self):
         self._activities_list = []
-        for activity in list(self._activities.values()):
-            self._all_activities.append(activity)
+        for activity in list(self._activities_dict.values()):
+            self._activities_list.append(activity)
         return self._activities_list
+
+    def length(self):
+        return len(self._activities_dict)
 
 
 class Roomslot:
@@ -151,13 +157,13 @@ class Roomslots:
     def __init__(self, roomslots):
         self._roomslots_dict = roomslots
 
-    def get_roomslots_dict(self):
+    def get_dict(self):
         return self._roomslots_dict
 
-    def get_roomslots_list(self):
+    def get_list(self):
         self._roomslots_list = []
-        for slot in list(self._roomslots.values()):
-            self._all_roomslots.append(slot)
+        for slot in list(self._roomslots_dict.values()):
+            self._roomslots_list.append(slot)
         return self._roomslots_list
 
 
@@ -175,11 +181,11 @@ class Students:
     def __init__(self, students):
         self._students_dict = students
 
-    def get_students_dict(self):
+    def get_dict(self):
         return self._students_dict
 
-    def get_students_list(self):
+    def get_list(self):
         self._students_list = []
-        for student in list(self._students.values()):
-            self._all_students.append(student)
+        for student in list(self._students_dict.values()):
+            self._students_list.append(student)
         return self._students_list

@@ -3,7 +3,7 @@ import pandas as pd
 
 def dict_to_df(roomslots):
     df = pd.DataFrame(columns=["day", "time", "room", "activity"])
-    for slot in list(roomslots.values()):
+    for slot in roomslots.get_list():
         if not slot.get_activity():
             df = df.append({
                 "day": slot.get_day(),
