@@ -1,4 +1,4 @@
-from classes import Room, Roomslot, Activity, Student, Course
+from classes import Room, Rooms, Course, Courses, Roomslot, Roomslots, Activity, Activities, Student, Students
 import csv
 import sys
 import math
@@ -25,6 +25,9 @@ def load(file_name_rooms, file_name_courses, file_name_students):
         for row in csv_reader:
             rooms[row[0]] = Room(row[0], int(row[1]))
 
+    # creating Rooms object
+    rooms = Rooms(rooms)
+
     # loading courses
     activities = {}
     courses = {}
@@ -42,7 +45,8 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                 num_of_practica = int(row[4]) * math.ceil(int(row[6]) / int(row[5]))
             else:
                 num_of_practica = 0
-            courses[course_name] = Course(course_name, num_of_tutorials, num_of_practica)
+            num_of_lectures = int(row[1])
+            courses[course_name] = Course(course_name, num_of_lectures, num_of_tutorials, num_of_practica)
             for i in range(int(row[1])):
                 new_activity = Activity("Lecture", course_name, int(row[6]))
                 activities[f"Lecture {course_name}"] = new_activity
@@ -58,17 +62,24 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                     activities[f"Practicum {course_name}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 
+    # creating activities and courses objects
+    activities = Activities(activities)
+    courses = Courses(courses)
+
     # creating Roomslot objects
     roomslots = {}
     for day in days:
-        for room in list(rooms.values()):
+        for room in rooms.get_list():
             if room.get_roomnumber() != "C0.110":
-                times2 = times[0:3]
+                times2 = times[0:4]
             else:
                 times2 = times
             for time in times2:
                 roomslots[f"Day: {day}, time: {time}, room: {room}"] = Roomslot(day, time, room)
-            
+
+    # creating Roomslots object
+    roomslots = Roomslots(roomslots)
+
     # creating Student objects
     students = {}
     with file_students:
@@ -78,17 +89,16 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             students_courses = []
             for i in range(3, 8):
                 if row[i]:
-                    students_courses.append(courses[row[i]])
+                    students_courses.append(courses.get_single(row[i]))
                 else:
                     break
             new_student = Student(row[0], row[1], row[2], students_courses)
             students[row[2]] = new_student
-        
+
             for course in students_courses:
                 course.add_student(new_student)
-            
+
+    # creating Students object
+    students = Students(students)
 
     return courses, activities, roomslots, students
-
-
-courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")

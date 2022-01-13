@@ -1,6 +1,5 @@
 '''Usage: main.py [algorithm]'''
 import sys
-import pandas as pd
 from load import load
 from algorithms import *
 from fitness import *

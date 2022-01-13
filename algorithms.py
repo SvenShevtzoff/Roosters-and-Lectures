@@ -1,22 +1,21 @@
 import random
 import pandas as pd
-from load import load
 
 
 def random_schedule(roomslots, activities):
     """ Creates a random schedule, not taking into account roomsizes. """
-    n = len(activities)
-    random_slots = random.sample(roomslots.keys(), n)
+    n = activities.length()
+    random_slots = random.sample(roomslots.get_list(), n)
     for i in range(n):
-        roomslots[random_slots[i]].set_activity(list(activities.values())[i])
+        random_slots[i].set_activity(activities.get_list()[i])
     return roomslots
 
 
 def random_schedule_two(roomslots, activities):
     """ Creates a random schedule, taking into account roomsizes. """
-    for activity in list(activities.values()):
+    for activity in activities.get_list():
         while not activity.get_roomslot():
-            slot = roomslots[random.choice(list(roomslots.keys()))]
+            slot = random.choice(roomslots.get_list())
             if slot.get_activity():
                 continue
             elif slot.get_room().get_capacity() < activity.get_max_stud():
@@ -29,10 +28,10 @@ def random_schedule_two(roomslots, activities):
 
 def random_schedule_three(roomslots, activities):
     """ Creates a random schedule, taking into account roomsizes and E(studenten) """
-    activities = sorted(list(activities.values()), key=lambda x: x.get_max_stud(), reverse=True)
+    activities = sorted(activities.get_list(), key=lambda x: x.get_max_stud(), reverse=True)
     for activity in activities:
         while not activity.get_roomslot():
-            slot = roomslots[random.choice(list(roomslots.keys()))]
+            slot = random.choice(roomslots.get_list())
             if slot.get_activity():
                 continue
             elif slot.get_room().get_capacity() < activity.get_max_stud():
@@ -54,18 +53,10 @@ def schedule_with_students(roomslots, activities, courses):
         #     ignore_index=True)
         for activity in course.get_activities():
             if activity.get_kind() == "Lecture":
-                activity.set_students(students)
+                activity.set_students(course.get_students())
             if activity.get_kind() == "Tutorial" and not activity.get_students():
                 maximum_students = activity.get_max_stud()
                 if len(course.get_students()) <= maximum_students:
                     activity.set_students(course.get_student())
     # schedule students to activities
 
-
-
-
-
-courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
-
-
-schedule_with_students(roomslots, activities, courses)
