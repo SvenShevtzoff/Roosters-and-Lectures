@@ -1,9 +1,9 @@
 import pandas as pd
 
 
-def list_to_df(roomslots):
+def dict_to_df(roomslots):
     df = pd.DataFrame(columns=["day", "time", "room", "activity"])
-    for slot in roomslots:
+    for slot in list(roomslots.values()):
         if not slot.get_activity():
             df = df.append({
                 "day": slot.get_day(),
@@ -17,3 +17,4 @@ def list_to_df(roomslots):
                 "room": slot.get_room(),
                 "activity": slot.get_activity()}, ignore_index=True)
     return df
+    
