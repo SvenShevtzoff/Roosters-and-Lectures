@@ -62,7 +62,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
     for day in days:
         for room in list(rooms.values()):
             if room.get_roomnumber() != "C0.110":
-                times2 = times[0:3]
+                times2 = times[0:4]
             else:
                 times2 = times
             for time in times2:
