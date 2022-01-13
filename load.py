@@ -1,5 +1,7 @@
 from classes import Room, Roomslot, Activity, Student, Course
-import csv, sys, math
+import csv
+import sys
+import math
 
 times = [9, 11, 13, 15]
 days = ["ma", "di", "wo", "do", "vr"]
@@ -63,10 +65,11 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                 else:
                     break
             students[row[2]] = Student(row[0], row[1], row[2], courses)
-    
+
     for course in courses:
         print(course)
 
     return courses, activities, roomslots, students
+
 
 courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")

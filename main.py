@@ -1,16 +1,15 @@
 '''Usage: main.py [algorithm]'''
 import sys
+import pandas as pd
 from load import load
 from algorithms import *
-
-from fitness import *
-
-import pandas as pd
+from fitness import list_to_df
 
 
 # checking if algorithm is specified
 if len(sys.argv) < 2:
-    sys.exit(f"Specify the algorithm to make schedule (random_schedule, random_schedule_two, random_schedule_three, schedule_with_students)")
+    sys.exit("Specify the algorithm to make schedule \
+             (random_schedule, random_schedule_two, random_schedule_three, schedule_with_students)")
 
 # loading in data
 courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
