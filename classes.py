@@ -16,9 +16,8 @@ class Room:
 
 class Course:
 
-    def __init__(self, name, num_of_students=0):
+    def __init__(self, name):
         self._name = name
-        self._num_of_students = num_of_students
         self._activities = []
         self._students = []
 
@@ -26,10 +25,7 @@ class Course:
         return self._name
 
     def get_num_of_students(self):
-        return self._num_of_students
-
-    def add_student(self):
-        self._num_of_students += 1
+        return len(self._students)
     
     def add_activity(self, activity):
         self._activities.append(activity)

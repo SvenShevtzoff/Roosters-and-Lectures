@@ -70,7 +70,6 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             students_courses = []
             for i in range(3, 8):
                 if row[i]:
-                    courses[row[i]].add_student()
                     students_courses.append(courses[row[i]])
                 else:
                     break
@@ -79,8 +78,6 @@ def load(file_name_rooms, file_name_courses, file_name_students):
         
             for course in students_courses:
                 course.add_student(new_student)
-
-# hier geblevenert students in dataframe zetten
             
 
     return courses, activities, roomslots, students
