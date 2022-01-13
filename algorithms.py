@@ -42,13 +42,25 @@ def random_schedule_three(roomslots, activities):
     return roomslots
 
 
-def schedule_with_students(roomslots, activities, students, courses):
+def schedule_with_students(roomslots, activities, courses):
     df_students_count = pd.DataFrame(columns=["Course name", "Student count"])
     for course in list(courses.values()):
-        df_students_count = df_students_count.append({
-            "Course name": course,
-            "Student count": course.get_num_of_students()},
-            ignore_index=True)
+        students_tutorial = [student for student in course.get_students()]
+        print(students_tutorial)
+        students_practicum = course.get_students()
+        # df_students_count = df_students_count.append({
+        #     "Course name": course,
+        #     "Student count": course.get_num_of_students()},
+        #     ignore_index=True)
+        for activity in course.get_activities():
+            if activity.get_kind() == "Lecture":
+                activity.set_students(students)
+            if activity.get_kind() == "Tutorial" and not activity.get_students():
+                maximum_students = activity.get_max_stud()
+                if len(course.get_students()) <= maximum_students:
+                    activity.set_students(course.get_student())
+    # schedule students to activities
+
 
 
 
@@ -56,4 +68,4 @@ def schedule_with_students(roomslots, activities, students, courses):
 courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
 
 
-schedule_with_students(roomslots, activities, students, courses)
+schedule_with_students(roomslots, activities, courses)

@@ -16,13 +16,21 @@ class Room:
 
 class Course:
 
-    def __init__(self, name):
+    def __init__(self, name, num_of_tutorials, num_of_practica):
         self._name = name
         self._activities = []
         self._students = []
+        self._num_of_tutorials = num_of_tutorials
+        self._num_of_practica = num_of_practica
 
     def get_name(self):
         return self._name
+
+    def get_num_of_tutorials(self):
+        return self._num_of_tutorials
+
+    def get_num_of_practica(self):
+        return self._num_of_practica
 
     def get_num_of_students(self):
         return len(self._students)
@@ -50,6 +58,10 @@ class Activity:
         self._course = course
         self._max_stud = max_stud
         self._roomslot = None
+        self._students = []
+
+    def get_kind(self):
+        return self._kind
 
     def get_roomslot(self):
         return self._roomslot
@@ -64,8 +76,14 @@ class Activity:
     def get_course(self):
         return self._course
 
+    def set_students(self, students):
+        self._students = students
+
+    def get_students(self):
+        return self._students
+
     def __str__(self):
-        return f"{self._kind} {self._course} {self._max_stud}"
+        return f"{self._kind} {self._course}"
 
 
 class Roomslot:
@@ -114,3 +132,6 @@ class Student:
         self._first_name = first_name
         self._student_number = student_number
         self._courses = courses
+
+    def __str__(self):
+        return f"{self._first_name} {self._last_name}"

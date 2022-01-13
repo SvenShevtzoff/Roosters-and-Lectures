@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from load import load
 from algorithms import *
-from fitness import dict_to_df
+from fitness import *
 
 
 # checking if algorithm is specified
@@ -22,13 +22,13 @@ elif sys.argv[1] == "random_schedule_two":
 elif sys.argv[1] == "random_schedule_three":
     schedule = random_schedule_three(roomslots, activities)
 elif sys.argv[1] == "schedule_with_students":
-    schedule = schedule_with_students(roomslots, activities, students, courses)
+    schedule = schedule_with_students(roomslots, activities, courses)
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-print(schedule)
 dfSchedule = dict_to_df(schedule)
+fitness_function(dfSchedule)
 dfSchedule.to_csv("schedule.csv", index=False)
 
 # les van 17 (5)
