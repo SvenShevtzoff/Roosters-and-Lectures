@@ -44,11 +44,12 @@ def random_schedule_three(roomslots, activities):
 
 def schedule_with_students(roomslots, activities, students, courses):
     df_students_count = pd.DataFrame(columns=["Course name", "Student count"])
-    for course in courses:
+    for course in list(courses.values()):
         df_students_count = df_students_count.append({
             "Course name": course,
             "Student count": courses[course].get_num_of_students()},
             ignore_index=True)
+
 
 
 
