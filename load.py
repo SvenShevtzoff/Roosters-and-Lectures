@@ -3,7 +3,7 @@ import csv
 import sys
 import math
 
-times = [9, 11, 13, 15]
+times = [9, 11, 13, 15, 17]
 days = ["ma", "di", "wo", "do", "vr"]
 
 
@@ -53,10 +53,14 @@ def load(file_name_rooms, file_name_courses, file_name_students):
     # creating Roomslot objects
     roomslots = {}
     for day in days:
-        for time in times:
-            for room in rooms:
+        for room in list(rooms.values()):
+            if room.get_roomnumber() != "C0.110":
+                times2 = times[0:3]
+            else:
+                times2 = times
+            for time in times2:
                 roomslots[f"Day: {day}, time: {time}, room: {room}"] = Roomslot(day, time, room)
-
+            
     # creating Student objects
     students = {}
     with file_students:
@@ -78,9 +82,6 @@ def load(file_name_rooms, file_name_courses, file_name_students):
 
 # hier geblevenert students in dataframe zetten
             
-
-    for course in courses:
-        print(course)
 
     return courses, activities, roomslots, students
 

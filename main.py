@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from load import load
 from algorithms import *
-from fitness import list_to_df
+from fitness import dict_to_df
 
 
 # checking if algorithm is specified
@@ -28,3 +28,12 @@ else:
     sys.exit("This algorithm does not exist")
 
 print(schedule)
+dfSchedule = dict_to_df(schedule)
+dfSchedule.to_csv("schedule.csv", index=False)
+
+# les van 17 (5)
+# niet in te roosteren studenten (1)
+# vakconflict (1)
+# 1 tussenuur (1)
+# 2 tussenuur(3)
+# geen 3 sloten
