@@ -1,6 +1,5 @@
 import random
 import pandas as pd
-from load import load
 
 
 def random_schedule(roomslots, activities):
@@ -49,11 +48,3 @@ def schedule_with_students(roomslots, activities, students, courses):
             "Course name": course,
             "Student count": course.get_num_of_students()},
             ignore_index=True)
-
-
-
-
-courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
-
-
-schedule_with_students(roomslots, activities, students, courses)

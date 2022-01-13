@@ -1,4 +1,4 @@
-from classes import Room, Roomslot, Activity, Student, Course
+from classes import Room, Rooms, Course, Courses, Roomslot, Roomslots, Activity, Activities, Student, Students
 import csv
 import sys
 import math
@@ -25,6 +25,9 @@ def load(file_name_rooms, file_name_courses, file_name_students):
         for row in csv_reader:
             rooms[row[0]] = Room(row[0], int(row[1]))
 
+    # creating Rooms object
+    rooms = Rooms(rooms)
+
     # loading courses
     activities = {}
     courses = {}
@@ -50,6 +53,10 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                     activities[f"Practicum {course_name}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 
+    # creating activities and courses objects
+    activities = Activities(activities)
+    courses = Courses(courses)
+
     # creating Roomslot objects
     roomslots = {}
     for day in days:
@@ -60,7 +67,10 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                 times2 = times
             for time in times2:
                 roomslots[f"Day: {day}, time: {time}, room: {room}"] = Roomslot(day, time, room)
-            
+
+    # creating Roomslots object
+    roomslots = Roomslots(roomslots)
+
     # creating Student objects
     students = {}
     with file_students:
@@ -75,12 +85,11 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                     break
             new_student = Student(row[0], row[1], row[2], students_courses)
             students[row[2]] = new_student
-        
+
             for course in students_courses:
                 course.add_student(new_student)
-            
+
+    # creating Students object
+    students = Students(students)
 
     return courses, activities, roomslots, students
-
-
-courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")

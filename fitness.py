@@ -17,4 +17,3 @@ def dict_to_df(roomslots):
                 "room": slot.get_room(),
                 "activity": slot.get_activity()}, ignore_index=True)
     return df
-    

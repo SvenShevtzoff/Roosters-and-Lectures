@@ -14,6 +14,21 @@ class Room:
         return self._roomnumber
 
 
+class Rooms:
+
+    def __init__(self, rooms):
+        self._rooms_dict = rooms
+
+    def get_rooms_dict(self):
+        return self._rooms_dict
+
+    def get_rooms_list(self):
+        self._rooms_list = []
+        for room in list(self._rooms.values()):
+            self._all_rooms.append(room)
+        return self._rooms_list
+
+
 class Course:
 
     def __init__(self, name):
@@ -26,10 +41,10 @@ class Course:
 
     def get_num_of_students(self):
         return len(self._students)
-    
+
     def add_activity(self, activity):
         self._activities.append(activity)
-    
+
     def get_activities(self):
         return self._activities
 
@@ -41,6 +56,21 @@ class Course:
 
     def __str__(self):
         return f"{self._name}: {self._num_of_students} student(s)"
+
+
+class Courses:
+
+    def __init__(self, courses):
+        self._courses_dict = courses
+
+    def get_courses_dict(self):
+        return self._courses_dict
+
+    def get_courses_list(self):
+        self._courses_list = []
+        for course in list(self._courses.values()):
+            self._all_courses.append(course)
+        return self._courses_list
 
 
 class Activity:
@@ -68,6 +98,21 @@ class Activity:
         return f"{self._kind} {self._course} {self._max_stud}"
 
 
+class Activities:
+
+    def __init__(self, activities):
+        self._activities_dict = activities
+
+    def get_activities_dict(self):
+        return self._activities_dict
+
+    def get_activities_list(self):
+        self._activities_list = []
+        for activity in list(self._activities.values()):
+            self._all_activities.append(activity)
+        return self._activities_list
+
+
 class Roomslot:
 
     def __init__(self, day, time, room, activity=None):
@@ -88,12 +133,6 @@ class Roomslot:
     def get_activity(self):
         return self._activity
 
-    def get_day(self):
-        return self._day
-
-    def get_time(self):
-        return self._time
-
     def get_course(self):
         return self._activity.get_course()
 
@@ -107,6 +146,21 @@ class Roomslot:
         return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
 
 
+class Roomslots:
+
+    def __init__(self, roomslots):
+        self._roomslots_dict = roomslots
+
+    def get_roomslots_dict(self):
+        return self._roomslots_dict
+
+    def get_roomslots_list(self):
+        self._roomslots_list = []
+        for slot in list(self._roomslots.values()):
+            self._all_roomslots.append(slot)
+        return self._roomslots_list
+
+
 class Student:
 
     def __init__(self, last_name, first_name, student_number, courses):
@@ -114,3 +168,18 @@ class Student:
         self._first_name = first_name
         self._student_number = student_number
         self._courses = courses
+
+
+class Students:
+
+    def __init__(self, students):
+        self._students_dict = students
+
+    def get_students_dict(self):
+        return self._students_dict
+
+    def get_students_list(self):
+        self._students_list = []
+        for student in list(self._students.values()):
+            self._all_students.append(student)
+        return self._students_list
