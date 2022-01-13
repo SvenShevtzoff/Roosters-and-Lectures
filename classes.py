@@ -19,6 +19,8 @@ class Course:
     def __init__(self, name, num_of_students=0):
         self._name = name
         self._num_of_students = num_of_students
+        self._activities = []
+        self._students = []
 
     def get_name(self):
         return self._name
@@ -28,6 +30,18 @@ class Course:
 
     def add_student(self):
         self._num_of_students += 1
+    
+    def add_activity(self, activity):
+        self._activities.append(activity)
+    
+    def get_activities(self):
+        return self._activities
+
+    def get_students(self):
+        return self._students
+
+    def add_student(self, student):
+        self._students.append(student)
 
     def __str__(self):
         return f"{self._name}: {self._num_of_students} student(s)"
@@ -40,7 +54,6 @@ class Activity:
         self._course = course
         self._max_stud = max_stud
         self._roomslot = None
-        self._students = []
 
     def get_roomslot(self):
         return self._roomslot
@@ -54,12 +67,6 @@ class Activity:
 
     def get_course(self):
         return self._course
-
-    def get_students(self):
-        return self._students
-
-    def add_student(self, student):
-        self._students.append(student)
 
     def __str__(self):
         return f"{self._kind} {self._course} {self._max_stud}"
