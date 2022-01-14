@@ -44,18 +44,18 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             courses[course_name] = new_course
 
             # create Lecture, Tutorial and Practicum Activity objects
-            for i in range(num_of_lectures):
+            for i in range(int(row[1])):
                 new_activity = Activity("Lecture", new_course, int(row[6]))
                 activities[f"Lecture {course_name}"] = new_activity
                 courses[course_name].add_activity(new_activity)
             if row[3] != "nvt":
                 for i in range(num_of_tutorials):
-                    new_activity = Activity("Tutorial", new_course, int(row[3]))
+                    new_activity = Activity("Tutorial", course_name, int(row[3]))
                     activities[f"Tutorial {course_name}"] = new_activity
                     courses[course_name].add_activity(new_activity)
             if row[5] != "nvt":
                 for i in range(num_of_practica):
-                    new_activity = Activity("Practicum", new_course, int(row[5]))
+                    new_activity = Activity("Practicum", course_name, int(row[5]))
                     activities[f"Practicum {course_name}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 
@@ -100,5 +100,5 @@ def load(file_name_rooms, file_name_courses, file_name_students):
 
     # for each course, add students to its currently existing activities
     courses.add_students_to_activities()
-
     return courses, activities, roomslots, students
+

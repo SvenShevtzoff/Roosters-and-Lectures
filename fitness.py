@@ -11,8 +11,8 @@ def dict_to_df(roomslots):
                 "time": slot.get_time(),
                 "room": slot.get_room(),
                 "activity": None,
-                "students": None}
-                , ignore_index=True)
+                "students": None}, 
+                ignore_index=True)
         else:
             students = []
             for student in slot.get_course().get_students():
@@ -22,14 +22,17 @@ def dict_to_df(roomslots):
                 "time": slot.get_time(),
                 "room": slot.get_room(),
                 "activity": slot.get_activity(),
-                "students": students}
-                , ignore_index=True)
+                "students": students}, 
+                ignore_index=True)
     return df
+
 
 
 def fitness_function(schedule_to_check):
     schedule = dict_to_df(schedule_to_check)
+
     malus_points = 0
+
     # aantal studenten groter dan maximum toegestaan in de zaal (1)
     for i in schedule.index:
         if schedule["activity"][i]:
@@ -63,3 +66,4 @@ def fitness_function(schedule_to_check):
         previous_student = row
 
     return schedule, malus_points
+

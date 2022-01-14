@@ -59,3 +59,4 @@ def schedule_with_students(roomslots, activities, courses):
                     activity.set_students(course.get_student())
     # schedule students to activities
 
+

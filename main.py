@@ -3,7 +3,11 @@ import sys
 from load import load
 from algorithms import *
 from fitness import *
+
+from schedule import *
+
 from IPython.display import display
+
 
 
 # checking if algorithm is specified
@@ -13,6 +17,7 @@ if len(sys.argv) < 2:
 
 # loading in data
 courses, activities, roomslots, students = load("data/rooms.csv", "data/courses.csv", "data/students_and_courses.csv")
+
 
 # checking which algorithm is selected and making a schedule accordingly
 if sys.argv[1] == "random_schedule":
@@ -29,6 +34,18 @@ else:
 
 display(fitness_function(schedule)[0])
 print(f"Malus points: {fitness_function(schedule)[1]}")
+
+schedule.to_csv("schedule.csv", index=False)
+
+x = Schedule(courses, activities, roomslots, students)
+print(x.course_schedule("Lineaire Algebra"))
+print(x.room_schedule("A1.08"))
+print(x.student_schedule(""))
+print(x.day_schedule("do"))
+print(x.time_schedule(13))
+print(x.empty_schedule())
+
 # dfSchedule = dfSchedule.explode('students').sort_values(by='students', key=lambda col: col.__str__())
 # dfSchedule = dfSchedule.explode('students').groupby('students').agg(["day", "time", "room", "activity"])
 # dfSchedule.to_csv("schedule.csv", index=False)
+
