@@ -3,6 +3,7 @@ import sys
 from load import load
 from algorithms import *
 from fitness import *
+from IPython.display import display
 
 
 # checking if algorithm is specified
@@ -29,4 +30,6 @@ else:
 dfSchedule = dict_to_df(schedule)
 fitness_function(dfSchedule)
 # dfSchedule = dfSchedule.explode('students').sort_values(by='students', key=lambda col: col.__str__())
-dfSchedule.to_csv("schedule.csv", index=False)
+# dfSchedule = dfSchedule.explode('students').groupby('students').agg(["day", "time", "room", "activity"])
+display(dfSchedule)
+# dfSchedule.to_csv("schedule.csv", index=False)

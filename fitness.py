@@ -24,9 +24,9 @@ def dict_to_df(roomslots):
 
 
 def fitness_function(schedule):
-    print(schedule)
+    # print(schedule)
     malus_points = 0
-    # aantal studenten groter dan maximum toegestaan in de zaal
+    # aantal studenten groter dan maximum toegestaan in de zaal (1)
     for i in schedule.index:
         if schedule["activity"][i]:
             max_students_in_activity = schedule["activity"][i].get_max_stud()
@@ -35,23 +35,16 @@ def fitness_function(schedule):
             if difference > 0:
                 malus_points += difference
 
-    # gebruik van avondslot
+    # gebruik van avondslot (5)
     schedule_evening = schedule.loc[(schedule["time"] == 17) & schedule["activity"]]
     malus_points += 5 * len(schedule_evening.index)
 
-    # vakconflicten
+    # vakconflicten (1)
     
 
-    # één tussenslot
+    # één tussenslot (1)
 
 
-    # twee tussensloten
+    # twee tussensloten (3)
 
-    pass
-
-# les van 17 (5)
-# niet in te roosteren studenten (1)
-# vakconflict (1)
-# 1 tussenuur (1)
-# 2 tussenuur(3)
-# geen 3 sloten
+    return malus_points
