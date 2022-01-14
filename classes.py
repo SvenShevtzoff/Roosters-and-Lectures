@@ -64,7 +64,25 @@ class Course:
         self._students.append(student)
 
     def __str__(self):
-        return f"{self._name}: {self._num_of_students} student(s)"
+        return f"{self._name}: {len(self._students)} student(s)"
+
+
+class Courses:
+
+    def __init__(self, courses):
+        self._courses_dict = courses
+
+    def get_dict(self):
+        return self._courses_dict
+
+    def get_list(self):
+        self._courses_list = []
+        for course in list(self._courses_dict.values()):
+            self._courses_list.append(course)
+        return self._courses_list
+    
+    def get_single(self, course):
+        return self._courses_dict[course]
 
 
 class Courses:
@@ -196,6 +214,13 @@ class Student:
 
     def __str__(self):
         return f"{self._first_name} {self._last_name}"
+<<<<<<< HEAD
+=======
+    
+    # def __repr__(self):
+    #     return f"{self._first_name} {self._last_name}"
+
+>>>>>>> c682bdca2d3731c53f12eee7166b26bd5033f652
 
 class Students:
 
@@ -209,4 +234,7 @@ class Students:
         self._students_list = []
         for student in list(self._students_dict.values()):
             self._students_list.append(student)
+
         return self._students_list
+
+
