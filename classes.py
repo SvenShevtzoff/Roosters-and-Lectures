@@ -93,24 +93,6 @@ class Courses:
             course.add_students_to_activities()
 
 
-class Courses:
-
-    def __init__(self, courses):
-        self._courses_dict = courses
-
-    def get_dict(self):
-        return self._courses_dict
-
-    def get_list(self):
-        self._courses_list = []
-        for course in list(self._courses_dict.values()):
-            self._courses_list.append(course)
-        return self._courses_list
-    
-    def get_single(self, course):
-        return self._courses_dict[course]
-
-
 class Activity:
 
     def __init__(self, kind, course, max_stud=0):

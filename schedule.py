@@ -1,7 +1,3 @@
-from classes import Room, Rooms, Course, Courses, Roomslot, Roomslots, Activity, Activities, Student, Students
-import pandas as pd
-
-
 class Schedule:
 
     def __init__(self, courses, activities, roomslots, students):
