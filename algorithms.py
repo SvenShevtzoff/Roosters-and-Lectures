@@ -44,8 +44,7 @@ def random_schedule_three(roomslots, activities):
 def schedule_with_students(roomslots, activities, courses):
     df_students_count = pd.DataFrame(columns=["Course name", "Student count"])
     for course in list(courses.values()):
-        students_tutorial = [student for student in course.get_students()]
-        print(students_tutorial)
+        students_tutorial = course.get_students()
         students_practicum = course.get_students()
         # df_students_count = df_students_count.append({
         #     "Course name": course,

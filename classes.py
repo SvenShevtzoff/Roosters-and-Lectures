@@ -197,8 +197,8 @@ class Student:
     def __str__(self):
         return f"{self._first_name} {self._last_name}"
     
-    def __repr__(self):
-        return f"{self._first_name} {self._last_name}"
+    # def __repr__(self):
+    #     return f"{self._first_name} {self._last_name}"
 
 
 class Students:
