@@ -16,7 +16,7 @@ def dict_to_df(roomslots):
         else:
             students = []
             for student in slot.get_course().get_students():
-                students.append(student.__str__())
+                students.append(student)
             df = df.append({
                 "day": slot.get_day(),
                 "time": slot.get_time(),
@@ -46,7 +46,7 @@ def fitness_function(schedule_to_check):
     schedule_evening = schedule.loc[(schedule["time"] == 17) & schedule["activity"]]
     malus_points += 5 * len(schedule_evening.index)
 
-    # # vakconflicten (1)
+    # vakconflicten (1)
     schedule_exploded = schedule.explode("students")
     schedule_conflicts = schedule_exploded[["students", "day", "time", "activity"]].groupby(["students", "day", "time"]).count()
 
