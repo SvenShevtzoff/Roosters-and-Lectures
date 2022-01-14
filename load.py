@@ -37,18 +37,14 @@ def load(file_name_rooms, file_name_courses, file_name_students):
         for row in csv_reader:
             # creating Lecture, Tutorial and Practicum objects
             course_name = row[0]
-            if row[3] != "nvt":
-                num_of_tutorials = int(row[2]) * math.ceil(int(row[6]) / int(row[3]))
-            else:
-                num_of_tutorials = 0
-            if row[5] != "nvt":
-                num_of_practica = int(row[4]) * math.ceil(int(row[6]) / int(row[5]))
-            else:
-                num_of_practica = 0
+            num_of_tutorials = int(row[2])
+            num_of_practica = int(row[4])
             num_of_lectures = int(row[1])
-            new_course = Course(course_name, num_of_lectures, num_of_tutorials, num_of_practica)
+            new_course = Course(course_name, num_of_lectures)
             courses[course_name] = new_course
-            for i in range(int(row[1])):
+
+            # create Lecture, Tutorial and Practicum Activity objects
+            for i in range(num_of_lectures):
                 new_activity = Activity("Lecture", new_course, int(row[6]))
                 activities[f"Lecture {course_name}"] = new_activity
                 courses[course_name].add_activity(new_activity)
@@ -101,5 +97,8 @@ def load(file_name_rooms, file_name_courses, file_name_students):
 
     # creating Students object
     students = Students(students)
+
+    # for each course, add students to its currently existing activities
+    courses.add_students_to_activities()
 
     return courses, activities, roomslots, students

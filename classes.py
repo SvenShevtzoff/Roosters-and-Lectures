@@ -31,7 +31,7 @@ class Rooms:
 
 class Course:
 
-    def __init__(self, name, num_of_lectures, num_of_tutorials, num_of_practica):
+    def __init__(self, name, num_of_lectures, num_of_tutorials=0, num_of_practica=0):
         self._name = name
         self._activities = []
         self._students = []
@@ -66,6 +66,10 @@ class Course:
     def __str__(self):
         return f"{self._name}: {len(self._students)} student(s)"
 
+    def add_students_to_activities(self):
+        for activity in self._activities:
+            activity.set_students(self._students)
+
 
 class Courses:
 
@@ -83,6 +87,10 @@ class Courses:
     
     def get_single(self, course):
         return self._courses_dict[course]
+
+    def add_students_to_activities(self):
+        for course in self.get_list():
+            course.add_students_to_activities()
 
 
 class Activity:

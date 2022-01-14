@@ -27,8 +27,8 @@ else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-dfSchedule = dict_to_df(schedule)
-fitness_function(dfSchedule)
+display(fitness_function(schedule)[0])
+print(f"Malus points: {fitness_function(schedule)[1]}")
 # dfSchedule = dfSchedule.explode('students').sort_values(by='students', key=lambda col: col.__str__())
 # dfSchedule = dfSchedule.explode('students').groupby('students').agg(["day", "time", "room", "activity"])
 # dfSchedule.to_csv("schedule.csv", index=False)
