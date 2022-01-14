@@ -2,6 +2,7 @@ import random
 import pandas as pd
 
 
+
 def random_schedule(roomslots, activities):
     """ Creates a random schedule, not taking into account roomsizes. """
     n = activities.length()
@@ -58,5 +59,4 @@ def schedule_with_students(roomslots, activities, courses):
                 if len(course.get_students()) <= maximum_students:
                     activity.set_students(course.get_student())
     # schedule students to activities
-
 

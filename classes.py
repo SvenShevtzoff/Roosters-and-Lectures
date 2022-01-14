@@ -202,6 +202,11 @@ class Student:
         self._student_number = student_number
         self._courses = courses
 
+
+
+    def get_name(self):
+        return f"{self._first_name} {self._last_name}"
+
     def __str__(self):
         return f"{self._first_name} {self._last_name}"
 
@@ -223,5 +228,4 @@ class Students:
             self._students_list.append(student)
 
         return self._students_list
-
 

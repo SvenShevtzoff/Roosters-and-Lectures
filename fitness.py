@@ -66,4 +66,3 @@ def fitness_function(schedule_to_check):
         previous_student = row
 
     return schedule, malus_points
-

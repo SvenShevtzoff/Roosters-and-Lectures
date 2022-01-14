@@ -4,9 +4,9 @@ from load import load
 from algorithms import *
 from fitness import *
 
-from schedule import *
+from schedule import Schedule
 
-from IPython.display import display
+# from IPython.display import display
 from classes import Student
 
 
@@ -33,21 +33,22 @@ else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
+x = Schedule(roomslots, activities)
+
+print(x.course_schedule("Technology for games"))
+print(x.room_schedule("A1.08"))
+print(x.student_schedule("Amos van den Oord"))
+print(x.day_schedule("do"))
+print(x.time_schedule(13))
+print(x.fitness())
 # display(fitness_function(schedule)[0])
 # print(f"Malus points: {fitness_function(schedule)[1]}")
 
 # schedule.to_csv("schedule.csv", index=False)
 
-maluspunten = fitness_function(schedule)
-print(maluspunten)
-dict_to_df(schedule).to_csv('schedule.csv')
-# x = Schedule(courses, activities, roomslots, students)
-# print(x.course_schedule("Lineaire Algebra"))
-# print(x.room_schedule("A1.08"))
-# print(x.student_schedule(""))
-# print(x.day_schedule("do"))
-# print(x.time_schedule(13))
-# print(x.empty_schedule())
+# maluspunten = fitness_function(schedule)
+# print(maluspunten)
+
 
 
 # dfSchedule = dict_to_df(schedule)
@@ -59,3 +60,5 @@ dict_to_df(schedule).to_csv('schedule.csv')
 # # dfSchedule = dfSchedule.explode('students').groupby('students').agg(["day", "time", "room", "activity"])
 # # dfSchedule.to_csv("schedule.csv", index=False)
 
+# dict_to_df(schedule).to_csv('schedule.csv')
+# x = Schedule(courses, activities, roomslots, students)
