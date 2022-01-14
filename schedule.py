@@ -41,7 +41,7 @@ class Schedule:
             else:
                 students = []
                 for student in slot.get_course().get_students():
-                    students.append(student)
+                    students.append(student.__str__())
                 df = df.append({
                     "day": slot.get_day(),
                     "time": slot.get_time(),
