@@ -46,19 +46,20 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             else:
                 num_of_practica = 0
             num_of_lectures = int(row[1])
-            courses[course_name] = Course(course_name, num_of_lectures, num_of_tutorials, num_of_practica)
+            new_course = Course(course_name, num_of_lectures, num_of_tutorials, num_of_practica)
+            courses[course_name] = new_course
             for i in range(int(row[1])):
-                new_activity = Activity("Lecture", course_name, int(row[6]))
+                new_activity = Activity("Lecture", new_course, int(row[6]))
                 activities[f"Lecture {course_name}"] = new_activity
                 courses[course_name].add_activity(new_activity)
             if row[3] != "nvt":
                 for i in range(num_of_tutorials):
-                    new_activity = Activity("Tutorial", course_name, int(row[3]))
+                    new_activity = Activity("Tutorial", new_course, int(row[3]))
                     activities[f"Tutorial {course_name}"] = new_activity
                     courses[course_name].add_activity(new_activity)
             if row[5] != "nvt":
                 for i in range(num_of_practica):
-                    new_activity = Activity("Practicum", course_name, int(row[5]))
+                    new_activity = Activity("Practicum", new_course, int(row[5]))
                     activities[f"Practicum {course_name}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 

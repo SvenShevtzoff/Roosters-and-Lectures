@@ -9,13 +9,17 @@ def dict_to_df(roomslots):
                 "day": slot.get_day(),
                 "time": slot.get_time(),
                 "room": slot.get_room(),
-                "activity": None}, ignore_index=True)
+                "activity": None,
+                "students": None}
+                , ignore_index=True)
         else:
             df = df.append({
                 "day": slot.get_day(),
                 "time": slot.get_time(),
                 "room": slot.get_room(),
-                "activity": slot.get_activity()}, ignore_index=True)
+                "activity": slot.get_activity(),
+                "students": slot.get_course().get_students()}
+                , ignore_index=True)
     return df
 
 
@@ -45,6 +49,9 @@ def fitness_function(schedule):
 
     pass
 
-    
-
-
+# les van 17 (5)
+# niet in te roosteren studenten (1)
+# vakconflict (1)
+# 1 tussenuur (1)
+# 2 tussenuur(3)
+# geen 3 sloten

@@ -28,11 +28,5 @@ else:
 
 dfSchedule = dict_to_df(schedule)
 fitness_function(dfSchedule)
+# dfSchedule = dfSchedule.explode('students').sort_values(by='students', key=lambda col: col.__str__())
 dfSchedule.to_csv("schedule.csv", index=False)
-
-# les van 17 (5)
-# niet in te roosteren studenten (1)
-# vakconflict (1)
-# 1 tussenuur (1)
-# 2 tussenuur(3)
-# geen 3 sloten

@@ -64,7 +64,7 @@ class Course:
         self._students.append(student)
 
     def __str__(self):
-        return f"{self._name}: {self._num_of_students} student(s)"
+        return f"{self._name}: {len(self._students)} student(s)"
 
 
 class Courses:
@@ -196,6 +196,10 @@ class Student:
 
     def __str__(self):
         return f"{self._first_name} {self._last_name}"
+    
+    def __repr__(self):
+        return f"{self._first_name} {self._last_name}"
+
 
 class Students:
 
