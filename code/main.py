@@ -30,7 +30,7 @@ else:
 
 x = Schedule(roomslots, activities)
 
-print(x.course_schedule("Bioinformatica"))
+# print(x.course_schedule("Bioinformatica"))
 # print(x.room_schedule("A1.08"))
 # print(x.student_schedule("Amos van den Oord"))
 # print(x.day_schedule("Mon"))

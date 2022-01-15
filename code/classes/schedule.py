@@ -30,13 +30,21 @@ class Schedule:
 
     def get_none(self):
         return [x.get_activity() for x in self._roomslots.get_list()]
-
-    # als we dit zo willen doen is de file fitness niet meer nodig
+    
     def fitness(self):
-        df = pd.DataFrame(columns=["day", "time", "room", "activity"])
+        df_to_test = self.to_df()
+        malus_points = self.max_roomsize_check(df_to_test)
+        malus_points += self.use_17_slot_check(df_to_test)
+        malus_points += self.course_conflict_check(df_to_test)
+        malus_points += self.empty_roomslot_check(df_to_test)
+
+        return malus_points
+    
+    def to_df(self):
+        schedule = pd.DataFrame(columns=["day", "time", "room", "activity", "students"])
         for slot in self._roomslots.get_list():
             if not slot.get_activity():
-                schedule = df.append({
+                schedule = schedule.append({
                     "day": slot.get_day(),
                     "time": slot.get_time(),
                     "room": slot.get_room(),
@@ -47,7 +55,7 @@ class Schedule:
                 students = []
                 for student in slot.get_course().get_students():
                     students.append(student.__str__())
-                df = df.append({
+                schedule = schedule.append({
                     "day": slot.get_day(),
                     "time": slot.get_time(),
                     "room": slot.get_room(),
@@ -55,33 +63,47 @@ class Schedule:
                     "students": students},
                     ignore_index=True)
 
+        return schedule
+    
+    def max_roomsize_check(self, df_to_test):
+        '''aantal studenten groter dan maximum toegestaan in de zaal (1)'''
         malus_points = 0
-
-        # aantal studenten groter dan maximum toegestaan in de zaal (1)
-        for i in schedule.index:
-            if schedule["activity"][i]:
-                number_of_students = len(schedule["students"][i])
-                room_capacity = schedule["room"][i].get_capacity()
+        for i in df_to_test.index:
+            if df_to_test["activity"][i]:
+                number_of_students = len(df_to_test["students"][i])
+                room_capacity = df_to_test["room"][i].get_capacity()
                 difference = number_of_students - room_capacity
                 if difference > 0:
                     malus_points += difference
+        
+        return malus_points
 
-        # gebruik van avondslot (5)
-        schedule_evening = schedule.loc[(schedule["time"] == 17) & schedule["activity"]]
+    def use_17_slot_check(self, df_to_test):
+        '''gebruik van avondslot (5)'''
+        malus_points = 0
+        schedule_evening = df_to_test.loc[(df_to_test["time"] == 17) & df_to_test["activity"]]
         malus_points += 5 * len(schedule_evening.index)
 
-        # vakconflicten (1)
-        schedule_exploded = schedule.explode("students")
+        return malus_points
+
+    def course_conflict_check(self, df_to_test):
+        '''vakconflicten (1)'''
+        malus_points = 0
+        schedule_exploded = df_to_test.explode("students")
         # in de regel hieronder gaat iets fout ik weet niet wat
         schedule_conflicts = schedule_exploded[["students", "day", "time", "activity"]].groupby(["students", "day", "time"]).count()
-
         for i in schedule_conflicts.index:
             if schedule_conflicts["activity"][i] > 1:
                 malus_points += (schedule_conflicts["activity"][i] - 1)
-        schedule_conflicts.to_csv("../doc/students.csv")
 
-        # één tussenslot (1) of twee tussensloten (3)
+        return malus_points
+
+    def empty_roomslot_check(self, df_to_test):
+        '''één tussenslot (1) of twee tussensloten (3)'''
+        malus_points = 0
         previous_student = ("dummy_name", "dummy_day", "dummy_time")
+        schedule_exploded = df_to_test.explode("students")
+        schedule_conflicts = schedule_exploded[["students", "day", "time", "activity"]].groupby(["students", "day", "time"]).count()
         for row in schedule_conflicts.index:
             if row[0:2] == previous_student[0:2]:
                 if abs(row[2] - previous_student[2]) == 4:
@@ -91,3 +113,4 @@ class Schedule:
             previous_student = row
 
         return malus_points
+
