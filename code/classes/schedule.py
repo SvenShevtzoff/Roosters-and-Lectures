@@ -1,5 +1,5 @@
 import pandas as pd
-
+from collections import Counter
 
 class Schedule:
 
@@ -14,7 +14,6 @@ class Schedule:
         return [x for x in self._roomslots.get_list() if room == x.get_room().get_roomnumber() and x.get_activity() is not None]
 
     def student_schedule(self, student):
-        # niet zeker of deze werkt
         schedule = []
         for x in self._activities.get_list():
             student_names = [i.get_name() for i in x.get_students()]
@@ -28,8 +27,20 @@ class Schedule:
     def time_schedule(self, time):
         return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
 
-    def get_none(self):
-        return [x.get_activity() for x in self._roomslots.get_list()]
+    def check_conflict(self, student):
+        dictionary = dict()
+        for x in self._activities.get_list():
+            student_names = [i.get_name() for i in x.get_students()]
+            if student in student_names:
+                if f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}" in dictionary:
+                    dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"].append(x.get_roomslot())
+                else :
+                    dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"] = [x.get_roomslot()]
+                    
+        return [x for x in dictionary.values() if len(x) > 1]
+        
+
+        
     
     def fitness(self):
         df_to_test = self.to_df()

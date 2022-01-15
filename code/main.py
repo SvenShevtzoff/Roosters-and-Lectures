@@ -37,6 +37,7 @@ x = Schedule(roomslots, activities)
 # print(x.day_schedule("Mon"))
 # print(x.time_schedule(13))
 # print(x.fitness())
+print(x.check_conflict("Yanick Abbing"))
 
 
 visualize_non_student(x.room_schedule("A1.08"))
