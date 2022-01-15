@@ -38,9 +38,14 @@ x = Schedule(roomslots, activities)
 print(x.course_schedule("Technology for games"))
 print(x.room_schedule("A1.08"))
 print(x.student_schedule("Amos van den Oord"))
-print(x.day_schedule("do"))
+print(x.day_schedule("Mon"))
 print(x.time_schedule(13))
+
 print(x.fitness())
+
+
+
+
 # display(fitness_function(schedule)[0])
 # print(f"Malus points: {fitness_function(schedule)[1]}")
 

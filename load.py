@@ -4,7 +4,7 @@ import sys
 import math
 
 times = [9, 11, 13, 15, 17]
-days = ["ma", "di", "wo", "do", "vr"]
+days = ["Mon", "Thu", "Wed", "Thu", "Fri"]
 
 
 def load(file_name_rooms, file_name_courses, file_name_students):
