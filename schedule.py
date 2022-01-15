@@ -9,22 +9,25 @@ class Schedule:
         return [x.get_roomslot() for x in self._activities.get_list() if course == x.get_course().get_name()]
     
     def room_schedule(self, room):
-        return [x for x in self._roomslots.get_list() if room == x.get_room().get_roomnumber()]
+        return [x for x in self._roomslots.get_list() if room == x.get_room().get_roomnumber() and x.get_activity() != None]
 
     def student_schedule(self, student):
         #niet zeker of deze werkt
         schedule = []
         for x in self._activities.get_list():
             student_names = [i.get_name() for i in x.get_students()]
-            if student in student_names:
+            if student in student_names: 
                 schedule.append(x.get_roomslot())
         return schedule
 
     def day_schedule(self, day):
-        return [x for x in self._roomslots.get_list() if day == x.get_day()]
+        return [x for x in self._roomslots.get_list() if day == x.get_day() and x.get_activity() != None]
 
     def time_schedule(self, time):
-        return [x for x in self._roomslots.get_list() if time == x.get_time()]
+        return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() != None]
+    
+    def get_none(self):
+        return [x.get_activity() for x in self._roomslots.get_list()]
 
     # als we dit zo willen doen is de file fitness niet meer nofig 
     def fitness(self):

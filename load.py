@@ -2,9 +2,10 @@ from classes import Room, Rooms, Course, Courses, Roomslot, Roomslots, Activity,
 import csv
 import sys
 import math
+from schedule import *
 
 times = [9, 11, 13, 15, 17]
-days = ["ma", "di", "wo", "do", "vr"]
+days = ["Mon", "Thu", "Wed", "Thu", "Fri"]
 
 
 def load(file_name_rooms, file_name_courses, file_name_students):
@@ -100,4 +101,5 @@ def load(file_name_rooms, file_name_courses, file_name_students):
 
     # for each course, add students to its currently existing activities
     courses.add_students_to_activities()
+
     return courses, activities, roomslots, students
