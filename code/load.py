@@ -1,4 +1,8 @@
-from code.classes.classes import Room, Rooms, Course, Courses, Roomslot, Roomslots, Activity, Activities, Student, Students
+from code.classes.rooms import Room, Rooms
+from code.classes.courses import Course, Courses
+from code.classes.roomslots import Roomslot, Roomslots
+from code.classes.activities import Activity, Activities
+from code.classes.students import Student, Students
 import csv
 import sys
 from code.classes.schedule import *

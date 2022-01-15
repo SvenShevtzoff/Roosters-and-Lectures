@@ -3,7 +3,6 @@ import sys
 from load import load
 from algorithms.algorithms import *
 from code.classes.schedule import Schedule
-from code.classes.classes import Student
 
 
 
