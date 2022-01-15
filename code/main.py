@@ -1,7 +1,8 @@
 '''Usage: main.py [algorithm]'''
 import sys
 from load import load
-from algorithms.algorithms import *
+from algorithms.random_alg import *
+from algorithms.greedy_alg import *
 from code.classes.schedule import Schedule
 
 
