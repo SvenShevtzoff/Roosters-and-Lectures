@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def schedule_with_students(roomslots, activities, courses):
     df_students_count = pd.DataFrame(columns=["Course name", "Student count"])
     for course in list(courses.values()):

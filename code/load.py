@@ -5,7 +5,6 @@ from code.classes.activities import Activity, Activities
 from code.classes.students import Student, Students
 import csv
 import sys
-from code.classes.schedule import *
 
 times = [9, 11, 13, 15, 17]
 days = ["Mon", "Thu", "Wed", "Thu", "Fri"]

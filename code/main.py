@@ -6,7 +6,6 @@ from algorithms.greedy_alg import *
 from code.classes.schedule import Schedule
 
 
-
 # checking if algorithm is specified
 if len(sys.argv) < 2:
     sys.exit("Specify the algorithm to make schedule \
@@ -39,9 +38,6 @@ print(x.time_schedule(13))
 
 print(x.fitness())
 
-
-
-
 # display(fitness_function(schedule)[0])
 # print(f"Malus points: {fitness_function(schedule)[1]}")
 
@@ -49,8 +45,6 @@ print(x.fitness())
 
 # maluspunten = fitness_function(schedule)
 # print(maluspunten)
-
-
 
 # dfSchedule = dict_to_df(schedule)
 # # display(dfSchedule.explode('students').sort_values('students'))

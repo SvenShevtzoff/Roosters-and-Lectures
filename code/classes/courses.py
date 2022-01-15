@@ -53,7 +53,7 @@ class Courses:
         for course in list(self._courses_dict.values()):
             self._courses_list.append(course)
         return self._courses_list
-    
+
     def get_single(self, course):
         return self._courses_dict[course]
 

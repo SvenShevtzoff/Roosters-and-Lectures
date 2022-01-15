@@ -9,29 +9,29 @@ class Schedule:
 
     def course_schedule(self, course):
         return [x.get_roomslot() for x in self._activities.get_list() if course == x.get_course().get_name()]
-    
+
     def room_schedule(self, room):
-        return [x for x in self._roomslots.get_list() if room == x.get_room().get_roomnumber() and x.get_activity() != None]
+        return [x for x in self._roomslots.get_list() if room == x.get_room().get_roomnumber() and x.get_activity() is not None]
 
     def student_schedule(self, student):
-        #niet zeker of deze werkt
+        # niet zeker of deze werkt
         schedule = []
         for x in self._activities.get_list():
             student_names = [i.get_name() for i in x.get_students()]
-            if student in student_names: 
+            if student in student_names:
                 schedule.append(x.get_roomslot())
         return schedule
 
     def day_schedule(self, day):
-        return [x for x in self._roomslots.get_list() if day == x.get_day() and x.get_activity() != None]
+        return [x for x in self._roomslots.get_list() if day == x.get_day() and x.get_activity() is not None]
 
     def time_schedule(self, time):
-        return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() != None]
-    
+        return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
+
     def get_none(self):
         return [x.get_activity() for x in self._roomslots.get_list()]
 
-    # als we dit zo willen doen is de file fitness niet meer nofig 
+    # als we dit zo willen doen is de file fitness niet meer nodig
     def fitness(self):
         df = pd.DataFrame(columns=["day", "time", "room", "activity"])
         for slot in self._roomslots.get_list():
@@ -41,7 +41,7 @@ class Schedule:
                     "time": slot.get_time(),
                     "room": slot.get_room(),
                     "activity": None,
-                    "students": None}, 
+                    "students": None},
                     ignore_index=True)
             else:
                 students = []
@@ -52,9 +52,9 @@ class Schedule:
                     "time": slot.get_time(),
                     "room": slot.get_room(),
                     "activity": slot.get_activity(),
-                    "students": students}, 
+                    "students": students},
                     ignore_index=True)
-        
+
         malus_points = 0
 
         # aantal studenten groter dan maximum toegestaan in de zaal (1)
@@ -72,7 +72,7 @@ class Schedule:
 
         # vakconflicten (1)
         schedule_exploded = schedule.explode("students")
-        #in de regel hieronder gaat iets fout ik weet niet wat
+        # in de regel hieronder gaat iets fout ik weet niet wat
         schedule_conflicts = schedule_exploded[["students", "day", "time", "activity"]].groupby(["students", "day", "time"]).count()
 
         for i in schedule_conflicts.index:

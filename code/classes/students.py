@@ -6,8 +6,6 @@ class Student:
         self._student_number = student_number
         self._courses = courses
 
-
-
     def get_name(self):
         return f"{self._first_name} {self._last_name}"
 

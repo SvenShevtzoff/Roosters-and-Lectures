@@ -1,5 +1,6 @@
 import random
 
+
 def random_schedule(roomslots, activities):
     """ Creates a random schedule, not taking into account roomsizes. """
     n = activities.length()
