@@ -1,13 +1,12 @@
 # TODO
 
 ### Baseline
-- functie maken voor berekenen maluspunten (fitness functie)    Vera
-- jelle mailen over "(practicum)"                               Sven
-- classes.py uitsplitsen in verschillende files
-- overkoepelende classes aanmaken                               Sven
-- schedule class aanmaken                                       Marc
-- visualisatie
-- files organiseren in mapjes
+- kijken of het mogelijk is om zonder pandas te doen    Vera
+- check of course_conflict juist werkt                  Vera
+- Fitness functie checken of alles klopt 
+(misschien even kleine datafile maken zodat 
+je weet wat de uitkomst is)                             Marc
+- visualisatie                                          Sven
 
 
 ### Algoritmes maken
