@@ -1,8 +1,8 @@
-from code.classes.rooms import Room, Rooms
-from code.classes.courses import Course, Courses
-from code.classes.roomslots import Roomslot, Roomslots
-from code.classes.activities import Activity, Activities
-from code.classes.students import Student, Students
+from classes.rooms import Room, Rooms
+from classes.courses import Course, Courses
+from classes.roomslots import Roomslot, Roomslots
+from classes.activities import Activity, Activities
+from classes.students import Student, Students
 import csv
 import sys
 
@@ -49,17 +49,17 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             # create Lecture, Tutorial and Practicum Activity objects
             for i in range(int(row[1])):
                 new_activity = Activity("Lecture", new_course, int(row[6]))
-                activities[f"Lecture {course_name}"] = new_activity
+                activities[f"Lecture {course_name} {i}"] = new_activity
                 courses[course_name].add_activity(new_activity)
             if row[3] != "nvt":
                 for i in range(num_of_tutorials):
                     new_activity = Activity("Tutorial", new_course, int(row[3]))
-                    activities[f"Tutorial {course_name}"] = new_activity
+                    activities[f"Tutorial {course_name} {i}"] = new_activity
                     courses[course_name].add_activity(new_activity)
             if row[5] != "nvt":
                 for i in range(num_of_practica):
                     new_activity = Activity("Practicum", new_course, int(row[5]))
-                    activities[f"Practicum {course_name}"] = new_activity
+                    activities[f"Practicum {course_name} {i}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 
     # creating activities and courses objects

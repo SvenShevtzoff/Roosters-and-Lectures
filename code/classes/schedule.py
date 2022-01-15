@@ -78,7 +78,7 @@ class Schedule:
         for i in schedule_conflicts.index:
             if schedule_conflicts["activity"][i] > 1:
                 malus_points += (schedule_conflicts["activity"][i] - 1)
-        schedule_conflicts.to_csv("doc/students.csv")
+        schedule_conflicts.to_csv("../doc/students.csv")
 
         # één tussenslot (1) of twee tussensloten (3)
         previous_student = ("dummy_name", "dummy_day", "dummy_time")
