@@ -4,6 +4,7 @@ from load import load
 from algorithms.random_alg import *
 from algorithms.greedy_alg import *
 from classes.schedule import Schedule
+from visualize import visualize_non_student, visualize_student
 
 
 # checking if algorithm is specified
@@ -32,28 +33,11 @@ x = Schedule(roomslots, activities)
 
 # print(x.course_schedule("Bioinformatica"))
 # print(x.room_schedule("A1.08"))
-# print(x.student_schedule("Amos van den Oord"))
+# print(x.student_schedule("Yanick Abbing"))
 # print(x.day_schedule("Mon"))
 # print(x.time_schedule(13))
+# print(x.fitness())
 
-print(x.fitness())
 
-# display(fitness_function(schedule)[0])
-# print(f"Malus points: {fitness_function(schedule)[1]}")
-
-# schedule.to_csv("../doc/schedule.csv", index=False)
-
-# maluspunten = fitness_function(schedule)
-# print(maluspunten)
-
-# dfSchedule = dict_to_df(schedule)
-# # display(dfSchedule.explode('students').sort_values('students'))
-# marc = Student("Marc", "Vlasblom", 12345678, [])
-# key=lambda marc: marc.__str__()
-# print(key)
-# dfSchedule = dfSchedule.explode('students').sort_values(by='students', key=lambda student: student.__str__())
-# # dfSchedule = dfSchedule.explode('students').groupby('students').agg(["day", "time", "room", "activity"])
-# # dfSchedule.to_csv("../doc/schedule.csv", index=False)
-
-# dict_to_df(schedule).to_csv('../doc/schedule.csv')
-# x = Schedule(courses, activities, roomslots, students)
+visualize_non_student(x.room_schedule("A1.08"))
+visualize_student(x.student_schedule("Yanick Abbing"))

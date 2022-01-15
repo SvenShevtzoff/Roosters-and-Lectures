@@ -33,7 +33,7 @@ class Course:
         self._students.append(student)
 
     def __str__(self):
-        return f"{self._name}: {len(self._students)} student(s)"
+        return f"{self._name}"
 
     def add_students_to_activities(self):
         for activity in self._activities:

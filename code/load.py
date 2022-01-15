@@ -7,7 +7,7 @@ import csv
 import sys
 
 times = [9, 11, 13, 15, 17]
-days = ["Mon", "Thu", "Wed", "Thu", "Fri"]
+days = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 
 
 def load(file_name_rooms, file_name_courses, file_name_students):
