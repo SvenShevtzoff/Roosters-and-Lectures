@@ -132,3 +132,4 @@ dmypy.json
 output.txt
 schedule.csv
 students.csv
+testing.py
