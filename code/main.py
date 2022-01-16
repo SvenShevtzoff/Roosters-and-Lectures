@@ -13,32 +13,31 @@ if len(sys.argv) < 2:
              (random_schedule, random_schedule_two, random_schedule_three, schedule_with_students)")
 
 # loading in data
-courses, activities, roomslots, students = load("../data/rooms.csv", "../data/courses.csv", "../data/students_and_courses.csv")
+activities, roomslots = load("../data/rooms.csv", "../data/courses.csv", "../data/students_and_courses.csv")
 
+schedule = Schedule(roomslots, activities)
 
 # checking which algorithm is selected and making a schedule accordingly
 if sys.argv[1] == "random_schedule":
-    schedule = random_schedule(roomslots, activities)
+    schedule = random_schedule(schedule)
 elif sys.argv[1] == "random_schedule_two":
-    schedule = random_schedule_two(roomslots, activities)
+    schedule = random_schedule_two(schedule)
 elif sys.argv[1] == "random_schedule_three":
-    schedule = random_schedule_three(roomslots, activities)
-elif sys.argv[1] == "schedule_with_students":
-    schedule = schedule_with_students(roomslots, activities, courses)
+    schedule = random_schedule_three(schedule)
+# elif sys.argv[1] == "schedule_with_students":
+#     schedule = schedule_with_students(roomslots, activities, courses)
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-x = Schedule(roomslots, activities)
+# print(schedule.course_schedule("Bioinformatica"))
+# print(schedule.room_schedule("A1.08"))
+# print(schedule.student_schedule("Yanick Abbing"))
+# print(schedule.day_schedule("Mon"))
+# print(schedule.time_schedule(13))
+# print(schedule.fitness())
 
-# print(x.course_schedule("Bioinformatica"))
-# print(x.room_schedule("A1.08"))
-# print(x.student_schedule("Yanick Abbing"))
-# print(x.day_schedule("Mon"))
-# print(x.time_schedule(13))
-# print(x.fitness())
-print(x.check_conflict("Yanick Abbing"))
+y = schedule.get_conflicts("Yanick Abbing")
 
-
-visualize_non_student(x.room_schedule("A1.08"))
-visualize_student(x.student_schedule("Yanick Abbing"))
+# visualize_non_student(schedule.room_schedule("A1.08"))
+visualize_student(schedule, "Yanick Abbing")

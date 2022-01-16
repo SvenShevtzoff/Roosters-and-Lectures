@@ -1,11 +1,17 @@
 import pandas as pd
-from collections import Counter
+
 
 class Schedule:
 
     def __init__(self, roomslots, activities):
         self._roomslots = roomslots
         self._activities = activities
+
+    def get_roomslots(self):
+        return self._roomslots
+
+    def get_activities(self):
+        return self._activities
 
     def course_schedule(self, course):
         return [x.get_roomslot() for x in self._activities.get_list() if course == x.get_course().get_name()]
@@ -27,21 +33,18 @@ class Schedule:
     def time_schedule(self, time):
         return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
 
-    def check_conflict(self, student):
+    def get_conflicts(self, student):
         dictionary = dict()
         for x in self._activities.get_list():
             student_names = [i.get_name() for i in x.get_students()]
             if student in student_names:
                 if f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}" in dictionary:
                     dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"].append(x.get_roomslot())
-                else :
+                else:
                     dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"] = [x.get_roomslot()]
-                    
-        return [x for x in dictionary.values() if len(x) > 1]
-        
 
-        
-    
+        return [x for x in dictionary.values() if len(x) > 1]
+
     def fitness(self):
         df_to_test = self.to_df()
         malus_points = self.max_roomsize_check(df_to_test)
@@ -50,7 +53,7 @@ class Schedule:
         malus_points += self.empty_roomslot_check(df_to_test)
 
         return malus_points
-    
+
     def to_df(self):
         schedule = pd.DataFrame(columns=["day", "time", "room", "activity", "students"])
         for slot in self._roomslots.get_list():
@@ -75,7 +78,7 @@ class Schedule:
                     ignore_index=True)
 
         return schedule
-    
+
     def max_roomsize_check(self, df_to_test):
         '''aantal studenten groter dan maximum toegestaan in de zaal (1)'''
         malus_points = 0
@@ -86,7 +89,7 @@ class Schedule:
                 difference = number_of_students - room_capacity
                 if difference > 0:
                     malus_points += difference
-        
+
         return malus_points
 
     def use_17_slot_check(self, df_to_test):
@@ -124,4 +127,3 @@ class Schedule:
             previous_student = row
 
         return malus_points
-

@@ -36,7 +36,12 @@ class Activity:
 class Activities:
 
     def __init__(self, activities):
-        self._activities_dict = activities
+        if type(activities) == list:
+            self._activities_dict = {}
+            for activity in activities:
+                self._activities_dict[activity.__str__()] = activity
+        else:
+            self._activities_dict = activities
 
     def get_dict(self):
         return self._activities_dict

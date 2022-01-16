@@ -5,6 +5,7 @@ class Roomslot:
         self._time = time
         self._room = room
         self._activity = activity
+        self._visualized = False
 
     def get_day(self):
         return self._day
@@ -23,6 +24,12 @@ class Roomslot:
 
     def set_activity(self, activity):
         self._activity = activity
+
+    def is_visualized(self):
+        return self._visualized
+
+    def set_visualized(self):
+        self._visualized = True
 
     def __str__(self):
         return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
