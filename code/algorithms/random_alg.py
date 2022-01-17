@@ -1,18 +1,23 @@
 import random
-import pandas as pd
+from classes.schedule import Schedule
+from classes.activities import Activities
 
 
-def random_schedule(roomslots, activities):
+def random_schedule(schedule):
     """ Creates a random schedule, not taking into account roomsizes. """
+    activities = schedule.get_activities()
+    roomslots = schedule.get_roomslots()
     n = activities.length()
     random_slots = random.sample(roomslots.get_list(), n)
     for i in range(n):
-        random_slots[i].set_activity(activities.get_list()[i])
-    return roomslots
+        activities.get_list()[i].set_roomslot(random_slots[i])
+    return schedule
 
 
-def random_schedule_two(roomslots, activities):
+def random_schedule_two(schedule):
     """ Creates a random schedule, taking into account roomsizes. """
+    activities = schedule.get_activities()
+    roomslots = schedule.get_roomslots()
     for activity in activities.get_list():
         while not activity.get_roomslot():
             slot = random.choice(roomslots.get_list())
@@ -23,11 +28,13 @@ def random_schedule_two(roomslots, activities):
             else:
                 activity.set_roomslot(slot)
 
-    return roomslots
+    return schedule
 
 
-def random_schedule_three(roomslots, activities):
+def random_schedule_three(schedule):
     """ Creates a random schedule, taking into account roomsizes and E(studenten) """
+    activities = schedule.get_activities()
+    roomslots = schedule.get_roomslots()
     activities = sorted(activities.get_list(), key=lambda x: x.get_max_stud(), reverse=True)
     for activity in activities:
         while not activity.get_roomslot():
@@ -38,28 +45,21 @@ def random_schedule_three(roomslots, activities):
                 continue
             else:
                 activity.set_roomslot(slot)
-    return roomslots
+    return schedule
 
 
-def algorithm_four(roomslots, activities):
-    activities = sorted(activities.get_list(), key=lambda x: x.get_num_of_enrolled_students(), reverse=True)
-    print(f"Number of activities: {len(activities)}")
-    activities_to_be_set = activities
+def algorithm_four(schedule):
+    activities = schedule.get_activities()
+    sorted_activities = sorted(activities.get_list(), key=lambda x: x.get_num_of_enrolled_students(), reverse=True)
     activities_set = 0
-    while len(activities_to_be_set) > 0:
-        activities_left = activities_to_be_set
-        for activity in activities_left:
-            for slot in roomslots.get_list():
-                if not slot.get_activity() and slot.get_room().get_capacity() >= activity.get_num_of_enrolled_students():
-                    activity.set_roomslot(slot)
-                    activities_to_be_set.remove(activity)
-                    activities_set += 1
-                    break
-        activities_left = activities_to_be_set
-        print(len(activities_to_be_set))
-        print(activities_set)
+    for activity in sorted_activities:
+        for slot in schedule.get_roomslots().get_list():
+            if not slot.get_activity() and slot.get_room().get_capacity() >= activity.get_num_of_enrolled_students():
+                activity.set_roomslot(slot)
+                activities_set += 1
+                break
 
-    return roomslots
+    return schedule
 
 
 def schedule_with_students(roomslots, activities, courses):

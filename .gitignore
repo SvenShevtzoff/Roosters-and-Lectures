@@ -131,3 +131,6 @@ dmypy.json
 # certain files
 output.txt
 schedule.csv
+students.csv
+testing.py
+schedule.png
