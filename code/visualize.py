@@ -1,6 +1,7 @@
 '''Visualizing the schedule'''
 import matplotlib.pyplot as plt
 
+# defining dictionaries to calculate the coordinates from day/time
 day_to_xcoord = {
     "Mon": 0,
     "Tue": 40,
@@ -15,7 +16,7 @@ time_to_ycoord = {
     17: 0}
 
 
-def visualize_non_student(schedule):
+def visualize(schedule):
     plot = plot_setup()
 
     for slot in schedule:
@@ -44,7 +45,7 @@ def visualize_student(schedule, student_name):
     plot = plot_setup()
 
     # plotting all activity conflicts
-    conflicts_list = schedule.get_conflicts(student_name)
+    conflicts_list = schedule.get_conflicts_student(student_name)
 
     for conflicts in conflicts_list:
         # drawing red box around conflict
@@ -62,6 +63,8 @@ def visualize_student(schedule, student_name):
             plot.annotate(conflicts[1].get_room(), (xcoord + 21, ycoord + 7))
             plot.annotate(conflicts[1].get_course().__str__()[:12], (xcoord + 21, ycoord + 5))
             plot.annotate(conflicts[1].get_course().__str__()[11:24], (xcoord + 21, ycoord + 3))
+
+            # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
         elif len(conflicts) == 3:
@@ -80,6 +83,8 @@ def visualize_student(schedule, student_name):
             plot.annotate(conflicts[2].get_room(), (xcoord + 27, ycoord + 7))
             plot.annotate(conflicts[2].get_course().__str__()[:8], (xcoord + 27, ycoord + 5))
             plot.annotate(conflicts[2].get_course().__str__()[7:15], (xcoord + 27, ycoord + 3))
+
+            # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
         elif len(conflicts) == 4:
@@ -99,6 +104,8 @@ def visualize_student(schedule, student_name):
             plot.annotate(conflicts[3].get_room(), (xcoord + 21, ycoord + 3))
             plot.annotate(conflicts[3].get_course().__str__()[:13], (xcoord + 21, ycoord + 5))
             plot.annotate(conflicts[3].get_course().__str__()[12:25], (xcoord + 21, ycoord + 3))
+
+            # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
 
@@ -114,7 +121,7 @@ def visualize_student(schedule, student_name):
             plot.broken_barh([(xcoord, 36)], (ycoord, 8), facecolors=(f'tab:{get_element_color(slot)}'))
             plot.annotate(f"{slot.get_activity().get_kind()} {slot.get_room()}", (xcoord + 1, ycoord + 6))
 
-            # if course name to long put on two lines
+            # if course name to long spread over two lines
             if len(slot.get_course().__str__()) < 20:
                 plot.annotate(slot.get_course(), (xcoord + 1, ycoord + 4))
             else:
@@ -132,11 +139,13 @@ def plot_setup():
     plt.rcParams["figure.figsize"] = (15, 7.5)
     fig, gnt = plt.subplots()
 
+    # setting up y axis
     gnt.set_ylabel('hours')
     gnt.set_ylim(0, 50)
     gnt.set_yticks([0, 10, 20, 30, 40, 50])
     gnt.set_yticklabels(['19', '17', '15', '13', '11', '9'])
 
+    # setting up x axis
     gnt.set_xlabel('days')
     gnt.set_xlim(0, 200)
     gnt.set_xticks([0, 40, 80, 120, 160])

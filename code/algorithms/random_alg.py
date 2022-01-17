@@ -11,7 +11,7 @@ def random_schedule(schedule):
     random_slots = random.sample(roomslots.get_list(), n)
     for i in range(n):
         random_slots[i].set_activity(activities.get_list()[i])
-    return Schedule(roomslots, Activities(activities))
+    return schedule
 
 
 def random_schedule_two(schedule):
@@ -28,7 +28,7 @@ def random_schedule_two(schedule):
             else:
                 activity.set_roomslot(slot)
 
-    return Schedule(roomslots, Activities(activities))
+    return schedule
 
 
 def random_schedule_three(schedule):
@@ -45,4 +45,4 @@ def random_schedule_three(schedule):
                 continue
             else:
                 activity.set_roomslot(slot)
-    return Schedule(roomslots, Activities(activities))
+    return schedule

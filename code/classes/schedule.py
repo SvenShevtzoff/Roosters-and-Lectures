@@ -1,3 +1,4 @@
+from re import L
 import pandas as pd
 
 
@@ -33,8 +34,8 @@ class Schedule:
     def time_schedule(self, time):
         return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
 
-    def get_conflicts(self, student):
-        dictionary = dict()
+    def get_conflicts_student(self, student):
+        dictionary = {}
         for x in self._activities.get_list():
             student_names = [i.get_name() for i in x.get_students()]
             if student in student_names:
@@ -44,6 +45,31 @@ class Schedule:
                     dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"] = [x.get_roomslot()]
 
         return [x for x in dictionary.values() if len(x) > 1]
+    
+    def get_conflicts_course(self, course_name):
+        dictionary = {}
+        course_activities = []
+        for activity in self._activities.get_list():
+            if activity.get_course().__str__() == course_name:
+                course_activities = activity.get_course().get_activities()
+                for activity in course_activities:
+                    print(activity)
+                break
+        
+        for activity in course_activities:
+            if f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}" in dictionary:
+                dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
+            else:
+                dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
+        
+        return [x for x in dictionary.values() if len(x) > 1]
+    
+    
+    def print_activities(self):
+        print("schedule.py")
+        for activity in self._activities.get_list():
+            print(activity)
+
 
     def fitness(self):
         df_to_test = self.to_df()

@@ -4,7 +4,7 @@ from load import load
 from algorithms.random_alg import *
 from algorithms.greedy_alg import *
 from classes.schedule import Schedule
-from visualize import visualize_non_student, visualize_student
+from visualize import visualize, visualize_student
 
 
 # checking if algorithm is specified
@@ -37,7 +37,8 @@ else:
 # print(schedule.time_schedule(13))
 # print(schedule.fitness())
 
-y = schedule.get_conflicts("Yanick Abbing")
+# y = schedule.get_conflicts_student("Yanick Abbing")
+schedule.get_conflicts_course("Bioinformatica")
 
-# visualize_non_student(schedule.room_schedule("A1.08"))
+# visualize(schedule.room_schedule("A1.08"))
 visualize_student(schedule, "Yanick Abbing")
