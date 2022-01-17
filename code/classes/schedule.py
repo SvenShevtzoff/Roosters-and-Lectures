@@ -58,8 +58,6 @@ class Schedule:
         for activity in self._activities.get_list():
             if activity.get_course().__str__() == course_name:
                 course_activities = activity.get_course().get_activities()
-                for activity in course_activities:
-                    print(activity)
                 break
         
         for activity in course_activities:
