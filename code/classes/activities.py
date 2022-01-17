@@ -25,6 +25,8 @@ class Activity:
 
     def set_students(self, students):
         self._students = students
+        for student in students:
+            student.add_activity(self)
 
     def get_students(self):
         return self._students

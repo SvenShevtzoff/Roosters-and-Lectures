@@ -40,12 +40,12 @@ def visualize_room(schedule):
     plt.savefig("../doc/schedule.png")
 
 
-def visualize_course(schedule, course_name):
+def visualize_course(schedule, course):
     '''Visualizing the schedule for one student'''
     plot = plot_setup()
 
     # plotting all activity conflicts
-    conflicts_list = schedule.get_conflicts_course(course_name)
+    conflicts_list = schedule.get_conflicts_course(course)
 
     for conflicts in conflicts_list:
         # drawing red box around conflict
@@ -110,7 +110,7 @@ def visualize_course(schedule, course_name):
                 conflict.set_visualized()
 
     # printing the rest of the activities
-    student_schedule = schedule.course_schedule(course_name)
+    student_schedule = schedule.course_schedule(course)
     for slot in student_schedule:
         if not slot.is_visualized():
             # calculating x and y coordinates according to day and time
@@ -130,15 +130,15 @@ def visualize_course(schedule, course_name):
 
     # plot
     plot.grid(True)
-    plt.savefig("../doc/schedule.png")
+    return plot
 
 
-def visualize_student(schedule, student_name):
+def visualize_student(schedule, student):
     '''Visualizing the schedule for one student'''
     plot = plot_setup()
 
     # plotting all activity conflicts
-    conflicts_list = schedule.get_conflicts_student(student_name)
+    conflicts_list = schedule.get_conflicts_student(student)
 
     for conflicts in conflicts_list:
         # drawing red box around conflict
@@ -203,7 +203,7 @@ def visualize_student(schedule, student_name):
                 conflict.set_visualized()
 
     # printing the rest of the activities
-    student_schedule = schedule.student_schedule(student_name)
+    student_schedule = schedule.student_schedule(student.get_name())
     for slot in student_schedule:
         if not slot.is_visualized():
             # calculating x and y coordinates according to day and time
@@ -223,7 +223,8 @@ def visualize_student(schedule, student_name):
 
     # plot
     plot.grid(True)
-    plt.savefig("../doc/schedule.png")
+    return plot
+    # plt.savefig("../doc/schedule.png")
 
 
 def plot_setup():

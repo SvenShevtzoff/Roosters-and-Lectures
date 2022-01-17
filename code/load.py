@@ -96,18 +96,15 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             students[row[2]] = new_student
 
             for course in students_courses:
-                course_activities = course.get_activities()
-                for activity in course_activities:
-                    new_student.add_activity(activity)
                 course.add_student(new_student)
 
     # creating Students object
     students = Students(students)
 
     # for each course, add students to its currently existing activities
-    courses.add_students_to_activities()
+    courses.add_students_to_activities_per_course()
 
     # for each student, add activities
 
 
-    return activities, roomslots, students
+    return activities, roomslots, students, courses

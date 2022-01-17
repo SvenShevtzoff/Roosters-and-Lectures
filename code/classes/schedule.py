@@ -40,15 +40,15 @@ class Schedule:
     def time_schedule(self, time):
         return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
 
-    def get_conflicts_student(self, student):
+    def get_conflicts_student(self, student_to_check):
         dictionary = {}
-        for x in self._activities.get_list():
-            student_names = [i.get_name() for i in x.get_students()]
-            if student in student_names:
-                if f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}" in dictionary:
-                    dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"].append(x.get_roomslot())
+        for activity in self._activities.get_list():
+            student_names = [student.get_name() for student in activity.get_students()]
+            if student_to_check.get_name() in student_names:
+                if f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}" in dictionary:
+                    dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
                 else:
-                    dictionary[f"{x.get_roomslot().get_day()}, {x.get_roomslot().get_time()}"] = [x.get_roomslot()]
+                    dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
 
         return [x for x in dictionary.values() if len(x) > 1]
     
@@ -66,7 +66,7 @@ class Schedule:
             else:
                 dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
         
-        return [x for x in dictionary.values() if len(x) > 1]
+        return [activity for activity in dictionary.values() if len(activity) > 1]
     
     
     def print_activities(self):
@@ -76,11 +76,14 @@ class Schedule:
 
 
     def fitness(self):
-        df_to_test = self.to_df()
         malus_points = self.max_roomsize_check()
+        print(f"Maximum roomsize: {malus_points}")
         malus_points += self.use_17_slot_check()
+        print(f"Use 17 slot: {malus_points}")
         malus_points += self.course_conflict_check()
-        malus_points += self.empty_roomslot_check(df_to_test)
+        print(f"Course conflicts: {malus_points}")
+        malus_points += self.empty_roomslot_check()
+        print(f"Gap hours: {malus_points}")
 
         return malus_points
 
@@ -125,11 +128,9 @@ class Schedule:
     def use_17_slot_check(self):
         '''gebruik van avondslot (5)'''
         malus_points = 0
-        num_of_times_17_slot_used = 0
         for slot in self.get_roomslots().get_list():
             if slot.get_time() == 17 and slot.get_activity():
-                num_of_times_17_slot_used += 1
-        malus_points += 5 * num_of_times_17_slot_used
+                malus_points += 5
 
         return malus_points
 
@@ -137,49 +138,32 @@ class Schedule:
         '''vakconflicten (1)'''
         malus_points = 0
         for student in self.get_students().get_list():
-            student_name = student.get_name()
-            num_of_conflicts = len(self.get_conflicts_student(student_name))
-            malus_points += num_of_conflicts
-        # schedule_exploded = df_to_test.explode("students")
-        # # in de regel hieronder gaat iets fout ik weet niet wat
-        # schedule_conflicts = schedule_exploded[["students", "day", "time", "activity"]].groupby(["students", "day", "time"]).count()
-        # for i in schedule_conflicts.index:
-        #     if schedule_conflicts["activity"][i] > 1:
-        #         malus_points += (schedule_conflicts["activity"][i] - 1)
+            for conflict in self.get_conflicts_student(student):
+                malus_points += len(conflict) - 1
 
         return malus_points
 
-    def empty_roomslot_check(self, df_to_test):
+    def empty_roomslot_check(self):
         '''één tussenslot (1) of twee tussensloten (3)'''
         malus_points = 0
         for student in self.get_students().get_list():
-            # dit klopt straks niet meer
             students_activities = student.get_activities()
-            # dummy activity
-            previous_activity = Activity("dummy_kind", "dummy_course")
-            previous_activity.set_roomslot(Roomslot("dummy_day", "dummy_time", "dummy_room"))
-            for activity in students_activities:
-                current_day = activity.get_roomslot().get_day()
-                current_time = activity.get_roomslot().get_time()
-                previous_day = previous_activity.get_roomslot().get_day()
-                previous_time = previous_activity.get_roomslot().get_time()
-                if current_day == previous_day:
+            for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+                students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
+                students_activities_sorted =  sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
+                # dummy activity
+                previous_activity = Activity("dummy_kind", "dummy_course")
+    
+                # 0 because the only time options are 9, 11, 13, 15 and 17 so now the difference is never 4 or 6 (so we never wrongfully 
+                # get a malus point)
+                previous_activity.set_roomslot(Roomslot("dummy_day", 0, "dummy_room"))
+                for activity in students_activities_sorted:
+                    current_time = int(activity.get_roomslot().get_time())
+                    previous_time = previous_activity.get_roomslot().get_time()
                     if abs(current_time - previous_time) == 4:
                         malus_points += 1
                     if abs(current_time - previous_time) == 6:
                         malus_points += 3
-                previous_activity = activity
-
-        # malus_points = 0
-        # previous_student = ("dummy_name", "dummy_day", "dummy_time")
-        # schedule_exploded = df_to_test.explode("students")
-        # schedule_conflicts = schedule_exploded[["students", "day", "time", "activity"]].groupby(["students", "day", "time"]).count()
-        # for row in schedule_conflicts.index:
-        #     if row[0:2] == previous_student[0:2]:
-        #         if abs(row[2] - previous_student[2]) == 4:
-        #             malus_points += 1
-        #         if abs(row[2] - previous_student[2]) == 6:
-        #             malus_points += 3
-        #     previous_student = row
+                    previous_activity = activity
 
         return malus_points

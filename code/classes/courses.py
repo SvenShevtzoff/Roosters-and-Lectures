@@ -57,6 +57,6 @@ class Courses:
     def get_single(self, course):
         return self._courses_dict[course]
 
-    def add_students_to_activities(self):
+    def add_students_to_activities_per_course(self):
         for course in self.get_list():
             course.add_students_to_activities()
