@@ -5,12 +5,10 @@
 - check of course_conflict juist werkt                  Vera
 - Fitness functie checken of alles klopt
   (misschien even kleine datafile maken zodat
-  je weet wat de uitkomst is)                           Marc
-- visualisatie                                          Sven
-- zorgen dat algorithmes een schedule object returnen   Marc
-- schedule een method geven die per student alle
-  vakconflicten returned                                Marc
+  je weet wat de uitkomst is)                           Sven
+- visualisatie per course                               Sven
+- organiseren/implementeren van schedule class          Sven
 
 
 ### Algoritmes maken
-- students toewijzen aan activiteiten                   Vera
+- students uitsplitsen over activiteiten                   Vera
