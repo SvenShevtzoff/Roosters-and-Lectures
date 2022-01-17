@@ -41,6 +41,27 @@ def random_schedule_three(roomslots, activities):
     return roomslots
 
 
+def algorithm_four(roomslots, activities):
+    activities = sorted(activities.get_list(), key=lambda x: x.get_num_of_enrolled_students(), reverse=True)
+    print(f"Number of activities: {len(activities)}")
+    activities_to_be_set = activities
+    activities_set = 0
+    while len(activities_to_be_set) > 0:
+        activities_left = activities_to_be_set
+        for activity in activities_left:
+            for slot in roomslots.get_list():
+                if not slot.get_activity() and slot.get_room().get_capacity() >= activity.get_num_of_enrolled_students():
+                    activity.set_roomslot(slot)
+                    activities_to_be_set.remove(activity)
+                    activities_set += 1
+                    break
+        activities_left = activities_to_be_set
+        print(len(activities_to_be_set))
+        print(activities_set)
+
+    return roomslots
+
+
 def schedule_with_students(roomslots, activities, courses):
     df_students_count = pd.DataFrame(columns=["Course name", "Student count"])
     for course in list(courses.values()):

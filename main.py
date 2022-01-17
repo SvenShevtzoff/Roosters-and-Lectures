@@ -28,22 +28,29 @@ elif sys.argv[1] == "random_schedule_three":
     schedule = random_schedule_three(roomslots, activities)
 elif sys.argv[1] == "schedule_with_students":
     schedule = schedule_with_students(roomslots, activities, courses)
+elif sys.argv[1] == "algorithm_four":
+    schedule = algorithm_four(roomslots, activities)
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-display(fitness_function(schedule)[0])
-print(f"Malus points: {fitness_function(schedule)[1]}")
+schedule_df = fitness_function(schedule)[0]
+malus_points = fitness_function(schedule)[1]
 
-schedule.to_csv("schedule.csv", index=False)
+display(schedule_df)
+print(f"Malus points: {malus_points}")
+
+schedule_df.to_csv("schedule.csv")
 
 x = Schedule(courses, activities, roomslots, students)
-print(x.course_schedule("Lineaire Algebra"))
-print(x.room_schedule("A1.08"))
-print(x.student_schedule(""))
-print(x.day_schedule("do"))
-print(x.time_schedule(13))
-print(x.empty_schedule())
+# print(x.course_schedule("Lineaire Algebra"))
+# print(x.room_schedule("A1.08"))
+# print(x.student_schedule(""))
+# print(x.day_schedule("do"))
+# print(x.time_schedule(13))
+# print(x.empty_schedule())
+
+
 
 # dfSchedule = dfSchedule.explode('students').sort_values(by='students', key=lambda col: col.__str__())
 # dfSchedule = dfSchedule.explode('students').groupby('students').agg(["day", "time", "room", "activity"])

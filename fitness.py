@@ -30,7 +30,7 @@ def dict_to_df(roomslots):
 
 def fitness_function(schedule_to_check):
     schedule = dict_to_df(schedule_to_check)
-
+    
     malus_points = 0
 
     # aantal studenten groter dan maximum toegestaan in de zaal (1)

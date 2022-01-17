@@ -124,6 +124,9 @@ class Activity:
     def get_students(self):
         return self._students
 
+    def get_num_of_enrolled_students(self):
+        return len(self._students)
+
     def __str__(self):
         return f"{self._kind} {self._course}"
 
