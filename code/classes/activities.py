@@ -5,7 +5,7 @@ class Activity:
         self._course = course
         self._max_stud = max_stud
         self._roomslot = None
-        self._students = []
+        self._students = {}
 
     def get_kind(self):
         return self._kind
@@ -24,7 +24,8 @@ class Activity:
         return self._course
 
     def set_students(self, students):
-        self._students = students
+        for student in students:
+            self._students[str(student)] = student
         for student in students:
             student.add_activity(self)
 

@@ -2,6 +2,7 @@ from re import L
 import pandas as pd
 from classes.activities import Activity
 from classes.roomslots import Roomslot
+from collections import defaultdict
 
 
 class Schedule:
@@ -41,14 +42,12 @@ class Schedule:
         return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
 
     def get_conflicts_student(self, student_to_check):
-        dictionary = {}
+        dictionary = defaultdict(list)
+        student_to_check = student_to_check.get_name()
         for activity in self._activities.get_list():
-            student_names = [student.get_name() for student in activity.get_students()]
-            if student_to_check.get_name() in student_names:
-                if f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}" in dictionary:
-                    dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
-                else:
-                    dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
+            students = activity.get_students()
+            if student_to_check in students:
+                dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
 
         return [x for x in dictionary.values() if len(x) > 1]
     
@@ -68,49 +67,19 @@ class Schedule:
         
         return [activity for activity in dictionary.values() if len(activity) > 1]
     
-    
     def print_activities(self):
         print("schedule.py")
         for activity in self._activities.get_list():
             print(activity)
 
-
     def fitness(self):
         malus_points = self.max_roomsize_check()
-        print(f"Maximum roomsize: {malus_points}")
         malus_points += self.use_17_slot_check()
-        print(f"Use 17 slot: {malus_points}")
         malus_points += self.course_conflict_check()
-        print(f"Course conflicts: {malus_points}")
         malus_points += self.empty_roomslot_check()
-        print(f"Gap hours: {malus_points}")
+        print(f"Pandapunten: {malus_points}")
 
         return malus_points
-
-    def to_df(self):
-        schedule = pd.DataFrame(columns=["day", "time", "room", "activity", "students"])
-        for slot in self._roomslots.get_list():
-            if not slot.get_activity():
-                schedule = schedule.append({
-                    "day": slot.get_day(),
-                    "time": slot.get_time(),
-                    "room": slot.get_room(),
-                    "activity": None,
-                    "students": None},
-                    ignore_index=True)
-            else:
-                students = []
-                for student in slot.get_course().get_students():
-                    students.append(str(student))
-                schedule = schedule.append({
-                    "day": slot.get_day(),
-                    "time": slot.get_time(),
-                    "room": slot.get_room(),
-                    "activity": slot.get_activity(),
-                    "students": students},
-                    ignore_index=True)
-
-        return schedule
 
     def max_roomsize_check(self):
         '''aantal studenten groter dan maximum toegestaan in de zaal (1)'''
