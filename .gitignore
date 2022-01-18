@@ -134,3 +134,8 @@ schedule.csv
 students.csv
 testing.py
 schedule.png
+
+testing_course/
+testing_student/
+
+*.png
