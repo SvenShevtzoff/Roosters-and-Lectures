@@ -56,7 +56,7 @@ class Schedule:
         dictionary = {}
         course_activities = []
         for activity in self._activities.get_list():
-            if activity.get_course().__str__() == course_name:
+            if str(activity.get_course()) == course_name:
                 course_activities = activity.get_course().get_activities()
                 break
         
@@ -101,7 +101,7 @@ class Schedule:
             else:
                 students = []
                 for student in slot.get_course().get_students():
-                    students.append(student.__str__())
+                    students.append(str(student))
                 schedule = schedule.append({
                     "day": slot.get_day(),
                     "time": slot.get_time(),

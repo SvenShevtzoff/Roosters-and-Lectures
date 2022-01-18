@@ -15,7 +15,7 @@ if len(sys.argv) < 2:
              (random_schedule, random_schedule_two, random_schedule_three, schedule_with_students, greedy_schedule_one)")
 
 # loading in data
-activities, roomslots, students, courses = load("../data/rooms.csv", "../data/courses.csv", "../data/students_and_courses_small.csv")
+activities, roomslots, students, courses = load("../data/rooms.csv", "../data/courses.csv", "../data/students_and_courses.csv")
 
 schedule = Schedule(roomslots, activities, students)
 
@@ -43,11 +43,15 @@ schedule.fitness()
 
 # visualize_room(schedule.room_schedule("A1.08"))
 # visualize_student(schedule, "Yanick Abbing")
+counter = 0
 for student in students.get_list():
     visualize_student(schedule, student)
     plt.savefig(f"../doc/testing_student/schedule_{student.get_name()}")
-for slot in roomslots.get_list():
-    if slot.get_time() == 17 and slot.get_activity():
-        visualize_course(schedule, slot.get_course())
-        plt.savefig(f"../doc/testing_course/schedule_{slot.get_course().get_name()}")
+    counter += 1
+    if counter == 10:
+        break
+# for slot in roomslots.get_list():
+#     if slot.get_time() == 17 and slot.get_activity():
+#         visualize_course(schedule, slot.get_course())
+#         plt.savefig(f"../doc/testing_course/schedule_{slot.get_course().get_name()}")
 visualize_course(schedule, "Bioinformatica")

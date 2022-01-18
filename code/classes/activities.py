@@ -44,7 +44,7 @@ class Activities:
         if type(activities) == list:
             self._activities_dict = {}
             for activity in activities:
-                self._activities_dict[activity.__str__()] = activity
+                self._activities_dict[str(activity)] = activity
         else:
             self._activities_dict = activities
 
