@@ -1,0 +1,74 @@
+72
+Lecture Advanced Heuristics --- 20 22
+Practicum Advanced Heuristics --- 10 10
+Lecture Algoritmen en complexiteit --- 43 47
+Tutorial Algoritmen en complexiteit --- 21 25
+Practicum Algoritmen en complexiteit --- 21 25
+Lecture Analysemethoden en -technieken --- 49 60
+Lecture Architectuur en computerorganisatie --- 21 19
+Lecture Architectuur en computerorganisatie --- 21 19
+Lecture Autonomous Agents 2 --- 22 19
+Lecture Autonomous Agents 2 --- 22 19
+Tutorial Autonomous Agents 2 --- 6 10
+Practicum Autonomous Agents 2 --- 6 10
+Lecture Bioinformatica --- 45 40
+Lecture Bioinformatica --- 45 40
+Lecture Bioinformatica --- 45 40
+Tutorial Bioinformatica --- 15 20
+Practicum Bioinformatica --- 15 20
+Lecture Calculus 2 --- 106 90
+Tutorial Calculus 2 --- 34 40
+Lecture Collectieve Intelligentie --- 61 65
+Lecture Collectieve Intelligentie --- 61 65
+Lecture Collectieve Intelligentie --- 61 65
+Tutorial Collectieve Intelligentie --- 13 20
+Practicum Collectieve Intelligentie --- 13 20
+Lecture Compilerbouw --- 69 70
+Lecture Compilerbouw --- 69 70
+Tutorial Compilerbouw --- 34 40
+Practicum Compilerbouw --- 34 40
+Practicum Compilerbouw (practicum) --- 12 15
+Lecture Data Mining --- 27 30
+Lecture Data Mining --- 27 30
+Tutorial Data Mining --- 9 10
+Practicum Data Mining --- 9 10
+Lecture Databases 2 --- 72 69
+Tutorial Databases 2 --- 36 40
+Lecture Heuristieken 1 --- 44 44
+Tutorial Heuristieken 1 --- 22 25
+Lecture Heuristieken 2 --- 32 30
+Tutorial Heuristieken 2 --- 16 20
+Lecture Informatie- en organisatieontwerp --- 21 40
+Lecture Informatie- en organisatieontwerp --- 21 40
+Tutorial Informatie- en organisatieontwerp --- 10 15
+Practicum Informatie- en organisatieontwerp --- 10 15
+Lecture Interactie-ontwerp --- 25 31
+Lecture Interactie-ontwerp --- 25 31
+Lecture Kansrekenen 2 --- 84 70
+Lecture Kansrekenen 2 --- 84 70
+Lecture Lineaire Algebra --- 54 50
+Lecture Lineaire Algebra --- 54 50
+Lecture Machine Learning --- 22 25
+Lecture Machine Learning --- 22 25
+Lecture Moderne Databases --- 54 60
+Tutorial Moderne Databases --- 18 20
+Practicum Moderne Databases --- 18 20
+Practicum Netwerken en systeembeveiliging --- 16 20
+Practicum Programmeren in Java 2 --- 15 20
+Practicum Project Genetic Algorithms --- 12 15
+Practicum Project Numerical Recipes --- 14 15
+Lecture Reflectie op de digitale cultuur --- 51 53
+Lecture Reflectie op de digitale cultuur --- 51 53
+Tutorial Reflectie op de digitale cultuur --- 17 20
+Lecture Software engineering --- 75 75
+Tutorial Software engineering --- 37 40
+Practicum Software engineering --- 37 40
+Lecture Technology for games --- 38 50
+Lecture Technology for games --- 38 50
+Tutorial Technology for games --- 19 20
+Lecture Webprogrammeren en databases --- 39 46
+Lecture Webprogrammeren en databases --- 39 46
+Tutorial Webprogrammeren en databases --- 19 20
+Practicum Webprogrammeren en databases --- 19 20
+Practicum Zoeken sturen en bewegen --- 14 15
+90

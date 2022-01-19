@@ -1,4 +1,5 @@
 import random
+from math import ceil
 
 
 def random_schedule_one(schedule):
@@ -43,4 +44,25 @@ def random_schedule_three(schedule):
                 continue
             else:
                 activity.set_roomslot(slot)
+    return schedule
+
+def baseline(schedule):
+    all_activities = schedule.get_activities()
+    roomslots = schedule.get_roomslots()
+    activities_to_add = []
+
+    for activity in all_activities.get_list():
+        if activity.get_kind() != "Lecture":
+            amount = ceil(activity.get_num_of_enrolled_students() / activity.get_max_stud())
+            if amount > 1:
+                new_activities = activity.split_into(amount)
+
+                for activity in new_activities:
+                    activities_to_add.append(activity)
+    
+    for activity in activities_to_add:
+        all_activities.add_activity(activity)
+
+    schedule = random_schedule_three(schedule)
+
     return schedule

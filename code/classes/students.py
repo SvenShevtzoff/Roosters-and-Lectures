@@ -5,7 +5,7 @@ class Student:
         self._first_name = first_name
         self._student_number = student_number
         self._courses = courses
-        self._activities = []
+        self._activities = set()
 
     def get_name(self):
         return f"{self._first_name} {self._last_name}"
@@ -14,10 +14,13 @@ class Student:
         return self._courses
 
     def add_activity(self, activity):
-        self._activities.append(activity)
+        self._activities.add(activity)
+    
+    def remove_activity(self, activity):
+        self._activities.remove(activity)
 
     def get_activities(self):
-        return self._activities
+        return list(self._activities)
 
     def __str__(self):
         return f"{self._first_name} {self._last_name}"
