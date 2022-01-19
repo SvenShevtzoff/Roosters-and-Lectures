@@ -16,8 +16,10 @@ time_to_ycoord = {
     17: 0}
 
 
-def visualize_room(schedule):
+def visualize_room(schedule, room):
     plot = plot_setup()
+
+    schedule = schedule.room_schedule(room)
 
     for slot in schedule:
         # calculating x and y coordinates according to day and time
@@ -37,7 +39,7 @@ def visualize_room(schedule):
 
     # plot
     plot.grid(True)
-    plt.savefig("../doc/schedule.png")
+    return plot
 
 
 def visualize_course(schedule, course):
@@ -224,7 +226,6 @@ def visualize_student(schedule, student):
     # plot
     plot.grid(True)
     return plot
-    # plt.savefig("../doc/schedule.png")
 
 
 def plot_setup():

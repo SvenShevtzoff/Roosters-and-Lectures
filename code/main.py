@@ -1,11 +1,9 @@
 '''Usage: main.py [algorithm]'''
 import sys
 from load import load
-from algorithms.random_alg import *
-from algorithms.greedy_alg import *
+from algorithms.random_alg import random_schedule_one, random_schedule_two, random_schedule_three
+from algorithms.greedy_alg import greedy_schedule_one
 from classes.schedule import Schedule
-from visualize import visualize_room, visualize_student, visualize_course
-import matplotlib.pyplot as plt
 
 
 # checking if algorithm is specified
@@ -14,7 +12,10 @@ if len(sys.argv) < 2:
              (random_schedule, random_schedule_two, random_schedule_three, schedule_with_students, greedy_schedule_one)")
 
 # loading in data
-activities, roomslots, students, courses = load("../data/rooms.csv", "../data/courses.csv", "../data/students_and_courses.csv")
+activities, roomslots, students, courses, rooms = load(
+    "../data/rooms.csv",
+    "../data/courses.csv",
+    "../data/students_and_courses.csv")
 
 schedule = Schedule(roomslots, activities, students)
 
@@ -31,26 +32,5 @@ else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-
-
-# print(schedule.course_schedule("Bioinformatica"))
-# print(schedule.room_schedule("A1.08"))
-# print(schedule.student_schedule("Yanick Abbing"))
-# print(schedule.day_schedule("Mon"))
-# print(schedule.time_schedule(13))
 schedule.fitness()
-
-# visualize_room(schedule.room_schedule("A1.08"))
-# visualize_student(schedule, "Yanick Abbing")
-# counter = 0
-# for student in students.get_list():
-#     visualize_student(schedule, student)
-#     plt.savefig(f"../doc/testing_student/schedule_{student.get_name()}")
-#     counter += 1
-#     if counter == 10:
-#         break
-# for slot in roomslots.get_list():
-#     if slot.get_time() == 17 and slot.get_activity():
-#         visualize_course(schedule, slot.get_course())
-#         plt.savefig(f"../doc/testing_course/schedule_{slot.get_course().get_name()}")
-# visualize_course(schedule, "Bioinformatica")
+schedule.visualize_by_room(rooms)

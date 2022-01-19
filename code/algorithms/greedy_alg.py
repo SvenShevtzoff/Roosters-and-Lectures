@@ -11,4 +11,3 @@ def greedy_schedule_one(schedule):
                 break
 
     return schedule
-

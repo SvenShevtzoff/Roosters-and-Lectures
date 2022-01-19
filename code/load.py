@@ -104,7 +104,4 @@ def load(file_name_rooms, file_name_courses, file_name_students):
     # for each course, add students to its currently existing activities
     courses.add_students_to_activities_per_course()
 
-    # for each student, add activities
-
-
-    return activities, roomslots, students, courses
+    return activities, roomslots, students, courses, rooms

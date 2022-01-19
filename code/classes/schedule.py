@@ -1,8 +1,8 @@
-from re import L
-import pandas as pd
 from classes.activities import Activity
 from classes.roomslots import Roomslot
 from collections import defaultdict
+from visualize import visualize_room
+import matplotlib.pyplot as plt
 
 
 class Schedule:
@@ -25,7 +25,7 @@ class Schedule:
         return [x.get_roomslot() for x in self._activities.get_list() if course == x.get_course().get_name()]
 
     def room_schedule(self, room):
-        return [x for x in self._roomslots.get_list() if room == x.get_room().get_roomnumber() and x.get_activity() is not None]
+        return [x for x in self._roomslots.get_list() if str(room) == x.get_room().get_roomnumber() and x.get_activity() is not None]
 
     def student_schedule(self, student):
         schedule = []
@@ -50,7 +50,7 @@ class Schedule:
                 dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
 
         return [x for x in dictionary.values() if len(x) > 1]
-    
+
     def get_conflicts_course(self, course_name):
         dictionary = {}
         course_activities = []
@@ -58,19 +58,14 @@ class Schedule:
             if str(activity.get_course()) == course_name:
                 course_activities = activity.get_course().get_activities()
                 break
-        
+
         for activity in course_activities:
             if f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}" in dictionary:
                 dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
             else:
                 dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
-        
+
         return [activity for activity in dictionary.values() if len(activity) > 1]
-    
-    def print_activities(self):
-        print("schedule.py")
-        for activity in self._activities.get_list():
-            print(activity)
 
     def fitness(self):
         malus_points = self.max_roomsize_check()
@@ -119,12 +114,12 @@ class Schedule:
             students_activities = student.get_activities()
             for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
                 students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
-                students_activities_sorted =  sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
+                students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
                 # dummy activity
                 previous_activity = Activity("dummy_kind", "dummy_course")
-    
-                # 0 because the only time options are 9, 11, 13, 15 and 17 so now the difference is never 4 or 6 (so we never wrongfully 
-                # get a malus point)
+
+                # 0 because the only time options are 9, 11, 13, 15 and 17 so now the
+                # difference is never 4 or 6 (so we never wrongfully get a malus point)
                 previous_activity.set_roomslot(Roomslot("dummy_day", 0, "dummy_room"))
                 for activity in students_activities_sorted:
                     current_time = int(activity.get_roomslot().get_time())
@@ -136,3 +131,8 @@ class Schedule:
                     previous_activity = activity
 
         return malus_points
+
+    def visualize_by_room(self, rooms):
+        for room in rooms.get_list():
+            visualize_room(self, room)
+            plt.savefig(f"../doc/output/schedule_{str(room)}.png")

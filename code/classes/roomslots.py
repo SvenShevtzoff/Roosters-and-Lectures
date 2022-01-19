@@ -28,7 +28,7 @@ class Roomslot:
     def is_visualized(self):
         return self._visualized
 
-    def set_visualized(self): 
+    def set_visualized(self):
         self._visualized = True
 
     def __str__(self):
