@@ -1,4 +1,6 @@
+from math import ceil
 import random
+from collections import defaultdict
 
 
 def random_schedule_one(schedule):
@@ -44,3 +46,20 @@ def random_schedule_three(schedule):
             else:
                 activity.set_roomslot(slot)
     return schedule
+
+def baseline(schedule):
+    dictionary = defaultdict()
+    activities = schedule.get_activities()
+    roomslots = schedule.get_roomslots()
+    i = 0 
+    activities = sorted(activities.get_list(), key=lambda x: x.get_max_stud(), reverse=True)
+    for activity in activities:
+        if activity.get_kind() == "Lecture":
+            dictinoryaantal = 1
+        else:
+            aantal = ceil(activity.get_num_of_enrolled_students() / activity.get_max_stud())
+        i += aantal
+        print(f"{activity}, {aantal}")
+    print(i)
+    return schedule
+
