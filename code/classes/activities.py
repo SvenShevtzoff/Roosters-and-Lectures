@@ -31,6 +31,7 @@ class Activity:
         for student in students:
             self._students[str(student)] = student
         for student in students: 
+            pass
     
     def add_student(self, student):
         self._students[str(student)] = student
