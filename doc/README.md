@@ -1,10 +1,7 @@
 
 # Roosters and Lectures
 
-
-
-
-
+In this case we are trying to generate a schedule given the data. This is an impossible problem and our task is to find an as good as can be solution.
 
 ## Authors
 
@@ -22,14 +19,9 @@ To run the program, the following command can be used
 When no algorithm is specified a list of possibilities is printed.
 
 
-### Data
+## Data
 
-De verschillende data (collega zalen, vakken, studenten) uit verschillende vakken inlezen
+We have 3 datafiles. One is the data of the rooms, another is the data of the courses and lastly the data of all students and the courses they registrated for.
+This data is profided by the course.
 
-### Files
 
-Main file en dan aparte files voor verschillende functies in het programma om conflicten te voorkomen
-
-### Programmeren
-
-Different classes for rooms, courses, people and roomslots
