@@ -34,7 +34,7 @@ def random_schedule_three(schedule):
     """ Creates a random schedule, taking into account roomsizes and E(studenten) """
     activities = schedule.get_activities()
     roomslots = schedule.get_roomslots()
-    activities = sorted(activities.get_list(), key=lambda x: x.get_max_stud(), reverse=True)
+    activities = sorted(activities.get_list(), key=lambda x: x.get_num_of_enrolled_students(), reverse=True)
     for activity in activities:
         while not activity.get_roomslot():
             slot = random.choice(roomslots.get_list())
