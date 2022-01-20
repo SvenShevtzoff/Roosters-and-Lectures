@@ -30,8 +30,8 @@ class Activity:
     def set_students(self, students):
         for student in students:
             self._students[str(student)] = student
-        for student in students: 
-            pass
+        for student in students:
+            student.add_activity(self)
     
     def add_student(self, student):
         self._students[str(student)] = student
