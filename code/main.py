@@ -35,4 +35,4 @@ else:
     sys.exit("This algorithm does not exist")
 
 schedule.fitness()
-schedule.visualize_by_room(rooms)
+# schedule.visualize_by_room(rooms)
