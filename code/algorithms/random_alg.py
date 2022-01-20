@@ -1,5 +1,6 @@
 import random
 from math import ceil
+from classes.schedule import Schedule
 
 
 def random_schedule_one(schedule):
@@ -40,7 +41,7 @@ def random_schedule_three(schedule):
             slot = random.choice(roomslots.get_list())
             if slot.get_activity():
                 continue
-            elif slot.get_room().get_capacity() < activity.get_max_stud():
+            elif slot.get_room().get_capacity() < activity.get_num_of_enrolled_students():
                 continue
             else:
                 activity.set_roomslot(slot)

@@ -66,6 +66,10 @@ class Schedule:
                 dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
 
         return [activity for activity in dictionary.values() if len(activity) > 1]
+    
+    def print_activities(self):
+        for activity in self._activities.get_list():
+            print(activity)
 
     def fitness(self):
         malus_points = self.max_roomsize_check()
@@ -112,6 +116,7 @@ class Schedule:
         malus_points = 0
         for student in self.get_students().get_list():
             students_activities = student.get_activities()
+<<<<<<< HEAD
             for activity in students_activities:
                 for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
                     students_activities_per_day = [activity for activity in students_activities if str(activity.get_roomslot().get_day()) == day]
@@ -132,6 +137,25 @@ class Schedule:
                         previous_activity = activity
                 
                     
+=======
+            for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+                students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
+                students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
+                # dummy activity
+                previous_activity = Activity("dummy_id", "dummy_kind", "dummy_course")
+
+                # 0 because the only time options are 9, 11, 13, 15 and 17 so now the
+                # difference is never 4 or 6 (so we never wrongfully get a malus point)
+                previous_activity.set_roomslot(Roomslot("dummy_day", 0, "dummy_room"))
+                for activity in students_activities_sorted:
+                    current_time = int(activity.get_roomslot().get_time())
+                    previous_time = previous_activity.get_roomslot().get_time()
+                    if abs(current_time - previous_time) == 4:
+                        malus_points += 1
+                    if abs(current_time - previous_time) == 6:
+                        malus_points += 3
+                    previous_activity = activity
+>>>>>>> f1beb853f790f1ea498a5cd10eb049c93799d702
 
         return malus_points
 

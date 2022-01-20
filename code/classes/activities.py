@@ -4,12 +4,16 @@ from math import ceil
 
 class Activity:
 
-    def __init__(self, kind, course, max_stud=0):
+    def __init__(self, unique_id, kind, course, max_stud=0):
+        self._unique_id = unique_id
         self._kind = kind
         self._course = course
         self._max_stud = max_stud
         self._roomslot = None
         self._students = {}
+
+    def get_unique_id(self):
+        return self._unique_id
 
     def get_kind(self):
         return self._kind
@@ -49,7 +53,7 @@ class Activity:
         new_activities = []
         # creating new activities
         for _ in range(amount - 1):
-            new_activities.append(Activity(self._kind, self._course, self._max_stud))
+            new_activities.append(Activity(f"{self._unique_id}.{_}", self._kind, self._course, self._max_stud))
         
         # calculating how many students to move
         amount_students_per_activity = ceil(self.get_num_of_enrolled_students() / amount)
@@ -70,7 +74,7 @@ class Activity:
 
 
     def __str__(self):
-        return f"{self._kind} {self._course}"
+        return f"{self._kind} {self._course} {self._unique_id}"
 
 
 class Activities:
@@ -94,6 +98,12 @@ class Activities:
 
     def add_activity(self, activity):
         self._activities_dict[str(activity)] = activity
+        # if self._activities_dict[str(activity)]:
+        #     self._activities_dict[f"{str(activity)} 2"]
+        # elif self._activities_dict[f"{str(activity)} 2"]:
+        #     self._activities_dict[f"{str(activity)} 3"]
+        # else:
+        #     self._activities_dict[str(activity)] = activity
 
     def length(self):
         return len(self._activities_dict)
