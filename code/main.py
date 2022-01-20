@@ -39,5 +39,3 @@ elif sys.argv[1] == "random_alg":
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
-
-
