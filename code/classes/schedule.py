@@ -112,6 +112,10 @@ class Schedule:
         malus_points = 0
         for student in self.get_students().get_list():
             students_activities = student.get_activities()
+            for activity in students_activities:
+                print(activity)
+                print(activity.get_roomslot())
+                print()
             for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
                 students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
                 students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)

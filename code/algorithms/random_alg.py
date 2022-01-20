@@ -46,6 +46,7 @@ def random_schedule_three(schedule):
                 activity.set_roomslot(slot)
     return schedule
 
+
 def baseline(schedule):
     all_activities = schedule.get_activities()
     roomslots = schedule.get_roomslots()
