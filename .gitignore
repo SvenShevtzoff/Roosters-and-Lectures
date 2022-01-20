@@ -133,6 +133,7 @@ output.txt
 schedule.csv
 students.csv
 testing.py
+plot.py
 schedule.png
 
 testing_course/
@@ -142,4 +143,3 @@ testing_student/
 *.prof
 *.txt
 *.DS_Store
-plot.py
