@@ -15,17 +15,17 @@ if len(sys.argv) < 2:
 
 list = []
 
-for x in range(100000):
-    activities, roomslots, students, courses, rooms = load(
-    "../data/rooms.csv",
-    "../data/courses.csv",
-    "../data/students_and_courses.csv")
-    schedule = Schedule(roomslots, activities, students)
-    schedule = random_alg(schedule)
-    list.append(schedule.fitness())
-    print(x)
-x = dict(Counter(list))
-print(x)
+# for x in range(100000):
+#     activities, roomslots, students, courses, rooms = load(
+#     "../data/rooms.csv",
+#     "../data/courses.csv",
+#     "../data/students_and_courses.csv")
+#     schedule = Schedule(roomslots, activities, students)
+#     schedule = random_alg(schedule)
+#     list.append(schedule.fitness())
+#     print(x)
+# x = dict(Counter(list))
+# print(x)
 
 
 

@@ -133,6 +133,7 @@ output.txt
 schedule.csv
 students.csv
 testing.py
+plot.py
 schedule.png
 
 testing_course/
