@@ -113,26 +113,25 @@ class Schedule:
         for student in self.get_students().get_list():
             students_activities = student.get_activities()
             for activity in students_activities:
-                print(activity)
-                print(activity.get_roomslot())
-                print()
-            for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
-                students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
-                students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
-                # dummy activity
-                previous_activity = Activity("dummy_kind", "dummy_course")
+                for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+                    students_activities_per_day = [activity for activity in students_activities if str(activity.get_roomslot().get_day()) == day]
+                    students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
+                    # dummy activity
+                    previous_activity = Activity("dummy_kind", "dummy_course")
 
-                # 0 because the only time options are 9, 11, 13, 15 and 17 so now the
-                # difference is never 4 or 6 (so we never wrongfully get a malus point)
-                previous_activity.set_roomslot(Roomslot("dummy_day", 0, "dummy_room"))
-                for activity in students_activities_sorted:
-                    current_time = int(activity.get_roomslot().get_time())
-                    previous_time = previous_activity.get_roomslot().get_time()
-                    if abs(current_time - previous_time) == 4:
-                        malus_points += 1
-                    if abs(current_time - previous_time) == 6:
-                        malus_points += 3
-                    previous_activity = activity
+                    # 0 because the only time options are 9, 11, 13, 15 and 17 so now the
+                    # difference is never 4 or 6 (so we never wrongfully get a malus point)
+                    previous_activity.set_roomslot(Roomslot("dummy_day", 0, "dummy_room"))
+                    for activity in students_activities_sorted:
+                        current_time = int(activity.get_roomslot().get_time())
+                        previous_time = previous_activity.get_roomslot().get_time()
+                        if abs(current_time - previous_time) == 4:
+                            malus_points += 1
+                        if abs(current_time - previous_time) == 6:
+                            malus_points += 3
+                        previous_activity = activity
+                
+                    
 
         return malus_points
 
