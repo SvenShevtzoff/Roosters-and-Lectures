@@ -29,5 +29,6 @@ else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
 
-schedule.fitness()
-schedule.visualize_by_room(rooms)
+# schedule.fitness()
+# schedule.visualize_by_room(rooms)
+
