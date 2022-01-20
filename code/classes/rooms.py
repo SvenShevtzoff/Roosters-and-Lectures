@@ -4,10 +4,10 @@ class Room:
         self._roomnumber = roomnumber
         self._capacity = capacity
 
-    def get_roomnumber(self):
+    def roomnumber(self):
         return self._roomnumber
 
-    def get_capacity(self):
+    def capacity(self):
         return self._capacity
 
     def __str__(self):
@@ -19,10 +19,10 @@ class Rooms:
     def __init__(self, rooms):
         self._rooms_dict = rooms
 
-    def get_dict(self):
+    def dict(self):
         return self._rooms_dict
 
-    def get_list(self):
+    def list(self):
         self._rooms_list = []
         for room in list(self._rooms_dict.values()):
             self._rooms_list.append(room)

@@ -48,17 +48,17 @@ def load(file_name_rooms, file_name_courses, file_name_students):
 
             # create Lecture, Tutorial and Practicum Activity objects
             for i in range(int(row[1])):
-                new_activity = Activity(str(i), "Lecture", new_course, int(row[6]))
+                new_activity = Activity(str(i + 1), "Lecture", new_course, int(row[6]))
                 activities[f"Lecture {course_name} {i}"] = new_activity
                 courses[course_name].add_activity(new_activity)
             if row[3] != "nvt":
                 for i in range(num_of_tutorials):
-                    new_activity = Activity(str(i), "Tutorial", new_course, int(row[3]))
+                    new_activity = Activity(str(i + 1), "Tutorial", new_course, int(row[3]))
                     activities[f"Tutorial {course_name} {i}"] = new_activity
                     courses[course_name].add_activity(new_activity)
             if row[5] != "nvt":
                 for i in range(num_of_practica):
-                    new_activity = Activity(str(i), "Practicum", new_course, int(row[5]))
+                    new_activity = Activity(str(i + 1), "Practicum", new_course, int(row[5]))
                     activities[f"Practicum {course_name} {i}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 
@@ -69,8 +69,8 @@ def load(file_name_rooms, file_name_courses, file_name_students):
     # creating Roomslot objects
     roomslots = {}
     for day in days:
-        for room in rooms.get_list():
-            if room.get_roomnumber() != "C0.110":
+        for room in rooms.list():
+            if room.roomnumber() != "C0.110":
                 times2 = times[0:4]
             else:
                 times2 = times
@@ -89,7 +89,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             students_courses = []
             for i in range(3, 8):
                 if row[i]:
-                    students_courses.append(courses.get_single(row[i]))
+                    students_courses.append(courses.single(row[i]))
                 else:
                     break
             new_student = Student(row[0], row[1], row[2], students_courses)
