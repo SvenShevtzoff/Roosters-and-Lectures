@@ -4,6 +4,7 @@ from load import load
 from algorithms.random_alg import random_schedule_one, random_schedule_two, random_schedule_three, baseline
 from algorithms.greedy_alg import greedy_schedule_one
 from classes.schedule import Schedule
+import copy
 
 
 # checking if algorithm is specified
@@ -16,10 +17,17 @@ activities, roomslots, students, courses, rooms = load(
     "../data/rooms.csv",
     "../data/courses.csv",
     "../data/students_and_courses.csv")
-
-schedule = Schedule(roomslots, activities, students)
+list = []
+k = Schedule(roomslots, activities, students)
+for x in range(0,4999):
+    schedule = copy.deepcopy(k)
+    schedule = baseline(schedule)
+    schedule.fitness()
+    schedule = None
 
 # checking which algorithm is selected and making a schedule accordingly
+# for x in range 
+
 if sys.argv[1] == "random_schedule":
     schedule = random_schedule_one(schedule)
 elif sys.argv[1] == "random_schedule_two":
@@ -33,6 +41,3 @@ elif sys.argv[1] == "baseline":
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
-
-schedule.fitness()
-schedule.visualize_by_room(rooms)
