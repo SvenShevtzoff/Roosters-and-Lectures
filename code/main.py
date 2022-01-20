@@ -15,7 +15,7 @@ if len(sys.argv) < 2:
 
 list = []
 
-for x in range(10000):
+for x in range(100000):
     activities, roomslots, students, courses, rooms = load(
     "../data/rooms.csv",
     "../data/courses.csv",
