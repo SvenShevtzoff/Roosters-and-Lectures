@@ -142,3 +142,4 @@ testing_student/
 *.prof
 *.txt
 *.DS_Store
+plot.py
