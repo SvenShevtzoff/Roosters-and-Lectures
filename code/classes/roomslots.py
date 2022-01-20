@@ -7,20 +7,20 @@ class Roomslot:
         self._activity = activity
         self._visualized = False
 
-    def get_day(self):
+    def day(self):
         return self._day
 
-    def get_time(self):
+    def time(self):
         return self._time
 
-    def get_room(self):
+    def room(self):
         return self._room
 
-    def get_activity(self):
+    def activity(self):
         return self._activity
 
-    def get_course(self):
-        return self._activity.get_course()
+    def course(self):
+        return self._activity.course()
 
     def set_activity(self, activity):
         self._activity = activity
@@ -43,10 +43,10 @@ class Roomslots:
     def __init__(self, roomslots):
         self._roomslots_dict = roomslots
 
-    def get_dict(self):
+    def dict(self):
         return self._roomslots_dict
 
-    def get_list(self):
+    def list(self):
         self._roomslots_list = []
         for slot in list(self._roomslots_dict.values()):
             self._roomslots_list.append(slot)

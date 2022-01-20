@@ -12,23 +12,23 @@ class Activity:
         self._roomslot = None
         self._students = {}
 
-    def get_unique_id(self):
+    def unique_id(self):
         return self._unique_id
 
-    def get_kind(self):
+    def kind(self):
         return self._kind
 
-    def get_roomslot(self):
+    def roomslot(self):
         return self._roomslot
 
     def set_roomslot(self, slot):
         slot.set_activity(self)
         self._roomslot = slot
 
-    def get_max_stud(self):
+    def max_stud(self):
         return self._max_stud
 
-    def get_course(self):
+    def course(self):
         return self._course
 
     def set_students(self, students):
@@ -43,20 +43,20 @@ class Activity:
     def remove_student(self, student):
         self._students.pop(str(student))
 
-    def get_students(self):
+    def students(self):
         return self._students
 
-    def get_num_of_enrolled_students(self):
+    def num_of_enrolled_students(self):
         return len(self._students)
     
     def split_into(self, amount):
         new_activities = []
         # creating new activities
-        for _ in range(amount - 1):
-            new_activities.append(Activity(f"{self._unique_id}.{_}", self._kind, self._course, self._max_stud))
+        for i in range(1, amount):
+            new_activities.append(Activity(f"{self._unique_id}.{i}", self._kind, self._course, self._max_stud))
         
         # calculating how many students to move
-        amount_students_per_activity = ceil(self.get_num_of_enrolled_students() / amount)
+        amount_students_per_activity = ceil(self.num_of_enrolled_students() / amount)
 
         # moving students to new activities
         for new_activity in new_activities:
@@ -87,10 +87,10 @@ class Activities:
         else:
             self._activities_dict = activities
 
-    def get_dict(self):
+    def dict(self):
         return self._activities_dict
 
-    def get_list(self):
+    def list(self):
         self._activities_list = []
         for activity in list(self._activities_dict.values()):
             self._activities_list.append(activity)

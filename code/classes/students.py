@@ -7,10 +7,10 @@ class Student:
         self._courses = courses
         self._activities = set()
 
-    def get_name(self):
+    def name(self):
         return f"{self._first_name} {self._last_name}"
 
-    def get_courses(self):
+    def courses(self):
         return self._courses
 
     def add_activity(self, activity):
@@ -19,7 +19,7 @@ class Student:
     def remove_activity(self, activity):
         self._activities.remove(activity)
 
-    def get_activities(self):
+    def activities(self):
         return list(self._activities)
 
     def __str__(self):
@@ -34,10 +34,10 @@ class Students:
     def __init__(self, students):
         self._students_dict = students
 
-    def get_dict(self):
+    def dict(self):
         return self._students_dict
 
-    def get_list(self):
+    def list(self):
         self._students_list = []
         for student in list(self._students_dict.values()):
             self._students_list.append(student)

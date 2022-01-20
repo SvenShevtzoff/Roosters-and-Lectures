@@ -3,6 +3,7 @@ from classes.roomslots import Roomslot
 from collections import defaultdict
 from visualize import visualize_room
 import matplotlib.pyplot as plt
+from math import ceil
 
 
 class Schedule:
@@ -12,64 +13,70 @@ class Schedule:
         self._activities = activities
         self._students = students
 
-    def get_roomslots(self):
+    def roomslots(self):
         return self._roomslots
 
-    def get_activities(self):
+    def activities(self):
         return self._activities
 
-    def get_students(self):
+    def students(self):
         return self._students
 
     def course_schedule(self, course):
-        return [x.get_roomslot() for x in self._activities.get_list() if course == x.get_course().get_name()]
+        return [x.roomslot() for x in self._activities.list() if course == x.course().name()]
 
     def room_schedule(self, room):
-        return [x for x in self._roomslots.get_list() if str(room) == x.get_room().get_roomnumber() and x.get_activity() is not None]
+        return [x for x in self._roomslots.list() if str(room) == x.room().roomnumber() and x.activity() is not None]
 
     def student_schedule(self, student):
         schedule = []
-        for x in self._activities.get_list():
-            student_names = [i.get_name() for i in x.get_students()]
+        for x in self._activities.list():
+            student_names = [i.name() for i in x.students()]
             if student in student_names:
-                schedule.append(x.get_roomslot())
+                schedule.append(x.roomslot())
         return schedule
 
-    def day_schedule(self, day):
-        return [x for x in self._roomslots.get_list() if day == x.get_day() and x.get_activity() is not None]
+    def divide_students(self):
+        all_activities = self.activities()
+        activities_to_add = []
 
-    def time_schedule(self, time):
-        return [x for x in self._roomslots.get_list() if time == x.get_time() and x.get_activity() is not None]
+        for activity in all_activities.list():
+            if activity.kind() != "Lecture":
+                amount = ceil(activity.num_of_enrolled_students() / activity.max_stud())
+                if amount > 1:
+                    new_activities = activity.split_into(amount)
 
-    def get_conflicts_student(self, student_to_check):
+                    for activity in new_activities:
+                        activities_to_add.append(activity)
+    
+        for activity in activities_to_add:
+            all_activities.add_activity(activity)
+
+    def conflicts_student(self, student_to_check):
         dictionary = defaultdict(list)
-        student_to_check = student_to_check.get_name()
-        for activity in self._activities.get_list():
-            students = activity.get_students()
+        student_to_check = student_to_check.name()
+        for activity in self._activities.list():
+            students = activity.students()
             if student_to_check in students:
-                dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
+                dictionary[f"{activity.roomslot().day()}, {activity.roomslot().time()}"].append(activity.roomslot())
 
         return [x for x in dictionary.values() if len(x) > 1]
 
-    def get_conflicts_course(self, course_name):
+    def conflicts_course(self, course_name):
         dictionary = {}
         course_activities = []
-        for activity in self._activities.get_list():
-            if str(activity.get_course()) == course_name:
-                course_activities = activity.get_course().get_activities()
+        for activity in self._activities.list():
+            if str(activity.course()) == course_name:
+                course_activities = activity.course().activities()
                 break
 
         for activity in course_activities:
-            if f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}" in dictionary:
-                dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"].append(activity.get_roomslot())
+            if f"{activity.roomslot().day()}, {activity.roomslot().time()}" in dictionary:
+                dictionary[f"{activity.roomslot().day()}, {activity.roomslot().time()}"].append(activity.roomslot())
             else:
-                dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
+                dictionary[f"{activity.roomslot().day()}, {activity.roomslot().time()}"] = [activity.roomslot()]
 
         return [activity for activity in dictionary.values() if len(activity) > 1]
-    
-    def print_activities(self):
-        for activity in self._activities.get_list():
-            print(activity)
 
     def fitness(self):
         malus_points = self.max_roomsize_check()
@@ -83,10 +90,10 @@ class Schedule:
     def max_roomsize_check(self):
         '''aantal studenten groter dan maximum toegestaan in de zaal (1)'''
         malus_points = 0
-        for slot in self.get_roomslots().get_list():
-            if slot.get_activity():
-                room_capacity = slot.get_room().get_capacity()
-                number_of_students = slot.get_activity().get_num_of_enrolled_students()
+        for slot in self.roomslots().list():
+            if slot.activity():
+                room_capacity = slot.room().capacity()
+                number_of_students = slot.activity().num_of_enrolled_students()
                 difference = number_of_students - room_capacity
                 if difference > 0:
                     malus_points += difference
@@ -96,8 +103,8 @@ class Schedule:
     def use_17_slot_check(self):
         '''gebruik van avondslot (5)'''
         malus_points = 0
-        for slot in self.get_roomslots().get_list():
-            if slot.get_time() == 17 and slot.get_activity():
+        for slot in self.roomslots().list():
+            if slot.time() == 17 and slot.activity():
                 malus_points += 5
 
         return malus_points
@@ -105,8 +112,8 @@ class Schedule:
     def course_conflict_check(self):
         '''vakconflicten (1)'''
         malus_points = 0
-        for student in self.get_students().get_list():
-            for conflict in self.get_conflicts_student(student):
+        for student in self.students().list():
+            for conflict in self.conflicts_student(student):
                 malus_points += len(conflict) - 1
 
         return malus_points
@@ -114,11 +121,11 @@ class Schedule:
     def empty_roomslot_check(self):
         '''één tussenslot (1) of twee tussensloten (3)'''
         malus_points = 0
-        for student in self.get_students().get_list():
-            students_activities = student.get_activities()
+        for student in self.students().list():
+            students_activities = student.activities()
             for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
-                students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
-                students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
+                students_activities_per_day = [activity for activity in students_activities if activity.roomslot().day() == day]
+                students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.roomslot().time(), reverse=True)
                 # dummy activity
                 previous_activity = Activity("dummy_id", "dummy_kind", "dummy_course")
 
@@ -126,8 +133,8 @@ class Schedule:
                 # difference is never 4 or 6 (so we never wrongfully get a malus point)
                 previous_activity.set_roomslot(Roomslot("dummy_day", 0, "dummy_room"))
                 for activity in students_activities_sorted:
-                    current_time = int(activity.get_roomslot().get_time())
-                    previous_time = previous_activity.get_roomslot().get_time()
+                    current_time = int(activity.roomslot().time())
+                    previous_time = previous_activity.roomslot().time()
                     if abs(current_time - previous_time) == 4:
                         malus_points += 1
                     if abs(current_time - previous_time) == 6:
@@ -137,6 +144,6 @@ class Schedule:
         return malus_points
 
     def visualize_by_room(self, rooms):
-        for room in rooms.get_list():
+        for room in rooms.list():
             visualize_room(self, room)
             plt.savefig(f"../doc/output/schedule_{str(room)}.png")
