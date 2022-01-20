@@ -66,6 +66,10 @@ class Schedule:
                 dictionary[f"{activity.get_roomslot().get_day()}, {activity.get_roomslot().get_time()}"] = [activity.get_roomslot()]
 
         return [activity for activity in dictionary.values() if len(activity) > 1]
+    
+    def print_activities(self):
+        for activity in self._activities.get_list():
+            print(activity)
 
     def fitness(self):
         malus_points = self.max_roomsize_check()
@@ -112,15 +116,11 @@ class Schedule:
         malus_points = 0
         for student in self.get_students().get_list():
             students_activities = student.get_activities()
-            for activity in students_activities:
-                print(activity)
-                print(activity.get_roomslot())
-                print()
             for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
                 students_activities_per_day = [activity for activity in students_activities if activity.get_roomslot().get_day() == day]
                 students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.get_roomslot().get_time(), reverse=True)
                 # dummy activity
-                previous_activity = Activity("dummy_kind", "dummy_course")
+                previous_activity = Activity("dummy_id", "dummy_kind", "dummy_course")
 
                 # 0 because the only time options are 9, 11, 13, 15 and 17 so now the
                 # difference is never 4 or 6 (so we never wrongfully get a malus point)
