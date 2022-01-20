@@ -141,3 +141,4 @@ testing_student/
 *.png
 *.prof
 *.txt
+*.DS_Store
