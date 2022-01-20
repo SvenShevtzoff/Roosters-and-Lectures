@@ -4,7 +4,7 @@ from collections import defaultdict
 from visualize import visualize_room
 import matplotlib.pyplot as plt
 from math import ceil
-
+import copy
 
 class Schedule:
 
@@ -83,7 +83,7 @@ class Schedule:
         malus_points += self.use_17_slot_check()
         malus_points += self.course_conflict_check()
         malus_points += self.empty_roomslot_check()
-        print(f"Pandapunten: {malus_points}")
+        # print(f"Pandapunten: {malus_points}")
 
         return malus_points
 
