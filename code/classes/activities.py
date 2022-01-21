@@ -98,12 +98,6 @@ class Activities:
 
     def add_activity(self, activity):
         self._activities_dict[str(activity)] = activity
-        # if self._activities_dict[str(activity)]:
-        #     self._activities_dict[f"{str(activity)} 2"]
-        # elif self._activities_dict[f"{str(activity)} 2"]:
-        #     self._activities_dict[f"{str(activity)} 3"]
-        # else:
-        #     self._activities_dict[str(activity)] = activity
 
     def length(self):
         return len(self._activities_dict)
