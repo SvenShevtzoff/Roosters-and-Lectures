@@ -81,7 +81,6 @@ class Schedule:
     def fitness(self):
         gapdict = self.empty_roomslot_check()
         if gapdict[3] > 0:
-            print(gapdict[3])
             return -1
         else:
             malus_points = gapdict[1] * 1

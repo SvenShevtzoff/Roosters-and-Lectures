@@ -32,22 +32,48 @@ schedule = Schedule(roomslots, activities, students)
 # x = dict(Counter(list))
 # print(x)
 
-activities, roomslots, students, courses, rooms = load(
-    "../data/rooms.csv",
-    "../data/courses.csv",
-    "../data/students_and_courses.csv")
-schedule = Schedule(roomslots, activities, students)
+# activities, roomslots, students, courses, rooms = load(
+#     "../data/rooms.csv",
+#     "../data/courses.csv",
+#     "../data/students_and_courses.csv")
+# schedule = Schedule(roomslots, activities, students)
 
 
-# checking which algorithm is selected and making a schedule accordingly
-if sys.argv[1] == "greedy":
-    schedule = greedy(schedule)
-elif sys.argv[1] == "baseline":
-    schedule = random_alg(schedule)
-elif sys.argv[1] == "random_alg":
-    schedule = random_alg(schedule)
-else:
-    # when no matching algorithm is found exit
-    sys.exit("This algorithm does not exist")
+# # checking which algorithm is selected and making a schedule accordingly
+# if sys.argv[1] == "greedy":
+#     schedule = greedy(schedule)
+# elif sys.argv[1] == "baseline":
+#     schedule = random_alg(schedule)
+# elif sys.argv[1] == "random_alg":
+#     schedule = random_alg(schedule)
+# else:
+#     # when no matching algorithm is found exit
+#     sys.exit("This algorithm does not exist")
+list = []
+for x in range(100):
+    malus_points = -1
+    while malus_points == -1:
+        activities, roomslots, students, courses, rooms = load(
+            "../data/rooms.csv",
+            "../data/courses.csv",
+            "../data/students_and_courses.csv")
+        schedule = Schedule(roomslots, activities, students)
 
-print (schedule.fitness())
+        if sys.argv[1] == "greedy":
+            schedule = greedy(schedule)
+        elif sys.argv[1] == "baseline":
+            schedule = random_alg(schedule)
+        elif sys.argv[1] == "random_alg":
+            schedule = random_alg(schedule)
+        else:
+            # when no matching algorithm is found exit
+            sys.exit("This algorithm does not exist")
+
+        malus_points = schedule.fitness()
+
+    list.append(malus_points)
+    print(malus_points)
+x = dict(Counter(list))
+print(x)
+
+# schedule.visualize_by_room(rooms)
