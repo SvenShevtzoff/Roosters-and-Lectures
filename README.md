@@ -14,6 +14,8 @@ In this case we are trying to generate a schedule given the data. This is an imp
 ## Usage
 To run the program, the following command can be used
 
+    cd code
+
     python3 main.py [algorithm_name]
 
 When no algorithm is specified a list of possibilities is printed.
