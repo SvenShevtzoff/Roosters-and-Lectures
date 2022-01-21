@@ -6,3 +6,5 @@
 - datastructuur uittekenen
 - change functies ( swap_student(), swap_activity(), add_werkgroep(), remove_werkgroep() )
 - merge() groups (tegenovergestelde van split_into () )
+- clear functie
+- constraint relaxation
