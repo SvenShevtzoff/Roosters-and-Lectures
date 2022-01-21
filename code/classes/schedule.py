@@ -79,13 +79,19 @@ class Schedule:
         return [activity for activity in dictionary.values() if len(activity) > 1]
 
     def fitness(self):
-        malus_points = self.max_roomsize_check()
-        malus_points += self.use_17_slot_check()
-        malus_points += self.course_conflict_check()
-        malus_points += self.empty_roomslot_check()
-        # print(f"Pandapunten: {malus_points}")
+        gapdict = self.empty_roomslot_check()
+        if gapdict[3] > 0:
+            print(gapdict[3])
+            return -1
+        else:
+            malus_points = gapdict[1] * 1
+            malus_points += gapdict[2] * 3
+            malus_points += self.max_roomsize_check()
+            malus_points += self.use_17_slot_check()
+            malus_points += self.course_conflict_check()
 
-        return malus_points
+            # print(f"Pandapunten: {malus_points}")
+            return malus_points
 
     def max_roomsize_check(self):
         '''aantal studenten groter dan maximum toegestaan in de zaal (1)'''
@@ -120,7 +126,7 @@ class Schedule:
 
     def empty_roomslot_check(self):
         '''één tussenslot (1) of twee tussensloten (3)'''
-        malus_points = 0
+        gapdict = {1 : 0, 2 : 0, 3 : 0}
         for student in self.students().list():
             students_activities = student.activities()
             for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
@@ -136,12 +142,14 @@ class Schedule:
                     current_time = int(activity.roomslot().time())
                     previous_time = previous_activity.roomslot().time()
                     if abs(current_time - previous_time) == 4:
-                        malus_points += 1
+                        gapdict[1] += 1
                     if abs(current_time - previous_time) == 6:
-                        malus_points += 3
+                        gapdict[2] += 1
+                    if abs(current_time - previous_time) == 8:
+                        gapdict[3] += 1
                     previous_activity = activity
-
-        return malus_points
+        
+        return gapdict
 
     def visualize_by_room(self, rooms):
         for room in rooms.list():

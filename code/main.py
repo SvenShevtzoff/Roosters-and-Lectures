@@ -13,7 +13,7 @@ if len(sys.argv) < 2:
 
 # loading in data
 
-list = []
+# list = []
 
 # for x in range(100000):
 #     activities, roomslots, students, courses, rooms = load(
@@ -27,6 +27,11 @@ list = []
 # x = dict(Counter(list))
 # print(x)
 
+activities, roomslots, students, courses, rooms = load(
+    "../data/rooms.csv",
+    "../data/courses.csv",
+    "../data/students_and_courses.csv")
+schedule = Schedule(roomslots, activities, students)
 
 
 # checking which algorithm is selected and making a schedule accordingly
@@ -39,3 +44,5 @@ elif sys.argv[1] == "random_alg":
 else:
     # when no matching algorithm is found exit
     sys.exit("This algorithm does not exist")
+
+print (schedule.fitness())

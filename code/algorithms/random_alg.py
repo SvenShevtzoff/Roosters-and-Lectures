@@ -13,10 +13,11 @@ def assign_random(schedule):
                 continue
             else:
                 activity.set_roomslot(slot)
-    return schedule
 
 
 def random_alg(schedule):
     schedule.divide_students()
     assign_random(schedule)
     return schedule
+
+
