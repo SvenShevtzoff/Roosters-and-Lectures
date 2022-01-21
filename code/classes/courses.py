@@ -23,12 +23,12 @@ class Course:
     def add_student(self, student):
         self._students.append(student)
 
-    def __str__(self):
-        return f"{self._name}"
-
     def add_students_to_activities(self):
         for activity in self._activities:
             activity.set_students(self._students)
+
+    def __str__(self):
+        return f"{self._name}"
 
 
 class Courses:
