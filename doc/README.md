@@ -21,7 +21,6 @@ To run the program, the following command can be used
 
 When no algorithm is specified a list of possibilities is printed.
 
-
 ### Data
 
 De verschillende data (collega zalen, vakken, studenten) uit verschillende vakken inlezen
