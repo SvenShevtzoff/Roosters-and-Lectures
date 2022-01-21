@@ -1,21 +1,12 @@
 class Course:
 
-    def __init__(self, name, num_of_lectures, num_of_tutorials=0, num_of_practica=0):
+    def __init__(self, name):
         self._name = name
         self._activities = []
         self._students = []
-        self._num_of_lectures = num_of_lectures
-        self._num_of_tutorials = num_of_tutorials
-        self._num_of_practica = num_of_practica
 
     def name(self):
         return self._name
-
-    def num_of_tutorials(self):
-        return self._num_of_tutorials
-
-    def num_of_practica(self):
-        return self._num_of_practica
 
     def num_of_students(self):
         return len(self._students)
