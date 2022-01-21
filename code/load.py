@@ -42,8 +42,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             course_name = row[0]
             num_of_tutorials = int(row[2])
             num_of_practica = int(row[4])
-            num_of_lectures = int(row[1])
-            new_course = Course(course_name, num_of_lectures)
+            new_course = Course(course_name)
             courses[course_name] = new_course
 
             # create Lecture, Tutorial and Practicum Activity objects

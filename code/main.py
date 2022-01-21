@@ -12,6 +12,11 @@ if len(sys.argv) < 2:
     sys.exit("Specify the algorithm to make schedule (greedy, random_alg, baseline)")
 
 # loading in data
+activities, roomslots, students, courses, rooms = load(
+    "../data/rooms.csv",
+    "../data/courses.csv",
+    "../data/students_and_courses.csv")
+schedule = Schedule(roomslots, activities, students)
 
 # list = []
 
