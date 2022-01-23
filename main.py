@@ -5,7 +5,7 @@
 
 import sys
 from code.load import load
-from code.algorithms import randomise
+from code.algorithms.randomise import randomise
 from code.algorithms import greedy as gr
 from code.classes.schedule import Schedule
 from collections import Counter
@@ -26,8 +26,12 @@ if __name__ == "__main__":
             "data/courses.csv",
             "data/students_and_courses.csv")
         schedule = Schedule(roomslots, activities, students)
+        schedule = randomise(schedule)
+        malus_points = schedule.fitness()
 
     print(f"pandapunten: {malus_points}")
+
+    schedule.visualize_by_room(rooms)
 
 
 

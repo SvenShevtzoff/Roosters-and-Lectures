@@ -168,4 +168,4 @@ class Schedule:
         """FUNCTIE HIER"""
         for room in rooms.list():
             vis.visualize_room(self, room)
-            plt.savefig(f"../doc/output/schedule_{str(room)}.png")
+            plt.savefig(f"doc/output/schedule_{str(room)}.png")
