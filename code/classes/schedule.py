@@ -55,10 +55,7 @@ class Schedule:
             if activity.kind() != "Lecture":
                 amount = ceil(activity.num_of_enrolled_students() / activity.max_stud())
                 if amount > 1:
-                    new_activities = activity.split_into(amount)
-
-                    for activity in new_activities:
-                        activities_to_add.append(activity)
+                    activities_to_add = activities_to_add + activity.split_into(amount)
     
         for activity in activities_to_add:
             all_activities.add_activity(activity)
