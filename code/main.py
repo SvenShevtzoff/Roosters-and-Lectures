@@ -27,19 +27,6 @@ if __name__ == "__main__":
             "../data/students_and_courses.csv")
         schedule = Schedule(roomslots, activities, students)
 
-        if sys.argv[1] == "greedy":
-            schedule = greedy(schedule)
-        elif sys.argv[1] == "baseline":
-            schedule = random_alg(schedule)
-        elif sys.argv[1] == "random_alg":
-            schedule = random_alg(schedule)
-        else:
-            # when no matching algorithm is found exit
-            sys.exit("This algorithm does not exist")
-
-        malus_points = schedule.fitness()
-
-
     print(f"pandapunten: {malus_points}")
 
 
