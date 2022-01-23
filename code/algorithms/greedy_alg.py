@@ -1,3 +1,7 @@
+# =============================================================================
+# greedy_alg.py with greedy algoritm functions
+# =============================================================================
+
 def greedy(schedule):
     schedule.divide_students()
     activities = schedule.activities()

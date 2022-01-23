@@ -1,4 +1,8 @@
-'''Visualizing the schedule'''
+# =============================================================================
+# visualize.py for visualizing the schedule
+# =============================================================================
+
+
 import matplotlib.pyplot as plt
 
 # defining dictionaries to calculate the coordinates from day/time

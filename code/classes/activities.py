@@ -1,6 +1,9 @@
+# =============================================================================
+# activities.py with classes activity and activities
+# =============================================================================
+
 import random
 from math import ceil
-
 
 class Activity:
 
@@ -13,43 +16,55 @@ class Activity:
         self._students = {}
 
     def unique_id(self):
+        """Returns unique_id of activity"""
         return self._unique_id
 
     def kind(self):
+        """Returns kind of the activity (with kind in {practicum, lecture, tutorial})"""
         return self._kind
 
     def roomslot(self):
+        """Returns roomslot object of activity"""
         return self._roomslot
 
     def set_roomslot(self, slot):
+        """Connects a roomslot object to an activity object"""
         slot.set_activity(self)
         self._roomslot = slot
 
     def max_stud(self):
+        """Returns the maximum of students in an activity"""
         return self._max_stud
 
     def course(self):
+        """Returns the couse object of an activity"""
         return self._course
 
     def set_students(self, students):
+        """Connects a list of students to an activity"""
         for student in students:
             self._students[str(student)] = student
         for student in students:
             student.add_activity(self)
     
     def add_student(self, student):
+        """Adds a student object to the studentlist of that activtiy"""
         self._students[str(student)] = student
     
     def remove_student(self, student):
+        """Removes a student object from the studentlist of that activtiy"""
         self._students.pop(str(student))
 
     def students(self):
+        """Returns all student objects from that activity"""
         return self._students
 
     def num_of_enrolled_students(self):
+        """Returns the number of enrolled students"""
         return len(self._students)
     
     def split_into(self, amount):
+        """Splits the activities in groups that fit the restictions of groupsize"""
         new_activities = []
         # creating new activities
         for i in range(1, amount):
@@ -88,16 +103,21 @@ class Activities:
             self._activities_dict = activities
 
     def dict(self):
+        """Returns a dictionary of the activtities"""
         return self._activities_dict
 
     def list(self):
+        """Returns a list of the activtities"""
         self._activities_list = []
         for activity in list(self._activities_dict.values()):
             self._activities_list.append(activity)
         return self._activities_list
 
     def add_activity(self, activity):
+        """Add a new activity"""
         self._activities_dict[str(activity)] = activity
 
     def length(self):
+        """Returns how many activiteis there are"""
         return len(self._activities_dict)
+        

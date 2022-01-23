@@ -1,3 +1,7 @@
+# =============================================================================
+# schedule.py with classe schedule
+# =============================================================================
+
 from classes.activities import Activity
 from classes.roomslots import Roomslot
 from collections import defaultdict
@@ -14,21 +18,27 @@ class Schedule:
         self._students = students
 
     def roomslots(self):
+        """Returns roomslot objects form the schedule"""
         return self._roomslots
 
     def activities(self):
+        """Returns activity objects form the schedule"""
         return self._activities
 
     def students(self):
+        """Returns student objects form the schedule"""
         return self._students
 
     def course_schedule(self, course):
+        """Returns a schedule for a given course"""
         return [x.roomslot() for x in self._activities.list() if course == x.course().name()]
 
     def room_schedule(self, room):
+        """Returns a schedule for a given room"""
         return [x for x in self._roomslots.list() if str(room) == x.room().roomnumber() and x.activity() is not None]
 
     def student_schedule(self, student):
+        """Returns a schedule for a given student"""
         schedule = []
         for x in self._activities.list():
             student_names = [i.name() for i in x.students()]
@@ -37,6 +47,7 @@ class Schedule:
         return schedule
 
     def divide_students(self):
+        """FUNCTIE HIER"""
         all_activities = self.activities()
         activities_to_add = []
 
@@ -53,6 +64,7 @@ class Schedule:
             all_activities.add_activity(activity)
 
     def conflicts_student(self, student_to_check):
+        """FUNCTIE HIER"""
         dictionary = defaultdict(list)
         student_to_check = student_to_check.name()
         for activity in self._activities.list():
@@ -63,6 +75,7 @@ class Schedule:
         return [x for x in dictionary.values() if len(x) > 1]
 
     def conflicts_course(self, course_name):
+        """FUNCTIE HIER"""
         dictionary = {}
         course_activities = []
         for activity in self._activities.list():
@@ -79,6 +92,7 @@ class Schedule:
         return [activity for activity in dictionary.values() if len(activity) > 1]
 
     def fitness(self):
+        """Calculates the fitness of the schedule"""
         gapdict = self.empty_roomslot_check()
         if gapdict[3] > 0:
             return -1
@@ -93,7 +107,7 @@ class Schedule:
             return malus_points
 
     def max_roomsize_check(self):
-        '''aantal studenten groter dan maximum toegestaan in de zaal (1)'''
+        """VERTALEN Aantal studenten groter dan maximum toegestaan in de zaal (1)"""
         malus_points = 0
         for slot in self.roomslots().list():
             if slot.activity():
@@ -106,7 +120,7 @@ class Schedule:
         return malus_points
 
     def use_17_slot_check(self):
-        '''gebruik van avondslot (5)'''
+        """VERTALEN Gebruik van avondslot (5)"""
         malus_points = 0
         for slot in self.roomslots().list():
             if slot.time() == 17 and slot.activity():
@@ -115,7 +129,7 @@ class Schedule:
         return malus_points
 
     def course_conflict_check(self):
-        '''vakconflicten (1)'''
+        """VERTALEN Vakconflicten (1)"""
         malus_points = 0
         for student in self.students().list():
             for conflict in self.conflicts_student(student):
@@ -124,7 +138,7 @@ class Schedule:
         return malus_points
 
     def empty_roomslot_check(self):
-        '''één tussenslot (1) of twee tussensloten (3)'''
+        """VERTALEN Één tussenslot (1) of twee tussensloten (3)"""
         gapdict = {1 : 0, 2 : 0, 3 : 0}
         for student in self.students().list():
             students_activities = student.activities()
@@ -151,6 +165,7 @@ class Schedule:
         return gapdict
 
     def visualize_by_room(self, rooms):
+        """FUNCTIE HIER"""
         for room in rooms.list():
             visualize_room(self, room)
             plt.savefig(f"../doc/output/schedule_{str(room)}.png")
