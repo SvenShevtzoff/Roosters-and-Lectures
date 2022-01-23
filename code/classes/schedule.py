@@ -2,10 +2,10 @@
 # schedule.py with classe schedule
 # =============================================================================
 
-from classes.activities import Activity
-from classes.roomslots import Roomslot
+from code.classes.activities import Activity
+from code.classes.roomslots import Roomslot
 from collections import defaultdict
-from visualize import visualize_room
+from code.visualize import visualize as vis
 import matplotlib.pyplot as plt
 from math import ceil
 import copy
@@ -167,5 +167,5 @@ class Schedule:
     def visualize_by_room(self, rooms):
         """FUNCTIE HIER"""
         for room in rooms.list():
-            visualize_room(self, room)
+            vis.visualize_room(self, room)
             plt.savefig(f"../doc/output/schedule_{str(room)}.png")

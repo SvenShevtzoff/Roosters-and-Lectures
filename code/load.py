@@ -2,11 +2,11 @@
 # load.py with fuctions to load all data form the given csv-files
 # =============================================================================
 
-from classes.rooms import Room, Rooms
-from classes.courses import Course, Courses
-from classes.roomslots import Roomslot, Roomslots
-from classes.activities import Activity, Activities
-from classes.students import Student, Students
+from code.classes.rooms import Room, Rooms
+from code.classes.courses import Course, Courses
+from code.classes.roomslots import Roomslot, Roomslots
+from code.classes.activities import Activity, Activities
+from code.classes.students import Student, Students
 import csv
 import sys
 

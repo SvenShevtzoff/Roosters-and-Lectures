@@ -19,7 +19,7 @@ def assign_random(schedule):
                 activity.set_roomslot(slot)
 
 
-def random_alg(schedule):
+def randomise(schedule):
     schedule.divide_students()
     assign_random(schedule)
     return schedule
