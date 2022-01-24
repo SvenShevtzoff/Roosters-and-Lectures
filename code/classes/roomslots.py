@@ -2,6 +2,10 @@
 # roomslots.py with classes roomslot and roomslots
 # =============================================================================
 
+from calendar import c
+import copy
+
+
 class Roomslot:
 
     def __init__(self, day, time, room, activity=None):
@@ -10,6 +14,16 @@ class Roomslot:
         self._room = room
         self._activity = activity
         self._visualized = False
+
+    def copy(self):
+        new = copy.copy(self)
+        new._day = copy.copy(self._day)
+        new._time = copy.copy(self._time)
+        new._room = copy.copy(self._room)
+        new._activity = copy.copy(self._activity)
+        new._visualized = False
+        
+        return new
 
     def day(self):
         """Returns the day of the roomslot"""
@@ -61,3 +75,10 @@ class Roomslots:
     def list(self):
         """Returns a list of the roomslots"""
         return list(self._roomslots_dict.values())
+
+    def copy(self):
+        new = copy.copy(self)
+        new._roomslots_dict = {}
+        for slot in self.list():
+            new._roomslots_dict[str(slot)] = slot.copy()
+        return new

@@ -3,6 +3,7 @@
 # =============================================================================
 
 import random
+import copy
 from math import ceil
 
 
@@ -15,6 +16,16 @@ class Activity:
         self._max_stud = max_stud
         self._roomslot = None
         self._students = {}
+
+    def copy(self):
+        new = copy.copy(self)
+        new._kind = copy.copy(self._kind)
+        new._course = copy.copy(self._course)
+        new._max_stud = copy.copy(self._max_stud)
+        new._roomslot = copy.copy(self._roomslot)
+        new._students = copy.copy(self._students)
+
+        return new
 
     def unique_id(self):
         """Returns unique_id of activity"""
@@ -109,3 +120,10 @@ class Activities:
     def add_activity(self, activity):
         """Add a new activity"""
         self._activities_dict[str(activity)] = activity
+
+    def copy(self):
+        new = copy.copy(self)
+        new._activities_dict = {}
+        for activity in self.list():
+            new._activities_dict[str(activity)] = activity.copy()
+        return new

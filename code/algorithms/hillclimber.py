@@ -1,7 +1,6 @@
 # =============================================================================
 # hillclimber.py with random algorithm functions
 # =============================================================================
-
 from code.algorithms.randomise import randomise
 from code.algorithms.helpers import swap_activities, move_students
 import random

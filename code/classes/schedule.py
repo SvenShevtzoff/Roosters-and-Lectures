@@ -20,9 +20,9 @@ class Schedule:
 
     def copy(self):
         new = copy.copy(self)
-        new._roomslots = copy.copy(self._roomslots)
-        new._activities = copy.copy(self._activities)
-        new._students = copy.copy(self._students)
+        new._roomslots = self._roomslots.copy()
+        new._activities = self._activities.copy()
+        new._students = self._students.copy()
 
         return new
 
