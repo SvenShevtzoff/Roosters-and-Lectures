@@ -127,13 +127,10 @@ class Schedule:
     def exceed_max_activity_check(self):
         malus_points = 0
         for activity in self.activities().list():
-            if activity.num_of_enrolled_students() > activity.max_stud():
-                print(str(activity))
-                print(activity.num_of_enrolled_students())
-                print(activity.max_stud())
-                print()
-                
-                malus_points += 1000
+            if activity.kind() != "Lecture":
+                if activity.num_of_enrolled_students() > activity.max_stud():
+                    print(f"{activity.num_of_enrolled_students()}, {activity.max_stud()}")
+                    malus_points += 1000
 
         return malus_points
 
