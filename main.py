@@ -16,7 +16,7 @@ from code.helpers import swap_activities, move_students
 if __name__ == "__main__":
     # checking if algorithm is specified
     if len(sys.argv) < 2:
-        sys.exit("Specify the algorithm to make schedule (greedy, random_alg, baseline)")
+        sys.exit("Specify the algorithm to make schedule (greedy, randomise, baseline)")
 
     malus_points = -1
     while malus_points == -1:
@@ -32,13 +32,3 @@ if __name__ == "__main__":
     print(f"pandapunten: {malus_points}")
 
     schedule.visualize_by_room(rooms)
-
-
-
-
-
-
-
-
-
-

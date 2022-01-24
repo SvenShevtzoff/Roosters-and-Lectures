@@ -102,22 +102,10 @@ class Activities:
         else:
             self._activities_dict = activities
 
-    def dict(self):
-        """Returns a dictionary of the activtities"""
-        return self._activities_dict
-
     def list(self):
         """Returns a list of the activtities"""
-        self._activities_list = []
-        for activity in list(self._activities_dict.values()):
-            self._activities_list.append(activity)
-        return self._activities_list
+        return list(self._activities_dict.values())
 
     def add_activity(self, activity):
         """Add a new activity"""
-        self._activities_dict[str(activity)] = activity
-
-    def length(self):
-        """Returns how many activiteis there are"""
-        return len(self._activities_dict)
-        
+        self._activities_dict[str(activity)] = activity        

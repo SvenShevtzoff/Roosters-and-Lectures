@@ -6,7 +6,7 @@ import random
 
 
 def assign_random(schedule):
-    """ Creates a random schedule, taking into account roomsizes and E(studenten) """
+    """Creates a random schedule, taking into account roomsizes and E(studenten)"""
     activities = schedule.activities()
     roomslots = schedule.roomslots()
     activities = sorted(activities.list(), key=lambda x: x.num_of_enrolled_students(), reverse=True)
