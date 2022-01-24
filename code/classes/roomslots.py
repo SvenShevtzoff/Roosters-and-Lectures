@@ -35,6 +35,9 @@ class Roomslot:
         """Connects an activity object to the roomslot object"""
         self._activity = activity
 
+    def remove_activity(self):
+        self._activity = None
+
     def is_visualized(self):
         return self._visualized
 

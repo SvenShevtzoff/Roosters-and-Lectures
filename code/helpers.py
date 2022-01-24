@@ -2,11 +2,22 @@
 # helpers.py contains different helper functions
 # =============================================================================
 
-def swap_activities(activity1, activity2):
-    """Swaps the roomslots of two activities"""
-    helper = activity1.roomslot()
-    activity1.set_roomslot(activity2.roomslot())
-    activity2.set_roomslot(helper)
+def swap_activities(roomslot1, roomslot2):
+    activity1 = roomslot1.activity()
+    activity2 = roomslot2.activity()
+    if activity1 and activity2:
+        helper = roomslot1
+        activity1.set_roomslot(roomslot2)
+        activity2.set_roomslot(helper)
+    elif not activity1 and activity2:
+        activity2.set_roomslot(roomslot1)
+        roomslot2.remove_activity()
+    elif activity1 and not activity2:
+        activity1.set_roomslot(roomslot2)
+        roomslot1.remove_activity()
+    else:
+        pass
+
 
 def move_students(student, from_activity, to_activity):
     """Moves a student from one activity to another"""
