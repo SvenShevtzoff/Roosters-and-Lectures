@@ -9,6 +9,7 @@ from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.classes.schedule import Schedule
+from code.algorithms.hillclimber import hill_climber_alg
 
 ITERATIONS = 100
 
@@ -25,6 +26,7 @@ if __name__ == "__main__":
         "data/students_and_courses.csv")
     schedule = Schedule(roomslots, activities, students)
 
+<<<<<<< HEAD
     # checking which algorithm is selected and making a schedule accordingly
     if sys.argv[1] == "randomise":
         best_schedule = randomise(schedule)
@@ -37,5 +39,12 @@ if __name__ == "__main__":
         sys.exit("This algorithm does not exist")
 
     print(f"Pandapunten: {best_schedule.fitness()}")
+=======
+    hill_climber_alg(schedule, 1)
+    # schedule = randomise(schedule)
+    # malus_points = schedule.fitness()
+>>>>>>> 651ec1cd580e4029ee41c1d3dc5b83f95230565a
 
-    # schedule.visualize_by_room(rooms)
+    # print(f"Pandapunten: {malus_points}")
+
+    # # schedule.visualize_by_room(rooms)
