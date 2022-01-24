@@ -2,7 +2,11 @@
 # hillclimber.py with random algoritm functions
 # =============================================================================
 from code.algorithms.randomise import randomise
+from code.algorithms.greedy import greedy
+from code.classes.schedule import Schedule
+from code.load import load
 import random
+import time
 
 def swap_activities(roomslot1, roomslot2):
     activity1 = roomslot1.activity()
@@ -34,20 +38,42 @@ def mutate(schedule):
 
     swap_activities(roomslot1, roomslot2)
 
-def hill_climber_alg(schedule, iterations):
-    current_schedule = randomise(schedule)
+def hill_climber_alg(schedule, mutations=5):
+    no_change_count = 0
+    best_schedule = None
 
-    for iteration in range(iterations):
-        # maak een kopie
-        new_schedule = current_schedule.copy()
+    try:
+        while True:
+            activities, roomslots, students, courses, rooms = load(
+                "data/rooms.csv",
+                "data/courses.csv",
+                "data/students_and_courses.csv")
+            schedule = Schedule(roomslots, activities, students)
+            current_schedule = randomise(schedule)
 
-        # maak een mutatie
-        mutate(new_schedule)
+            while no_change_count < 250:
+                # copy the schedule
+                new_schedule = current_schedule.copy()
 
-        # verbeterd
-        if new_schedule.fitness() <= current_schedule.fitness():
-            # print("if")
-            print(new_schedule.fitness())
-            current_schedule = new_schedule
+                # make some mutations
+                for _ in range(mutations):
+                    mutate(new_schedule)
 
-    return current_schedule
+                # if the new schedule is better save it
+                if new_schedule.fitness() <= current_schedule.fitness():
+                    print(new_schedule.fitness())
+                    current_schedule = new_schedule
+                    no_change_count = 0
+                else:
+                    # keep track of the amount of iterations without change
+                    no_change_count += 1
+
+            if best_schedule:
+                if current_schedule.fitness() < best_schedule.fitness():
+                    best_schedule = current_schedule.copy()
+            else:
+                best_schedule = current_schedule.copy()
+            no_change_count = 0
+
+    except KeyboardInterrupt:
+        return current_schedule
