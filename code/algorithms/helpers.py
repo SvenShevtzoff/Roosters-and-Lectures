@@ -25,13 +25,3 @@ def move_students(student, from_activity, to_activity):
     student.remove_activity(from_activity)
     to_activity.add_student(student)
     student.add_activity(to_activity)
-
-  
-
-
-
-
-
-
-
-

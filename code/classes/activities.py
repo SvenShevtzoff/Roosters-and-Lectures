@@ -5,6 +5,7 @@
 import random
 from math import ceil
 
+
 class Activity:
 
     def __init__(self, unique_id, kind, course, max_stud=0):
@@ -46,11 +47,11 @@ class Activity:
             self._students[str(student)] = student
         for student in students:
             student.add_activity(self)
-    
+
     def add_student(self, student):
         """Adds a student object to the studentlist of that activtiy"""
         self._students[str(student)] = student
-    
+
     def remove_student(self, student):
         """Removes a student object from the studentlist of that activtiy"""
         self._students.pop(str(student))
@@ -62,14 +63,14 @@ class Activity:
     def num_of_enrolled_students(self):
         """Returns the number of enrolled students"""
         return len(self._students)
-    
+
     def split_into(self, amount):
         """Splits the activities in groups that fit the restictions of groupsize"""
         new_activities = []
         # creating new activities
         for i in range(1, amount):
             new_activities.append(Activity(f"{self._unique_id}.{i}", self._kind, self._course, self._max_stud))
-        
+
         # calculating how many students to move
         amount_students_per_activity = ceil(self.num_of_enrolled_students() / amount)
 
@@ -86,7 +87,6 @@ class Activity:
                 new_activity.add_student(new_student)
 
         return new_activities
-
 
     def __str__(self):
         return f"{self._kind} {self._course} {self._unique_id}"
@@ -108,4 +108,4 @@ class Activities:
 
     def add_activity(self, activity):
         """Add a new activity"""
-        self._activities_dict[str(activity)] = activity        
+        self._activities_dict[str(activity)] = activity
