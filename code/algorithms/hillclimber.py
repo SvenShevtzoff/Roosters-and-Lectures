@@ -2,17 +2,38 @@
 # hillclimber.py with random algoritm functions
 # =============================================================================
 
+from code.algorithms.randomise import randomise
 from helpers import swap_activities, move_students
 import random
 
-def hill_climber_alg(schedule):
-    copied_schedule = 
+def hill_climber_alg(schedule, iterations, count_until_startover=100, mutations=5):
+    oschedule = randomise(schedule)
 
-    for _ in range(100):
-        roomslot1 = random.choice(schedule.roomslots().list())
-        roomslot2 = random.choice(schedule.roomslots().list())
+    i = 0 
+    while i != iterations:
+        for _ in range(mutations):
+            roomslot1 = random.choice(nschedule.roomslots().list())
+            roomslot2 = random.choice(nschedule.roomslots().list())
 
-        swap_activities(roomslot1, roomslot2)
+            swap_activities(roomslot1, roomslot2)
+
+        if nschedule.fitness() >= oschedule.fitness():
+            nschedule = oschedule
+            i += 1
+        else:
+            oschedule = nschedule
+            i = 0
+        
+        print(nschedule.fitness())
+
+    
+        
+
+
+    
+
+
+
 
     
 
