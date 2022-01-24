@@ -5,6 +5,7 @@
 def swap_activities(roomslot1, roomslot2):
     activity1 = roomslot1.activity()
     activity2 = roomslot2.activity()
+
     if activity1 and activity2:
         helper = roomslot1
         activity1.set_roomslot(roomslot2)
