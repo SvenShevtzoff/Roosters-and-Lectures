@@ -18,17 +18,16 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         sys.exit("Specify the algorithm to make schedule (greedy, randomise, baseline)")
 
-    malus_points = -1
-    while malus_points == -1:
-        #loading data
-        activities, roomslots, students, courses, rooms = load(
-            "data/rooms.csv",
-            "data/courses.csv",
-            "data/students_and_courses.csv")
-        schedule = Schedule(roomslots, activities, students)
-        schedule = randomise(schedule)
-        malus_points = schedule.fitness()
+    
+    #loading data
+    activities, roomslots, students, courses, rooms = load(
+        "data/rooms.csv",
+        "data/courses.csv",
+        "data/students_and_courses.csv")
+    schedule = Schedule(roomslots, activities, students)
+    schedule = randomise(schedule)
+    malus_points = schedule.fitness()
 
-    print(f"pandapunten: {malus_points}")
+    print(f"Pandapunten: {malus_points}")
 
-    schedule.visualize_by_room(rooms)
+    # schedule.visualize_by_room(rooms)
