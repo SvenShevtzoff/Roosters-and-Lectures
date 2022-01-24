@@ -25,13 +25,6 @@ class Rooms:
     def __init__(self, rooms):
         self._rooms_dict = rooms
 
-    def dict(self):
-        """Returns a dictionary of the rooms"""
-        return self._rooms_dict
-
     def list(self):
         """Returns a list of the rooms"""
-        self._rooms_list = []
-        for room in list(self._rooms_dict.values()):
-            self._rooms_list.append(room)
-        return self._rooms_list
+        return list(self._rooms_dict.values())

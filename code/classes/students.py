@@ -15,10 +15,6 @@ class Student:
         """Returns name and surname of student"""
         return f"{self._first_name} {self._last_name}"
 
-    def courses(self):
-        """Returns the course objects of a student"""
-        return self._courses
-
     def add_activity(self, activity):
         """Adds an activity object to the activity set of the student"""
         self._activities.add(activity)
@@ -43,14 +39,6 @@ class Students:
     def __init__(self, students):
         self._students_dict = students
 
-    def dict(self):
-        """Returns a dictionary of the students"""
-        return self._students_dict
-
     def list(self):
         """Returns a list of the students"""
-        self._students_list = []
-        for student in list(self._students_dict.values()):
-            self._students_list.append(student)
-
-        return self._students_list
+        return list(self._students_dict.values())

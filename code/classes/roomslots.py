@@ -39,9 +39,11 @@ class Roomslot:
         self._activity = None
 
     def is_visualized(self):
+        """Check if this roomslot has already been visualized"""
         return self._visualized
 
     def set_visualized(self):
+        """Mark this roomslot as visualized"""
         self._visualized = True
 
     def __str__(self):
@@ -56,13 +58,6 @@ class Roomslots:
     def __init__(self, roomslots):
         self._roomslots_dict = roomslots
 
-    def dict(self):
-        """Returns a dictionary of the roomslots"""
-        return self._roomslots_dict
-
     def list(self):
         """Returns a list of the roomslots"""
-        self._roomslots_list = []
-        for slot in list(self._roomslots_dict.values()):
-            self._roomslots_list.append(slot)
-        return self._roomslots_list
+        return list(self._roomslots_dict.values())

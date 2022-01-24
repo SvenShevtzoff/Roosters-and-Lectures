@@ -17,6 +17,7 @@ import random
 if __name__ == "__main__":
     # checking if algorithm is specified
     if len(sys.argv) < 2:
+<<<<<<< HEAD
         sys.exit("Specify the algorithm to make schedule (greedy, random_alg, baseline)")
 
 #loading data
@@ -45,6 +46,20 @@ schedule.visualize_by_room(rooms)
 
 
 
+=======
+        sys.exit("Specify the algorithm to make schedule (greedy, randomise, baseline)")
+>>>>>>> 40fed18177c1ae199ff7d08fb7bd7f5afa8cdfd2
 
+    
+    #loading data
+    activities, roomslots, students, courses, rooms = load(
+        "data/rooms.csv",
+        "data/courses.csv",
+        "data/students_and_courses.csv")
+    schedule = Schedule(roomslots, activities, students)
+    schedule = randomise(schedule)
+    malus_points = schedule.fitness()
 
+    print(f"Pandapunten: {malus_points}")
 
+    # schedule.visualize_by_room(rooms)
