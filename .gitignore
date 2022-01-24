@@ -136,9 +136,6 @@ testing.py
 plot.py
 schedule.png
 
-testing_course/
-testing_student/
-
 *.png
 *.prof
 *.txt
