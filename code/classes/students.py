@@ -2,6 +2,9 @@
 # student.py with classes student and students
 # =============================================================================
 
+import copy
+
+
 class Student:
 
     def __init__(self, last_name, first_name, student_number, courses):
@@ -10,6 +13,16 @@ class Student:
         self._student_number = student_number
         self._courses = courses
         self._activities = set()
+
+    def copy(self):
+        new = copy.copy(self)
+        new._last_name = copy.copy(self._last_name)
+        new._first_name = copy.copy(self._first_name)
+        new._student_number = copy.copy(self._student_number)
+        new._courses = copy.copy(self._courses)
+        new._activities = copy.copy(self._activities)
+
+        return new
 
     def name(self):
         """Returns name and surname of student"""
@@ -42,3 +55,10 @@ class Students:
     def list(self):
         """Returns a list of the students"""
         return list(self._students_dict.values())
+
+    def copy(self):
+        new = copy.copy(self)
+        new._students_dict = {}
+        for student in self.list():
+            new._students_dict[str(student)] = student.copy()
+        return new
