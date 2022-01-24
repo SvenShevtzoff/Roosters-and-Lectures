@@ -29,3 +29,7 @@ if __name__ == "__main__":
     # print(f"Pandapunten: {malus_points}")
 
     # # schedule.visualize_by_room(rooms)
+
+    # x = randomise(schedule)
+    # print(x)
+    # print(x.copy())

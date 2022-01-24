@@ -1,12 +1,12 @@
 # =============================================================================
-# hillclimber.py with random algoritm functions
+# hillclimber.py with random algorithm functions
 # =============================================================================
 
 from code.algorithms.randomise import randomise
 from code.algorithms.helpers import swap_activities, move_students
 import random
 
-def hill_climber_alg(schedule, iterations, count_until_startover=100, mutations=5):
+def hill_climber_alg(schedule, iterations, count_until_startover=100, mutations=1):
     current_schedule = randomise(schedule)
     old_schedule = current_schedule.copy()
     i = 0 
@@ -19,16 +19,14 @@ def hill_climber_alg(schedule, iterations, count_until_startover=100, mutations=
 
             swap_activities(roomslot1, roomslot2)
 
-        if current_schedule.fitness() >= old_schedule.fitness():
-            current_schedule = old_schedule.copy()
-            print("slechter")
+        if current_schedule.fitness() > old_schedule.fitness():
+            current_schedule = old_schedule
+            print("v")
             i += 1
         else:
             old_schedule = current_schedule.copy()
-            print("beter")
+            print("b")
             i = 0
-  
-        print(current_schedule.fitness())
 
     
         
