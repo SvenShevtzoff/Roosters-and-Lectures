@@ -1,6 +1,7 @@
 # =============================================================================
-# hillclimber.py with random algoritm functions
+# hillclimber.py with random algorithm functions
 # =============================================================================
+from code.algorithms.greedy import greedy
 from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy
 from code.classes.schedule import Schedule
