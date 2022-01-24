@@ -26,7 +26,6 @@ if __name__ == "__main__":
         "data/students_and_courses.csv")
     schedule = Schedule(roomslots, activities, students)
 
-<<<<<<< HEAD
     # checking which algorithm is selected and making a schedule accordingly
     if sys.argv[1] == "randomise":
         best_schedule = randomise(schedule)
@@ -39,11 +38,6 @@ if __name__ == "__main__":
         sys.exit("This algorithm does not exist")
 
     print(f"Pandapunten: {best_schedule.fitness()}")
-=======
-    hill_climber_alg(schedule, 1)
-    # schedule = randomise(schedule)
-    # malus_points = schedule.fitness()
->>>>>>> 651ec1cd580e4029ee41c1d3dc5b83f95230565a
 
     # print(f"Pandapunten: {malus_points}")
 
