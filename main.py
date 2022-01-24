@@ -14,8 +14,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         sys.exit("Specify the algorithm to make schedule (greedy, randomise, baseline)")
 
-    
-    #loading data
+    # loading data
     activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
