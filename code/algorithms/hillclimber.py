@@ -46,9 +46,7 @@ def mutate(schedule):
         
         if all_activities.single(from_activity_key).kind() != "Lecture":
             activities_of_same_course = [activity for activity in activities if all_activities.single(activity).course() == all_activities.single(from_activity_key).course()]
-            print(activities_of_same_course)
             activities_of_same_kind = [activity for activity in activities_of_same_course if all_activities.single(activity).kind() == all_activities.single(from_activity_key).kind()]
-            print(activities_of_same_kind)
             to_activity_key = random.choice(activities_of_same_kind)
 
             if from_activity_key != to_activity_key:
