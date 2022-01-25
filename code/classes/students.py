@@ -28,6 +28,10 @@ class Student:
         """Returns name and surname of student"""
         return f"{self._first_name} {self._last_name}"
 
+    def std_number(self):
+        """Returns student number of student"""
+        return self._student_number
+
     def add_activity(self, activity):
         """Adds an activity object to the activity set of the student"""
         self._activities.add(str(activity))

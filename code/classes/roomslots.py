@@ -61,10 +61,10 @@ class Roomslot:
         self._visualized = True
 
     def __str__(self):
-        return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
+        return f"{self._day} {self._time} {self._room}"
 
     def __repr__(self):
-        return f"Day: {self._day}, time: {self._time}, room: {self._room}, activity: {self._activity}"
+        return f"{self._day} {self._time} {self._room}"
 
 
 class Roomslots:

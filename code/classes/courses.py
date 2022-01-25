@@ -7,15 +7,15 @@ class Course:
     def __init__(self, name):
         self._name = name
         self._activities = set()
-        self._students = []
+        self._students = set()
 
     def add_activity(self, activity):
         """Adds a new activity object to the course object"""
-        self._activities.append(activity)
+        self._activities.add(str(activity))
 
     def add_student(self, student):
         """Adds student object to the course object"""
-        self._students.append(student)
+        self._students.add(student.std_number())
 
     def add_students_to_activities(self):
         """Adds students objects to activty objects"""
