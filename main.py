@@ -23,6 +23,8 @@ if __name__ == "__main__":
         "data/students_and_courses.csv")
     schedule = Schedule(roomslots, activities, students)
 
+    schedule.divide_students()
+
     # checking which algorithm is selected and making a schedule accordingly
     if sys.argv[1] == "randomise":
         best_schedule = randomise(schedule)
