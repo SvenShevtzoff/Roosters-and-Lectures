@@ -3,7 +3,6 @@
 # =============================================================================
 
 import random
-import copy
 from math import ceil
 
 
