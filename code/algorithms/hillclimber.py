@@ -38,7 +38,7 @@ def mutate(schedule):
         roomslot1 = random.choice(schedule.roomslots().list())
         roomslot2 = random.choice(schedule.roomslots().list())
 
-        swap_activities(roomslot1, roomslot2)
+    swap_activities(roomslot1, roomslot2)
 
     if mutation == 2:
         from_activity = random.choice(schedule.activities().list())
