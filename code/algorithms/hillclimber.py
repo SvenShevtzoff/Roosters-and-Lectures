@@ -51,8 +51,7 @@ def merge(schedule, activity_to_merge):
     num_of_groups = len(activities_to_merge)
 
     # if there is more than 1 activity to merge, merge it
-    if len(activities_to_merge) > 1 and activity_to_merge.kind() != "Lecture":
-        num_of_groups = len(activities_to_merge)
+    if len(activities_to_merge) > 1:
         activities_to_remove = activities_to_merge[1:]
 
         # replace students from activities to remove and remove these activities
@@ -101,15 +100,13 @@ def mutate(schedule):
 
     elif mutation == 3:
         activity_to_merge = random.choice(all_activities.list())
-        activity_to_split, num_of_groups = merge(schedule, activity_to_merge)
-        more_or_less = random.choice([-1, 1])
-        if num_of_groups != 1:
-            print(num_of_groups)
-            print(num_of_groups + more_or_less)
-            new_activities = activity_to_split.split_into(num_of_groups + more_or_less, all_students)
-            for activity in new_activities:
-                print(activity.students())
-                all_activities.add_activity(activity)
+        if activity_to_merge.kind() != "Lecture":
+            activity_to_split, num_of_groups = merge(schedule, activity_to_merge)
+            more_or_less = random.choice([-1, 1])
+            if num_of_groups != 1:
+                new_activities = activity_to_split.split_into(num_of_groups + more_or_less, all_students)
+                for activity in new_activities:
+                    all_activities.add_activity(activity)
 
 
 def hill_climber_alg(schedule, mutations=5):
