@@ -18,14 +18,6 @@ class Schedule:
         self._activities = activities
         self._students = students
 
-    def copy(self):
-        new = copy.copy(self)
-        new._roomslots = self._roomslots.copy()
-        new._activities = self._activities.copy()
-        new._students = self._students.copy()
-
-        return new
-
     def roomslots(self):
         """Returns roomslot objects from the schedule"""
         return self._roomslots

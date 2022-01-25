@@ -14,16 +14,6 @@ class Student:
         self._courses = courses
         self._activities = set()
 
-    def copy(self):
-        new = copy.copy(self)
-        new._last_name = copy.copy(self._last_name)
-        new._first_name = copy.copy(self._first_name)
-        new._student_number = copy.copy(self._student_number)
-        new._courses = copy.copy(self._courses)
-        new._activities = copy.copy(self._activities)
-
-        return new
-
     def name(self):
         """Returns name and surname of student"""
         return f"{self._first_name} {self._last_name}"
@@ -62,10 +52,3 @@ class Students:
 
     def single(self, student_key):
         return self._students_dict[student_key]
-
-    def copy(self):
-        new = copy.copy(self)
-        new._students_dict = {}
-        for student in self.list():
-            new._students_dict[student.std_number()] = student.copy()
-        return new
