@@ -1,13 +1,10 @@
 # =============================================================================
 # hillclimber.py with random algorithm functions
 # =============================================================================
-from code.algorithms.greedy import greedy
 from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy
-from code.classes.schedule import Schedule
-from code.load import load
+import copy
 import random
-import time
 
 def swap_activities(roomslot1, roomslot2):
     activity1 = roomslot1.activity()
@@ -64,12 +61,12 @@ def hill_climber_alg(schedule, mutations=5):
 
     try:
         while True:
-            copied_schedule = schedule.copy()
+            copied_schedule = copy.deepcopy(schedule)
             current_schedule = randomise(copied_schedule)
 
             while no_change_count < 250:
                 # copy the schedule
-                new_schedule = current_schedule.copy()
+                new_schedule = copy.deepcopy(current_schedule)
 
                 # make some mutations
                 for _ in range(mutations):
@@ -86,10 +83,10 @@ def hill_climber_alg(schedule, mutations=5):
 
             if best_schedule:
                 if current_schedule.fitness() < best_schedule.fitness():
-                    best_schedule = current_schedule.copy()
+                    best_schedule = copy.deepcopy(current_schedule)
             else:
-                best_schedule = current_schedule.copy()
+                best_schedule = copy.deepcopy(current_schedule)
             no_change_count = 0
 
     except KeyboardInterrupt:
-        return current_schedule
+        return best_schedule
