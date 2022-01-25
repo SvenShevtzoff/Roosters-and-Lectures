@@ -27,7 +27,7 @@ class Schedule:
         return self._activities
 
     def students(self):
-        """Returns student objects form the schedule"""
+        """Returns student objects from the schedule"""
         return self._students
 
     def course_schedule(self, course):
