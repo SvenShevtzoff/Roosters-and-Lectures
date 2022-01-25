@@ -2,9 +2,6 @@
 # student.py with classes student and students
 # =============================================================================
 
-import copy
-
-
 class Student:
 
     def __init__(self, last_name, first_name, student_number, courses):
@@ -27,7 +24,7 @@ class Student:
         self._activities.add(activity_key)
 
     def remove_activity(self, activity_key):
-        """Removes an activity object from the activity set of the student """
+        """Removes an activity object from the activity set of the student"""
         self._activities.remove(activity_key)
 
     def activities(self):
@@ -51,4 +48,5 @@ class Students:
         return list(self._students_dict.values())
 
     def single(self, student_key):
+        """Takes a Student object out of the Students dictionary, given its key"""
         return self._students_dict[student_key]

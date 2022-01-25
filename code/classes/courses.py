@@ -13,6 +13,12 @@ class Course:
         """Adds a new activity object to the course object"""
         self._activities.add(str(activity))
 
+    def activities(self, all_activities):
+        activities = []
+        for activity_key in self._activities:
+            activities.append(all_activities.single(activity_key))
+        return activities
+
     def add_student(self, student):
         """Adds student object to the course object"""
         self._students.add(student.std_number())
@@ -36,7 +42,7 @@ class Courses:
         return list(self._courses_dict.values())
 
     def single(self, course_key):
-        """Returns a single course object"""
+        """Takes a Course object out of the Courses dictionary, given its key"""
         return self._courses_dict[course_key]
 
     def add_students_to_activities_per_course(self, all_activities, all_students):

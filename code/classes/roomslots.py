@@ -2,10 +2,6 @@
 # roomslots.py with classes roomslot and roomslots
 # =============================================================================
 
-from calendar import c
-import copy
-
-
 class Roomslot:
 
     def __init__(self, day, time, room, activity=None):
@@ -40,6 +36,7 @@ class Roomslot:
         self._activity = activity
 
     def remove_activity(self):
+        """Removes an activity from this roomslot"""
         self._activity = None
 
     def is_visualized(self):
@@ -67,4 +64,5 @@ class Roomslots:
         return list(self._roomslots_dict.values())
 
     def single(self, roomslot_key):
+        """Takes a Roomslot object out of the Roomslots dictionary, given its key"""
         return self._roomslots_dict[roomslot_key]
