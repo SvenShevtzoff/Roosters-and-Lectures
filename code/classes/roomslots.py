@@ -76,6 +76,9 @@ class Roomslots:
         """Returns a list of the roomslots"""
         return list(self._roomslots_dict.values())
 
+    def single(self, roomslot_key):
+        return self._roomslots_dict[roomslot_key]
+
     def copy(self):
         new = copy.copy(self)
         new._roomslots_dict = {}
