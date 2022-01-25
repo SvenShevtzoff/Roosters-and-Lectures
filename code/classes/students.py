@@ -67,5 +67,5 @@ class Students:
         new = copy.copy(self)
         new._students_dict = {}
         for student in self.list():
-            new._students_dict[str(student)] = student.copy()
+            new._students_dict[student.std_number()] = student.copy()
         return new
