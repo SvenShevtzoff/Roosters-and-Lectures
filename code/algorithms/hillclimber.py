@@ -58,6 +58,7 @@ def merge(schedule, activity_to_merge):
         for activity in activities_to_remove:
             for student_key in list(activity.students()):
                 move_student(schedule, student_key, str(activity), str(activity_to_keep))
+                activity.roomslot().remove_activity()
             all_activities.remove_activity(str(activity))
 
         return activity_to_keep, num_of_groups
@@ -107,6 +108,12 @@ def mutate(schedule):
                 new_activities = activity_to_split.split_into(num_of_groups + more_or_less, all_students)
                 for activity in new_activities:
                     all_activities.add_activity(activity)
+                    while not activity.roomslot():
+                        slot = random.choice(all_roomslots.list())
+                        if slot.activity():
+                            continue
+                        else:
+                            activity.set_roomslot(slot)
 
 
 def hill_climber_alg(schedule, mutations=5):
