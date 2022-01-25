@@ -27,7 +27,7 @@ def move_student(schedule, student_key, from_activity_key, to_activity_key):
     # obtain the Activities and Student objects
     from_activity = schedule.activities().single(from_activity_key)
     to_activity = schedule.activities().single(to_activity_key)
-    student = schedule.activities().single(student_key)
+    student = schedule.students().single(student_key)
 
     # removing and adding
     from_activity.remove_student(student_key)
@@ -36,33 +36,80 @@ def move_student(schedule, student_key, from_activity_key, to_activity_key):
     student.add_activity(to_activity_key)
 
 
+def merge(schedule, activity_to_merge):
+    """Merges an activity with other activities, if any"""
+    all_activities = schedule.activities()
+    activities_to_merge = []
+
+    # find all activities to merge
+    for activity in all_activities.list():
+        if activity.kind() == activity_to_merge.kind() and activity.course() == activity_to_merge.course():
+            activities_to_merge.append(activity)
+
+    # save the activity to keep and the current number of groups
+    activity_to_keep = activities_to_merge[0]
+    num_of_groups = len(activities_to_merge)
+
+    # if there is more than 1 activity to merge, merge it
+    if len(activities_to_merge) > 1 and activity_to_merge.kind() != "Lecture":
+        num_of_groups = len(activities_to_merge)
+        activities_to_remove = activities_to_merge[1:]
+
+        # replace students from activities to remove and remove these activities
+        for activity in activities_to_remove:
+            for student_key in list(activity.students()):
+                move_student(schedule, student_key, str(activity), str(activity_to_keep))
+            all_activities.remove_activity(str(activity))
+
+        return activity_to_keep, num_of_groups
+    else:
+        return activity_to_merge, 1
+
+
 def mutate(schedule):
     """This function chooses a mutation and then executes it"""
     all_activities = schedule.activities()
     all_roomslots = schedule.roomslots()
-    mutation = random.choice([1, 2])
+    all_students = schedule.students()
+    mutation = random.choice([1, 2, 3])
 
     if mutation == 1:
         # choose two random roomslots and swap their activities
         roomslot1 = random.choice(all_roomslots.list())
         roomslot2 = random.choice(all_roomslots.list())
         swap_activities(roomslot1, roomslot2)
+
     elif mutation == 2:
         # choose a random student from the schedule
-        student = random.choice(schedule.students().list())
+        student = random.choice(all_students.list())
         # these are all activities a student is enrolled in
-        activities = student.activities()
+        activities_keys = student.activities()
         # choose a random activity to move the student from
-        from_activity_key = random.choice(activities)
+        from_activity_key = random.choice(activities_keys)
         
         # if the activity is not a lecture, find activities of the same course and kind and swap student to a random one of these
         if all_activities.single(from_activity_key).kind() != "Lecture":
-            activities_of_same_course = [activity for activity in activities if all_activities.single(activity).course() == all_activities.single(from_activity_key).course()]
-            activities_of_same_kind = [activity for activity in activities_of_same_course if all_activities.single(activity).kind() == all_activities.single(from_activity_key).kind()]
-            to_activity_key = random.choice(activities_of_same_kind)
+            activities_to_choose = []
+            for activity_key in activities_keys:
+                if all_activities.single(activity_key).course() == all_activities.single(from_activity_key).course():
+                    if all_activities.single(activity_key).kind() == all_activities.single(from_activity_key).kind():
+                        activities_to_choose.append(activity_key)
+            to_activity_key = random.choice(activities_to_choose)
 
             if from_activity_key != to_activity_key:
                 move_student(schedule, str(student), from_activity_key, to_activity_key)
+
+    elif mutation == 3:
+        activity_to_merge = random.choice(all_activities.list())
+        activity_to_split, num_of_groups = merge(schedule, activity_to_merge)
+        more_or_less = random.choice([-1, 1])
+        if num_of_groups != 1:
+            print(num_of_groups)
+            print(num_of_groups + more_or_less)
+            new_activities = activity_to_split.split_into(num_of_groups + more_or_less, all_students)
+            for activity in new_activities:
+                print(activity.students())
+                all_activities.add_activity(activity)
 
 
 def hill_climber_alg(schedule, mutations=5):

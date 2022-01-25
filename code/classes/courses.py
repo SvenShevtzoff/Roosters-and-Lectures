@@ -42,7 +42,7 @@ class Courses:
         return list(self._courses_dict.values())
 
     def single(self, course_key):
-        """Returns a single course object"""
+        """Takes a Course object out of the Courses dictionary, given its key"""
         return self._courses_dict[course_key]
 
     def add_students_to_activities_per_course(self, all_activities, all_students):
