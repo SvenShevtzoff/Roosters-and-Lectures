@@ -2,9 +2,6 @@
 # student.py with classes student and students
 # =============================================================================
 
-import copy
-
-
 class Student:
 
     def __init__(self, last_name, first_name, student_number, courses):

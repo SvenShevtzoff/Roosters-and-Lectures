@@ -8,7 +8,6 @@ from collections import defaultdict
 from code.visualize import visualize as vis
 import matplotlib.pyplot as plt
 from math import ceil
-import copy
 
 
 class Schedule:
@@ -64,7 +63,7 @@ class Schedule:
     def conflicts_student(self, student_to_check):
         """Returns all the conflicts of a student"""
         dictionary = defaultdict(list)
-        student_to_check = student_to_check.name()
+        student_to_check = student_to_check.std_number()
         for activity in self._activities.list():
             students = activity.students()
             if student_to_check in students:
@@ -117,6 +116,7 @@ class Schedule:
         return malus_points
 
     def exceed_max_activity_check(self):
+        """Checks if the maximum amount of students in an tutorial/practicum is not exceeded"""
         malus_points = 0
         for activity in self.activities().list():
             if activity.kind() != "Lecture":
