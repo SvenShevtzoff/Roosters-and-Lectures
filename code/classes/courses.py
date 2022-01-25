@@ -6,7 +6,7 @@ class Course:
 
     def __init__(self, name):
         self._name = name
-        self._activities = []
+        self._activities = set()
         self._students = []
 
     def add_activity(self, activity):

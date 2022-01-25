@@ -30,11 +30,11 @@ class Student:
 
     def add_activity(self, activity):
         """Adds an activity object to the activity set of the student"""
-        self._activities.add(activity)
+        self._activities.add(str(activity))
 
     def remove_activity(self, activity):
         """Removes an activity object from the activity set of the student """
-        self._activities.remove(activity)
+        self._activities.remove(str(activity))
 
     def activities(self):
         """Returns a list with activity objects form the student"""

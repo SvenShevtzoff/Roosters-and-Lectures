@@ -15,7 +15,7 @@ class Activity:
         self._course = course
         self._max_stud = max_stud
         self._roomslot = None
-        self._students = {}
+        self._students = set()
 
     def copy(self):
         new = copy.copy(self)
@@ -55,7 +55,7 @@ class Activity:
     def set_students(self, students):
         """Connects a list of students to an activity"""
         for student in students:
-            self._students[str(student)] = student
+            self._students.add(student.std_number())
         for student in students:
             student.add_activity(self)
 
