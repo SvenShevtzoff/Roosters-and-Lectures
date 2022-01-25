@@ -9,7 +9,6 @@ from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.classes.schedule import Schedule
-import pickle
 
 
 if __name__ == "__main__":

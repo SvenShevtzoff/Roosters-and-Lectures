@@ -45,12 +45,8 @@ def hill_climber_alg(schedule, mutations=5):
 
     try:
         while True:
-            activities, roomslots, students, courses, rooms = load(
-                "data/rooms.csv",
-                "data/courses.csv",
-                "data/students_and_courses.csv")
-            schedule = Schedule(roomslots, activities, students)
-            current_schedule = randomise(schedule)
+            copied_schedule = schedule.copy()
+            current_schedule = randomise(copied_schedule)
 
             while no_change_count < 250:
                 # copy the schedule
