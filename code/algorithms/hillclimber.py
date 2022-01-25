@@ -22,42 +22,37 @@ def swap_activities(roomslot1, roomslot2):
     else:
         pass
 
-def move_student(student, from_activity, to_activity):
+
+def move_student(schedule, student_key, from_activity_key, to_activity_key):
     """Moves a student from one activity to another"""
-    from_activity.remove_student(student)
-    student.remove_activity(from_activity)
-    to_activity.add_student(student)
-    student.add_activity(to_activity)
+    schedule.activities().single(from_activity_key).remove_student(student_key)
+    schedule.students.single(student_key).remove_activity(from_activity_key)
+    schedule.activities().single(to_activity_key).add_student(student_key)
+    schedule.students().single(student_key).add_activity(to_activity_key)
 
 def mutate(schedule):
+    all_activities = schedule.activities()
+    all_roomslots = schedule.roomslots()
     mutation = random.choice([1, 2])
 
-    print(mutation)
-
     if mutation == 1:
-        roomslot1 = random.choice(schedule.roomslots().list())
-        roomslot2 = random.choice(schedule.roomslots().list())
+        roomslot1 = random.choice(all_roomslots.list())
+        roomslot2 = random.choice(all_roomslots.list())
+        swap_activities(roomslot1, roomslot2)
+    elif mutation == 2:
+        student = random.choice(schedule.students().list()) # student object
+        activities = student.activities()
+        from_activity_key = random.choice(activities) # string activity
+        
+        if all_activities.single(from_activity_key).kind() != "Lecture":
+            activities_of_same_course = [activity for activity in activities if all_activities.single(activity).course() == all_activities.single(from_activity_key).course()]
+            print(activities_of_same_course)
+            activities_of_same_kind = [activity for activity in activities_of_same_course if all_activities.single(activity).kind() == all_activities.single(from_activity_key).kind()]
+            print(activities_of_same_kind)
+            to_activity_key = random.choice(activities_of_same_kind)
 
-    swap_activities(roomslot1, roomslot2)
-
-    if mutation == 2:
-        from_activity = random.choice(schedule.activities().list())
-        if from_activity.kind() == "Tutorial" or from_activity.kind() == "Practicum":
-            student = random.choice(list(from_activity.students().values()))
-            print(type(student))
-            kind = from_activity.kind()
-            course = from_activity.course()
-            activities_of_this_kind = [activity for activity in course.activities() if activity.kind() == kind]
-            to_activity = random.choice(activities_of_this_kind)
-            if from_activity != to_activity:
-                print(f"Moving to: {to_activity}")
-    
-                print()
-
-                move_student(student, from_activity, to_activity)
-
-                for activity in student.activities():
-                    print(activity)
+            if from_activity_key != to_activity_key:
+                move_student(schedule, str(student), from_activity_key, to_activity_key)
 
 
 def hill_climber_alg(schedule, mutations=5):

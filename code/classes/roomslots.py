@@ -15,16 +15,6 @@ class Roomslot:
         self._activity = activity
         self._visualized = False
 
-    def copy(self):
-        new = copy.copy(self)
-        new._day = copy.copy(self._day)
-        new._time = copy.copy(self._time)
-        new._room = copy.copy(self._room)
-        new._activity = copy.copy(self._activity)
-        new._visualized = False
-        
-        return new
-
     def day(self):
         """Returns the day of the roomslot"""
         return self._day
@@ -78,10 +68,3 @@ class Roomslots:
 
     def single(self, roomslot_key):
         return self._roomslots_dict[roomslot_key]
-
-    def copy(self):
-        new = copy.copy(self)
-        new._roomslots_dict = {}
-        for slot in self.list():
-            new._roomslots_dict[str(slot)] = slot.copy()
-        return new
