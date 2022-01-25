@@ -17,13 +17,10 @@ class Course:
         """Adds student object to the course object"""
         self._students.add(student.std_number())
 
-    def activities(self):
-        return self._activities
-
-    def add_students_to_activities(self):
+    def add_students_to_activities(self, all_activities, all_students):
         """Adds students objects to activty objects"""
-        for activity in self._activities:
-            activity.set_students(self._students)
+        for activity_key in self._activities:
+            all_activities.single(activity_key).set_students(self._students, all_students)
 
     def __str__(self):
         return f"{self._name}"
@@ -38,11 +35,11 @@ class Courses:
         """Returns a list of the courses obj"""
         return list(self._courses_dict.values())
 
-    def single(self, course):
+    def single(self, course_key):
         """Returns a single course object"""
-        return self._courses_dict[course]
+        return self._courses_dict[course_key]
 
-    def add_students_to_activities_per_course(self):
+    def add_students_to_activities_per_course(self, all_activities, all_students):
         """Adds students objects to activity objects per course object"""
         for course in self.list():
-            course.add_students_to_activities()
+            course.add_students_to_activities(all_activities, all_students)

@@ -52,20 +52,20 @@ class Activity:
         """Returns the couse object of an activity"""
         return self._course
 
-    def set_students(self, students):
+    def set_students(self, students, all_students):
         """Connects a list of students to an activity"""
         for student in students:
-            self._students.add(student.std_number())
+            self._students.add(student)
         for student in students:
-            student.add_activity(self)
+            all_students.single(student).add_activity(str(self))
 
-    def add_student(self, student):
+    def add_student(self, student_key):
         """Adds a student object to the studentlist of that activtiy"""
-        self._students[str(student)] = student
+        self._students.add(student_key)
 
-    def remove_student(self, student):
+    def remove_student(self, student_key):
         """Removes a student object from the studentlist of that activtiy"""
-        self._students.pop(str(student))
+        self._students.remove(student_key)
 
     def students(self):
         """Returns all student objects from that activity"""
@@ -75,7 +75,7 @@ class Activity:
         """Returns the number of enrolled students"""
         return len(self._students)
 
-    def split_into(self, amount):
+    def split_into(self, amount, all_students):
         """Splits the activities in groups that fit the restictions of groupsize"""
         new_activities = []
         # creating new activities
@@ -87,21 +87,22 @@ class Activity:
 
         # moving students to new activities
         for new_activity in new_activities:
-            new_activity.course().add_activity(new_activity)
-            new_students = random.sample(list(self._students.values()), amount_students_per_activity)
-            for new_student in new_students:
+            new_students = random.sample(self._students, amount_students_per_activity)
+            for new_student_key in new_students:
                 # removing from current activity
-                new_student.remove_activity(self)
-                self.remove_student(new_student)
+                all_students.single(new_student_key).remove_activity(str(self))
+                self.remove_student(new_student_key)
 
                 # adding to new activity
-                new_student.add_activity(new_activity)
-                
-                new_activity.add_student(new_student)
+                all_students.single(new_student_key).add_activity(str(new_activity))
+                new_activity.add_student(new_student_key)
 
         return new_activities
 
     def __str__(self):
+        return f"{self._kind} {self._course} {self._unique_id}"
+
+    def __repr__(self):
         return f"{self._kind} {self._course} {self._unique_id}"
 
 
@@ -118,6 +119,13 @@ class Activities:
     def list(self):
         """Returns a list of the activtities"""
         return list(self._activities_dict.values())
+
+    def dict(self):
+        return self._activities_dict
+
+    def single(self, activity_key):
+        """Returns an Activity object, given its key"""
+        return self._activities_dict[activity_key]
 
     def add_activity(self, activity):
         """Add a new activity"""

@@ -64,7 +64,7 @@ class Schedule:
             if activity.kind() != "Lecture":
                 amount = ceil(activity.num_of_enrolled_students() / activity.max_stud())
                 if amount > 1:
-                    activities_to_add = activities_to_add + activity.split_into(amount)
+                    activities_to_add = activities_to_add + activity.split_into(amount, self.students())
 
         for activity in activities_to_add:
             all_activities.add_activity(activity)
@@ -158,7 +158,7 @@ class Schedule:
         for student in self.students().list():
             students_activities = student.activities()
             for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
-                students_activities_per_day = [activity for activity in students_activities if activity.roomslot().day() == day]
+                students_activities_per_day = [self.activities().single(activity) for activity in students_activities if self.activities().single(activity).roomslot().day() == day]
                 students_activities_sorted = sorted(students_activities_per_day, key=lambda x: x.roomslot().time(), reverse=True)
                 # dummy activity
                 previous_activity = Activity("dummy_id", "dummy_kind", "dummy_course")

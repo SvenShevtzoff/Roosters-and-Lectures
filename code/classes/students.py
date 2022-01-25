@@ -32,13 +32,13 @@ class Student:
         """Returns student number of student"""
         return self._student_number
 
-    def add_activity(self, activity):
+    def add_activity(self, activity_key):
         """Adds an activity object to the activity set of the student"""
-        self._activities.add(str(activity))
+        self._activities.add(activity_key)
 
-    def remove_activity(self, activity):
+    def remove_activity(self, activity_key):
         """Removes an activity object from the activity set of the student """
-        self._activities.remove(str(activity))
+        self._activities.remove(activity_key)
 
     def activities(self):
         """Returns a list with activity objects form the student"""
@@ -60,9 +60,12 @@ class Students:
         """Returns a list of the students"""
         return list(self._students_dict.values())
 
+    def single(self, student_key):
+        return self._students_dict[student_key]
+
     def copy(self):
         new = copy.copy(self)
         new._students_dict = {}
         for student in self.list():
-            new._students_dict[str(student)] = student.copy()
+            new._students_dict[student.std_number()] = student.copy()
         return new
