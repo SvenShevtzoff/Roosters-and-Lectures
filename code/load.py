@@ -65,7 +65,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
                     activities[f"Practicum {course_name} {i}"] = new_activity
                     courses[course_name].add_activity(new_activity)
 
-    # creating activities and courses objects
+    # creating Activities and Courses objects
     activities = Activities(activities)
     courses = Courses(courses)
 
@@ -78,7 +78,7 @@ def load(file_name_rooms, file_name_courses, file_name_students):
             else:
                 times2 = times
             for time in times2:
-                roomslots[f"Day: {day}, time: {time}, room: {room}"] = Roomslot(day, time, room)
+                roomslots[f"{day} {time} {room}"] = Roomslot(day, time, room)
 
     # creating Roomslots object
     roomslots = Roomslots(roomslots)

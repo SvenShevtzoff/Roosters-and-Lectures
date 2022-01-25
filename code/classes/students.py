@@ -28,16 +28,17 @@ class Student:
         """Returns name and surname of student"""
         return f"{self._first_name} {self._last_name}"
 
-    def courses(self):
-        return self._courses
+    def std_number(self):
+        """Returns student number of student"""
+        return self._student_number
 
     def add_activity(self, activity):
         """Adds an activity object to the activity set of the student"""
-        self._activities.add(activity)
+        self._activities.add(str(activity))
 
     def remove_activity(self, activity):
         """Removes an activity object from the activity set of the student """
-        self._activities.remove(activity)
+        self._activities.remove(str(activity))
 
     def activities(self):
         """Returns a list with activity objects form the student"""
