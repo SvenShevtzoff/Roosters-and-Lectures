@@ -2,10 +2,6 @@
 # roomslots.py with classes roomslot and roomslots
 # =============================================================================
 
-from calendar import c
-import copy
-
-
 class Roomslot:
 
     def __init__(self, day, time, room, activity=None):

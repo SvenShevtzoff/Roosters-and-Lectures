@@ -13,6 +13,12 @@ class Course:
         """Adds a new activity object to the course object"""
         self._activities.add(str(activity))
 
+    def activities(self, all_activities):
+        activities = []
+        for activity_key in self._activities:
+            activities.append(all_activities.single(activity_key))
+        return activities
+
     def add_student(self, student):
         """Adds student object to the course object"""
         self._students.add(student.std_number())
