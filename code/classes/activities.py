@@ -87,6 +87,7 @@ class Activity:
 
         # moving students to new activities
         for new_activity in new_activities:
+            new_activity.course().add_activity(new_activity)
             new_students = random.sample(list(self._students.values()), amount_students_per_activity)
             for new_student in new_students:
                 # removing from current activity
@@ -95,6 +96,7 @@ class Activity:
 
                 # adding to new activity
                 new_student.add_activity(new_activity)
+                
                 new_activity.add_student(new_student)
 
         return new_activities

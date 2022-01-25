@@ -16,13 +16,14 @@ def swap_activities(roomslot1, roomslot2):
     elif activity1 and not activity2:
         activity1.set_roomslot(roomslot2)
         roomslot1.remove_activity()
-    else:
-        pass
+    # else:
+    #     pass
 
 
-def move_students(student, from_activity, to_activity):
+def move_student(student, from_activity, to_activity):
     """Moves a student from one activity to another"""
     from_activity.remove_student(student)
     student.remove_activity(from_activity)
     to_activity.add_student(student)
     student.add_activity(to_activity)
+

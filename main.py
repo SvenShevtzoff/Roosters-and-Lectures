@@ -11,7 +11,7 @@ from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.classes.schedule import Schedule
 from code.algorithms.hillclimber import hill_climber_alg
 
-ITERATIONS = 100
+ITERATIONS = 100000
 
 
 if __name__ == "__main__":
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     elif sys.argv[1] == "greedy":
         best_schedule = gr(schedule)
     elif sys.argv[1] == "hillclimber":
-        best_schedule = hc(schedule, ITERATIONS)
+        best_schedule = hc(schedule, ITERATIONS, 5)
     else:
         # when no matching algorithm is found exit
         sys.exit("This algorithm does not exist")

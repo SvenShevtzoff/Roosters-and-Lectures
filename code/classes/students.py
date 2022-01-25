@@ -28,6 +28,9 @@ class Student:
         """Returns name and surname of student"""
         return f"{self._first_name} {self._last_name}"
 
+    def courses(self):
+        return self._courses
+
     def add_activity(self, activity):
         """Adds an activity object to the activity set of the student"""
         self._activities.add(activity)

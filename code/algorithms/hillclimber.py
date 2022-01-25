@@ -21,8 +21,7 @@ def swap_activities(roomslot1, roomslot2):
     else:
         pass
 
-
-def move_students(student, from_activity, to_activity):
+def move_student(student, from_activity, to_activity):
     """Moves a student from one activity to another"""
     from_activity.remove_student(student)
     student.remove_activity(from_activity)
@@ -30,12 +29,37 @@ def move_students(student, from_activity, to_activity):
     student.add_activity(to_activity)
 
 def mutate(schedule):
-    roomslot1 = random.choice(schedule.roomslots().list())
-    roomslot2 = random.choice(schedule.roomslots().list())
+    mutation = random.choice([1, 2])
 
-    swap_activities(roomslot1, roomslot2)
+    print(mutation)
 
-def hill_climber_alg(schedule, iterations):
+    if mutation == 1:
+        roomslot1 = random.choice(schedule.roomslots().list())
+        roomslot2 = random.choice(schedule.roomslots().list())
+
+        swap_activities(roomslot1, roomslot2)
+
+    if mutation == 2:
+        from_activity = random.choice(schedule.activities().list())
+        if from_activity.kind() == "Tutorial" or from_activity.kind() == "Practicum":
+            student = random.choice(list(from_activity.students().values()))
+            print(type(student))
+            kind = from_activity.kind()
+            course = from_activity.course()
+            activities_of_this_kind = [activity for activity in course.activities() if activity.kind() == kind]
+            to_activity = random.choice(activities_of_this_kind)
+            if from_activity != to_activity:
+                print(f"Moving to: {to_activity}")
+    
+                print()
+
+                move_student(student, from_activity, to_activity)
+
+                for activity in student.activities():
+                    print(activity)
+
+
+def hill_climber_alg(schedule, iterations, mutations):
     current_schedule = randomise(schedule)
 
     for iteration in range(iterations):
@@ -43,16 +67,14 @@ def hill_climber_alg(schedule, iterations):
         new_schedule = current_schedule.copy()
 
         # maak een mutatie
-        mutate(new_schedule)
+        for _ in range(mutations):
+            mutate(new_schedule)
 
-        if current_schedule.fitness() > old_schedule.fitness():
-            current_schedule = old_schedule
-            i += 1
-        else:
-            old_schedule = current_schedule.copy()
-            i = 0
-        
-        print(current_schedule.fitness(), i)
+        if new_schedule.fitness() <= current_schedule.fitness():
+            print(new_schedule.fitness())
+            current_schedule = new_schedule
+
+    return current_schedule
         
 
     

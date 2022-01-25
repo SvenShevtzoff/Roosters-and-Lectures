@@ -17,6 +17,9 @@ class Course:
         """Adds student object to the course object"""
         self._students.append(student)
 
+    def activities(self):
+        return self._activities
+
     def add_students_to_activities(self):
         """Adds students objects to activty objects"""
         for activity in self._activities:
