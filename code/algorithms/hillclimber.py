@@ -142,9 +142,9 @@ def hill_climber_alg(schedule, mutations=5):
 
             if best_schedule:
                 if current_schedule.fitness() < best_schedule.fitness():
-                    best_schedule = copy.deepcopy(current_schedule)
+                    best_schedule = current_schedule
             else:
-                best_schedule = copy.deepcopy(current_schedule)
+                best_schedule = current_schedule
             no_change_count = 0
 
     except KeyboardInterrupt:
