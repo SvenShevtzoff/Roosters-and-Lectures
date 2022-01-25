@@ -9,9 +9,7 @@ from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.classes.schedule import Schedule
-from code.algorithms.hillclimber import hill_climber_alg
-
-ITERATIONS = 100000
+import pickle
 
 
 if __name__ == "__main__":
@@ -32,17 +30,11 @@ if __name__ == "__main__":
     elif sys.argv[1] == "greedy":
         best_schedule = gr(schedule)
     elif sys.argv[1] == "hillclimber":
-        best_schedule = hc(schedule, ITERATIONS, 5)
+        best_schedule = hc(schedule)
     else:
         # when no matching algorithm is found exit
         sys.exit("This algorithm does not exist")
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
-    # print(f"Pandapunten: {malus_points}")
-
-    # # schedule.visualize_by_room(rooms)
-
-    # x = randomise(schedule)
-    # print(x)
-    # print(x.copy())
+    schedule.visualize_by_room(rooms)
