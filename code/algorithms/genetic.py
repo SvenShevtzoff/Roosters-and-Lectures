@@ -12,29 +12,42 @@ def genetic(schedule, n=10):
         random_schedule = randomise(copied_schedule)
         scores[random_schedule] = random_schedule.fitness()
 
-    two_best_schedules = []
+    while len(scores) > 1:
+        mean = sum(scores.values()) / len(scores)
+        print(f"Number of schedules: {len(scores)}")
+        print(f"Average malus points: {mean}")
+        two_best_schedules = []
 
-    mother = min(scores.items(), key=operator.itemgetter(1))[0]
-    two_best_schedules.append(mother)
+        mother = max(scores.items(), key=operator.itemgetter(1))[0]
+        two_best_schedules.append(mother)
 
-    scores.pop(mother)
+        scores.pop(mother)
 
-    father = min(scores.items(), key=operator.itemgetter(1))[0]
-    two_best_schedules.append(father)
+        father = max(scores.items(), key=operator.itemgetter(1))[0]
+        two_best_schedules.append(father)
 
-    print(mother.fitness())
-    print(father.fitness())
+        scores.pop(father)
 
-    child = copy.deepcopy(schedule)
-    child.divide_students()
+        print(mother.fitness())
+        print(father.fitness())
 
-    for activity in child.activities().list():
-        mothers_roomslot = mother.activities().dict()[str(activity)].roomslot()
-        fathers_roomslot = father.activities().dict()[str(activity)].roomslot()
-        roomslots_to_choose = [mothers_roomslot, fathers_roomslot]
-        roomslot = random.choice(roomslots_to_choose)
-        activity.set_roomslot(roomslot)
+        fitness = max(mother.fitness(), father.fitness())
+        while fitness >= (mother.fitness() and father.fitness()):
+            child = copy.deepcopy(schedule)
+            child.divide_students()
+            for activity in child.activities().list():
+                mothers_roomslot = mother.activities().dict()[str(activity)].roomslot()
+                fathers_roomslot = father.activities().dict()[str(activity)].roomslot()
+                roomslots_to_choose = [mothers_roomslot, fathers_roomslot]
+                roomslot = random.choice(roomslots_to_choose)
+                activity.set_roomslot(roomslot)
+            fitness = child.fitness()
+
         print(child.fitness())
+
+        scores[child] = child.fitness()
+    
+    print(scores)
 
 
 
