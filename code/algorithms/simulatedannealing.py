@@ -35,7 +35,7 @@ def check_solution(new_schedule, current_schedule, no_change_count, temperature)
 
     return no_change_count, temperature
 
-def simulated_annealing(schedule, mutations=5):
+def simulated_annealing(schedule, mutations=1):
     """The simulated annealing algorithm"""
     best_schedule = None
     iteration_counter_total = 0
@@ -52,7 +52,7 @@ def simulated_annealing(schedule, mutations=5):
             # reset temperature to 1
             temperature = 1
 
-            while no_change_count < 250:
+            while no_change_count < 1000:
                 iteration_counter_local += 1
                 print(iteration_counter_local)
                 # copy the schedule
