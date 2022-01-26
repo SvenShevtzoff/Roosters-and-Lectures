@@ -138,7 +138,7 @@ def visualize_course(schedule, course):
     return plot
 
 
-def visualize_student(schedule, student):
+def visualize_student(schedule, student, students):
     '''Visualizing the schedule for one student'''
     plot = plot_setup()
 
@@ -208,6 +208,7 @@ def visualize_student(schedule, student):
                 conflict.set_visualized()
 
     # printing the rest of the activities
+    student = students.single(student)
     student_schedule = schedule.student_schedule(student.name())
     for slot in student_schedule:
         if not slot.is_visualized():

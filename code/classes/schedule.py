@@ -64,7 +64,6 @@ class Schedule:
     def conflicts_student(self, student_to_check):
         """Returns all the conflicts of a student"""
         dictionary = defaultdict(list)
-        student_to_check = student_to_check.std_number()
         for activity in self._activities.list():
             students = activity.students()
             if student_to_check in students:
