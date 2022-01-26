@@ -3,7 +3,7 @@ import copy
 import operator
 import random
 
-def genetic(schedule, n=100):
+def genetic(schedule, n=10):
 
     scores = {}
 
