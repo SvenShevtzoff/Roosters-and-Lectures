@@ -31,19 +31,23 @@ def genetic(schedule, n=10):
         print(mother.fitness())
         print(father.fitness())
 
-        child = copy.deepcopy(schedule)
-        child.divide_students()
-
-        for activity in child.activities().list():
-            mothers_roomslot = mother.activities().dict()[str(activity)].roomslot()
-            fathers_roomslot = father.activities().dict()[str(activity)].roomslot()
-            roomslots_to_choose = [mothers_roomslot, fathers_roomslot]
-            roomslot = random.choice(roomslots_to_choose)
-            activity.set_roomslot(roomslot)
+        fitness = max(mother.fitness(), father.fitness())
+        while fitness >= (mother.fitness() and father.fitness()):
+            child = copy.deepcopy(schedule)
+            child.divide_students()
+            for activity in child.activities().list():
+                mothers_roomslot = mother.activities().dict()[str(activity)].roomslot()
+                fathers_roomslot = father.activities().dict()[str(activity)].roomslot()
+                roomslots_to_choose = [mothers_roomslot, fathers_roomslot]
+                roomslot = random.choice(roomslots_to_choose)
+                activity.set_roomslot(roomslot)
+            fitness = child.fitness()
 
         print(child.fitness())
 
         scores[child] = child.fitness()
+    
+    print(scores)
 
 
 
