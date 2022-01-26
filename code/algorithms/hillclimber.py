@@ -2,7 +2,6 @@
 # hillclimber.py with random algorithm functions
 # =============================================================================
 from code.algorithms.randomise import randomise
-from code.algorithms.greedy import greedy
 import copy
 import random
 

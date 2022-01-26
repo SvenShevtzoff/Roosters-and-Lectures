@@ -1,4 +1,7 @@
+import imp
+from code.algorithms.greedy import greedy
 from code.algorithms.randomise import randomise
+from code.algorithms.greedy import greedy
 import copy
 import operator
 import random
@@ -32,7 +35,7 @@ def genetic(schedule, n=10):
         print(father.fitness())
 
         fitness = max(mother.fitness(), father.fitness())
-        while fitness >= (mother.fitness() and father.fitness()):
+        while fitness >= (mother.fitness() or father.fitness()):
             child = copy.deepcopy(schedule)
             child.divide_students()
             for activity in child.activities().list():
