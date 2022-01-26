@@ -114,7 +114,6 @@ def mutate(schedule):
                         else:
                             activity.set_roomslot(slot)
 
-k = []
 def hill_climber_alg(schedule, mutations=1):
     """The hill climber algorithm"""
     no_change_count = 0
@@ -149,8 +148,6 @@ def hill_climber_alg(schedule, mutations=1):
             else:
                 best_schedule = current_schedule
             no_change_count = 0
-
-            k.append(best_schedule)
 
     except KeyboardInterrupt:
         return best_schedule

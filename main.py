@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     schedule.divide_students()
 
-    # checking which algorithm is selected and making a schedule accordingly
+    # checking which algorithm is selected and making a schedule accordingl
     if sys.argv[1] == "randomise":
         best_schedule = randomise(schedule)
     elif sys.argv[1] == "greedy":
@@ -45,4 +45,5 @@ if __name__ == "__main__":
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
-    # schedule.visualize_by_room(rooms)
+    best_schedule.visualize_by_room(rooms)
+    
