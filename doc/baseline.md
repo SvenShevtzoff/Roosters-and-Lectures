@@ -1,6 +1,6 @@
 # Baseline
 
-For the baseline, we ran an algorithm that produces a random schedule. We created lectures, practica and tutorials (in a general class called `Activity`) for each course, adjusted to the amount of students that signed up for the course. Sometimes, more than one tutorial/practicum needs to be created because the number of students enrolled is larger than the maximum number of students allowed in a tutorial/pracitcum. After this, we chose a random roomslot for every activity. We did not take into account the maximum amount of students allowed in a room. If we would have done so, the algorithm would become less random. We ran the code 10000 times, calculating the number of malus points at every run. The results can be seen in the histogram below.
+For the baseline, we ran an algorithm that produces a random schedule. We created lectures, practica and tutorials (in a general class called `Activity`) for each course, adjusted to the amount of students that signed up for the course. Sometimes, more than one tutorial/practicum needs to be created because the number of students enrolled is larger than the maximum number of students allowed in a tutorial/pracitcum. After this, we chose a random roomslot for every activity. We did not take into account the maximum amount of students allowed in a room. If we would have done so, the algorithm would become less random. We ran the code 50000 times, calculating the number of malus points at every run. The results can be seen in the histogram below.
 
 
 ## Bias

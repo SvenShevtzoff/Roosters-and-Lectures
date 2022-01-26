@@ -22,7 +22,6 @@ time_to_ycoord = {
 
 def visualize_room(schedule, room):
     plot = plot_setup()
-
     schedule = schedule.room_schedule(room)
 
     for slot in schedule:
