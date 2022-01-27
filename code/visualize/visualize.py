@@ -138,12 +138,12 @@ def visualize_course(schedule, course):
     plt.savefig(f"doc/output/schedule_{course}.png")
 
 
-def visualize_student(schedule, student, students):
-    '''Visualizing the schedule for one student'''
+def visualize_student(schedule, student_number):
+    '''Visualizing the schedule for one student, WARNING: make sure to enter student number'''
     plot = plot_setup()
 
     # plotting all activity conflicts
-    conflicts_list = schedule.conflicts_student(student)
+    conflicts_list = schedule.conflicts_student(student_number)
 
     for conflicts in conflicts_list:
         # drawing red box around conflict
@@ -208,8 +208,7 @@ def visualize_student(schedule, student, students):
                 conflict.set_visualized()
 
     # printing the rest of the activities
-    student = students.single(student)
-    student_schedule = schedule.student_schedule(student.name())
+    student_schedule = schedule.student_schedule(student_number)
     for slot in student_schedule:
         if not slot.is_visualized():
             # calculating x and y coordinates according to day and time
@@ -229,7 +228,7 @@ def visualize_student(schedule, student, students):
 
     # plot
     plot.grid(True)
-    return plot
+    plt.savefig(f"doc/output/schedule_{student_number}.png")
 
 
 def plot_setup():

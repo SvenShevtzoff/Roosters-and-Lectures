@@ -38,13 +38,13 @@ class Schedule:
         """Returns a schedule for a given room"""
         return [x for x in self._roomslots.list() if str(room) == x.room().roomnumber() and x.activity() is not None]
 
-    def student_schedule(self, student):
+    def student_schedule(self, student_number):
         """Returns a schedule for a given student"""
         schedule = []
-        for x in self._activities.list():
-            student_names = [i.name() for i in x.students()]
-            if student in student_names:
-                schedule.append(x.roomslot())
+        for activity in self._activities.list():
+            student_numbers = [student for student in activity.students()]
+            if student_number in student_numbers:
+                schedule.append(activity.roomslot())
         return schedule
 
     def divide_students(self):
