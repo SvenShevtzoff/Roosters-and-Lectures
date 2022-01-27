@@ -115,7 +115,7 @@ def mutate(schedule):
                             activity.set_roomslot(slot)
 
 
-def hill_climber_alg(schedule, mutations=5):
+def hill_climber_alg(schedule, mutations=1):
     """The hill climber algorithm"""
     no_change_count = 0
     best_schedule = None
@@ -126,7 +126,7 @@ def hill_climber_alg(schedule, mutations=5):
             copied_schedule = copy.deepcopy(schedule)
             current_schedule = randomise(copied_schedule)
 
-            while no_change_count < 10:
+            while no_change_count < 250:
                 # copy the schedule
                 new_schedule = copy.deepcopy(current_schedule)
 

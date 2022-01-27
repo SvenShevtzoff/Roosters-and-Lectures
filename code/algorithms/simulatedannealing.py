@@ -33,9 +33,9 @@ def check_solution(new_schedule, current_schedule, no_change_count, temperature)
     if temperature > 0.001:
         temperature -= TEMPERATURE_INTERVAL
 
-    return no_change_count, temperature
+    return no_change_count, temperature, current_schedule
 
-def simulated_annealing(schedule, mutations=5):
+def simulated_annealing(schedule, mutations=1):
     """The simulated annealing algorithm"""
     best_schedule = None
     iteration_counter_total = 0
@@ -46,15 +46,11 @@ def simulated_annealing(schedule, mutations=5):
             copied_schedule = copy.deepcopy(schedule)
             current_schedule = randomise(copied_schedule)
             no_change_count = 0
-            iteration_counter_total += 1
-            iteration_counter_local = 0
 
             # reset temperature to 1
             temperature = 1
 
             while no_change_count < 250:
-                iteration_counter_local += 1
-                print(iteration_counter_local)
                 # copy the schedule
                 new_schedule = copy.deepcopy(current_schedule)
 
@@ -63,7 +59,7 @@ def simulated_annealing(schedule, mutations=5):
                     mutate(new_schedule)
 
                 # check if the mutation is accepted
-                no_change_count, temperature = check_solution(new_schedule, current_schedule, no_change_count, temperature)
+                no_change_count, temperature, current_schedule = check_solution(new_schedule, current_schedule, no_change_count, temperature)
 
             # when iteration is done, save the schedule if it is the best schedule overall
             if best_schedule:
