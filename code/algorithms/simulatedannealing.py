@@ -50,7 +50,7 @@ def simulated_annealing(schedule, mutations=1):
             # reset temperature to 1
             temperature = 1
 
-            while no_change_count < 250:
+            while no_change_count < 1000:
                 # copy the schedule
                 new_schedule = copy.deepcopy(current_schedule)
 
