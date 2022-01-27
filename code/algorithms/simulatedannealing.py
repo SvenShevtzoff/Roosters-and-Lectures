@@ -35,6 +35,7 @@ def check_solution(new_schedule, current_schedule, no_change_count, temperature)
 
     return no_change_count, temperature
 
+
 def simulated_annealing(schedule, mutations=1):
     """The simulated annealing algorithm"""
     best_schedule = None
@@ -42,6 +43,7 @@ def simulated_annealing(schedule, mutations=1):
 
     try:
         while True:
+
             # copy 'empty' schedule and fill it in by randomising a schedule
             copied_schedule = copy.deepcopy(schedule)
             current_schedule = randomise(copied_schedule)
