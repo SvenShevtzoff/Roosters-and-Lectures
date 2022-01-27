@@ -9,6 +9,9 @@ class Course:
         self._activities = set()
         self._students = set()
 
+    def name(self):
+        return self._name
+
     def add_activity(self, activity):
         """Adds a new activity object to the course object"""
         self._activities.add(str(activity))

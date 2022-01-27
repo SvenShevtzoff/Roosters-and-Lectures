@@ -42,7 +42,7 @@ def visualize_room(schedule, room):
 
     # plot
     plot.grid(True)
-    return plot
+    plt.savefig(f"doc/output/schedule_{str(room)}.png")
 
 
 def visualize_course(schedule, course):
@@ -135,7 +135,7 @@ def visualize_course(schedule, course):
 
     # plot
     plot.grid(True)
-    return plot
+    plt.savefig(f"doc/output/schedule_{course}.png")
 
 
 def visualize_student(schedule, student, students):
