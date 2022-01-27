@@ -77,7 +77,7 @@ class Schedule:
         course_activities = []
         for activity in self._activities.list():
             if str(activity.course()) == course_name:
-                course_activities = activity.course().activities()
+                course_activities = activity.course().activities(self._activities)
                 break
 
         for activity in course_activities:
@@ -198,4 +198,3 @@ class Schedule:
         """Generates a visualisation per room"""
         for room in rooms.list():
             vis.visualize_room(self, room)
-            plt.savefig(f"doc/output/schedule_{str(room)}.png")

@@ -12,7 +12,7 @@ from code.algorithms.hillclimber import hill_climber_alg_1000 as hc1000
 from code.algorithms.genetic import genetic as gen
 from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.classes.schedule import Schedule
-from code.visualize.visualize import visualize_student
+from code.visualize.visualize import visualize_student, visualize_course
 
 
 if __name__ == "__main__":
@@ -48,4 +48,6 @@ if __name__ == "__main__":
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
-    schedule.visualize_by_room(rooms)
+    visualize_course(best_schedule, "Bioinformatica")
+
+    # schedule.visualize_by_room(rooms)
