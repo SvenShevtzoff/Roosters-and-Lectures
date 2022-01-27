@@ -45,4 +45,4 @@ if __name__ == "__main__":
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
-    # schedule.visualize_by_room(rooms)
+    best_schedule.visualize_by_room(rooms)
