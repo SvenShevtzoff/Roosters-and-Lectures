@@ -9,6 +9,7 @@ from collections import defaultdict
 from code.visualize import visualize as vis
 import matplotlib.pyplot as plt
 from math import ceil
+import csv
 
 
 class Schedule:
@@ -198,3 +199,20 @@ class Schedule:
         """Generates a visualisation per room"""
         for room in rooms.list():
             vis.visualize_room(self, room)
+
+    def output(self):
+        with open('doc/output/output.csv', 'w') as file:
+            writer = csv.writer(file)
+
+            #write the header
+            header = ['student', 'course', 'activity', 'room', 'day', 'time']
+            writer.writerow(header)
+
+            #write the data
+            for student in self._students.list():
+                for activity in student.activities():
+                    activity = self._activities.single(activity)
+                    roomslot = activity.roomslot()
+                    data = [student.name(), str(activity.course()), activity.__repr__(), roomslot.room(), roomslot.day(), roomslot.time()]
+                    writer.writerow(data)
+

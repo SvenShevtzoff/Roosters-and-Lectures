@@ -143,7 +143,7 @@ def hill_climber_alg(schedule, mutations=1):
             copied_schedule = copy.deepcopy(schedule)
             current_schedule = randomise(copied_schedule)
 
-            while no_change_count < 1000:
+            while no_change_count < 100:
                 # copy the schedule
                 new_schedule = copy.deepcopy(current_schedule)
 

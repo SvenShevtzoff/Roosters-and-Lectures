@@ -24,7 +24,7 @@ if __name__ == "__main__":
     activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
-        "data/students_and_courses.csv")
+        "data/students.csv")
     schedule = Schedule(roomslots, activities, students)
 
     schedule.divide_students()
@@ -48,6 +48,8 @@ if __name__ == "__main__":
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
-    visualize_student(schedule, "52311353")
+    # visualize_student(schedule, "52311353")
+    # visualize_course(schedule, "Bioinformatica")
 
     # best_schedule.visualize_by_room(rooms)
+    best_schedule.output()
