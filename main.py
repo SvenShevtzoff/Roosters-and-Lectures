@@ -8,10 +8,11 @@ from code.load import load
 from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
+from code.algorithms.hillclimber import hill_climber_alg_1000 as hc1000
 from code.algorithms.genetic import genetic as gen
 from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.classes.schedule import Schedule
-from code.visualize.visualize import visualize_student
+from code.visualize.visualize import visualize_student, visualize_course
 
 
 if __name__ == "__main__":
@@ -35,6 +36,8 @@ if __name__ == "__main__":
         best_schedule = gr(schedule)
     elif sys.argv[1] == "hillclimber":
         best_schedule = hc(schedule)
+    elif sys.argv[1] == "hillclimber1000":
+        best_schedule = hc1000(schedule)
     elif sys.argv[1] == "simulatedannealing":
         best_schedule = sa(schedule)
     elif sys.argv[1] == "genetic":
@@ -45,5 +48,11 @@ if __name__ == "__main__":
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
+<<<<<<< HEAD
     best_schedule.visualize_by_room(rooms)
     
+=======
+    visualize_student(schedule, "52311353")
+
+    # best_schedule.visualize_by_room(rooms)
+>>>>>>> 0ef141a0a452bb1b931cd570b6a2b0698288d86b

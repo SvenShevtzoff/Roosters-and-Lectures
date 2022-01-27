@@ -5,7 +5,7 @@
 import random
 
 
-def assign_random(schedule):
+def randomise(schedule):
     """Creates a random schedule, taking into account roomsizes and E(studenten)"""
     activities = schedule.activities()
     roomslots = schedule.roomslots()
@@ -17,9 +17,4 @@ def assign_random(schedule):
                 continue
             else:
                 activity.set_roomslot(slot)
-
-
-def randomise(schedule):
-    schedule.divide_students()
-    assign_random(schedule)
     return schedule
