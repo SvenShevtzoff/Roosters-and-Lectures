@@ -1,4 +1,7 @@
+import imp
+from code.algorithms.greedy import greedy
 from code.algorithms.randomise import randomise
+from code.algorithms.greedy import greedy
 import copy
 import operator
 import random
