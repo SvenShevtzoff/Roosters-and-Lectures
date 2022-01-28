@@ -29,25 +29,6 @@ if __name__ == "__main__":
     schedule = Schedule(roomslots, activities, students)
 
     schedule.divide_students()
-
-    # # checking which algorithm is selected and making a schedule accordingl
-    # if sys.argv[1] == "randomise":
-    #     best_schedule = randomise(schedule)
-    # elif sys.argv[1] == "greedy":
-    #     best_schedule = gr(schedule)
-    # elif sys.argv[1] == "hillclimber":
-    #     best_schedule = hc(schedule)
-    # elif sys.argv[1] == "hillclimber1000":
-    #     best_schedule = hc1000(schedule)
-    # elif sys.argv[1] == "simulatedannealing":
-    #     best_schedule = sa(schedule)
-    # elif sys.argv[1] == "genetic":
-    #     best_schedule = gen(schedule)
-    # else:
-    #     # when no matching algorithm is found exit
-    #     sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
-    
-    # print(f"Pandapunten: {best_schedule.fitness()}")
     
     def checker(schedule):
         # ac_dict = Counter([[x, x.activity()][1] for x in schedule.roomslots().list()])
@@ -58,45 +39,43 @@ if __name__ == "__main__":
             else:
                 return 2
             
-    best_schedule = hc(schedule)
-    best_schedule.fitness()
+
+    i = 0 
+    for x in range(1000):
+        print(x)
+
+        best_schedule = randomise(schedule)
+        if checker(best_schedule) == 1:
+            i += 1
+    print(f"i: {i}")
+
+
+
+    # visualize_student(schedule, "52311353")
+    # checking which algorithm is selected and making a schedule accordingly
+    if sys.argv[1] == "randomise":
+        best_schedule = randomise(schedule)
+    elif sys.argv[1] == "greedy":
+        best_schedule = gr(schedule)
+    elif sys.argv[1] == "hillclimber":
+        best_schedule = hc(schedule)
+    elif sys.argv[1] == "hillclimber1000":
+        best_schedule = hc1000(schedule)
+    elif sys.argv[1] == "simulatedannealing":
+        best_schedule = sa(schedule)
+    elif sys.argv[1] == "genetic":
+        best_schedule = gen(schedule)
+    else:
+        # when no matching algorithm is found exit
+        sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
+
+    print(f"Pandapunten: {best_schedule.fitness()}")
+
+    # best_schedule.visualize_by_room(rooms)
+    # schedule.visualize_by_room(rooms)
+    # visualize_course(best_schedule, "Bioinformatica")
+    # visualize_student(schedule, "52311353")
+    # visualize_course(schedule, "Bioinformatica")
+
+    # best_schedule.visualize_by_room(rooms)
     best_schedule.output()
-    # i = 0 
-    # for x in range(1000000):
-    #     print(x)
-
-    #     best_schedule = randomise(schedule)
-    #     if checker(best_schedule) == 1:
-    #         i += 1
-    # print(f"i: {i}")
-
-
-
-    # # visualize_student(schedule, "52311353")
-    # # checking which algorithm is selected and making a schedule accordingly
-    # if sys.argv[1] == "randomise":
-    #     best_schedule = randomise(schedule)
-    # elif sys.argv[1] == "greedy":
-    #     best_schedule = gr(schedule)
-    # elif sys.argv[1] == "hillclimber":
-    #     best_schedule = hc(schedule)
-    # elif sys.argv[1] == "hillclimber1000":
-    #     best_schedule = hc1000(schedule)
-    # elif sys.argv[1] == "simulatedannealing":
-    #     best_schedule = sa(schedule)
-    # elif sys.argv[1] == "genetic":
-    #     best_schedule = gen(schedule)
-    # else:
-    #     # when no matching algorithm is found exit
-    #     sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
-
-    # print(f"Pandapunten: {best_schedule.fitness()}")
-
-    # # best_schedule.visualize_by_room(rooms)
-    # # schedule.visualize_by_room(rooms)
-    # # visualize_course(best_schedule, "Bioinformatica")
-    # # visualize_student(schedule, "52311353")
-    # # visualize_course(schedule, "Bioinformatica")
-
-    # # best_schedule.visualize_by_room(rooms)
-    # best_schedule.output()

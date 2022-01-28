@@ -3,7 +3,7 @@
 # =============================================================================
 
 from collections import defaultdict
-from visualize import visualize as vis
+# from visualize import visualize as vis
 from math import ceil
 import csv
 
@@ -197,10 +197,10 @@ class Schedule:
                             previous_time = time
         return gapdict
 
-    def visualize_by_room(self, rooms):
-        """Generates a visualisation per room"""
-        for room in rooms.list():
-            vis.visualize_room(self, room)
+    # def visualize_by_room(self, rooms):
+    #     """Generates a visualisation per room"""
+    #     for room in rooms.list():
+    #         vis.visualize_room(self, room)
 
     def output(self):
         with open('doc/output/output.csv', 'w') as file:
