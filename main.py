@@ -25,7 +25,7 @@ if __name__ == "__main__":
     activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
-        "data/students_and_courses.csv")
+        "data/students.csv")
     schedule = Schedule(roomslots, activities, students)
 
     schedule.divide_students()
@@ -60,6 +60,7 @@ if __name__ == "__main__":
             
     best_schedule = hc(schedule)
     best_schedule.fitness()
+    best_schedule.output()
     # i = 0 
     # for x in range(1000000):
     #     print(x)

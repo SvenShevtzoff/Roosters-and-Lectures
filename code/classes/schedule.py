@@ -3,8 +3,7 @@
 # =============================================================================
 
 from collections import defaultdict
-from code.visualize import visualize as vis
-import matplotlib.pyplot as plt
+from visualize import visualize as vis
 from math import ceil
 import csv
 
