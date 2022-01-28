@@ -24,7 +24,7 @@ if __name__ == "__main__":
     activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
-        "data/students.csv")
+        "data/students_and_courses.csv")
     schedule = Schedule(roomslots, activities, students)
 
     schedule.divide_students()
