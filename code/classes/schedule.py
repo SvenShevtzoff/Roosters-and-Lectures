@@ -117,14 +117,23 @@ class Schedule:
         
     def fitness(self):
         """Calculates the fitness of the schedule"""
+        print()
         gapdict = self.empty_roomslot_check()
         malus_points = gapdict[1] * 1
+        print(f"1t                  :   {gapdict[1] * 1}")
         malus_points += gapdict[2] * 3
+        print(f"2t                  :   {gapdict[2] * 3}")
         malus_points += gapdict[3] * 1000
+        print(f"3t                  :   {gapdict[3] * 1000}")
         malus_points += self.exceed_max_activity_check()
+        print(f"exceed max activity :   {self.exceed_max_activity_check()}")
         malus_points += self.max_roomsize_check()
+        print(f"max roomsize        :   {self.max_roomsize_check()}")
         malus_points += self.use_17_slot_check()
+        print(f"use 17 slot         :   {self.use_17_slot_check()}")
         malus_points += self.course_conflict_check()
+        print(f"conflictslot        :   {self.course_conflict_check()}")
+        print(malus_points)
         return malus_points
 
     def max_roomsize_check(self):

@@ -114,8 +114,6 @@ def mutate(schedule):
                         else:
                             activity.set_roomslot(slot)
 
-<<<<<<< HEAD
-=======
 def hill_climber_alg_1000(schedule, mutations=1):
     """The hill climber algorithm"""
     copied_schedule = copy.deepcopy(schedule)
@@ -134,7 +132,6 @@ def hill_climber_alg_1000(schedule, mutations=1):
             current_schedule = new_schedule
     return current_schedule
 
->>>>>>> 0ef141a0a452bb1b931cd570b6a2b0698288d86b
 def hill_climber_alg(schedule, mutations=1):
     """The hill climber algorithm"""
     no_change_count = 0
