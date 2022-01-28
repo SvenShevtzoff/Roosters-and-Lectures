@@ -10,7 +10,7 @@ Like the hillclimber this algorithm also uses constraint relexation, this is no 
 
 ### The Child
 
-The algorithm makes a child by combining the roomslots of the father and the mother. Every iteration a roomslot of the father and a roomslot of the mother is chosen. By changce it is determent whitch roomslot will be given to the child. Near the end of an iteration almost all differen roomslots given to the child, the activitys of roomslots that are left over will be randomly given to the child in this way the child gets mutations.
+The algorithm makes a child by combining the roomslots of the father and the mother. Every iteration a roomslot of the father and a roomslot of the mother are chosen. By chance it is determent which roomslot will be given to the child. Near the end of an iteration almost all different roomslots given to the child, the activities of roomslots that are left over will be randomly given to the child in this way the child gets mutations.
 
 ### Technicalities
 
