@@ -27,24 +27,24 @@ if __name__ == "__main__":
 
     schedule.divide_students()
     
-    def checker(schedule):
-        # ac_dict = Counter([[x, x.activity()][1] for x in schedule.roomslots().list()])
-        rm_dict = Counter([[x, x.activity()][0] for x in schedule.roomslots().list()])
-        for x in rm_dict:
-            if rm_dict[x] > 1:
-                return 1
-            else:
-                return 2
+    # def checker(schedule):
+    #     # ac_dict = Counter([[x, x.activity()][1] for x in schedule.roomslots().list()])
+    #     rm_dict = Counter([[x, x.activity()][0] for x in schedule.roomslots().list()])
+    #     for x in rm_dict:
+    #         if rm_dict[x] > 1:
+    #             return 1
+    #         else:
+    #             return 2
             
 
-    i = 0 
-    for x in range(1000):
-        print(x)
+    # i = 0 
+    # for x in range(1000):
+    #     print(x)
 
-        best_schedule = randomise(schedule)
-        if checker(best_schedule) == 1:
-            i += 1
-    print(f"i: {i}")
+    #     best_schedule = randomise(schedule)
+    #     if checker(best_schedule) == 1:
+    #         i += 1
+    # print(f"i: {i}")
 
 
 

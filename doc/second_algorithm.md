@@ -14,8 +14,10 @@ The algorithm makes a child by combining the roomslots of the father and the mot
 
 ### Technicalities
 
-We run one iteration of the hillclimber algorithm until it does not improve for 1000 iterations. When this is reached, it will start over with a new random start state. The best solution overall will be recorded and returned at the end of the algorithm.
+When making a child the algorithm tries 100 times to make a better child. When there is no better child the algorithm makes a child by making a random schedule.
+
+We run one iteration of the Generetic Algoritme until all schedules in the population have the same fitness.
 
 ### Results
 
-After a whole night of running the best solution found had 258 malus points. When comparing this with our baseline (mean of 1520) we see that this solution is significantly better. However, this algorithm still uses a form of the random algorithm used in the baseline, which results in the same biases mentioned there.
+We had no time to run this algoritm properly we will address this later
