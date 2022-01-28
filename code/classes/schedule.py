@@ -3,7 +3,7 @@
 # =============================================================================
 
 from collections import defaultdict
-from visualize import visualize as vis
+from code.visualize import visualize as vis
 from math import ceil
 import csv
 
