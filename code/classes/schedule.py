@@ -6,6 +6,7 @@ from collections import defaultdict
 from code.visualize import visualize as vis
 import matplotlib.pyplot as plt
 from math import ceil
+import csv
 
 
 class Schedule:
@@ -35,13 +36,13 @@ class Schedule:
         """Returns a schedule for a given room"""
         return [x for x in self._roomslots.list() if str(room) == x.room().roomnumber() and x.activity() is not None]
 
-    def student_schedule(self, student):
+    def student_schedule(self, student_number):
         """Returns a schedule for a given student"""
         schedule = []
-        for x in self._activities.list():
-            student_names = [i.name() for i in x.students()]
-            if student in student_names:
-                schedule.append(x.roomslot())
+        for activity in self._activities.list():
+            student_numbers = [student for student in activity.students()]
+            if student_number in student_numbers:
+                schedule.append(activity.roomslot())
         return schedule
 
     def divide_students(self):
@@ -192,3 +193,20 @@ class Schedule:
         """Generates a visualisation per room"""
         for room in rooms.list():
             vis.visualize_room(self, room)
+
+    def output(self):
+        with open('doc/output/output.csv', 'w') as file:
+            writer = csv.writer(file)
+
+            #write the header
+            header = ['student', 'course', 'activity', 'room', 'day', 'time']
+            writer.writerow(header)
+
+            #write the data
+            for student in self._students.list():
+                for activity in student.activities():
+                    activity = self._activities.single(activity)
+                    roomslot = activity.roomslot()
+                    data = [student.name(), str(activity.course()), activity.__repr__(), roomslot.room(), roomslot.day(), roomslot.time()]
+                    writer.writerow(data)
+

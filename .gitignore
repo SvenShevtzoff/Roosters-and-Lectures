@@ -132,6 +132,7 @@ dmypy.json
 output.txt
 schedule.csv
 students.csv
+output.csv
 testing.py
 plot.py
 schedule.png
