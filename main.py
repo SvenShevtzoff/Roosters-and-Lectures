@@ -13,7 +13,6 @@ from code.algorithms.genetic import genetic as gen
 from code.algorithms.genetic_2 import genetic
 from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.classes.schedule import Schedule
-from code.visualize.visualize import visualize_student, visualize_course
 
 
 if __name__ == "__main__":
