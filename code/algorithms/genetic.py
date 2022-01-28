@@ -19,10 +19,6 @@ def genetic(schedule, population_size=10):
     # keep reproducing until all scores are the same
     while not all(score == list(scores.values())[0] for score in list(scores.values())):
         mean = sum(scores.values()) / len(scores)
-<<<<<<< HEAD
-=======
-        print(mean)
->>>>>>> c8ede900967eea3e737a5604d365b8a66ba9c2e0
 
         mother = max(scores.items(), key=operator.itemgetter(1))[0]
         scores.pop(mother)
@@ -32,7 +28,6 @@ def genetic(schedule, population_size=10):
 
         father = max(scores.items(), key=operator.itemgetter(1))[0]
 
-<<<<<<< HEAD
         print("Father schedule")
         for activity in father.activities().list():
             print(f"Activity: {activity} roomslot: {activity.roomslot()}")
@@ -50,15 +45,8 @@ def genetic(schedule, population_size=10):
                 available_father.append(str(roomslot))
             wrong_times += 1
             print(wrong_times)
-=======
-        fitness = mother.fitness()
-        no_change_count = 0
-        while (fitness >= (mother.fitness() and father.fitness())) and no_change_count < 100:
-            no_change_count += 1
->>>>>>> c8ede900967eea3e737a5604d365b8a66ba9c2e0
             child = copy.deepcopy(schedule)
             child.divide_students()
-            random_child_schedule = randomise(child)
             for activity in child.activities().list():
                 print(str(activity))
                 mothers_roomslot = mother.activities().dict()[str(activity)].roomslot()
@@ -67,7 +55,6 @@ def genetic(schedule, population_size=10):
                 print(f"Fathers roomslot: {str(fathers_roomslot)}")
                 roomslots_to_choose = [mothers_roomslot, fathers_roomslot]
                 roomslot = random.choice(roomslots_to_choose)
-<<<<<<< HEAD
                 if str(roomslot) == str(mothers_roomslot):
                     print("Chose mothers roomslot")
                     if str(roomslot) in available_mother:
@@ -99,12 +86,6 @@ def genetic(schedule, population_size=10):
         #     another_copied_schedule = copy.deepcopy(schedule)
         #     mutation = randomise(another_copied_schedule)
         #     scores[mutation] = mutation.fitness()
-=======
-                activity.set_roomslot(roomslot)
-            fitness = child.fitness()
-
-        scores[child] = child.fitness()
->>>>>>> c8ede900967eea3e737a5604d365b8a66ba9c2e0
     
     return scores[list(scores.keys())[0]]
 
