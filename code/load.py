@@ -1,5 +1,5 @@
 # =============================================================================
-# load.py with fuctions to load all data form the given csv-files
+# load.py with fuctions to load all data from the given csv-files
 # =============================================================================
 
 from code.classes.rooms import Room, Rooms
@@ -10,8 +10,8 @@ from code.classes.students import Student, Students
 import csv
 import sys
 
-times = [9, 11, 13, 15, 17]
-days = ["Mon", "Tue", "Wed", "Thu", "Fri"]
+TIMES = [9, 11, 13, 15, 17]
+DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 
 
 def load(file_name_rooms, file_name_courses, file_name_students):
@@ -71,13 +71,13 @@ def load(file_name_rooms, file_name_courses, file_name_students):
 
     # creating Roomslot objects
     roomslots = {}
-    for day in days:
+    for day in DAYS:
         for room in rooms.list():
             if room.roomnumber() != "C0.110":
-                times2 = times[0:4]
+                times_filtered = TIMES[0:4]
             else:
-                times2 = times
-            for time in times2:
+                times_filtered = TIMES
+            for time in times_filtered:
                 roomslots[f"{day} {time} {room}"] = Roomslot(day, time, room)
 
     # creating Roomslots object

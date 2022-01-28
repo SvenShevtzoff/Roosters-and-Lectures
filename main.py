@@ -1,15 +1,11 @@
 # =============================================================================
 # main.py:  Usage: main.py [algorithm]
 # =============================================================================
-
-from collections import defaultdict, Counter
-
 import sys
 from code.load import load
 from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
-from code.algorithms.hillclimber import hill_climber_alg_1000 as hc1000
 from code.algorithms.genetic import genetic as gen
 from code.algorithms.genetic import genetic
 from code.algorithms.simulatedannealing import simulated_annealing as sa
@@ -26,13 +22,8 @@ if __name__ == "__main__":
     activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
-<<<<<<< HEAD
-        "data/students.csv")
-    schedule = Schedule(roomslots, activities, students)
-=======
         "data/students_and_courses.csv")
     schedule = Schedule(roomslots, activities, students, courses)
->>>>>>> 6d8f4783ce20332ea41a37d503a2e9997b4bad84
 
     schedule.divide_students()
     
@@ -64,10 +55,12 @@ if __name__ == "__main__":
     elif sys.argv[1] == "greedy":
         best_schedule = gr(schedule)
     elif sys.argv[1] == "hillclimber":
+        if len(sys.argv) == 3:
+            best_schedule = hc(schedule, int(sys.argv[2]))
         best_schedule = hc(schedule)
-    elif sys.argv[1] == "hillclimber1000":
-        best_schedule = hc1000(schedule)
     elif sys.argv[1] == "simulatedannealing":
+        if len(sys.argv) == 3:
+            best_schedule = sa(schedule, int(sys.argv[2]))
         best_schedule = sa(schedule)
     elif sys.argv[1] == "genetic":
         best_schedule = genetic(schedule)
@@ -75,19 +68,8 @@ if __name__ == "__main__":
         # when no matching algorithm is found exit
         sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
 
-    # print(f"Pandapunten: {best_schedule.fitness()}")
-
+    print(f"Pandapunten: {best_schedule.fitness()}")
+    best_schedule.output()
     # best_schedule.visualize_by_room(rooms)
-    # schedule.visualize_by_room(rooms)
     # visualize_course(best_schedule, "Bioinformatica")
     # visualize_student(schedule, "52311353")
-    # visualize_course(schedule, "Bioinformatica")
-
-    # best_schedule.visualize_by_room(rooms)
-    # schedule.visualize_by_room(rooms)
-    visualize_course(best_schedule, "Bioinformatica")
-    # visualize_student(schedule, "52311353")
-    # visualize_course(schedule, "Bioinformatica")
-
-    # best_schedule.visualize_by_room(rooms)
-    best_schedule.output()
