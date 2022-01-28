@@ -85,30 +85,7 @@ def mutate(schedule):
         return 3, []
 
 
-def hill_climber_alg_100(schedule, mutations=1, iterations=100):
-    """The hill climber algorithm"""
-    # make a random start state
-    schedule = randomise(schedule)
-
-    # try to improve 100 times
-    for _ in range(iterations):
-        old_fitness = schedule.fitness()
-        # make some mutations
-        for _ in range(mutations):
-            choice, mutation_parameters = mutate(schedule)
-
-        # if the new schedule is better save it else undo the mutation
-        if schedule.fitness() < old_fitness:
-            print(schedule.fitness())
-        else:
-            if choice == 1:
-                swap_activities(mutation_parameters[0], mutation_parameters[1])
-            elif choice == 2:
-                move_student(schedule, mutation_parameters[0].std_number(), mutation_parameters[2], mutation_parameters[1])
-    return schedule
-
-
-def hill_climber_alg(schedule, iterations=100, mutations=1, no_change_count_max=1000):
+def hill_climber_alg(schedule, iterations=100, no_change_count_max=1000):
     """The hill climber algorithm"""
     best_schedule = None
     best_schedule_fitness = None
@@ -121,14 +98,13 @@ def hill_climber_alg(schedule, iterations=100, mutations=1, no_change_count_max=
 
         while no_change_count < no_change_count_max:
             # make some mutations
-            for _ in range(mutations):
-                choice, mutation_parameters = mutate(current_schedule)
+            choice, mutation_parameters = mutate(current_schedule)
 
             # calculate the fitness after mutating
             new_fitness = current_schedule.fitness()
 
             # if the new schedule is better save it
-            if new_fitness < current_fitness:
+            if new_fitness <= current_fitness:
                 print(new_fitness)
                 current_fitness = new_fitness
                 no_change_count = 0
@@ -149,4 +125,5 @@ def hill_climber_alg(schedule, iterations=100, mutations=1, no_change_count_max=
             best_schedule = current_schedule
             best_schedule_fitness = current_fitness
         no_change_count = 0
+
     return best_schedule

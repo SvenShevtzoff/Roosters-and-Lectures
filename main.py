@@ -6,7 +6,6 @@ from code.load import load
 from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
-from code.algorithms.hillclimber import hill_climber_alg_100 as hc100
 from code.algorithms.genetic import genetic as gen
 from code.algorithms.genetic_2 import genetic
 from code.algorithms.simulatedannealing import simulated_annealing as sa
@@ -38,6 +37,8 @@ if __name__ == "__main__":
             best_schedule = hc(schedule, int(sys.argv[2]))
         best_schedule = hc(schedule)
     elif sys.argv[1] == "simulatedannealing":
+        if len(sys.argv) == 3:
+            best_schedule = sa(schedule, int(sys.argv[2]))
         best_schedule = sa(schedule)
     elif sys.argv[1] == "genetic":
         best_schedule = genetic(schedule)
