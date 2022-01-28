@@ -5,7 +5,7 @@ import operator
 import random
 from collections import Counter
 
-def genetic(schedule, population_size=10):
+def genetic(schedule, population_size=100):
 
     scores = {}
     hundred_in_a_row = 0
@@ -15,7 +15,7 @@ def genetic(schedule, population_size=10):
         random_schedule = randomise(copied_schedule)
         scores[random_schedule] = random_schedule.fitness()
 
-    while not all(score == list(scores.values())[0] for score in list(scores.values())):
+    while len(scores) > 1:
         mother = max(scores.items(), key=operator.itemgetter(1))[0]
         scores.pop(mother)
         father = max(scores.items(), key=operator.itemgetter(1))[0]
@@ -68,11 +68,14 @@ def genetic(schedule, population_size=10):
             
             fitness = child.fitness()
 
+        scores[child] = child.fitness()
+
         if wrong_times == 100:
             hundred_in_a_row += 1
 
         if hundred_in_a_row == 4:
             scores.pop(child)
+            hundred_in_a_row = 0
         print(f"Malus points of child: {child.fitness()}")
         scores[child] = child.fitness()
         if hundred_in_a_row == 4:
