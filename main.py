@@ -10,6 +10,7 @@ from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.algorithms.hillclimber import hill_climber_alg_1000 as hc1000
 from code.algorithms.genetic import genetic as gen
+from code.algorithms.genetic_2 import genetic
 from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.classes.schedule import Schedule
 from code.visualize.visualize import visualize_student, visualize_course
@@ -41,12 +42,18 @@ if __name__ == "__main__":
     elif sys.argv[1] == "simulatedannealing":
         best_schedule = sa(schedule)
     elif sys.argv[1] == "genetic":
-        best_schedule = gen(schedule)
+        best_schedule = genetic(schedule)
     else:
         # when no matching algorithm is found exit
         sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
 
-    print(f"Pandapunten: {best_schedule.fitness()}")
+    # print(f"Pandapunten: {best_schedule.fitness()}")
+
+    # best_schedule.visualize_by_room(rooms)
+    # schedule.visualize_by_room(rooms)
+    # visualize_course(best_schedule, "Bioinformatica")
+    # visualize_student(schedule, "52311353")
+    # visualize_course(schedule, "Bioinformatica")
 
     # best_schedule.visualize_by_room(rooms)
     # schedule.visualize_by_room(rooms)
