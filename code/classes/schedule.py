@@ -3,10 +3,8 @@
 # =============================================================================
 
 from re import L
-from code.classes.activities import Activity
-from code.classes.roomslots import Roomslot
 from collections import defaultdict
-from code.visualize import visualize as vis
+from visualize import visualize as vis
 import matplotlib.pyplot as plt
 from math import ceil
 import csv
