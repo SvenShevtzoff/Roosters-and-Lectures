@@ -2,13 +2,11 @@
 # schedule.py with classe schedule
 # =============================================================================
 
-from re import L
-from code.classes.activities import Activity
-from code.classes.roomslots import Roomslot
 from collections import defaultdict
 from code.visualize import visualize as vis
 import matplotlib.pyplot as plt
 from math import ceil
+import csv
 
 
 class Schedule:
@@ -66,7 +64,7 @@ class Schedule:
         dictionary = defaultdict(list)
         for activity in self._activities.list():
             students = activity.students()
-            if student_to_check in students:
+            if student_to_check.std_number() in students:
                 dictionary[f"{activity.roomslot().day()}, {activity.roomslot().time()}"].append(activity.roomslot())
 
         return [x for x in dictionary.values() if len(x) > 1]
@@ -98,15 +96,12 @@ class Schedule:
             if activity.kind() == activity_to_merge.kind() and activity.name() == activity_to_merge.name():
                 activities_to_merge.append(activity)
 
-        print(activities_to_merge)
-
         if len(activities_to_merge) > 1:
             # if more than one group, find all students in these groups
             students_keys = []
             for activity in activities_to_merge:
                 print(activity.students())
                 students_keys.extend(activity.students())
-            print(students_keys)
             activity_to_keep = activities_to_merge[0]
             activity_to_keep.set_students(students_keys, self.students())
             activity_to_keep.set_id_to_1()
@@ -117,23 +112,23 @@ class Schedule:
         
     def fitness(self):
         """Calculates the fitness of the schedule"""
-        print()
+        # print()
         gapdict = self.empty_roomslot_check()
         malus_points = gapdict[1] * 1
-        print(f"1t                  :   {gapdict[1] * 1}")
+        # print(f"1t                  :   {gapdict[1] * 1}")
         malus_points += gapdict[2] * 3
-        print(f"2t                  :   {gapdict[2] * 3}")
+        # print(f"2t                  :   {gapdict[2] * 3}")
         malus_points += gapdict[3] * 1000
-        print(f"3t                  :   {gapdict[3] * 1000}")
+        # print(f"3t                  :   {gapdict[3] * 1000}")
         malus_points += self.exceed_max_activity_check()
-        print(f"exceed max activity :   {self.exceed_max_activity_check()}")
+        # print(f"exceed max activity :   {self.exceed_max_activity_check()}")
         malus_points += self.max_roomsize_check()
-        print(f"max roomsize        :   {self.max_roomsize_check()}")
+        # print(f"max roomsize        :   {self.max_roomsize_check()}")
         malus_points += self.use_17_slot_check()
-        print(f"use 17 slot         :   {self.use_17_slot_check()}")
+        # print(f"use 17 slot         :   {self.use_17_slot_check()}")
         malus_points += self.course_conflict_check()
-        print(f"conflictslot        :   {self.course_conflict_check()}")
-        print(malus_points)
+        # print(f"conflictslot        :   {self.course_conflict_check()}")
+        # print(malus_points)
         return malus_points
 
     def max_roomsize_check(self):
@@ -207,3 +202,20 @@ class Schedule:
         """Generates a visualisation per room"""
         for room in rooms.list():
             vis.visualize_room(self, room)
+
+    def output(self):
+        with open('doc/output/output.csv', 'w') as file:
+            writer = csv.writer(file)
+
+            #write the header
+            header = ['student', 'course', 'activity', 'room', 'day', 'time']
+            writer.writerow(header)
+
+            #write the data
+            for student in self._students.list():
+                for activity in student.activities():
+                    activity = self._activities.single(activity)
+                    roomslot = activity.roomslot()
+                    data = [student.name(), str(activity.course()), activity.__repr__(), roomslot.room(), roomslot.day(), roomslot.time()]
+                    writer.writerow(data)
+

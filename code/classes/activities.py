@@ -95,7 +95,12 @@ class Activity:
         return f"{self._kind} {self._course} {self._unique_id}"
 
     def __repr__(self):
-        return f"{self._kind} {self._course} {self._unique_id}"
+        if self._kind == "Lecture":
+            return f"h{self._unique_id}"
+        elif self._kind == "Practicum":
+            return "p1"
+        elif self._kind == "Tutorial":
+            return "w1"
 
 
 class Activities:
