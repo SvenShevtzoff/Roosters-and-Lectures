@@ -1,7 +1,6 @@
 # =============================================================================
 # schedule.py with classe schedule
 # =============================================================================
-
 from collections import defaultdict
 from code.visualize import visualize as vis
 from math import ceil
@@ -10,10 +9,11 @@ import csv
 
 class Schedule:
 
-    def __init__(self, roomslots, activities, students):
+    def __init__(self, roomslots, activities, students, courses):
         self._roomslots = roomslots
         self._activities = activities
         self._students = students
+        self._courses = courses
 
     def roomslots(self):
         """Returns roomslot objects from the schedule"""
@@ -57,6 +57,7 @@ class Schedule:
 
         for activity in activities_to_add:
             all_activities.add_activity(activity)
+            activity.course().add_activity(activity)
 
     def conflicts_student(self, student_to_check):
         """Returns all the conflicts of a student"""
@@ -70,12 +71,8 @@ class Schedule:
 
     def conflicts_course(self, course_name):
         """Returns all the conflicts of a course"""
+        course_activities = self._courses.single(course_name).activities(self._activities)
         dictionary = {}
-        course_activities = []
-        for activity in self._activities.list():
-            if str(activity.course()) == course_name:
-                course_activities = activity.course().activities(self._activities)
-                break
 
         for activity in course_activities:
             if f"{activity.roomslot().day()}, {activity.roomslot().time()}" in dictionary:
@@ -99,7 +96,6 @@ class Schedule:
             # if more than one group, find all students in these groups
             students_keys = []
             for activity in activities_to_merge:
-                print(activity.students())
                 students_keys.extend(activity.students())
             activity_to_keep = activities_to_merge[0]
             activity_to_keep.set_students(students_keys, self.students())
@@ -114,9 +110,13 @@ class Schedule:
         gapdict, malus_points = self.empty_roomslot_and_conflict_check()
         malus_points += gapdict[1] * 1
         malus_points += gapdict[2] * 3
+        # print(f"2t                  :   {gapdict[2] * 3}")
         malus_points += gapdict[3] * 1000
+        # print(f"3t                  :   {gapdict[3] * 1000}")
         malus_points += self.exceed_max_activity_check()
+        # print(f"exceed max activity :   {self.exceed_max_activity_check()}")
         malus_points += self.max_roomsize_check()
+        # print(f"max roomsize        :   {self.max_roomsize_check()}")
         malus_points += self.use_17_slot_check()
         return malus_points
 
@@ -179,18 +179,16 @@ class Schedule:
                         if time - previous_time == 8:
                             gapdict[3] += 1
                         previous_time = time
-                # print(time_frequencies.values())
                 for frequency in time_frequencies.values():
                     if frequency > 1:
                         conflict_count += frequency - 1
-                # print(f"conflict count: {conflict_count}")
 
         return gapdict, conflict_count
 
-    def visualize_by_room(self, rooms):
-        """Generates a visualisation per room"""
-        for room in rooms.list():
-            vis.visualize_room(self, room)
+    # def visualize_by_room(self, rooms):
+    #     """Generates a visualisation per room"""
+    #     for room in rooms.list():
+    #         vis.visualize_room(self, room)
 
     def output(self):
         with open('doc/output/output.csv', 'w') as file:

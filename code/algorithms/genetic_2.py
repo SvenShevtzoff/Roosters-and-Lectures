@@ -1,9 +1,7 @@
 from code.algorithms.randomise import randomise
-from code.classes.roomslots import Roomslot
 import copy
 import operator
 import random
-from collections import Counter
 
 def genetic(schedule, population_size=100):
 
