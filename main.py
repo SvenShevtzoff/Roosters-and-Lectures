@@ -48,6 +48,9 @@ if __name__ == "__main__":
 
     print(f"Pandapunten: {best_schedule.fitness()}")
 
+    # best_schedule.visualize_by_room(rooms)
+    # schedule.visualize_by_room(rooms)
+    # visualize_course(best_schedule, "Bioinformatica")
     # visualize_student(schedule, "52311353")
     # visualize_course(schedule, "Bioinformatica")
 

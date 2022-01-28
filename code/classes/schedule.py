@@ -2,10 +2,8 @@
 # schedule.py with classe schedule
 # =============================================================================
 
-from re import L
 from collections import defaultdict
 from visualize import visualize as vis
-import matplotlib.pyplot as plt
 from math import ceil
 import csv
 
@@ -65,7 +63,7 @@ class Schedule:
         dictionary = defaultdict(list)
         for activity in self._activities.list():
             students = activity.students()
-            if student_to_check in students:
+            if student_to_check.std_number() in students:
                 dictionary[f"{activity.roomslot().day()}, {activity.roomslot().time()}"].append(activity.roomslot())
 
         return [x for x in dictionary.values() if len(x) > 1]
@@ -97,15 +95,12 @@ class Schedule:
             if activity.kind() == activity_to_merge.kind() and activity.name() == activity_to_merge.name():
                 activities_to_merge.append(activity)
 
-        print(activities_to_merge)
-
         if len(activities_to_merge) > 1:
             # if more than one group, find all students in these groups
             students_keys = []
             for activity in activities_to_merge:
                 print(activity.students())
                 students_keys.extend(activity.students())
-            print(students_keys)
             activity_to_keep = activities_to_merge[0]
             activity_to_keep.set_students(students_keys, self.students())
             activity_to_keep.set_id_to_1()
