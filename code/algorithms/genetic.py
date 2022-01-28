@@ -1,60 +1,83 @@
-import imp
-from code.algorithms.greedy import greedy
 from code.algorithms.randomise import randomise
-from code.algorithms.greedy import greedy
+from code.classes.roomslots import Roomslot
 import copy
 import operator
 import random
+from collections import Counter
 
 def genetic(schedule, population_size=10):
 
     scores = {}
+    hundred_in_a_row = 0
 
-    # make n start randomised schedules
     for _ in range(population_size):
         copied_schedule = copy.deepcopy(schedule)
         random_schedule = randomise(copied_schedule)
         scores[random_schedule] = random_schedule.fitness()
 
-    # keep reproducing until all scores are the same
     while not all(score == list(scores.values())[0] for score in list(scores.values())):
-        mean = sum(scores.values()) / len(scores)
-        print(mean)
-
         mother = max(scores.items(), key=operator.itemgetter(1))[0]
         scores.pop(mother)
-
-        for activity in mother.activities().list():
-            print(f"Activity: {activity} roomslot: {activity.roomslot()}")
-
         father = max(scores.items(), key=operator.itemgetter(1))[0]
 
         fitness = mother.fitness()
-        no_change_count = 0
-        while (fitness >= (mother.fitness() and father.fitness())) and no_change_count < 100:
-            no_change_count += 1
+        wrong_times = 0
+
+        while fitness >= father.fitness() and wrong_times < 100:
+            available_roomslots = []
+            roomslots_used = []
+            for slot in schedule.roomslots().list():
+                available_roomslots.append(str(slot))
+
+            wrong_times += 1
+            print(wrong_times)
             child = copy.deepcopy(schedule)
             child.divide_students()
-            random_child_schedule = randomise(child)
+
             for activity in child.activities().list():
-                print(str(activity))
                 mothers_roomslot = mother.activities().dict()[str(activity)].roomslot()
-                print(f"Mothers roomslot: {str(mothers_roomslot)}")
                 fathers_roomslot = father.activities().dict()[str(activity)].roomslot()
-                print(f"Fathers roomslot: {str(fathers_roomslot)}")
-                roomslots_to_choose = [mothers_roomslot, fathers_roomslot]
-                roomslot = random.choice(roomslots_to_choose)
-                activity.set_roomslot(roomslot)
+
+                roomslot = random.choice([mothers_roomslot, fathers_roomslot])
+
+                if str(roomslot) in available_roomslots:
+                    activity.set_roomslot(roomslot)
+                    available_roomslots.remove(str(roomslot))
+                    roomslots_used.append(str(roomslot))
+                else:
+                    if str(roomslot) == str(mothers_roomslot):
+                        roomslot = fathers_roomslot
+                        if str(roomslot) in available_roomslots:
+                            activity.set_roomslot(roomslot)
+                            available_roomslots.remove(str(roomslot))
+                            roomslots_used.append(str(roomslot))
+                    else:
+                        roomslot = mothers_roomslot
+                        if str(roomslot) in available_roomslots:
+                            activity.set_roomslot(roomslot)
+                            available_roomslots.remove(str(roomslot))
+                            roomslots_used.append(str(roomslot))
+
+            for activity in child.activities().list():
+                if not activity.roomslot():
+                    roomslot_key = random.choice(available_roomslots)
+                    roomslot = schedule.roomslots().single(roomslot_key)
+                    activity.set_roomslot(roomslot)
+                    available_roomslots.remove(str(roomslot))
+                    roomslots_used.append(str(roomslot))
+            
             fitness = child.fitness()
 
+        if wrong_times == 100:
+            hundred_in_a_row += 1
+
+        if hundred_in_a_row == 4:
+            scores.pop(child)
+        print(f"Malus points of child: {child.fitness()}")
         scores[child] = child.fitness()
-    
-    return scores[list(scores.keys())[0]]
-
-
-
-
-
+        if hundred_in_a_row == 4:
+            scores.pop(child)
+        print(list(scores.values()))
 
 
 

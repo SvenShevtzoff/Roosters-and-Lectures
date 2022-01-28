@@ -10,6 +10,7 @@ import random
 
 TEMPERATURE_INTERVAL = 1/1000
 
+
 def check_solution(new_schedule, current_schedule, no_change_count, temperature):
     # calculate the increase/decrease in fitness
     delta = new_schedule.fitness() - current_schedule.fitness()
@@ -39,7 +40,6 @@ def check_solution(new_schedule, current_schedule, no_change_count, temperature)
 def simulated_annealing(schedule, mutations=1):
     """The simulated annealing algorithm"""
     best_schedule = None
-    iteration_counter_total = 0
 
     try:
         while True:
@@ -61,7 +61,11 @@ def simulated_annealing(schedule, mutations=1):
                     mutate(new_schedule)
 
                 # check if the mutation is accepted
-                no_change_count, temperature, current_schedule = check_solution(new_schedule, current_schedule, no_change_count, temperature)
+                no_change_count, temperature, current_schedule = check_solution(
+                    new_schedule,
+                    current_schedule,
+                    no_change_count,
+                    temperature)
 
             # when iteration is done, save the schedule if it is the best schedule overall
             if best_schedule:

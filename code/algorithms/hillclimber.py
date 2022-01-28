@@ -5,6 +5,7 @@ from code.algorithms.randomise import randomise
 import copy
 import random
 
+
 def swap_activities(roomslot1, roomslot2):
     """Swaps the roomslots of two activities"""
     activity1 = roomslot1.activity()
@@ -85,8 +86,9 @@ def mutate(schedule):
         activities_keys = student.activities()
         # choose a random activity to move the student from
         from_activity_key = random.choice(activities_keys)
-        
-        # if the activity is not a lecture, find activities of the same course and kind and swap student to a random one of these
+
+        # if the activity is not a lecture, find activities of the same course
+        # and kind and swap student to a random one of these
         if all_activities.single(from_activity_key).kind() != "Lecture":
             activities_to_choose = []
             for activity_key in activities_keys:
@@ -114,6 +116,7 @@ def mutate(schedule):
                         else:
                             activity.set_roomslot(slot)
 
+
 def hill_climber_alg_1000(schedule, mutations=1):
     """The hill climber algorithm"""
     copied_schedule = copy.deepcopy(schedule)
@@ -131,6 +134,7 @@ def hill_climber_alg_1000(schedule, mutations=1):
             print(new_schedule.fitness())
             current_schedule = new_schedule
     return current_schedule
+
 
 def hill_climber_alg(schedule, mutations=1):
     """The hill climber algorithm"""
