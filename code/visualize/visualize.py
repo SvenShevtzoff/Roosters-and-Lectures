@@ -1,8 +1,6 @@
 # =============================================================================
 # visualize.py for visualizing the schedule
 # =============================================================================
-
-
 import matplotlib.pyplot as plt
 
 # defining dictionaries to calculate the coordinates from day/time
@@ -35,6 +33,7 @@ def visualize_room(schedule, room):
     # plotting and saving plot
     plot.grid(True)
     plt.savefig(f"doc/output/schedule_{str(room)}.png")
+
 
 def visualize_course(schedule, course):
     '''Visualizing the schedule for one student'''
@@ -124,6 +123,7 @@ def visualize_course(schedule, course):
     # plotting and saving plot
     plot.grid(True)
     plt.savefig(f"doc/output/schedule_{course}.png")
+
 
 def visualize_student(schedule, student_number):
     '''Visualizing the schedule for one student, WARNING: make sure to enter student number'''
@@ -217,17 +217,19 @@ def visualize_student(schedule, student_number):
     plot.grid(True)
     plt.savefig(f"doc/output/schedule_{student_number}.png")
 
+
 def plot_full(plot, xcoord, ycoord, slot):
     # plotting the element and annotating it
-        plot.broken_barh([(xcoord, 36)], (ycoord, 8), facecolors=(f'tab:{element_color(slot)}'))
-        plot.annotate(f"{slot.activity().kind()} {slot.room()}", (xcoord + 1, ycoord + 6))
+    plot.broken_barh([(xcoord, 36)], (ycoord, 8), facecolors=(f'tab:{element_color(slot)}'))
+    plot.annotate(f"{slot.activity().kind()} {slot.room()}", (xcoord + 1, ycoord + 6))
 
-        # if course name to long put on two lines
-        if len(str(slot.course())) < 20:
-            plot.annotate(slot.course(), (xcoord + 1, ycoord + 4))
-        else:
-            plot.annotate(str(slot.course())[0:21], (xcoord + 1, ycoord + 4))
-            plot.annotate(str(slot.course())[21:], (xcoord + 1, ycoord + 2))
+    # if course name to long put on two lines
+    if len(str(slot.course())) < 20:
+        plot.annotate(slot.course(), (xcoord + 1, ycoord + 4))
+    else:
+        plot.annotate(str(slot.course())[0:21], (xcoord + 1, ycoord + 4))
+        plot.annotate(str(slot.course())[21:], (xcoord + 1, ycoord + 2))
+
 
 def plot_half(plot, xcoord, ycoord, slot):
     # plotting the element and annotating it
@@ -235,6 +237,7 @@ def plot_half(plot, xcoord, ycoord, slot):
     plot.annotate(slot.room(), (xcoord + 3, ycoord + 7))
     plot.annotate(str(slot.course())[:12], (xcoord + 3, ycoord + 5))
     plot.annotate(str(slot.course())[11:24], (xcoord + 3, ycoord + 3))
+
 
 def plot_setup():
     '''Defining the starting settings for the schedule plot'''
