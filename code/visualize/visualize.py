@@ -41,7 +41,6 @@ def visualize_course(schedule, course):
 
     # plotting all activity conflicts
     conflicts_list = schedule.conflicts_course(course)
-    print(conflicts_list)
 
     for conflicts in conflicts_list:
         # drawing red box around conflict
@@ -111,7 +110,6 @@ def visualize_course(schedule, course):
     # printing the rest of the activities
     student_schedule = schedule.course_schedule(course)
     for slot in student_schedule:
-        print(slot)
         if not slot.is_visualized():
             # calculating x and y coordinates according to day and time
             xcoord = day_to_xcoord[slot.day()] + 2
@@ -255,7 +253,7 @@ def plot_setup():
     gnt.set_xlabel('days')
     gnt.set_xlim(0, 200)
     gnt.set_xticks([0, 40, 80, 120, 160])
-    gnt.set_xticklabels(["Mon", "Thu", "Wed", "Thu", "Fri"], ha='left')
+    gnt.set_xticklabels(["Mon", "Tue", "Wed", "Thu", "Fri"], ha='left')
 
     return gnt
 
