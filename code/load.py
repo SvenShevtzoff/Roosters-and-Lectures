@@ -1,5 +1,5 @@
 # =============================================================================
-# load.py with fuctions to load all data form the given csv-files
+# load.py with fuctions to load all data from the given csv-files
 # =============================================================================
 
 from code.classes.rooms import Room, Rooms
