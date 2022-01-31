@@ -38,7 +38,7 @@ def update_temperature(temperature):
     return temperature
 
 
-def simulated_annealing(schedule, iterations=100, no_change_count_max=1000):
+def simulated_annealing(schedule, iterations=1, no_change_count_max=10):
     """The simulated annealing algorithm"""
     best_schedule = None
     best_schedule_fitness = None
@@ -62,7 +62,7 @@ def simulated_annealing(schedule, iterations=100, no_change_count_max=1000):
             # new schedule accepted
             if boolean == True:
                 # print("accept")
-                print(new_fitness)
+                # print(new_fitness)
                 current_fitness = new_fitness
                 no_change_count = 0
             # new schedule rejected

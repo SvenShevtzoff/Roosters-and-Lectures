@@ -104,8 +104,8 @@ def hill_climber_alg(schedule, iterations=100, no_change_count_max=1000):
             new_fitness = current_schedule.fitness()
 
             # if the new schedule is better save it
-            if new_fitness <= current_fitness:
-                print(new_fitness)
+            if new_fitness < current_fitness:
+                # print(new_fitness)
                 current_fitness = new_fitness
                 no_change_count = 0
             else:
