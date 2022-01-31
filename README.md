@@ -12,6 +12,10 @@ In this case we are trying to generate a schedule given the data. This is an imp
 
 
 ## Usage
+Before the program can be excecuted make sure to install the right packages using the following:
+
+    pip3 install -r requirements.txt
+
 To run the program, the following command can be used
 
     python3 main.py [algorithm_name]
