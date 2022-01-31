@@ -19,6 +19,8 @@ def check_solution(new_fitness, current_fitness, temperature):
     # calculate a probability of accepting the mutation
     if delta > 0:
         probability = math.exp(-delta / temperature)
+    elif temperature < TEMPERATURE_INTERVAL:
+        probability = 0
     else:
         probability = 2
 
@@ -38,7 +40,7 @@ def update_temperature(temperature):
     return temperature
 
 
-def simulated_annealing(schedule, iterations=100, no_change_count_max=1000):
+def simulated_annealing(schedule, iterations=100, no_change_count_max=100):
     """The simulated annealing algorithm"""
     best_schedule = None
     best_schedule_fitness = None
@@ -51,7 +53,6 @@ def simulated_annealing(schedule, iterations=100, no_change_count_max=1000):
         temperature = 1
 
         while no_change_count < no_change_count_max:
-            # print("bla")
             # make some mutations
             choice, mutation_parameters = mutate(current_schedule)
 
@@ -61,13 +62,11 @@ def simulated_annealing(schedule, iterations=100, no_change_count_max=1000):
 
             # new schedule accepted
             if boolean:
-                # print("accept")
                 print(new_fitness)
                 current_fitness = new_fitness
                 no_change_count = 0
             # new schedule rejected
             elif not boolean:
-                # print("reject")
                 if choice == 1:
                     swap_activities(mutation_parameters[0], mutation_parameters[1])
                 elif choice == 2:

@@ -200,18 +200,10 @@ def visualize_student(schedule, student_number):
             xcoord = day_to_xcoord[slot.day()] + 2
             ycoord = time_to_ycoord[slot.time()] + 1
 
-            # plotting the element and annotating it
-            plot.broken_barh([(xcoord, 36)], (ycoord, 8), facecolors=(f'tab:{element_color(slot)}'))
-            plot.annotate(f"{slot.activity().kind()} {slot.room()}", (xcoord + 1, ycoord + 6))
+            # plot single activity
+            plot_full(plot, xcoord, ycoord, slot)
 
-            # if course name to long spread over two lines
-            if len(str(slot.course())) < 20:
-                plot.annotate(slot.course(), (xcoord + 1, ycoord + 4))
-            else:
-                plot.annotate(str(slot.course())[0:21], (xcoord + 1, ycoord + 4))
-                plot.annotate(str(slot.course())[21:], (xcoord + 1, ycoord + 2))
-
-    # plot
+    # saving plot
     plot.grid(True)
     plt.savefig(f"doc/output/schedule_{student_number}.png")
 
