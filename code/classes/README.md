@@ -2,4 +2,4 @@
 
 This folder contains the datastructure, for an overview see the UML below
 
-![UML Diagram](../data/ClassesUML.png)
+![UML Diagram](../../doc/ClassesUML.png)
