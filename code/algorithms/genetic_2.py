@@ -3,6 +3,7 @@ import copy
 import operator
 import random
 
+
 def genetic(schedule, population_size=100):
 
     scores = {}
@@ -63,7 +64,7 @@ def genetic(schedule, population_size=100):
                     activity.set_roomslot(roomslot)
                     available_roomslots.remove(str(roomslot))
                     roomslots_used.append(str(roomslot))
-            
+
             fitness = child.fitness()
 
         scores[child] = child.fitness()
@@ -79,6 +80,3 @@ def genetic(schedule, population_size=100):
         if hundred_in_a_row == 4:
             scores.pop(child)
         print(list(scores.values()))
-
-
-

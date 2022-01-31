@@ -1,9 +1,8 @@
 from code.algorithms.randomise import randomise
-from code.classes.roomslots import Roomslot
 import copy
 import operator
 import random
-from collections import Counter
+
 
 def genetic(schedule, population_size=10):
 
@@ -65,7 +64,7 @@ def genetic(schedule, population_size=10):
                     activity.set_roomslot(roomslot)
                     available_roomslots.remove(str(roomslot))
                     roomslots_used.append(str(roomslot))
-            
+
             fitness = child.fitness()
 
         if wrong_times == 100:
@@ -78,6 +77,3 @@ def genetic(schedule, population_size=10):
         if hundred_in_a_row == 4:
             scores.pop(child)
         print(list(scores.values()))
-
-
-

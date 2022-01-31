@@ -185,10 +185,10 @@ class Schedule:
 
         return gapdict, conflict_count
 
-    # def visualize_by_room(self, rooms):
-    #     """Generates a visualisation per room"""
-    #     for room in rooms.list():
-    #         vis.visualize_room(self, room)
+    def visualize_by_room(self, rooms):
+        """Generates a visualisation per room"""
+        for room in rooms.list():
+            vis.visualize_room(self, room)
 
     def output(self):
         with open('doc/output/output.csv', 'w') as file:

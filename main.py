@@ -7,7 +7,6 @@ from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.algorithms.genetic import genetic as gen
-from code.algorithms.genetic import genetic
 from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.classes.schedule import Schedule
 from code.visualize.visualize import visualize_student, visualize_course
@@ -26,7 +25,7 @@ if __name__ == "__main__":
     schedule = Schedule(roomslots, activities, students, courses)
 
     schedule.divide_students()
-    
+
     # def checker(schedule):
     #     # ac_dict = Counter([[x, x.activity()][1] for x in schedule.roomslots().list()])
     #     rm_dict = Counter([[x, x.activity()][0] for x in schedule.roomslots().list()])
@@ -35,9 +34,8 @@ if __name__ == "__main__":
     #             return 1
     #         else:
     #             return 2
-            
 
-    # i = 0 
+    # i = 0
     # for x in range(1000):
     #     print(x)
 
@@ -45,8 +43,6 @@ if __name__ == "__main__":
     #     if checker(best_schedule) == 1:
     #         i += 1
     # print(f"i: {i}")
-
-
 
     # visualize_student(schedule, "52311353")
     # checking which algorithm is selected and making a schedule accordingly
@@ -63,7 +59,7 @@ if __name__ == "__main__":
             best_schedule = sa(schedule, int(sys.argv[2]))
         best_schedule = sa(schedule)
     elif sys.argv[1] == "genetic":
-        best_schedule = genetic(schedule)
+        best_schedule = gen(schedule)
     else:
         # when no matching algorithm is found exit
         sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')

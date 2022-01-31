@@ -64,7 +64,7 @@ def mutate(schedule):
         # choose a random activity to move the student from
         from_activity_key = random.choice(activities_keys)
 
-        # if the activity is not a lecture, find activities of the same course and kind 
+        # if the activity is not a lecture, find activities of the same course and kind
         # and swap student to a random one of these
         if all_activities.single(from_activity_key).kind() != "Lecture":
             activities_to_choose = []
