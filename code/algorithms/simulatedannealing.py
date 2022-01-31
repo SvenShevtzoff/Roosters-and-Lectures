@@ -60,13 +60,13 @@ def simulated_annealing(schedule, iterations=1, no_change_count_max=10):
             boolean = check_solution(new_fitness, current_fitness, temperature)
 
             # new schedule accepted
-            if boolean == True:
+            if boolean:
                 # print("accept")
                 # print(new_fitness)
                 current_fitness = new_fitness
                 no_change_count = 0
             # new schedule rejected
-            elif boolean == False:
+            elif not boolean:
                 # print("reject")
                 if choice == 1:
                     swap_activities(mutation_parameters[0], mutation_parameters[1])
