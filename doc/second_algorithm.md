@@ -1,4 +1,4 @@
-# First Algorithm
+# Second Algorithm
 
 ### Genetic Algorithm
 

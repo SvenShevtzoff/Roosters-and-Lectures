@@ -190,8 +190,8 @@ class Schedule:
         for room in rooms.list():
             vis.visualize_room(self, room)
 
-    def output(self):
-        with open('doc/output/output.csv', 'w') as file:
+    def output(self, alg):
+        with open(f'alg_data/{alg}_schedule.csv', 'w') as file:
             writer = csv.writer(file)
 
             # write the header

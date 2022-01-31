@@ -3,8 +3,7 @@ import copy
 import operator
 import random
 
-
-def genetic(schedule, population_size=10):
+def genetic(schedule, population_size=100):
 
     scores = {}
     hundred_in_a_row = 0
@@ -14,7 +13,7 @@ def genetic(schedule, population_size=10):
         random_schedule = randomise(copied_schedule)
         scores[random_schedule] = random_schedule.fitness()
 
-    while not all(score == list(scores.values())[0] for score in list(scores.values())):
+    while len(scores) > 1 and not all(score == list(scores.values())[0] for score in list(scores.values())):
         mother = max(scores.items(), key=operator.itemgetter(1))[0]
         scores.pop(mother)
         father = max(scores.items(), key=operator.itemgetter(1))[0]
@@ -29,7 +28,6 @@ def genetic(schedule, population_size=10):
                 available_roomslots.append(str(slot))
 
             wrong_times += 1
-            print(wrong_times)
             child = copy.deepcopy(schedule)
             child.divide_students()
 
@@ -67,13 +65,22 @@ def genetic(schedule, population_size=10):
 
             fitness = child.fitness()
 
+        scores[child] = child.fitness()
+
         if wrong_times == 100:
             hundred_in_a_row += 1
 
         if hundred_in_a_row == 4:
             scores.pop(child)
-        print(f"Malus points of child: {child.fitness()}")
+            hundred_in_a_row = 0
         scores[child] = child.fitness()
         if hundred_in_a_row == 4:
             scores.pop(child)
+<<<<<<< HEAD
+    return child
+
+
+
+=======
         print(list(scores.values()))
+>>>>>>> d329823c05997e487344e686b860655ae07300e1
