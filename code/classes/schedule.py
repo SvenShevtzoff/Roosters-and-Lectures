@@ -110,13 +110,9 @@ class Schedule:
         gapdict, malus_points = self.empty_roomslot_and_conflict_check()
         malus_points += gapdict[1] * 1
         malus_points += gapdict[2] * 3
-        # print(f"2t                  :   {gapdict[2] * 3}")
         malus_points += gapdict[3] * 1000
-        # print(f"3t                  :   {gapdict[3] * 1000}")
         malus_points += self.exceed_max_activity_check()
-        # print(f"exceed max activity :   {self.exceed_max_activity_check()}")
         malus_points += self.max_roomsize_check()
-        # print(f"max roomsize        :   {self.max_roomsize_check()}")
         malus_points += self.use_17_slot_check()
         return malus_points
 

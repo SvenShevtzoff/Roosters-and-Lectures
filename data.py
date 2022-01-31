@@ -13,6 +13,9 @@ from code.visualize.visualize import visualize_student, visualize_course
 import copy
 import operator
 
+
+ITERATIONS = 100
+
 activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
@@ -24,7 +27,7 @@ schedule_head = Schedule(roomslots, activities, students, courses)
 dictionary = []
 
 if sys.argv[1] == "randomise":
-    for x in range(10000):
+    for x in range(ITERATIONS):
         print(x)
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
@@ -36,7 +39,7 @@ if sys.argv[1] == "randomise":
 #   best_schedule.output("randomise")
 
 elif sys.argv[1] == "greedy":
-    for x in range(10000):
+    for x in range(ITERATIONS):
         print(x)
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
@@ -49,7 +52,7 @@ elif sys.argv[1] == "greedy":
 
 elif sys.argv[1] == "hillclimber":
     schedules = dict()
-    for x in range(10000):
+    for x in range(ITERATIONS):
         print(x)
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
@@ -64,7 +67,7 @@ elif sys.argv[1] == "hillclimber":
 
 elif sys.argv[1] == "simulatedannealing":
     schedules = dict()
-    for x in range(10000):
+    for x in range(ITERATIONS):
         print(x)
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
@@ -79,7 +82,7 @@ elif sys.argv[1] == "simulatedannealing":
  
 elif sys.argv[1] == "genetic":
     schedules = dict()
-    for x in range(10000):
+    for x in range(ITERATIONS):
         print(x)
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
