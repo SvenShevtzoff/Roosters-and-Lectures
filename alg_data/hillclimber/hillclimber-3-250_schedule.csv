@@ -20,7 +20,7 @@ Servaas Anker,Software engineering,w1,C0.110,Wed,13
 Servaas Anker,Software engineering,p1,A1.08,Tue,11
 Servaas Anker,Architectuur en computerorganisatie,h2,A1.04,Thu,13
 Servaas Anker,Architectuur en computerorganisatie,h1,C1.112,Wed,13
-Wissal Ankone,Compilerbouw (practicum),p1,C0.110,Fri,9
+Wissal Ankone,Compilerbouw practicum,p1,C0.110,Fri,9
 Wissal Ankone,Project Genetic Algorithms,p1,A1.04,Tue,9
 Herman Apeldoorn,Advanced Heuristics,h1,C1.112,Fri,11
 Herman Apeldoorn,Heuristieken 2,w1,A1.08,Tue,9
@@ -225,7 +225,7 @@ Marco Bloemert,Collectieve Intelligentie,h1,C0.110,Thu,17
 Marco Bloemert,Collectieve Intelligentie,w1,C1.112,Fri,9
 Marco Bloemert,Collectieve Intelligentie,p1,A1.04,Fri,11
 Marco Bloemert,Collectieve Intelligentie,h2,C1.112,Wed,11
-Anjana Bloemsma,Compilerbouw (practicum),p1,C0.110,Fri,9
+Anjana Bloemsma,Compilerbouw practicum,p1,C0.110,Fri,9
 Guilliano Blomsma,Webprogrammeren en databases,w1,A1.04,Tue,11
 Guilliano Blomsma,Webprogrammeren en databases,h1,A1.10,Mon,13
 Guilliano Blomsma,Webprogrammeren en databases,p1,B0.201,Fri,9
@@ -498,7 +498,7 @@ Gradus Dams,Compilerbouw,h2,A1.10,Fri,13
 Gradus Dams,Compilerbouw,w1,A1.08,Wed,11
 Gradus Dams,Compilerbouw,h1,C0.110,Fri,11
 Gradus Dams,Project Genetic Algorithms,p1,A1.04,Tue,9
-Goos Dane,Compilerbouw (practicum),p1,A1.04,Fri,9
+Goos Dane,Compilerbouw practicum,p1,A1.04,Fri,9
 Goos Dane,Project Genetic Algorithms,p1,C1.112,Tue,9
 Goos Dane,Zoeken sturen en bewegen,p1,A1.08,Thu,9
 Manul de Boon,Algoritmen en complexiteit,p1,C0.110,Wed,11
@@ -541,7 +541,7 @@ Mslm de Olde,Calculus 2,w1,A1.10,Mon,9
 Mslm de Olde,Calculus 2,h1,C0.110,Wed,15
 Ziggy de Smit,Heuristieken 2,w1,A1.08,Tue,9
 Ziggy de Smit,Heuristieken 2,h1,C1.112,Mon,11
-a?la de Snoo,Compilerbouw (practicum),p1,A1.04,Fri,9
+a?la de Snoo,Compilerbouw practicum,p1,A1.04,Fri,9
 a?la de Snoo,Project Genetic Algorithms,p1,A1.04,Tue,9
 Marije de Vreeze,Collectieve Intelligentie,h3,C1.112,Thu,15
 Marije de Vreeze,Collectieve Intelligentie,h1,C0.110,Thu,17
@@ -557,7 +557,7 @@ Quido Deniz,Interactie-ontwerp,h2,C0.110,Fri,15
 Quido Deniz,Interactie-ontwerp,h1,C0.110,Thu,15
 Quido Deniz,Programmeren in Java 2,p1,A1.10,Tue,9
 Brigitta Diallo,Software engineering,h1,C0.110,Tue,13
-Brigitta Diallo,Compilerbouw (practicum),p1,A1.04,Fri,9
+Brigitta Diallo,Compilerbouw practicum,p1,A1.04,Fri,9
 Brigitta Diallo,Collectieve Intelligentie,h3,C1.112,Thu,15
 Brigitta Diallo,Algoritmen en complexiteit,h1,B0.201,Tue,11
 Brigitta Diallo,Collectieve Intelligentie,p1,A1.04,Fri,11
@@ -859,15 +859,15 @@ Virgill Hamelink,Software engineering,h1,C0.110,Tue,13
 Virgill Hamelink,Programmeren in Java 2,p1,A1.06,Fri,13
 Virgill Hamelink,Software engineering,p1,A1.08,Tue,11
 Virgill Hamelink,Software engineering,w1,C1.112,Mon,13
-Judi Hamers,Compilerbouw (practicum),p1,A1.04,Fri,9
+Judi Hamers,Compilerbouw practicum,p1,A1.04,Fri,9
 Judi Hamers,Technology for games,h1,A1.04,Mon,13
 Judi Hamers,Technology for games,h2,A1.06,Mon,15
 Judi Hamers,Technology for games,w1,A1.06,Fri,11
-Olle Hamhuis,Compilerbouw (practicum),p1,A1.08,Wed,9
+Olle Hamhuis,Compilerbouw practicum,p1,A1.08,Wed,9
 Sahar Hamstra,Lineaire Algebra,h1,C0.110,Thu,11
 Sahar Hamstra,Heuristieken 1,h1,A1.10,Wed,11
 Sahar Hamstra,Heuristieken 1,w1,B0.201,Thu,13
-Sahar Hamstra,Compilerbouw (practicum),p1,C0.110,Fri,9
+Sahar Hamstra,Compilerbouw practicum,p1,C0.110,Fri,9
 Sahar Hamstra,Lineaire Algebra,h2,B0.201,Mon,11
 Ervin Hartevelt,Reflectie op de digitale cultuur,w1,C1.112,Fri,13
 Ervin Hartevelt,Reflectie op de digitale cultuur,h2,C0.110,Tue,11
@@ -915,7 +915,7 @@ Anne-Jet Hofman,Webprogrammeren en databases,p1,B0.201,Fri,9
 Anne-Jet Hofman,Webprogrammeren en databases,h2,B0.201,Thu,15
 Anne-Jet Hofman,Webprogrammeren en databases,w1,A1.10,Fri,15
 Johanne Holstein,Netwerken en systeembeveiliging,p1,C1.112,Fri,15
-Johanne Holstein,Compilerbouw (practicum),p1,A1.08,Wed,9
+Johanne Holstein,Compilerbouw practicum,p1,A1.08,Wed,9
 Nesrin Holt,Databases 2,h1,C0.110,Tue,15
 Nesrin Holt,Databases 2,w1,A1.04,Tue,13
 Nesrin Holt,Project Genetic Algorithms,p1,A1.08,Thu,11
@@ -1065,7 +1065,7 @@ Chrystel Kalshoven,Lineaire Algebra,h1,C0.110,Thu,11
 Chrystel Kalshoven,Netwerken en systeembeveiliging,p1,A1.04,Mon,9
 Chrystel Kalshoven,Kansrekenen 2,h1,C0.110,Thu,13
 Chrystel Kalshoven,Kansrekenen 2,h2,C0.110,Tue,9
-Chrystel Kalshoven,Compilerbouw (practicum),p1,C0.110,Fri,9
+Chrystel Kalshoven,Compilerbouw practicum,p1,C0.110,Fri,9
 Chrystel Kalshoven,Lineaire Algebra,h2,B0.201,Mon,11
 Chrystel Kalshoven,Programmeren in Java 2,p1,B0.201,Mon,15
 Yaro Kamp,Webprogrammeren en databases,w1,A1.04,Tue,11
@@ -1104,7 +1104,7 @@ Ceciel Kentie,Moderne Databases,p1,B0.201,Fri,13
 Ceciel Kentie,Reflectie op de digitale cultuur,w1,A1.04,Wed,15
 Ceciel Kentie,Reflectie op de digitale cultuur,h1,A1.04,Fri,15
 Ceciel Kentie,Moderne Databases,h1,A1.10,Tue,11
-Thys Kersten,Compilerbouw (practicum),p1,A1.04,Fri,9
+Thys Kersten,Compilerbouw practicum,p1,A1.04,Fri,9
 Thys Kersten,Informatie- en organisatieontwerp,h2,C1.112,Thu,9
 Thys Kersten,Informatie- en organisatieontwerp,w1,C0.110,Mon,17
 Thys Kersten,Informatie- en organisatieontwerp,h1,B0.201,Tue,9
@@ -1124,7 +1124,7 @@ Lysbeth Keuken,Compilerbouw,p1,B0.201,Wed,11
 Lysbeth Keuken,Compilerbouw,h1,C0.110,Fri,11
 Lysbeth Keuken,Moderne Databases,h1,A1.10,Tue,11
 Rahim Kienhuis,Programmeren in Java 2,p1,C1.112,Thu,11
-Rahim Kienhuis,Compilerbouw (practicum),p1,A1.04,Fri,9
+Rahim Kienhuis,Compilerbouw practicum,p1,A1.04,Fri,9
 Rahim Kienhuis,Kansrekenen 2,h1,C0.110,Thu,13
 Rahim Kienhuis,Kansrekenen 2,h2,C0.110,Tue,9
 Sezen Kivits,Zoeken sturen en bewegen,p1,B0.201,Wed,13
@@ -1209,7 +1209,7 @@ Yee Koppers,Calculus 2,w1,A1.10,Mon,9
 Yee Koppers,Interactie-ontwerp,h1,C0.110,Thu,15
 Yee Koppers,Calculus 2,h1,C0.110,Wed,15
 Yee Koppers,Interactie-ontwerp,h2,C0.110,Fri,15
-Eveline Kops,Compilerbouw (practicum),p1,A1.08,Wed,9
+Eveline Kops,Compilerbouw practicum,p1,A1.08,Wed,9
 Titia Korbee,Compilerbouw,p1,C1.112,Tue,11
 Titia Korbee,Collectieve Intelligentie,h3,C1.112,Thu,15
 Titia Korbee,Project Numerical Recipes,p1,A1.04,Thu,15
@@ -1245,7 +1245,7 @@ Fynn Krabbe,Interactie-ontwerp,h1,C0.110,Thu,15
 Fynn Krabbe,Interactie-ontwerp,h2,C0.110,Fri,15
 Nikie Kreijkes,Lineaire Algebra,h1,C0.110,Thu,11
 Nikie Kreijkes,Lineaire Algebra,h2,B0.201,Mon,11
-Do?ukan Krikke,Compilerbouw (practicum),p1,A1.08,Wed,9
+Do?ukan Krikke,Compilerbouw practicum,p1,A1.08,Wed,9
 Corry Kroonen,Bioinformatica,h1,C0.110,Mon,13
 Corry Kroonen,Bioinformatica,w1,A1.08,Mon,11
 Corry Kroonen,Bioinformatica,h3,C1.112,Mon,15
@@ -1281,7 +1281,7 @@ Nadeem Lagendijk,Calculus 2,h1,C0.110,Wed,15
 Nadeem Lagendijk,Kansrekenen 2,h1,C0.110,Thu,13
 Nadeem Lagendijk,Kansrekenen 2,h2,C0.110,Tue,9
 Christianus Laman,Webprogrammeren en databases,w1,A1.04,Tue,11
-Christianus Laman,Compilerbouw (practicum),p1,A1.04,Fri,9
+Christianus Laman,Compilerbouw practicum,p1,A1.04,Fri,9
 Christianus Laman,Calculus 2,w1,B0.201,Tue,13
 Christianus Laman,Calculus 2,h1,C0.110,Wed,15
 Christianus Laman,Webprogrammeren en databases,h1,A1.10,Mon,13
@@ -1310,7 +1310,7 @@ Hanan Lathouwers,Project Numerical Recipes,p1,A1.10,Mon,11
 Hanan Lathouwers,Bioinformatica,w1,B0.201,Thu,11
 Hanan Lathouwers,Bioinformatica,p1,A1.06,Wed,13
 Hanan Lathouwers,Bioinformatica,h1,C0.110,Mon,13
-Hanan Lathouwers,Compilerbouw (practicum),p1,C0.110,Fri,9
+Hanan Lathouwers,Compilerbouw practicum,p1,C0.110,Fri,9
 Hanan Lathouwers,Bioinformatica,h3,C1.112,Mon,15
 Hanan Lathouwers,Software engineering,p1,A1.08,Tue,11
 Hanan Lathouwers,Bioinformatica,h2,A1.04,Fri,13
@@ -1351,7 +1351,7 @@ Bjrn Leijen,Collectieve Intelligentie,h2,C1.112,Wed,11
 Bjrn Leijen,Collectieve Intelligentie,p1,C1.112,Thu,13
 Bjrn Leijen,Software engineering,p1,A1.08,Tue,11
 Jory Leijenaar,Project Genetic Algorithms,p1,C1.112,Tue,9
-Jory Leijenaar,Compilerbouw (practicum),p1,A1.08,Wed,9
+Jory Leijenaar,Compilerbouw practicum,p1,A1.08,Wed,9
 Haroun Lemaire,Software engineering,h1,C0.110,Tue,13
 Haroun Lemaire,Bioinformatica,p1,A1.06,Wed,13
 Haroun Lemaire,Bioinformatica,h1,C0.110,Mon,13
@@ -1380,7 +1380,7 @@ Sanne Lentz,Databases 2,w1,A1.04,Tue,13
 Sanne Lentz,Technology for games,h2,A1.06,Mon,15
 Sanne Lentz,Technology for games,w1,A1.06,Fri,11
 Federico Levels,Compilerbouw,p1,C1.112,Tue,11
-Federico Levels,Compilerbouw (practicum),p1,A1.04,Fri,9
+Federico Levels,Compilerbouw practicum,p1,A1.04,Fri,9
 Federico Levels,Moderne Databases,w1,A1.10,Thu,15
 Federico Levels,Moderne Databases,p1,A1.10,Thu,13
 Federico Levels,Compilerbouw,h2,A1.10,Fri,13
@@ -1388,10 +1388,10 @@ Federico Levels,Compilerbouw,w1,A1.08,Wed,11
 Federico Levels,Compilerbouw,h1,C0.110,Fri,11
 Federico Levels,Moderne Databases,h1,A1.10,Tue,11
 Chi Liebregts,Algoritmen en complexiteit,p1,C0.110,Wed,17
-Chi Liebregts,Compilerbouw (practicum),p1,C0.110,Fri,9
+Chi Liebregts,Compilerbouw practicum,p1,C0.110,Fri,9
 Chi Liebregts,Algoritmen en complexiteit,h1,B0.201,Tue,11
 Chi Liebregts,Algoritmen en complexiteit,w1,A1.10,Mon,15
-Maurice Lima,Compilerbouw (practicum),p1,C0.110,Fri,9
+Maurice Lima,Compilerbouw practicum,p1,C0.110,Fri,9
 Maurice Lima,Project Genetic Algorithms,p1,A1.08,Thu,11
 Hetty Lindhout,Collectieve Intelligentie,w1,A1.06,Tue,11
 Hetty Lindhout,Collectieve Intelligentie,h3,C1.112,Thu,15
@@ -1426,7 +1426,7 @@ Yi Luten,Calculus 2,w1,A1.10,Wed,13
 Yi Luten,Programmeren in Java 2,p1,B0.201,Mon,9
 Yi Luten,Kansrekenen 2,h1,C0.110,Thu,13
 Yi Luten,Kansrekenen 2,h2,C0.110,Tue,9
-Yi Luten,Compilerbouw (practicum),p1,A1.08,Wed,9
+Yi Luten,Compilerbouw practicum,p1,A1.08,Wed,9
 Yi Luten,Calculus 2,h1,C0.110,Wed,15
 Math Luth,Zoeken sturen en bewegen,p1,A1.08,Thu,9
 Math Luth,Analysemethoden en -technieken,h1,C0.110,Mon,15
@@ -1549,7 +1549,7 @@ Jorren Modderkolk,Webprogrammeren en databases,p1,A1.06,Tue,13
 Jorren Modderkolk,Architectuur en computerorganisatie,h1,C1.112,Wed,13
 Jorren Modderkolk,Webprogrammeren en databases,h2,B0.201,Thu,15
 Lisse Moes,Algoritmen en complexiteit,p1,C0.110,Wed,11
-Lisse Moes,Compilerbouw (practicum),p1,A1.04,Fri,9
+Lisse Moes,Compilerbouw practicum,p1,A1.04,Fri,9
 Lisse Moes,Algoritmen en complexiteit,h1,B0.201,Tue,11
 Lisse Moes,Algoritmen en complexiteit,w1,A1.10,Mon,15
 Lisse Moes,Calculus 2,w1,A1.10,Mon,9
@@ -1577,7 +1577,7 @@ Shannon Mullenders,Kansrekenen 2,h2,C0.110,Tue,9
 Shannon Mullenders,Collectieve Intelligentie,p1,C1.112,Wed,9
 Doetje Munsters,Kansrekenen 2,h1,C0.110,Thu,13
 Doetje Munsters,Kansrekenen 2,h2,C0.110,Tue,9
-Callista Mutsaers,Compilerbouw (practicum),p1,C0.110,Fri,9
+Callista Mutsaers,Compilerbouw practicum,p1,C0.110,Fri,9
 Claudine Nagel,Programmeren in Java 2,p1,A1.06,Fri,9
 Fauve Neve,Technology for games,h1,A1.04,Mon,13
 Fauve Neve,Technology for games,h2,A1.06,Mon,15
@@ -1683,7 +1683,7 @@ Redouane Paijmans,Compilerbouw,w1,A1.04,Wed,9
 Loulou Panman,Calculus 2,w1,B0.201,Tue,13
 Loulou Panman,Calculus 2,h1,C0.110,Wed,15
 Farah Pastoor,Compilerbouw,h2,A1.10,Fri,13
-Farah Pastoor,Compilerbouw (practicum),p1,A1.08,Wed,9
+Farah Pastoor,Compilerbouw practicum,p1,A1.08,Wed,9
 Farah Pastoor,Compilerbouw,p1,B0.201,Wed,11
 Farah Pastoor,Compilerbouw,h1,C0.110,Fri,11
 Farah Pastoor,Compilerbouw,w1,A1.04,Wed,9
@@ -1702,7 +1702,7 @@ Solane Paulissen,Collectieve Intelligentie,p1,A1.04,Fri,11
 Solane Paulissen,Collectieve Intelligentie,h1,C0.110,Thu,17
 Solane Paulissen,Collectieve Intelligentie,h2,C1.112,Wed,11
 Solane Paulissen,Algoritmen en complexiteit,p1,C0.110,Wed,17
-Solane Paulissen,Compilerbouw (practicum),p1,C0.110,Fri,9
+Solane Paulissen,Compilerbouw practicum,p1,C0.110,Fri,9
 Xander Peijs,Collectieve Intelligentie,w1,A1.06,Tue,11
 Xander Peijs,Collectieve Intelligentie,h3,C1.112,Thu,15
 Xander Peijs,Collectieve Intelligentie,h1,C0.110,Thu,17
@@ -1768,7 +1768,7 @@ Gustaaf Poldervaart,Zoeken sturen en bewegen,p1,A1.08,Thu,9
 Gustaaf Poldervaart,Calculus 2,h1,C0.110,Wed,15
 Gustaaf Poldervaart,Project Genetic Algorithms,p1,A1.04,Tue,9
 Rafaela Polfliet,Advanced Heuristics,p1,A1.08,Thu,13
-Rafaela Polfliet,Compilerbouw (practicum),p1,A1.04,Fri,9
+Rafaela Polfliet,Compilerbouw practicum,p1,A1.04,Fri,9
 Rafaela Polfliet,Advanced Heuristics,h1,C1.112,Fri,11
 Rafaela Polfliet,Netwerken en systeembeveiliging,p1,C1.112,Fri,15
 Rafaela Polfliet,Calculus 2,w1,B0.201,Tue,13
@@ -1870,7 +1870,7 @@ Romello Reintjes,Collectieve Intelligentie,w1,A1.10,Fri,9
 Romello Reintjes,Collectieve Intelligentie,h2,C1.112,Wed,11
 Romello Reintjes,Collectieve Intelligentie,p1,C1.112,Wed,9
 Nadir Remijn,Netwerken en systeembeveiliging,p1,A1.04,Tue,15
-Taeke Renes,Compilerbouw (practicum),p1,C0.110,Fri,9
+Taeke Renes,Compilerbouw practicum,p1,C0.110,Fri,9
 Taeke Renes,Programmeren in Java 2,p1,B0.201,Mon,15
 Cheyenna Reuvekamp,Lineaire Algebra,h1,C0.110,Thu,11
 Cheyenna Reuvekamp,Algoritmen en complexiteit,h1,B0.201,Tue,11
@@ -2152,7 +2152,7 @@ Marrit Speelman,Kansrekenen 2,h2,C0.110,Tue,9
 Marrit Speelman,Project Genetic Algorithms,p1,C1.112,Tue,9
 Marrit Speelman,Interactie-ontwerp,h2,C0.110,Fri,15
 Marrit Speelman,Interactie-ontwerp,h1,C0.110,Thu,15
-Kenan Spronck,Compilerbouw (practicum),p1,C0.110,Fri,9
+Kenan Spronck,Compilerbouw practicum,p1,C0.110,Fri,9
 Ya Steeman,Zoeken sturen en bewegen,p1,A1.08,Thu,9
 Sharief Stegink,Databases 2,h1,C0.110,Tue,15
 Sharief Stegink,Databases 2,w1,A1.04,Tue,13
@@ -2210,7 +2210,7 @@ Nermin Talhaoui,Software engineering,w1,C0.110,Wed,13
 Nermin Talhaoui,Bioinformatica,p1,A1.06,Wed,13
 Nermin Talhaoui,Bioinformatica,h1,C0.110,Mon,13
 Nermin Talhaoui,Bioinformatica,w1,A1.08,Mon,11
-Nermin Talhaoui,Compilerbouw (practicum),p1,C0.110,Fri,9
+Nermin Talhaoui,Compilerbouw practicum,p1,C0.110,Fri,9
 Nermin Talhaoui,Bioinformatica,h3,C1.112,Mon,15
 Nermin Talhaoui,Software engineering,p1,A1.08,Tue,11
 Nermin Talhaoui,Bioinformatica,h2,A1.04,Fri,13
@@ -2269,7 +2269,7 @@ Pleun ter Heide,Software engineering,w1,C0.110,Wed,13
 Pleun ter Heide,Bioinformatica,w1,B0.201,Wed,9
 Pleun ter Heide,Bioinformatica,h1,C0.110,Mon,13
 Pleun ter Heide,Heuristieken 1,h1,A1.10,Wed,11
-Pleun ter Heide,Compilerbouw (practicum),p1,C0.110,Fri,9
+Pleun ter Heide,Compilerbouw practicum,p1,C0.110,Fri,9
 Pleun ter Heide,Bioinformatica,h3,C1.112,Mon,15
 Pleun ter Heide,Software engineering,p1,A1.08,Tue,11
 Pleun ter Heide,Bioinformatica,h2,A1.04,Fri,13
@@ -2296,7 +2296,7 @@ Rochelle Thielen,Kansrekenen 2,h2,C0.110,Tue,9
 Silvie Thoma,Collectieve Intelligentie,h3,C1.112,Thu,15
 Silvie Thoma,Collectieve Intelligentie,h1,C0.110,Thu,17
 Silvie Thoma,Collectieve Intelligentie,w1,A1.10,Fri,9
-Silvie Thoma,Compilerbouw (practicum),p1,A1.08,Wed,9
+Silvie Thoma,Compilerbouw practicum,p1,A1.08,Wed,9
 Silvie Thoma,Collectieve Intelligentie,h2,C1.112,Wed,11
 Silvie Thoma,Collectieve Intelligentie,p1,A1.06,Wed,9
 Ard Tielemans,Bioinformatica,p1,A1.08,Wed,13
@@ -2539,7 +2539,7 @@ Enrique van den Born,Technology for games,w1,A1.08,Wed,15
 Enrique van den Born,Technology for games,h1,A1.04,Mon,13
 Enrique van den Born,Informatie- en organisatieontwerp,h1,B0.201,Tue,9
 Enrique van den Born,Informatie- en organisatieontwerp,w1,C1.112,Wed,15
-Enrique van den Born,Compilerbouw (practicum),p1,A1.08,Wed,9
+Enrique van den Born,Compilerbouw practicum,p1,A1.08,Wed,9
 Enrique van den Born,Informatie- en organisatieontwerp,p1,A1.10,Thu,9
 Enrique van den Born,Technology for games,h2,A1.06,Mon,15
 Cyrano van den Eijnde,Heuristieken 1,w1,A1.06,Thu,9
@@ -2568,7 +2568,7 @@ Chelly van der Doelen,Reflectie op de digitale cultuur,h1,A1.04,Fri,15
 Chelly van der Doelen,Webprogrammeren en databases,h1,A1.10,Mon,13
 Chelly van der Doelen,Webprogrammeren en databases,p1,B0.201,Fri,9
 Chelly van der Doelen,Webprogrammeren en databases,h2,B0.201,Thu,15
-Tamar van der Drift,Compilerbouw (practicum),p1,A1.08,Wed,9
+Tamar van der Drift,Compilerbouw practicum,p1,A1.08,Wed,9
 Lakshmi van der Gaag,Databases 2,h1,C0.110,Tue,15
 Lakshmi van der Gaag,Databases 2,w1,C0.110,Tue,17
 Deejay van der Geer,Algoritmen en complexiteit,p1,C0.110,Wed,11
@@ -2809,7 +2809,7 @@ Harwin van Loon,Collectieve Intelligentie,h3,C1.112,Thu,15
 Harwin van Loon,Technology for games,h1,A1.04,Mon,13
 Harwin van Loon,Databases 2,w1,C0.110,Tue,17
 Harwin van Loon,Collectieve Intelligentie,h1,C0.110,Thu,17
-Harwin van Loon,Compilerbouw (practicum),p1,A1.08,Wed,9
+Harwin van Loon,Compilerbouw practicum,p1,A1.08,Wed,9
 Harwin van Loon,Collectieve Intelligentie,h2,C1.112,Wed,11
 Harwin van Loon,Collectieve Intelligentie,p1,C1.112,Thu,13
 Harwin van Loon,Databases 2,h1,C0.110,Tue,15
@@ -3026,7 +3026,7 @@ Maggy van Walsum,Databases 2,w1,C0.110,Tue,17
 Maggy van Walsum,Interactie-ontwerp,h1,C0.110,Thu,15
 Maran van Wanrooij,Interactie-ontwerp,h2,C0.110,Fri,15
 Maran van Wanrooij,Interactie-ontwerp,h1,C0.110,Thu,15
-Maran van Wanrooij,Compilerbouw (practicum),p1,A1.08,Wed,9
+Maran van Wanrooij,Compilerbouw practicum,p1,A1.08,Wed,9
 Renco van Weel,Software engineering,h1,C0.110,Tue,13
 Renco van Weel,Software engineering,w1,C0.110,Wed,13
 Renco van Weel,Technology for games,h1,A1.04,Mon,13
@@ -3042,7 +3042,7 @@ Sanna van Wiggen,Lineaire Algebra,h1,C0.110,Thu,11
 Sanna van Wiggen,Lineaire Algebra,h2,B0.201,Mon,11
 Hui van Zeijl,Heuristieken 1,w1,A1.06,Thu,9
 Hui van Zeijl,Heuristieken 1,h1,A1.10,Wed,11
-Hui van Zeijl,Compilerbouw (practicum),p1,A1.08,Wed,9
+Hui van Zeijl,Compilerbouw practicum,p1,A1.08,Wed,9
 Hui van Zeijl,Architectuur en computerorganisatie,h2,A1.04,Thu,13
 Hui van Zeijl,Architectuur en computerorganisatie,h1,C1.112,Wed,13
 Jorian van Zijderveld,Software engineering,h1,C0.110,Tue,13
@@ -3074,14 +3074,14 @@ Vinod Velt,Webprogrammeren en databases,h1,A1.10,Mon,13
 Vinod Velt,Databases 2,h1,C0.110,Tue,15
 Vinod Velt,Webprogrammeren en databases,p1,B0.201,Fri,9
 Vinod Velt,Webprogrammeren en databases,h2,B0.201,Thu,15
-Nadja Vendel,Compilerbouw (practicum),p1,A1.08,Wed,9
+Nadja Vendel,Compilerbouw practicum,p1,A1.08,Wed,9
 Solomon Verhorst,Compilerbouw,h2,A1.10,Fri,13
 Solomon Verhorst,Compilerbouw,w1,A1.08,Wed,11
 Solomon Verhorst,Compilerbouw,p1,B0.201,Wed,11
 Solomon Verhorst,Compilerbouw,h1,C0.110,Fri,11
 Yuki Verkuijl,Databases 2,h1,C0.110,Tue,15
 Yuki Verkuijl,Databases 2,w1,C0.110,Tue,17
-Yuki Verkuijl,Compilerbouw (practicum),p1,A1.04,Fri,9
+Yuki Verkuijl,Compilerbouw practicum,p1,A1.04,Fri,9
 Yuki Verkuijl,Analysemethoden en -technieken,h1,C0.110,Mon,15
 Chloe Vermanen,Lineaire Algebra,h1,C0.110,Thu,11
 Chloe Vermanen,Calculus 2,w1,A1.10,Mon,9
@@ -3151,7 +3151,7 @@ Nadien Volman,Technology for games,w1,A1.06,Fri,11
 Nadien Volman,Compilerbouw,h1,C0.110,Fri,11
 Nadien Volman,Technology for games,h2,A1.06,Mon,15
 Nadien Volman,Compilerbouw,w1,A1.04,Wed,9
-Annemarie Vooijs,Compilerbouw (practicum),p1,C0.110,Fri,9
+Annemarie Vooijs,Compilerbouw practicum,p1,C0.110,Fri,9
 Dax Voskuilen,Software engineering,h1,C0.110,Tue,13
 Dax Voskuilen,Moderne Databases,p1,A1.08,Mon,15
 Dax Voskuilen,Moderne Databases,w1,A1.06,Thu,13
@@ -3325,7 +3325,7 @@ Frederikus Wullink,Calculus 2,h1,C0.110,Wed,15
 Frederikus Wullink,Analysemethoden en -technieken,h1,C0.110,Mon,15
 Gabrilla Yazici,Software engineering,h1,C0.110,Tue,13
 Gabrilla Yazici,Reflectie op de digitale cultuur,h2,C0.110,Tue,11
-Gabrilla Yazici,Compilerbouw (practicum),p1,A1.04,Fri,9
+Gabrilla Yazici,Compilerbouw practicum,p1,A1.04,Fri,9
 Gabrilla Yazici,Algoritmen en complexiteit,h1,B0.201,Tue,11
 Gabrilla Yazici,Software engineering,p1,A1.10,Fri,11
 Gabrilla Yazici,Algoritmen en complexiteit,p1,C0.110,Wed,17
