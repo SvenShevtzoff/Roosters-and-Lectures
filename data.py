@@ -14,7 +14,7 @@ import copy
 import operator
 
 
-ITERATIONS = 100
+ITERATIONS = 1000
 
 activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
@@ -52,30 +52,33 @@ elif sys.argv[1] == "greedy":
 
 elif sys.argv[1] == "hillclimber":
     schedules = dict()
+    no_change_count_max = 250
     for x in range(ITERATIONS):
-        print(x)
+        print(f"count {x}")
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
-        schedule = hc(schedule, 1, 10)
+        schedule = hc(schedule, 1, no_change_count_max)
         dictionary.append(schedule.fitness())
         schedules[schedule] = schedule.fitness()
+        print(f"fitness {schedule.fitness()}")
     dictionary = Counter(dictionary)
-    with open('alg_data/hillclimber_data.txt', 'w') as f:
+    with open('alg_data/hillclimber/hillclimber_data_mut3_ncm250.txt', 'w') as f:
         print(dictionary, file=f)
     best_schedule = min(schedules.items(), key=operator.itemgetter(1))[0]
-    best_schedule.output("hillclimber")
+    best_schedule.output("hillclimber-3-250")
 
 elif sys.argv[1] == "simulatedannealing":
     schedules = dict()
     for x in range(ITERATIONS):
-        print(x)
+        print(f"count {x}")
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
-        schedule = sa(schedule, 1, 10)
+        schedule = sa(schedule, 1, 1000)
         dictionary.append(schedule.fitness())
         schedules[schedule] = schedule.fitness()
+        print(f"fitness {schedule.fitness()}")
     dictionary = Counter(dictionary)
-    with open('alg_data/simulatedannealing_data.txt', 'w') as f:
+    with open('alg_data/simulatedannealing_data_mut1_ncm1000.txt', 'w') as f:
         print(dictionary, file=f)
     best_schedule = min(schedules.items(), key=operator.itemgetter(1))[0]
     best_schedule.output("simulatedannealing")

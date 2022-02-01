@@ -98,7 +98,11 @@ def hill_climber_alg(schedule, iterations=100, no_change_count_max=1000):
 
         while no_change_count < no_change_count_max:
             # make some mutations
-            choice, mutation_parameters = mutate(current_schedule)
+            choice1, mutation_parameters1 = mutate(current_schedule)
+            choice2, mutation_parameters2 = mutate(current_schedule)
+            choice3, mutation_parameters3 = mutate(current_schedule)
+            choice_list = [choice1, choice2, choice3]
+            mutation_parameters_list = [mutation_parameters1, mutation_parameters2, mutation_parameters3]
 
             # calculate the fitness after mutating
             new_fitness = current_schedule.fitness()
@@ -110,10 +114,13 @@ def hill_climber_alg(schedule, iterations=100, no_change_count_max=1000):
                 no_change_count = 0
             else:
                 # keep track of the amount of iterations without change
-                if choice == 1:
-                    swap_activities(mutation_parameters[0], mutation_parameters[1])
-                elif choice == 2:
-                    move_student(schedule, mutation_parameters[0].std_number(), mutation_parameters[2], mutation_parameters[1])
+                for i in range(3):
+                    choice = choice_list[i]
+                    mutation_parameters = mutation_parameters_list[i]
+                    if choice == 1:
+                        swap_activities(mutation_parameters[0], mutation_parameters[1])
+                    elif choice == 2:
+                        move_student(schedule, mutation_parameters[0].std_number(), mutation_parameters[2], mutation_parameters[1])
                 no_change_count += 1
 
         # saving the best schedule

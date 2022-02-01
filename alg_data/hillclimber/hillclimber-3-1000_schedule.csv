@@ -1,0 +1,3371 @@
+student,course,activity,room,day,time
+Yanick Abbing,Software engineering,w1,C1.112,Tue,13
+Yanick Abbing,Data Mining,h2,A1.06,Fri,11
+Yanick Abbing,Data Mining,w1,A1.08,Wed,9
+Yanick Abbing,Lineaire Algebra,h2,C1.112,Fri,11
+Yanick Abbing,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Yanick Abbing,Software engineering,p1,A1.04,Fri,13
+Yanick Abbing,Software engineering,h1,B0.201,Mon,11
+Yanick Abbing,Data Mining,h1,A1.04,Tue,15
+Yanick Abbing,Lineaire Algebra,h1,B0.201,Tue,11
+Yanick Abbing,Data Mining,p1,A1.06,Mon,11
+Roelof Adam,Webprogrammeren en databases,h2,A1.10,Thu,13
+Roelof Adam,Webprogrammeren en databases,h1,A1.06,Tue,9
+Roelof Adam,Webprogrammeren en databases,w1,C0.110,Tue,11
+Roelof Adam,Webprogrammeren en databases,p1,C1.112,Wed,9
+Willibrordus Agema,Calculus 2,w1,B0.201,Thu,11
+Willibrordus Agema,Calculus 2,h1,C0.110,Thu,9
+Servaas Anker,Software engineering,w1,C1.112,Tue,13
+Servaas Anker,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Servaas Anker,Software engineering,h1,B0.201,Mon,11
+Servaas Anker,Software engineering,p1,A1.10,Fri,9
+Servaas Anker,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Wissal Ankone,Project Genetic Algorithms,p1,B0.201,Mon,9
+Wissal Ankone,Compilerbouw (practicum),p1,C1.112,Thu,15
+Herman Apeldoorn,Heuristieken 2,h1,C1.112,Thu,9
+Herman Apeldoorn,Advanced Heuristics,h1,C0.110,Tue,13
+Herman Apeldoorn,Heuristieken 2,w1,A1.04,Wed,13
+Herman Apeldoorn,Advanced Heuristics,p1,A1.06,Tue,15
+Evi Appel,Collectieve Intelligentie,p1,A1.10,Thu,15
+Evi Appel,Collectieve Intelligentie,w1,A1.10,Mon,11
+Evi Appel,Collectieve Intelligentie,h1,C1.112,Mon,11
+Evi Appel,Collectieve Intelligentie,h3,B0.201,Tue,13
+Evi Appel,Collectieve Intelligentie,h2,C1.112,Tue,11
+Wilmer Appelhof,Programmeren in Java 2,p1,C1.112,Mon,15
+Benjamin Arendse,Webprogrammeren en databases,h2,A1.10,Thu,13
+Benjamin Arendse,Webprogrammeren en databases,h1,A1.06,Tue,9
+Benjamin Arendse,Webprogrammeren en databases,w1,C0.110,Tue,11
+Benjamin Arendse,Webprogrammeren en databases,p1,C1.112,Wed,9
+Diny Aslan,Calculus 2,w1,B0.201,Thu,11
+Diny Aslan,Calculus 2,h1,C0.110,Thu,9
+Chesney Autar,Moderne Databases,p1,A1.10,Mon,13
+Chesney Autar,Moderne Databases,w1,A1.04,Mon,11
+Chesney Autar,Moderne Databases,h1,A1.10,Fri,13
+Martin Avci,Compilerbouw,h2,C0.110,Thu,13
+Martin Avci,Project Numerical Recipes,p1,C0.110,Fri,17
+Martin Avci,Compilerbouw,p1,A1.06,Wed,11
+Martin Avci,Compilerbouw,h1,C0.110,Thu,11
+Martin Avci,Compilerbouw,w1,B0.201,Wed,13
+Gidon Baetsen,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Gidon Baetsen,Moderne Databases,w1,A1.04,Mon,11
+Gidon Baetsen,Moderne Databases,p1,A1.10,Mon,13
+Gidon Baetsen,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Gidon Baetsen,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Gidon Baetsen,Moderne Databases,h1,A1.10,Fri,13
+Gidon Baetsen,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Rhona Bakkum,Collectieve Intelligentie,p1,C0.110,Mon,13
+Rhona Bakkum,Moderne Databases,w1,A1.04,Mon,11
+Rhona Bakkum,Collectieve Intelligentie,w1,A1.10,Mon,11
+Rhona Bakkum,Moderne Databases,p1,C1.112,Fri,15
+Rhona Bakkum,Collectieve Intelligentie,h1,C1.112,Mon,11
+Rhona Bakkum,Collectieve Intelligentie,h3,B0.201,Tue,13
+Rhona Bakkum,Collectieve Intelligentie,h2,C1.112,Tue,11
+Rhona Bakkum,Moderne Databases,h1,A1.10,Fri,13
+Wafa Bart,Collectieve Intelligentie,p1,A1.10,Thu,15
+Wafa Bart,Kansrekenen 2,h1,A1.04,Thu,9
+Wafa Bart,Collectieve Intelligentie,w1,A1.10,Mon,11
+Wafa Bart,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Wafa Bart,Kansrekenen 2,h2,C0.110,Fri,11
+Wafa Bart,Collectieve Intelligentie,h1,C1.112,Mon,11
+Wafa Bart,Databases 2,w1,C1.112,Fri,13
+Wafa Bart,Databases 2,h1,C0.110,Wed,15
+Wafa Bart,Collectieve Intelligentie,h3,B0.201,Tue,13
+Wafa Bart,Collectieve Intelligentie,h2,C1.112,Tue,11
+Sharan Baselmans,Collectieve Intelligentie,p1,A1.10,Thu,15
+Sharan Baselmans,Compilerbouw,h2,C0.110,Thu,13
+Sharan Baselmans,Lineaire Algebra,h1,B0.201,Tue,11
+Sharan Baselmans,Lineaire Algebra,h2,C1.112,Fri,11
+Sharan Baselmans,Collectieve Intelligentie,w1,A1.10,Mon,11
+Sharan Baselmans,Compilerbouw,p1,A1.04,Wed,11
+Sharan Baselmans,Collectieve Intelligentie,h1,C1.112,Mon,11
+Sharan Baselmans,Compilerbouw,h1,C0.110,Thu,11
+Sharan Baselmans,Collectieve Intelligentie,h3,B0.201,Tue,13
+Sharan Baselmans,Collectieve Intelligentie,h2,C1.112,Tue,11
+Sharan Baselmans,Project Numerical Recipes,p1,A1.06,Mon,9
+Sharan Baselmans,Compilerbouw,w1,B0.201,Wed,13
+Edin Bastings,Collectieve Intelligentie,p1,C0.110,Mon,13
+Edin Bastings,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Edin Bastings,Collectieve Intelligentie,w1,A1.10,Mon,11
+Edin Bastings,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Edin Bastings,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Edin Bastings,Collectieve Intelligentie,h1,C1.112,Mon,11
+Edin Bastings,Databases 2,w1,C1.112,Fri,13
+Edin Bastings,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Edin Bastings,Databases 2,h1,C0.110,Wed,15
+Edin Bastings,Collectieve Intelligentie,h3,B0.201,Tue,13
+Edin Bastings,Collectieve Intelligentie,h2,C1.112,Tue,11
+Edin Bastings,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Edin Bastings,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Mattijs Baudoin,Compilerbouw,h2,C0.110,Thu,13
+Mattijs Baudoin,Lineaire Algebra,h2,C1.112,Fri,11
+Mattijs Baudoin,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Mattijs Baudoin,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Mattijs Baudoin,Interactie-ontwerp,h1,A1.10,Tue,9
+Mattijs Baudoin,Compilerbouw,p1,A1.04,Wed,11
+Mattijs Baudoin,Compilerbouw,h1,C0.110,Thu,11
+Mattijs Baudoin,Interactie-ontwerp,h2,C0.110,Mon,9
+Mattijs Baudoin,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Mattijs Baudoin,Lineaire Algebra,h1,B0.201,Tue,11
+Mattijs Baudoin,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Mattijs Baudoin,Compilerbouw,w1,B0.201,Wed,13
+Ravi Bauer,Collectieve Intelligentie,w1,C0.110,Tue,9
+Ravi Bauer,Collectieve Intelligentie,p1,A1.06,Wed,15
+Ravi Bauer,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Ravi Bauer,Calculus 2,h1,C0.110,Thu,9
+Ravi Bauer,Calculus 2,w1,B0.201,Thu,11
+Ravi Bauer,Collectieve Intelligentie,h1,C1.112,Mon,11
+Ravi Bauer,Collectieve Intelligentie,h3,B0.201,Tue,13
+Ravi Bauer,Collectieve Intelligentie,h2,C1.112,Tue,11
+Wiert Becht,Project Numerical Recipes,p1,C0.110,Fri,17
+Kyllian Bekkema,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Kyllian Bekkema,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Kyllian Bekkema,Advanced Heuristics,h1,C0.110,Tue,13
+Kyllian Bekkema,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Kyllian Bekkema,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Kyllian Bekkema,Advanced Heuristics,p1,A1.10,Fri,11
+Marrie Bekker,Collectieve Intelligentie,w1,C0.110,Tue,9
+Marrie Bekker,Calculus 2,h1,C0.110,Thu,9
+Marrie Bekker,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Marrie Bekker,Collectieve Intelligentie,h1,C1.112,Mon,11
+Marrie Bekker,Collectieve Intelligentie,p1,A1.08,Tue,9
+Marrie Bekker,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Marrie Bekker,Calculus 2,w1,A1.10,Wed,15
+Marrie Bekker,Collectieve Intelligentie,h3,B0.201,Tue,13
+Marrie Bekker,Collectieve Intelligentie,h2,C1.112,Tue,11
+Angèle Berentsen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Angèle Berentsen,Kansrekenen 2,h1,A1.04,Thu,9
+Angèle Berentsen,Advanced Heuristics,h1,C0.110,Tue,13
+Angèle Berentsen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Angèle Berentsen,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Angèle Berentsen,Kansrekenen 2,h2,C0.110,Fri,11
+Angèle Berentsen,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Angèle Berentsen,Advanced Heuristics,p1,A1.10,Fri,11
+Angèle Berentsen,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Angèle Berentsen,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Emil Bergmans,Kansrekenen 2,h1,A1.04,Thu,9
+Emil Bergmans,Project Genetic Algorithms,p1,C0.110,Wed,9
+Emil Bergmans,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Emil Bergmans,Kansrekenen 2,h2,C0.110,Fri,11
+Emil Bergmans,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Emil Bergmans,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Emil Bergmans,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Tian Berkers,Advanced Heuristics,h1,C0.110,Tue,13
+Tian Berkers,Calculus 2,h1,C0.110,Thu,9
+Tian Berkers,Webprogrammeren en databases,p1,B0.201,Fri,11
+Tian Berkers,Webprogrammeren en databases,w1,C0.110,Tue,11
+Tian Berkers,Advanced Heuristics,p1,A1.10,Fri,11
+Tian Berkers,Webprogrammeren en databases,h1,A1.06,Tue,9
+Tian Berkers,Calculus 2,w1,A1.10,Wed,15
+Tian Berkers,Webprogrammeren en databases,h2,A1.10,Thu,13
+Annique Berrevoets,Software engineering,w1,C1.112,Mon,9
+Annique Berrevoets,Software engineering,p1,A1.04,Fri,13
+Annique Berrevoets,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Annique Berrevoets,Software engineering,h1,B0.201,Mon,11
+Theadora Besemer,Data Mining,h1,A1.04,Tue,15
+Theadora Besemer,Data Mining,p1,B0.201,Fri,9
+Theadora Besemer,Data Mining,w1,A1.08,Wed,15
+Theadora Besemer,Data Mining,h2,A1.06,Fri,11
+Abdallah Beulen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Abdallah Beulen,Heuristieken 1,h1,B0.201,Wed,11
+Abdallah Beulen,Heuristieken 1,w1,C1.112,Mon,13
+Abdallah Beulen,Software engineering,w1,C1.112,Tue,13
+Abdallah Beulen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Abdallah Beulen,Autonomous Agents 2,h1,A1.04,Thu,15
+Abdallah Beulen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Abdallah Beulen,Software engineering,p1,A1.04,Fri,13
+Abdallah Beulen,Software engineering,h1,B0.201,Mon,11
+Abdallah Beulen,Autonomous Agents 2,h2,A1.04,Tue,11
+Abdallah Beulen,Autonomous Agents 2,w1,A1.06,Fri,9
+Abdallah Beulen,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Abdallah Beulen,Autonomous Agents 2,p1,A1.10,Thu,9
+Eltjo Beunen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Eltjo Beunen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Eltjo Beunen,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Eltjo Beunen,Software engineering,p1,A1.10,Fri,9
+Eltjo Beunen,Software engineering,h1,B0.201,Mon,11
+Eltjo Beunen,Software engineering,w1,C1.112,Mon,9
+Saba Bhaggoe,Kansrekenen 2,h1,A1.04,Thu,9
+Saba Bhaggoe,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Saba Bhaggoe,Kansrekenen 2,h2,C0.110,Fri,11
+Saba Bhaggoe,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Saba Bhaggoe,Programmeren in Java 2,p1,A1.06,Thu,9
+Saba Bhaggoe,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Ella Bischoff,Collectieve Intelligentie,h1,C1.112,Mon,11
+Ella Bischoff,Collectieve Intelligentie,p1,A1.08,Tue,9
+Ella Bischoff,Collectieve Intelligentie,h3,B0.201,Tue,13
+Ella Bischoff,Collectieve Intelligentie,w1,A1.10,Fri,15
+Ella Bischoff,Collectieve Intelligentie,h2,C1.112,Tue,11
+Perry Blijleven,Project Numerical Recipes,p1,C0.110,Fri,17
+Thyrza Blik,Lineaire Algebra,h2,C1.112,Fri,11
+Thyrza Blik,Lineaire Algebra,h1,B0.201,Tue,11
+Jarik Blikman,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Jarik Blikman,Bioinformatica,h3,B0.201,Tue,15
+Jarik Blikman,Data Mining,h2,A1.06,Fri,11
+Jarik Blikman,Data Mining,w1,A1.08,Wed,9
+Jarik Blikman,Bioinformatica,h1,C1.112,Wed,13
+Jarik Blikman,Heuristieken 2,w1,A1.08,Mon,15
+Jarik Blikman,Interactie-ontwerp,h1,A1.10,Tue,9
+Jarik Blikman,Bioinformatica,p1,A1.10,Wed,11
+Jarik Blikman,Data Mining,p1,B0.201,Fri,9
+Jarik Blikman,Bioinformatica,h2,B0.201,Fri,13
+Jarik Blikman,Interactie-ontwerp,h2,C0.110,Mon,9
+Jarik Blikman,Data Mining,h1,A1.04,Tue,15
+Jarik Blikman,Heuristieken 2,h1,C1.112,Thu,9
+Jarik Blikman,Bioinformatica,w1,A1.08,Thu,9
+Monika Blikman,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Monika Blikman,Kansrekenen 2,h1,A1.04,Thu,9
+Monika Blikman,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Monika Blikman,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Monika Blikman,Kansrekenen 2,h2,C0.110,Fri,11
+Monika Blikman,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Monika Blikman,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Monika Blikman,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Marco Bloemert,Collectieve Intelligentie,h1,C1.112,Mon,11
+Marco Bloemert,Collectieve Intelligentie,p1,A1.08,Tue,9
+Marco Bloemert,Collectieve Intelligentie,h3,B0.201,Tue,13
+Marco Bloemert,Collectieve Intelligentie,w1,A1.10,Fri,15
+Marco Bloemert,Collectieve Intelligentie,h2,C1.112,Tue,11
+Anjana Bloemsma,Compilerbouw (practicum),p1,C1.112,Thu,15
+Guilliano Blomsma,Project Genetic Algorithms,p1,C0.110,Wed,9
+Guilliano Blomsma,Webprogrammeren en databases,p1,B0.201,Fri,11
+Guilliano Blomsma,Webprogrammeren en databases,w1,A1.08,Thu,13
+Guilliano Blomsma,Webprogrammeren en databases,h1,A1.06,Tue,9
+Guilliano Blomsma,Webprogrammeren en databases,h2,A1.10,Thu,13
+Lenne Boateng,Compilerbouw,h2,C0.110,Thu,13
+Lenne Boateng,Machine Learning,h2,B0.201,Fri,15
+Lenne Boateng,Compilerbouw,p1,A1.04,Wed,11
+Lenne Boateng,Compilerbouw,h1,C0.110,Thu,11
+Lenne Boateng,Compilerbouw,w1,C0.110,Wed,13
+Lenne Boateng,Machine Learning,h1,A1.06,Mon,13
+Amadou Boekema,Kansrekenen 2,h1,A1.04,Thu,9
+Amadou Boekema,Compilerbouw,h2,C0.110,Thu,13
+Amadou Boekema,Kansrekenen 2,h2,C0.110,Fri,11
+Amadou Boekema,Interactie-ontwerp,h1,A1.10,Tue,9
+Amadou Boekema,Compilerbouw,p1,A1.04,Wed,11
+Amadou Boekema,Compilerbouw,h1,C0.110,Thu,11
+Amadou Boekema,Interactie-ontwerp,h2,C0.110,Mon,9
+Amadou Boekema,Compilerbouw,w1,B0.201,Wed,13
+Armin Bol,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Armin Bol,Project Genetic Algorithms,p1,A1.06,Fri,15
+Rayn Bolding,Moderne Databases,p1,C0.110,Tue,15
+Rayn Bolding,Moderne Databases,h1,A1.10,Fri,13
+Rayn Bolding,Moderne Databases,w1,A1.10,Tue,11
+Jeremey Bontenbal,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Jeremey Bontenbal,Kansrekenen 2,h1,A1.04,Thu,9
+Jeremey Bontenbal,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Jeremey Bontenbal,Kansrekenen 2,h2,C0.110,Fri,11
+Jeremey Bontenbal,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Tariq Bood,Programmeren in Java 2,p1,C0.110,Mon,11
+Hiba Boogert,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Hiba Boogert,Calculus 2,w1,B0.201,Thu,11
+Hiba Boogert,Calculus 2,h1,C0.110,Thu,9
+Kely Borg,Programmeren in Java 2,p1,A1.08,Thu,11
+Ken Borsboom,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Ken Borsboom,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Ken Borsboom,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Narin Boshuis,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Narin Boshuis,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Narin Boshuis,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Rudolph Bosman,Calculus 2,w1,A1.10,Wed,15
+Rudolph Bosman,Calculus 2,h1,C0.110,Thu,9
+Jael Boutkan,Calculus 2,w1,B0.201,Thu,11
+Jael Boutkan,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Jael Boutkan,Calculus 2,h1,C0.110,Thu,9
+Resi Braamhaar,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Hanne Brans,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Hanne Brans,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Hanne Brans,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Hanne Brans,Technology for games,h1,A1.04,Wed,15
+Hanne Brans,Technology for games,w1,A1.08,Tue,11
+Hanne Brans,Technology for games,h2,C0.110,Tue,17
+Hanne Brans,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Cyrina Brasser,Bioinformatica,h3,B0.201,Tue,15
+Cyrina Brasser,Bioinformatica,h1,C1.112,Wed,13
+Cyrina Brasser,Bioinformatica,p1,A1.08,Fri,9
+Cyrina Brasser,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Cyrina Brasser,Bioinformatica,w1,A1.04,Tue,13
+Cyrina Brasser,Bioinformatica,h2,B0.201,Fri,13
+Cyrina Brasser,Project Numerical Recipes,p1,A1.06,Mon,9
+Femia Brink,Collectieve Intelligentie,p1,A1.06,Wed,15
+Femia Brink,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Femia Brink,Collectieve Intelligentie,h1,C1.112,Mon,11
+Femia Brink,Collectieve Intelligentie,h3,B0.201,Tue,13
+Femia Brink,Collectieve Intelligentie,w1,A1.10,Fri,15
+Femia Brink,Collectieve Intelligentie,h2,C1.112,Tue,11
+Femia Brink,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Renze Brink,Kansrekenen 2,h1,A1.04,Thu,9
+Renze Brink,Calculus 2,h1,C0.110,Thu,9
+Renze Brink,Webprogrammeren en databases,p1,B0.201,Fri,11
+Renze Brink,Kansrekenen 2,h2,C0.110,Fri,11
+Renze Brink,Webprogrammeren en databases,w1,C0.110,Tue,11
+Renze Brink,Webprogrammeren en databases,h1,A1.06,Tue,9
+Renze Brink,Calculus 2,w1,A1.10,Wed,15
+Renze Brink,Webprogrammeren en databases,h2,A1.10,Thu,13
+Nyncke Brinks,Kansrekenen 2,h1,A1.04,Thu,9
+Nyncke Brinks,Kansrekenen 2,h2,C0.110,Fri,11
+Wulfert Brinksma,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Wulfert Brinksma,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Wulfert Brinksma,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Ilyass Broeks,Bioinformatica,h3,B0.201,Tue,15
+Ilyass Broeks,Bioinformatica,w1,A1.08,Wed,11
+Ilyass Broeks,Bioinformatica,h1,C1.112,Wed,13
+Ilyass Broeks,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Ilyass Broeks,Bioinformatica,h2,B0.201,Fri,13
+Ilyass Broeks,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Ilyass Broeks,Bioinformatica,p1,A1.10,Wed,11
+Ethan Broer,Kansrekenen 2,h1,A1.04,Thu,9
+Ethan Broer,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Ethan Broer,Software engineering,p1,A1.04,Fri,13
+Ethan Broer,Kansrekenen 2,h2,C0.110,Fri,11
+Ethan Broer,Software engineering,h1,B0.201,Mon,11
+Ethan Broer,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Ethan Broer,Software engineering,w1,C1.112,Mon,9
+Ethan Broer,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Tarah Broerse,Autonomous Agents 2,h1,A1.04,Thu,15
+Tarah Broerse,Lineaire Algebra,h2,C1.112,Fri,11
+Tarah Broerse,Autonomous Agents 2,w1,A1.04,Mon,9
+Tarah Broerse,Autonomous Agents 2,h2,A1.04,Tue,11
+Tarah Broerse,Lineaire Algebra,h1,B0.201,Tue,11
+Tarah Broerse,Autonomous Agents 2,p1,A1.10,Thu,9
+Devlin Bronsema,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Devlin Bronsema,Databases 2,w1,A1.10,Tue,13
+Devlin Bronsema,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Devlin Bronsema,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Devlin Bronsema,Databases 2,h1,C0.110,Wed,15
+Devlin Bronsema,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Devlin Bronsema,Programmeren in Java 2,p1,A1.08,Fri,15
+Sayfeddine Bruijnes,Programmeren in Java 2,p1,C0.110,Mon,11
+Sayfeddine Bruijnes,Kansrekenen 2,h1,A1.04,Thu,9
+Sayfeddine Bruijnes,Data Mining,h2,A1.06,Fri,11
+Sayfeddine Bruijnes,Lineaire Algebra,h2,C1.112,Fri,11
+Sayfeddine Bruijnes,Kansrekenen 2,h2,C0.110,Fri,11
+Sayfeddine Bruijnes,Data Mining,w1,A1.04,Thu,13
+Sayfeddine Bruijnes,Data Mining,h1,A1.04,Tue,15
+Sayfeddine Bruijnes,Data Mining,p1,B0.201,Fri,9
+Sayfeddine Bruijnes,Lineaire Algebra,h1,B0.201,Tue,11
+Virginie Brunsveld,Collectieve Intelligentie,p1,C0.110,Mon,13
+Virginie Brunsveld,Databases 2,w1,A1.10,Tue,13
+Virginie Brunsveld,Autonomous Agents 2,w1,C1.112,Wed,11
+Virginie Brunsveld,Autonomous Agents 2,h1,A1.04,Thu,15
+Virginie Brunsveld,Lineaire Algebra,h2,C1.112,Fri,11
+Virginie Brunsveld,Autonomous Agents 2,p1,C1.112,Tue,9
+Virginie Brunsveld,Moderne Databases,w1,A1.10,Tue,11
+Virginie Brunsveld,Moderne Databases,p1,C1.112,Fri,15
+Virginie Brunsveld,Autonomous Agents 2,h2,A1.04,Tue,11
+Virginie Brunsveld,Collectieve Intelligentie,h1,C1.112,Mon,11
+Virginie Brunsveld,Databases 2,h1,C0.110,Wed,15
+Virginie Brunsveld,Collectieve Intelligentie,h3,B0.201,Tue,13
+Virginie Brunsveld,Lineaire Algebra,h1,B0.201,Tue,11
+Virginie Brunsveld,Collectieve Intelligentie,w1,A1.10,Fri,15
+Virginie Brunsveld,Collectieve Intelligentie,h2,C1.112,Tue,11
+Virginie Brunsveld,Moderne Databases,h1,A1.10,Fri,13
+Angus Brusse,Databases 2,h1,C0.110,Wed,15
+Angus Brusse,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Angus Brusse,Databases 2,w1,C1.112,Fri,13
+Allan Budel,Calculus 2,w1,B0.201,Wed,15
+Allan Budel,Calculus 2,h1,C0.110,Thu,9
+Allan Budel,Heuristieken 2,w1,A1.04,Wed,13
+Allan Budel,Project Genetic Algorithms,p1,C0.110,Wed,9
+Allan Budel,Heuristieken 2,h1,C1.112,Thu,9
+Wytske Buining,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Wytske Buining,Databases 2,w1,A1.10,Tue,13
+Wytske Buining,Compilerbouw,h2,C0.110,Thu,13
+Wytske Buining,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Wytske Buining,Compilerbouw,w1,B0.201,Wed,13
+Wytske Buining,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Wytske Buining,Compilerbouw,h1,C0.110,Thu,11
+Wytske Buining,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Wytske Buining,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Wytske Buining,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Wytske Buining,Programmeren in Java 2,p1,C1.112,Mon,15
+Wytske Buining,Databases 2,h1,C0.110,Wed,15
+Wytske Buining,Compilerbouw,p1,A1.06,Wed,11
+Rika Buizer,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Rika Buizer,Kansrekenen 2,h1,A1.04,Thu,9
+Rika Buizer,Technology for games,w1,B0.201,Mon,15
+Rika Buizer,Technology for games,h1,A1.04,Wed,15
+Rika Buizer,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Rika Buizer,Kansrekenen 2,h2,C0.110,Fri,11
+Rika Buizer,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Rika Buizer,Technology for games,h2,C0.110,Tue,17
+Rika Buizer,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Vivianne Buter,Heuristieken 1,h1,B0.201,Wed,11
+Vivianne Buter,Advanced Heuristics,h1,C0.110,Tue,13
+Vivianne Buter,Calculus 2,h1,C0.110,Thu,9
+Vivianne Buter,Calculus 2,w1,B0.201,Thu,11
+Vivianne Buter,Project Numerical Recipes,p1,C1.112,Wed,15
+Vivianne Buter,Advanced Heuristics,p1,A1.10,Fri,11
+Vivianne Buter,Programmeren in Java 2,p1,A1.06,Thu,9
+Vivianne Buter,Heuristieken 1,w1,A1.04,Wed,9
+Abdül Buth,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Abdül Buth,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Abdül Buth,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Abdül Buth,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Abdül Buth,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Abdül Buth,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Donné Buurma,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Donné Buurma,Kansrekenen 2,h1,A1.04,Thu,9
+Donné Buurma,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Donné Buurma,Kansrekenen 2,h2,C0.110,Fri,11
+Donné Buurma,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Lucienne Caris,Compilerbouw,h2,C0.110,Thu,13
+Lucienne Caris,Technology for games,w1,B0.201,Mon,15
+Lucienne Caris,Technology for games,h1,A1.04,Wed,15
+Lucienne Caris,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Lucienne Caris,Compilerbouw,p1,A1.06,Wed,11
+Lucienne Caris,Compilerbouw,h1,C0.110,Thu,11
+Lucienne Caris,Technology for games,h2,C0.110,Tue,17
+Lucienne Caris,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Lucienne Caris,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Lucienne Caris,Compilerbouw,w1,B0.201,Wed,13
+Samyra Çetin,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Samyra Çetin,Bioinformatica,h3,B0.201,Tue,15
+Samyra Çetin,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Samyra Çetin,Bioinformatica,h1,C1.112,Wed,13
+Samyra Çetin,Bioinformatica,p1,A1.08,Tue,13
+Samyra Çetin,Bioinformatica,h2,B0.201,Fri,13
+Samyra Çetin,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Samyra Çetin,Programmeren in Java 2,p1,C1.112,Mon,15
+Samyra Çetin,Bioinformatica,w1,A1.08,Thu,9
+Liana Charité,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Liana Charité,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Liana Charité,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Liana Charité,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Liana Charité,Programmeren in Java 2,p1,A1.08,Thu,11
+Yde Christiaens,Kansrekenen 2,h1,A1.04,Thu,9
+Yde Christiaens,Bioinformatica,h3,B0.201,Tue,15
+Yde Christiaens,Calculus 2,h1,C0.110,Thu,9
+Yde Christiaens,Bioinformatica,h1,C1.112,Wed,13
+Yde Christiaens,Bioinformatica,p1,A1.08,Tue,13
+Yde Christiaens,Kansrekenen 2,h2,C0.110,Fri,11
+Yde Christiaens,Bioinformatica,w1,A1.04,Tue,13
+Yde Christiaens,Bioinformatica,h2,B0.201,Fri,13
+Yde Christiaens,Databases 2,w1,C1.112,Fri,13
+Yde Christiaens,Programmeren in Java 2,p1,A1.06,Thu,9
+Yde Christiaens,Databases 2,h1,C0.110,Wed,15
+Yde Christiaens,Calculus 2,w1,A1.10,Wed,15
+Hailey Claassen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Hailey Claassen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Hailey Claassen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Hailey Claassen,Software engineering,h1,B0.201,Mon,11
+Hailey Claassen,Software engineering,p1,A1.10,Fri,9
+Hailey Claassen,Software engineering,w1,C1.112,Mon,9
+Hailey Claassen,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Seyit Cleven,Heuristieken 2,h1,C1.112,Thu,9
+Seyit Cleven,Heuristieken 2,w1,A1.04,Wed,13
+Jorike Coenen,Compilerbouw,h2,C0.110,Thu,13
+Jorike Coenen,Project Numerical Recipes,p1,C1.112,Wed,15
+Jorike Coenen,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Jorike Coenen,Compilerbouw,h1,C0.110,Thu,11
+Jorike Coenen,Compilerbouw,w1,C0.110,Wed,13
+Jorike Coenen,Compilerbouw,p1,A1.06,Wed,11
+Laurentia Cooijmans,Collectieve Intelligentie,w1,C0.110,Tue,9
+Laurentia Cooijmans,Calculus 2,h1,C0.110,Thu,9
+Laurentia Cooijmans,Heuristieken 2,w1,A1.04,Wed,13
+Laurentia Cooijmans,Calculus 2,w1,B0.201,Thu,11
+Laurentia Cooijmans,Collectieve Intelligentie,h1,C1.112,Mon,11
+Laurentia Cooijmans,Collectieve Intelligentie,p1,A1.08,Tue,9
+Laurentia Cooijmans,Heuristieken 2,h1,C1.112,Thu,9
+Laurentia Cooijmans,Collectieve Intelligentie,h3,B0.201,Tue,13
+Laurentia Cooijmans,Collectieve Intelligentie,h2,C1.112,Tue,11
+Mitzi Corten,Compilerbouw,h1,C0.110,Thu,11
+Mitzi Corten,Compilerbouw,h2,C0.110,Thu,13
+Mitzi Corten,Compilerbouw,p1,A1.04,Wed,11
+Mitzi Corten,Compilerbouw,w1,B0.201,Wed,13
+Jildou Corvers,Webprogrammeren en databases,w1,A1.08,Thu,13
+Jildou Corvers,Webprogrammeren en databases,h2,A1.10,Thu,13
+Jildou Corvers,Webprogrammeren en databases,h1,A1.06,Tue,9
+Jildou Corvers,Webprogrammeren en databases,p1,C1.112,Wed,9
+Abdelouahid Cramer,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Hananja Cramer,Software engineering,p1,A1.10,Fri,9
+Hananja Cramer,Programmeren in Java 2,p1,C0.110,Wed,11
+Hananja Cramer,Software engineering,w1,C1.112,Tue,13
+Hananja Cramer,Software engineering,h1,B0.201,Mon,11
+Jonas Crombach,Kansrekenen 2,h1,A1.04,Thu,9
+Jonas Crombach,Kansrekenen 2,h2,C0.110,Fri,11
+Güven Curfs,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Güven Curfs,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Güven Curfs,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Everhard Curvers,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Everhard Curvers,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Everhard Curvers,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Everhard Curvers,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Amélie Daams,Heuristieken 2,h1,C1.112,Thu,9
+Amélie Daams,Programmeren in Java 2,p1,C1.112,Mon,15
+Amélie Daams,Heuristieken 2,w1,A1.04,Wed,13
+Gradus Dams,Compilerbouw,h2,C0.110,Thu,13
+Gradus Dams,Project Genetic Algorithms,p1,C0.110,Wed,9
+Gradus Dams,Compilerbouw,p1,A1.06,Wed,11
+Gradus Dams,Compilerbouw,h1,C0.110,Thu,11
+Gradus Dams,Compilerbouw,w1,B0.201,Wed,13
+Goos Dane,Compilerbouw (practicum),p1,B0.201,Tue,9
+Goos Dane,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Goos Dane,Project Genetic Algorithms,p1,C0.110,Wed,9
+Manuël de Boon,Calculus 2,h1,C0.110,Thu,9
+Manuël de Boon,Machine Learning,h2,B0.201,Fri,15
+Manuël de Boon,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Manuël de Boon,Project Genetic Algorithms,p1,A1.06,Fri,15
+Manuël de Boon,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Manuël de Boon,Calculus 2,w1,A1.10,Wed,15
+Manuël de Boon,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Manuël de Boon,Programmeren in Java 2,p1,A1.08,Thu,11
+Manuël de Boon,Machine Learning,h1,A1.06,Mon,13
+Albertien de Hoogh,Technology for games,w1,B0.201,Mon,15
+Albertien de Hoogh,Technology for games,h1,A1.04,Wed,15
+Albertien de Hoogh,Software engineering,h1,B0.201,Mon,11
+Albertien de Hoogh,Software engineering,p1,A1.10,Fri,9
+Albertien de Hoogh,Technology for games,h2,C0.110,Tue,17
+Albertien de Hoogh,Software engineering,w1,C1.112,Mon,9
+Kathryn de Jongste,Interactie-ontwerp,h1,A1.10,Tue,9
+Kathryn de Jongste,Project Numerical Recipes,p1,C1.112,Wed,15
+Kathryn de Jongste,Interactie-ontwerp,h2,C0.110,Mon,9
+Anes de Kanter,Moderne Databases,p1,C1.112,Fri,15
+Anes de Kanter,Moderne Databases,h1,A1.10,Fri,13
+Anes de Kanter,Moderne Databases,w1,A1.06,Fri,13
+Krijna de Kreij,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Farhad de Kuijer,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Farhad de Kuijer,Project Numerical Recipes,p1,A1.06,Mon,9
+Janniek de Leest,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Janniek de Leest,Programmeren in Java 2,p1,C0.110,Mon,11
+Janniek de Leest,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Janniek de Leest,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Wieke de Leest,Lineaire Algebra,h2,C1.112,Fri,11
+Wieke de Leest,Lineaire Algebra,h1,B0.201,Tue,11
+Yana de Looff,Software engineering,p1,A1.10,Fri,9
+Yana de Looff,Software engineering,w1,C1.112,Tue,13
+Yana de Looff,Software engineering,h1,B0.201,Mon,11
+Alexandre de Olde,Lineaire Algebra,h2,C1.112,Fri,11
+Alexandre de Olde,Lineaire Algebra,h1,B0.201,Tue,11
+Müslüm de Olde,Calculus 2,w1,B0.201,Wed,15
+Müslüm de Olde,Calculus 2,h1,C0.110,Thu,9
+Müslüm de Olde,Programmeren in Java 2,p1,A1.08,Fri,15
+Ziggy de Smit,Heuristieken 2,h1,C1.112,Thu,9
+Ziggy de Smit,Heuristieken 2,w1,A1.04,Wed,13
+Ça?la de Snoo,Compilerbouw (practicum),p1,B0.201,Tue,9
+Ça?la de Snoo,Project Genetic Algorithms,p1,C0.110,Wed,9
+Marije de Vreeze,Collectieve Intelligentie,w1,C0.110,Tue,9
+Marije de Vreeze,Collectieve Intelligentie,p1,A1.06,Wed,15
+Marije de Vreeze,Collectieve Intelligentie,h1,C1.112,Mon,11
+Marije de Vreeze,Programmeren in Java 2,p1,A1.06,Thu,9
+Marije de Vreeze,Collectieve Intelligentie,h3,B0.201,Tue,13
+Marije de Vreeze,Collectieve Intelligentie,h2,C1.112,Tue,11
+Linne de Zoete,Kansrekenen 2,h1,A1.04,Thu,9
+Linne de Zoete,Kansrekenen 2,h2,C0.110,Fri,11
+Quido Deniz,Programmeren in Java 2,p1,C0.110,Mon,11
+Quido Deniz,Lineaire Algebra,h2,C1.112,Fri,11
+Quido Deniz,Interactie-ontwerp,h1,A1.10,Tue,9
+Quido Deniz,Interactie-ontwerp,h2,C0.110,Mon,9
+Quido Deniz,Lineaire Algebra,h1,B0.201,Tue,11
+Brigitta Diallo,Software engineering,w1,C1.112,Tue,13
+Brigitta Diallo,Data Mining,h2,A1.06,Fri,11
+Brigitta Diallo,Data Mining,w1,A1.08,Wed,9
+Brigitta Diallo,Collectieve Intelligentie,w1,A1.10,Mon,11
+Brigitta Diallo,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Brigitta Diallo,Software engineering,h1,B0.201,Mon,11
+Brigitta Diallo,Software engineering,p1,A1.10,Fri,9
+Brigitta Diallo,Collectieve Intelligentie,h1,C1.112,Mon,11
+Brigitta Diallo,Compilerbouw (practicum),p1,B0.201,Tue,9
+Brigitta Diallo,Collectieve Intelligentie,p1,A1.08,Tue,9
+Brigitta Diallo,Data Mining,p1,A1.10,Thu,11
+Brigitta Diallo,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Brigitta Diallo,Data Mining,h1,A1.04,Tue,15
+Brigitta Diallo,Collectieve Intelligentie,h3,B0.201,Tue,13
+Brigitta Diallo,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Brigitta Diallo,Collectieve Intelligentie,h2,C1.112,Tue,11
+Boy Dibbets,Databases 2,w1,A1.10,Tue,13
+Boy Dibbets,Lineaire Algebra,h1,B0.201,Tue,11
+Boy Dibbets,Lineaire Algebra,h2,C1.112,Fri,11
+Boy Dibbets,Heuristieken 2,w1,A1.08,Mon,15
+Boy Dibbets,Databases 2,h1,C0.110,Wed,15
+Boy Dibbets,Heuristieken 2,h1,C1.112,Thu,9
+Boy Dibbets,Programmeren in Java 2,p1,A1.08,Fri,15
+Marjory Dielen,Calculus 2,w1,A1.10,Wed,15
+Marjory Dielen,Calculus 2,h1,C0.110,Thu,9
+Pietro Dieperink,Technology for games,w1,B0.201,Mon,15
+Pietro Dieperink,Technology for games,h1,A1.04,Wed,15
+Pietro Dieperink,Technology for games,h2,C0.110,Tue,17
+André Dieters,Heuristieken 1,h1,B0.201,Wed,11
+André Dieters,Databases 2,w1,A1.10,Tue,13
+André Dieters,Algoritmen en complexiteit,h1,A1.04,Fri,11
+André Dieters,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+André Dieters,Algoritmen en complexiteit,w1,B0.201,Thu,13
+André Dieters,Heuristieken 1,w1,A1.04,Wed,9
+André Dieters,Databases 2,h1,C0.110,Wed,15
+André Dieters,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Kelly Doedens,Databases 2,h1,C0.110,Wed,15
+Kelly Doedens,Calculus 2,w1,B0.201,Wed,15
+Kelly Doedens,Databases 2,w1,A1.10,Tue,13
+Kelly Doedens,Calculus 2,h1,C0.110,Thu,9
+Winfried Doeve,Project Numerical Recipes,p1,C1.112,Wed,15
+Oumaima Donselaar,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Oumaima Donselaar,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Oumaima Donselaar,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Oumaima Donselaar,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Maruschka Doppenberg,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Siri Dröge,Project Numerical Recipes,p1,C1.112,Wed,15
+S?la Droog,Bioinformatica,h3,B0.201,Tue,15
+S?la Droog,Databases 2,w1,A1.10,Tue,13
+S?la Droog,Advanced Heuristics,h1,C0.110,Tue,13
+S?la Droog,Bioinformatica,h1,C1.112,Wed,13
+S?la Droog,Bioinformatica,p1,A1.08,Tue,13
+S?la Droog,Advanced Heuristics,p1,A1.10,Fri,11
+S?la Droog,Bioinformatica,w1,A1.04,Tue,13
+S?la Droog,Bioinformatica,h2,B0.201,Fri,13
+S?la Droog,Databases 2,h1,C0.110,Wed,15
+Ko Droste,Software engineering,w1,C1.112,Tue,13
+Ko Droste,Calculus 2,h1,C0.110,Thu,9
+Ko Droste,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Ko Droste,Software engineering,p1,A1.04,Fri,13
+Ko Droste,Software engineering,h1,B0.201,Mon,11
+Ko Droste,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Ko Droste,Calculus 2,w1,A1.10,Wed,15
+Ko Droste,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Doede Duiveman,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Doede Duiveman,Compilerbouw,h2,C0.110,Thu,13
+Doede Duiveman,Technology for games,h1,A1.04,Wed,15
+Doede Duiveman,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Doede Duiveman,Moderne Databases,p1,C0.110,Tue,15
+Doede Duiveman,Moderne Databases,w1,A1.10,Tue,11
+Doede Duiveman,Compilerbouw,p1,A1.06,Wed,11
+Doede Duiveman,Compilerbouw,h1,C0.110,Thu,11
+Doede Duiveman,Technology for games,h2,C0.110,Tue,17
+Doede Duiveman,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Doede Duiveman,Technology for games,w1,A1.08,Tue,11
+Doede Duiveman,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Doede Duiveman,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Doede Duiveman,Moderne Databases,h1,A1.10,Fri,13
+Doede Duiveman,Compilerbouw,w1,B0.201,Wed,13
+Rintje Dumoulin,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Brecht Eeltink,Software engineering,w1,C1.112,Tue,13
+Brecht Eeltink,Compilerbouw,h2,C0.110,Thu,13
+Brecht Eeltink,Software engineering,p1,A1.04,Fri,13
+Brecht Eeltink,Software engineering,h1,B0.201,Mon,11
+Brecht Eeltink,Compilerbouw,p1,A1.06,Wed,11
+Brecht Eeltink,Compilerbouw,h1,C0.110,Thu,11
+Brecht Eeltink,Compilerbouw,w1,B0.201,Wed,13
+Wissal Eggens,Databases 2,h1,C0.110,Wed,15
+Wissal Eggens,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Wissal Eggens,Databases 2,w1,C1.112,Fri,13
+Catharinus Eggermont,Software engineering,w1,C1.112,Mon,9
+Catharinus Eggermont,Software engineering,p1,A1.04,Fri,13
+Catharinus Eggermont,Software engineering,h1,B0.201,Mon,11
+Mattie Eisinga,Heuristieken 1,h1,B0.201,Wed,11
+Mattie Eisinga,Kansrekenen 2,h1,A1.04,Thu,9
+Mattie Eisinga,Kansrekenen 2,h2,C0.110,Fri,11
+Mattie Eisinga,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Mattie Eisinga,Heuristieken 1,w1,A1.04,Wed,9
+Ludovicus Eissens,Kansrekenen 2,h1,A1.04,Thu,9
+Ludovicus Eissens,Bioinformatica,h3,B0.201,Tue,15
+Ludovicus Eissens,Bioinformatica,w1,A1.08,Wed,11
+Ludovicus Eissens,Bioinformatica,h1,C1.112,Wed,13
+Ludovicus Eissens,Kansrekenen 2,h2,C0.110,Fri,11
+Ludovicus Eissens,Software engineering,h1,B0.201,Mon,11
+Ludovicus Eissens,Software engineering,p1,A1.10,Fri,9
+Ludovicus Eissens,Bioinformatica,h2,B0.201,Fri,13
+Ludovicus Eissens,Bioinformatica,p1,A1.10,Wed,11
+Ludovicus Eissens,Software engineering,w1,C1.112,Mon,9
+Pearl Elberse,Databases 2,h1,C0.110,Wed,15
+Pearl Elberse,Databases 2,w1,A1.10,Tue,13
+Raven Elissen,Bioinformatica,h3,B0.201,Tue,15
+Raven Elissen,Bioinformatica,h1,C1.112,Wed,13
+Raven Elissen,Bioinformatica,p1,A1.08,Fri,9
+Raven Elissen,Bioinformatica,w1,A1.04,Tue,13
+Raven Elissen,Bioinformatica,h2,B0.201,Fri,13
+Raven Elissen,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Bauke Elschot,Compilerbouw,h1,C0.110,Thu,11
+Bauke Elschot,Compilerbouw,h2,C0.110,Thu,13
+Bauke Elschot,Compilerbouw,p1,A1.04,Wed,11
+Bauke Elschot,Compilerbouw,w1,B0.201,Wed,13
+Geerten Elschot,Kansrekenen 2,h1,A1.04,Thu,9
+Geerten Elschot,Kansrekenen 2,h2,C0.110,Fri,11
+Geerten Elschot,Software engineering,h1,B0.201,Mon,11
+Geerten Elschot,Software engineering,p1,A1.10,Fri,9
+Geerten Elschot,Software engineering,w1,C1.112,Mon,9
+Dinah Ensink,Kansrekenen 2,h1,A1.04,Thu,9
+Dinah Ensink,Kansrekenen 2,h2,C0.110,Fri,11
+Dinah Ensink,Programmeren in Java 2,p1,A1.08,Fri,15
+Hande Essink,Moderne Databases,p1,A1.10,Mon,13
+Hande Essink,Moderne Databases,w1,A1.04,Mon,11
+Hande Essink,Moderne Databases,h1,A1.10,Fri,13
+Jaro Essink,Compilerbouw,h2,C0.110,Thu,13
+Jaro Essink,Compilerbouw,p1,A1.04,Wed,11
+Jaro Essink,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Jaro Essink,Compilerbouw,h1,C0.110,Thu,11
+Jaro Essink,Programmeren in Java 2,p1,A1.06,Thu,9
+Jaro Essink,Compilerbouw,w1,B0.201,Wed,13
+Herwin Ester,Bioinformatica,h3,B0.201,Tue,15
+Herwin Ester,Data Mining,w1,A1.08,Wed,15
+Herwin Ester,Data Mining,h2,A1.06,Fri,11
+Herwin Ester,Autonomous Agents 2,w1,C1.112,Wed,11
+Herwin Ester,Bioinformatica,h1,C1.112,Wed,13
+Herwin Ester,Autonomous Agents 2,h1,A1.04,Thu,15
+Herwin Ester,Bioinformatica,p1,A1.08,Tue,13
+Herwin Ester,Autonomous Agents 2,h2,A1.04,Tue,11
+Herwin Ester,Bioinformatica,w1,A1.04,Tue,13
+Herwin Ester,Bioinformatica,h2,B0.201,Fri,13
+Herwin Ester,Data Mining,p1,A1.10,Thu,11
+Herwin Ester,Data Mining,h1,A1.04,Tue,15
+Herwin Ester,Autonomous Agents 2,p1,A1.10,Thu,9
+Jurrian Fekkes,Calculus 2,w1,B0.201,Wed,15
+Jurrian Fekkes,Calculus 2,h1,C0.110,Thu,9
+Jurrian Fekkes,Autonomous Agents 2,h1,A1.04,Thu,15
+Jurrian Fekkes,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Jurrian Fekkes,Autonomous Agents 2,w1,A1.04,Mon,9
+Jurrian Fekkes,Autonomous Agents 2,p1,C1.112,Tue,9
+Jurrian Fekkes,Autonomous Agents 2,h2,A1.04,Tue,11
+Jurrian Fekkes,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Jurrian Fekkes,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Jurrian Fekkes,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Nurcan Fennis,Moderne Databases,p1,C0.110,Tue,15
+Nurcan Fennis,Moderne Databases,h1,A1.10,Fri,13
+Nurcan Fennis,Moderne Databases,w1,A1.10,Tue,11
+Antonius Fleming,Compilerbouw,w1,B0.201,Wed,13
+Antonius Fleming,Compilerbouw,h1,C0.110,Thu,11
+Antonius Fleming,Compilerbouw,h2,C0.110,Thu,13
+Antonius Fleming,Compilerbouw,p1,A1.06,Wed,11
+Belle Florijn,Heuristieken 1,h1,B0.201,Wed,11
+Belle Florijn,Heuristieken 1,w1,A1.04,Wed,9
+Belle Florijn,Project Numerical Recipes,p1,C0.110,Fri,17
+Diemer Fokkens,Calculus 2,w1,B0.201,Wed,15
+Diemer Fokkens,Bioinformatica,h3,B0.201,Tue,15
+Diemer Fokkens,Calculus 2,h1,C0.110,Thu,9
+Diemer Fokkens,Moderne Databases,w1,A1.06,Fri,13
+Diemer Fokkens,Bioinformatica,h1,C1.112,Wed,13
+Diemer Fokkens,Technology for games,w1,B0.201,Mon,15
+Diemer Fokkens,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Diemer Fokkens,Technology for games,h1,A1.04,Wed,15
+Diemer Fokkens,Bioinformatica,p1,A1.08,Tue,13
+Diemer Fokkens,Moderne Databases,p1,C1.112,Fri,15
+Diemer Fokkens,Bioinformatica,h2,B0.201,Fri,13
+Diemer Fokkens,Technology for games,h2,C0.110,Tue,17
+Diemer Fokkens,Moderne Databases,h1,A1.10,Fri,13
+Diemer Fokkens,Bioinformatica,w1,A1.08,Thu,9
+Ynze Freriks,Software engineering,w1,C1.112,Mon,9
+Ynze Freriks,Software engineering,p1,A1.10,Fri,9
+Ynze Freriks,Software engineering,h1,B0.201,Mon,11
+Nordin Geboers,Data Mining,w1,A1.08,Wed,15
+Nordin Geboers,Data Mining,h2,A1.06,Fri,11
+Nordin Geboers,Data Mining,p1,A1.10,Thu,11
+Nordin Geboers,Data Mining,h1,A1.04,Tue,15
+Nordin Geboers,Programmeren in Java 2,p1,A1.08,Fri,15
+Bahattin Geelen,Technology for games,w1,B0.201,Mon,15
+Bahattin Geelen,Technology for games,h1,A1.04,Wed,15
+Bahattin Geelen,Technology for games,h2,C0.110,Tue,17
+Sohrab Geers,Collectieve Intelligentie,p1,C0.110,Mon,13
+Sohrab Geers,Lineaire Algebra,h1,B0.201,Tue,11
+Sohrab Geers,Lineaire Algebra,h2,C1.112,Fri,11
+Sohrab Geers,Collectieve Intelligentie,h1,C1.112,Mon,11
+Sohrab Geers,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Sohrab Geers,Collectieve Intelligentie,h3,B0.201,Tue,13
+Sohrab Geers,Collectieve Intelligentie,w1,A1.10,Fri,15
+Sohrab Geers,Collectieve Intelligentie,h2,C1.112,Tue,11
+Patric Geluk,Webprogrammeren en databases,p1,B0.201,Fri,11
+Patric Geluk,Webprogrammeren en databases,h2,A1.10,Thu,13
+Patric Geluk,Webprogrammeren en databases,w1,A1.08,Thu,13
+Patric Geluk,Webprogrammeren en databases,h1,A1.06,Tue,9
+Eddy Gerritse,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Deacon Gielissen,Kansrekenen 2,h1,A1.04,Thu,9
+Deacon Gielissen,Compilerbouw,h2,C0.110,Thu,13
+Deacon Gielissen,Autonomous Agents 2,w1,C1.112,Wed,11
+Deacon Gielissen,Autonomous Agents 2,h1,A1.04,Thu,15
+Deacon Gielissen,Software engineering,p1,A1.04,Fri,13
+Deacon Gielissen,Kansrekenen 2,h2,C0.110,Fri,11
+Deacon Gielissen,Compilerbouw,p1,A1.04,Wed,11
+Deacon Gielissen,Software engineering,h1,B0.201,Mon,11
+Deacon Gielissen,Autonomous Agents 2,h2,A1.04,Tue,11
+Deacon Gielissen,Compilerbouw,h1,C0.110,Thu,11
+Deacon Gielissen,Compilerbouw,w1,C0.110,Wed,13
+Deacon Gielissen,Software engineering,w1,C1.112,Mon,9
+Deacon Gielissen,Autonomous Agents 2,p1,A1.10,Thu,9
+Richenel Giesen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Abdelkader Gijbels,Compilerbouw,h2,C0.110,Thu,13
+Abdelkader Gijbels,Lineaire Algebra,h2,C1.112,Fri,11
+Abdelkader Gijbels,Technology for games,h1,A1.04,Wed,15
+Abdelkader Gijbels,Project Numerical Recipes,p1,C1.112,Wed,15
+Abdelkader Gijbels,Compilerbouw,p1,A1.06,Wed,11
+Abdelkader Gijbels,Compilerbouw,h1,C0.110,Thu,11
+Abdelkader Gijbels,Technology for games,w1,A1.08,Tue,11
+Abdelkader Gijbels,Technology for games,h2,C0.110,Tue,17
+Abdelkader Gijbels,Lineaire Algebra,h1,B0.201,Tue,11
+Abdelkader Gijbels,Compilerbouw,w1,B0.201,Wed,13
+Marco Gilsing,Moderne Databases,p1,A1.10,Mon,13
+Marco Gilsing,Moderne Databases,h1,A1.10,Fri,13
+Marco Gilsing,Moderne Databases,w1,A1.06,Fri,13
+Maritte Gök,Moderne Databases,w1,A1.04,Mon,11
+Maritte Gök,Webprogrammeren en databases,p1,C1.112,Wed,9
+Maritte Gök,Webprogrammeren en databases,w1,A1.08,Thu,13
+Maritte Gök,Heuristieken 2,w1,A1.08,Mon,15
+Maritte Gök,Software engineering,h1,B0.201,Mon,11
+Maritte Gök,Moderne Databases,p1,C1.112,Fri,15
+Maritte Gök,Software engineering,p1,A1.10,Fri,9
+Maritte Gök,Webprogrammeren en databases,h1,A1.06,Tue,9
+Maritte Gök,Software engineering,w1,C1.112,Mon,9
+Maritte Gök,Heuristieken 2,h1,C1.112,Thu,9
+Maritte Gök,Webprogrammeren en databases,h2,A1.10,Thu,13
+Maritte Gök,Moderne Databases,h1,A1.10,Fri,13
+Rivelino Goor,Data Mining,h1,A1.04,Tue,15
+Rivelino Goor,Data Mining,p1,A1.06,Mon,11
+Rivelino Goor,Data Mining,h2,A1.06,Fri,11
+Rivelino Goor,Data Mining,w1,A1.08,Wed,9
+Umar Grift,Autonomous Agents 2,w1,C1.112,Wed,11
+Umar Grift,Autonomous Agents 2,h1,A1.04,Thu,15
+Umar Grift,Autonomous Agents 2,h2,A1.04,Tue,11
+Umar Grift,Autonomous Agents 2,p1,A1.10,Thu,9
+Umar Grift,Programmeren in Java 2,p1,C1.112,Mon,15
+Rijkje Groote,Calculus 2,w1,B0.201,Wed,15
+Rijkje Groote,Software engineering,w1,C1.112,Tue,13
+Rijkje Groote,Calculus 2,h1,C0.110,Thu,9
+Rijkje Groote,Software engineering,p1,A1.04,Fri,13
+Rijkje Groote,Interactie-ontwerp,h1,A1.10,Tue,9
+Rijkje Groote,Software engineering,h1,B0.201,Mon,11
+Rijkje Groote,Interactie-ontwerp,h2,C0.110,Mon,9
+Ünal Grooteman,Heuristieken 2,w1,A1.04,Wed,13
+Ünal Grooteman,Technology for games,w1,B0.201,Mon,15
+Ünal Grooteman,Technology for games,h1,A1.04,Wed,15
+Ünal Grooteman,Technology for games,h2,C0.110,Tue,17
+Ünal Grooteman,Heuristieken 2,h1,C1.112,Thu,9
+Yalda Grootenboer,Compilerbouw,h2,C0.110,Thu,13
+Yalda Grootenboer,Webprogrammeren en databases,h2,A1.10,Thu,13
+Yalda Grootenboer,Webprogrammeren en databases,p1,C1.112,Wed,9
+Yalda Grootenboer,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Yalda Grootenboer,Webprogrammeren en databases,w1,C0.110,Tue,11
+Yalda Grootenboer,Compilerbouw,p1,A1.04,Wed,11
+Yalda Grootenboer,Compilerbouw,h1,C0.110,Thu,11
+Yalda Grootenboer,Webprogrammeren en databases,h1,A1.06,Tue,9
+Yalda Grootenboer,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Yalda Grootenboer,Compilerbouw,w1,C0.110,Wed,13
+Yalda Grootenboer,Project Numerical Recipes,p1,A1.06,Mon,9
+Yalda Grootenboer,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Faruk Haalboom,Databases 2,h1,C0.110,Wed,15
+Faruk Haalboom,Databases 2,w1,A1.10,Tue,13
+Jetty Haanstra,Calculus 2,w1,B0.201,Wed,15
+Jetty Haanstra,Calculus 2,h1,C0.110,Thu,9
+Gabe Haarman,Technology for games,h1,A1.04,Wed,15
+Gabe Haarman,Technology for games,w1,A1.08,Tue,11
+Gabe Haarman,Technology for games,h2,C0.110,Tue,17
+Eylem Haas,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Eylem Haas,Programmeren in Java 2,p1,C0.110,Mon,11
+Eylem Haas,Kansrekenen 2,h1,A1.04,Thu,9
+Eylem Haas,Databases 2,w1,A1.10,Tue,13
+Eylem Haas,Moderne Databases,w1,A1.04,Mon,11
+Eylem Haas,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Eylem Haas,Kansrekenen 2,h2,C0.110,Fri,11
+Eylem Haas,Moderne Databases,p1,C0.110,Tue,15
+Eylem Haas,Databases 2,h1,C0.110,Wed,15
+Eylem Haas,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Eylem Haas,Moderne Databases,h1,A1.10,Fri,13
+Eylem Haas,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Virgill Hamelink,Software engineering,p1,A1.10,Fri,9
+Virgill Hamelink,Software engineering,w1,C1.112,Tue,13
+Virgill Hamelink,Programmeren in Java 2,p1,A1.06,Thu,9
+Virgill Hamelink,Software engineering,h1,B0.201,Mon,11
+Judi Hamers,Compilerbouw (practicum),p1,C1.112,Thu,13
+Judi Hamers,Technology for games,h1,A1.04,Wed,15
+Judi Hamers,Technology for games,w1,A1.08,Tue,11
+Judi Hamers,Technology for games,h2,C0.110,Tue,17
+Olle Hamhuis,Compilerbouw (practicum),p1,B0.201,Tue,9
+Sahar Hamstra,Heuristieken 1,h1,B0.201,Wed,11
+Sahar Hamstra,Compilerbouw (practicum),p1,C1.112,Thu,15
+Sahar Hamstra,Lineaire Algebra,h2,C1.112,Fri,11
+Sahar Hamstra,Lineaire Algebra,h1,B0.201,Tue,11
+Sahar Hamstra,Heuristieken 1,w1,A1.04,Wed,9
+Ervin Hartevelt,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Ervin Hartevelt,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Ervin Hartevelt,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Berdina Heijman,Kansrekenen 2,h1,A1.04,Thu,9
+Berdina Heijman,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Berdina Heijman,Kansrekenen 2,h2,C0.110,Fri,11
+Berdina Heijman,Project Genetic Algorithms,p1,C0.110,Wed,9
+Guus Heijnen,Calculus 2,w1,B0.201,Thu,11
+Guus Heijnen,Project Numerical Recipes,p1,A1.06,Mon,9
+Guus Heijnen,Calculus 2,h1,C0.110,Thu,9
+Rosali Heikoop,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Rosali Heikoop,Software engineering,w1,C1.112,Tue,13
+Rosali Heikoop,Software engineering,h1,B0.201,Mon,11
+Rosali Heikoop,Software engineering,p1,A1.10,Fri,9
+Rosali Heikoop,Programmeren in Java 2,p1,A1.06,Thu,9
+Mahmud Heller,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Mahmud Heller,Data Mining,h2,A1.06,Fri,11
+Mahmud Heller,Data Mining,w1,A1.08,Wed,9
+Mahmud Heller,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Mahmud Heller,Data Mining,h1,A1.04,Tue,15
+Mahmud Heller,Data Mining,p1,B0.201,Fri,9
+Mahmud Heller,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Sergio Hijdra,Calculus 2,w1,B0.201,Wed,15
+Sergio Hijdra,Calculus 2,h1,C0.110,Thu,9
+Sergio Hijdra,Interactie-ontwerp,h1,A1.10,Tue,9
+Sergio Hijdra,Interactie-ontwerp,h2,C0.110,Mon,9
+Bo Hilhorst,Autonomous Agents 2,h1,A1.04,Thu,15
+Bo Hilhorst,Lineaire Algebra,h2,C1.112,Fri,11
+Bo Hilhorst,Autonomous Agents 2,w1,A1.04,Mon,9
+Bo Hilhorst,Autonomous Agents 2,p1,C1.112,Tue,9
+Bo Hilhorst,Autonomous Agents 2,h2,A1.04,Tue,11
+Bo Hilhorst,Lineaire Algebra,h1,B0.201,Tue,11
+Dana Hoeksema,Compilerbouw,h2,C0.110,Thu,13
+Dana Hoeksema,Compilerbouw,w1,B0.201,Wed,13
+Dana Hoeksema,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Dana Hoeksema,Machine Learning,h2,B0.201,Fri,15
+Dana Hoeksema,Compilerbouw,h1,C0.110,Thu,11
+Dana Hoeksema,Machine Learning,h1,A1.06,Mon,13
+Dana Hoeksema,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Dana Hoeksema,Compilerbouw,p1,A1.06,Wed,11
+Sverre Hoenderdos,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Anne-Jet Hofman,Webprogrammeren en databases,h2,A1.10,Thu,13
+Anne-Jet Hofman,Webprogrammeren en databases,h1,A1.06,Tue,9
+Anne-Jet Hofman,Webprogrammeren en databases,w1,C0.110,Tue,11
+Anne-Jet Hofman,Webprogrammeren en databases,p1,C1.112,Wed,9
+Johanne Holstein,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Johanne Holstein,Compilerbouw (practicum),p1,C1.112,Thu,15
+Nesrin Holt,Databases 2,h1,C0.110,Wed,15
+Nesrin Holt,Project Genetic Algorithms,p1,B0.201,Mon,9
+Nesrin Holt,Databases 2,w1,C1.112,Fri,13
+Florus Holtkamp,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Florus Holtkamp,Programmeren in Java 2,p1,A1.08,Fri,15
+Christal Hoogerbrugge,Webprogrammeren en databases,p1,B0.201,Fri,11
+Christal Hoogerbrugge,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Christal Hoogerbrugge,Webprogrammeren en databases,w1,A1.08,Thu,13
+Christal Hoogerbrugge,Software engineering,h1,B0.201,Mon,11
+Christal Hoogerbrugge,Software engineering,p1,A1.10,Fri,9
+Christal Hoogerbrugge,Webprogrammeren en databases,h1,A1.06,Tue,9
+Christal Hoogerbrugge,Software engineering,w1,C1.112,Mon,9
+Christal Hoogerbrugge,Webprogrammeren en databases,h2,A1.10,Thu,13
+Christal Hoogerbrugge,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Esmée Hooijmaijers,Software engineering,w1,C1.112,Tue,13
+Esmée Hooijmaijers,Autonomous Agents 2,w1,C1.112,Wed,11
+Esmée Hooijmaijers,Project Numerical Recipes,p1,C0.110,Fri,17
+Esmée Hooijmaijers,Autonomous Agents 2,h1,A1.04,Thu,15
+Esmée Hooijmaijers,Software engineering,p1,A1.04,Fri,13
+Esmée Hooijmaijers,Autonomous Agents 2,p1,B0.201,Thu,15
+Esmée Hooijmaijers,Software engineering,h1,B0.201,Mon,11
+Esmée Hooijmaijers,Autonomous Agents 2,h2,A1.04,Tue,11
+Michal Hooiveld,Data Mining,h1,A1.04,Tue,15
+Michal Hooiveld,Data Mining,p1,A1.06,Mon,11
+Michal Hooiveld,Data Mining,w1,A1.08,Wed,15
+Michal Hooiveld,Data Mining,h2,A1.06,Fri,11
+Catherine Hoornstra,Calculus 2,h1,C0.110,Thu,9
+Catherine Hoornstra,Lineaire Algebra,h2,C1.112,Fri,11
+Catherine Hoornstra,Technology for games,w1,B0.201,Mon,15
+Catherine Hoornstra,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Catherine Hoornstra,Technology for games,h1,A1.04,Wed,15
+Catherine Hoornstra,Calculus 2,w1,B0.201,Thu,11
+Catherine Hoornstra,Technology for games,h2,C0.110,Tue,17
+Catherine Hoornstra,Lineaire Algebra,h1,B0.201,Tue,11
+Catherine Hoornstra,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Tea Horstink,Compilerbouw,h2,C0.110,Thu,13
+Tea Horstink,Compilerbouw,h1,C0.110,Thu,11
+Tea Horstink,Compilerbouw,w1,C0.110,Wed,13
+Tea Horstink,Programmeren in Java 2,p1,A1.08,Thu,11
+Tea Horstink,Compilerbouw,p1,A1.06,Wed,11
+Wichard Hospers,Programmeren in Java 2,p1,C0.110,Mon,11
+Wichard Hospers,Collectieve Intelligentie,p1,A1.06,Wed,15
+Wichard Hospers,Lineaire Algebra,h2,C1.112,Fri,11
+Wichard Hospers,Collectieve Intelligentie,h1,C1.112,Mon,11
+Wichard Hospers,Collectieve Intelligentie,h3,B0.201,Tue,13
+Wichard Hospers,Lineaire Algebra,h1,B0.201,Tue,11
+Wichard Hospers,Collectieve Intelligentie,w1,A1.10,Fri,15
+Wichard Hospers,Collectieve Intelligentie,h2,C1.112,Tue,11
+Kyra Huibers,Webprogrammeren en databases,p1,B0.201,Fri,11
+Kyra Huibers,Webprogrammeren en databases,h2,A1.10,Thu,13
+Kyra Huibers,Webprogrammeren en databases,w1,A1.08,Thu,13
+Kyra Huibers,Webprogrammeren en databases,h1,A1.06,Tue,9
+Paulette Hunting,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Paulette Hunting,Bioinformatica,h3,B0.201,Tue,15
+Paulette Hunting,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Paulette Hunting,Bioinformatica,h1,C1.112,Wed,13
+Paulette Hunting,Bioinformatica,p1,A1.08,Tue,13
+Paulette Hunting,Bioinformatica,h2,B0.201,Fri,13
+Paulette Hunting,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Paulette Hunting,Bioinformatica,w1,A1.08,Thu,9
+Ytje Hup,Heuristieken 1,h1,B0.201,Wed,11
+Ytje Hup,Heuristieken 1,w1,C1.112,Mon,13
+Frédéric IJkema,Software engineering,w1,C1.112,Tue,13
+Frédéric IJkema,Moderne Databases,p1,A1.10,Mon,13
+Frédéric IJkema,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Frédéric IJkema,Software engineering,h1,B0.201,Mon,11
+Frédéric IJkema,Software engineering,p1,A1.10,Fri,9
+Frédéric IJkema,Moderne Databases,w1,A1.10,Tue,11
+Frédéric IJkema,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Frédéric IJkema,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Frédéric IJkema,Moderne Databases,h1,A1.10,Fri,13
+Marnik Imthorn,Programmeren in Java 2,p1,A1.08,Fri,15
+Marnik Imthorn,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Geartsje Jackson,Heuristieken 1,h1,B0.201,Wed,11
+Geartsje Jackson,Heuristieken 1,w1,C1.112,Mon,13
+Rino Jacob,Kansrekenen 2,h1,A1.04,Thu,9
+Rino Jacob,Kansrekenen 2,h2,C0.110,Fri,11
+Faya Jagersma,Calculus 2,w1,B0.201,Wed,15
+Faya Jagersma,Calculus 2,h1,C0.110,Thu,9
+Faya Jagersma,Project Numerical Recipes,p1,C0.110,Fri,17
+Faya Jagersma,Databases 2,w1,C1.112,Fri,13
+Faya Jagersma,Databases 2,h1,C0.110,Wed,15
+Paulo Jak,Databases 2,h1,C0.110,Wed,15
+Paulo Jak,Databases 2,w1,C1.112,Fri,13
+Owen Jama,Bioinformatica,h3,B0.201,Tue,15
+Owen Jama,Bioinformatica,w1,A1.08,Wed,11
+Owen Jama,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Owen Jama,Bioinformatica,p1,A1.08,Fri,9
+Owen Jama,Bioinformatica,h1,C1.112,Wed,13
+Owen Jama,Bioinformatica,h2,B0.201,Fri,13
+Le Janga,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Le Janga,Kansrekenen 2,h1,A1.04,Thu,9
+Le Janga,Compilerbouw,h2,C0.110,Thu,13
+Le Janga,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Le Janga,Heuristieken 2,w1,A1.08,Mon,15
+Le Janga,Kansrekenen 2,h2,C0.110,Fri,11
+Le Janga,Compilerbouw,p1,A1.04,Wed,11
+Le Janga,Compilerbouw,h1,C0.110,Thu,11
+Le Janga,Compilerbouw,w1,C0.110,Wed,13
+Le Janga,Heuristieken 2,h1,C1.112,Thu,9
+Le Janga,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Kyan Jankie,Heuristieken 1,h1,B0.201,Wed,11
+Kyan Jankie,Data Mining,h2,A1.06,Fri,11
+Kyan Jankie,Data Mining,w1,A1.08,Wed,9
+Kyan Jankie,Data Mining,p1,A1.10,Thu,11
+Kyan Jankie,Data Mining,h1,A1.04,Tue,15
+Kyan Jankie,Heuristieken 1,w1,A1.04,Wed,9
+Nikolas Jansema,Technology for games,w1,B0.201,Mon,15
+Nikolas Jansema,Technology for games,h1,A1.04,Wed,15
+Nikolas Jansema,Technology for games,h2,C0.110,Tue,17
+Tamar Jongbloed,Kansrekenen 2,h1,A1.04,Thu,9
+Tamar Jongbloed,Software engineering,w1,C1.112,Tue,13
+Tamar Jongbloed,Machine Learning,h2,B0.201,Fri,15
+Tamar Jongbloed,Software engineering,p1,A1.04,Fri,13
+Tamar Jongbloed,Kansrekenen 2,h2,C0.110,Fri,11
+Tamar Jongbloed,Software engineering,h1,B0.201,Mon,11
+Tamar Jongbloed,Project Genetic Algorithms,p1,B0.201,Mon,9
+Tamar Jongbloed,Programmeren in Java 2,p1,A1.08,Thu,11
+Tamar Jongbloed,Machine Learning,h1,A1.06,Mon,13
+Jenske Jongejan,Collectieve Intelligentie,p1,A1.10,Thu,15
+Jenske Jongejan,Calculus 2,h1,C0.110,Thu,9
+Jenske Jongejan,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Jenske Jongejan,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Jenske Jongejan,Calculus 2,w1,B0.201,Thu,11
+Jenske Jongejan,Collectieve Intelligentie,h1,C1.112,Mon,11
+Jenske Jongejan,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Jenske Jongejan,Collectieve Intelligentie,h3,B0.201,Tue,13
+Jenske Jongejan,Collectieve Intelligentie,w1,A1.10,Fri,15
+Jenske Jongejan,Collectieve Intelligentie,h2,C1.112,Tue,11
+Jenske Jongejan,Programmeren in Java 2,p1,A1.08,Fri,15
+Aradhna Jonkergouw,Technology for games,h1,A1.04,Wed,15
+Aradhna Jonkergouw,Technology for games,w1,A1.08,Tue,11
+Aradhna Jonkergouw,Technology for games,h2,C0.110,Tue,17
+Gerritjan Joris,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Gerritjan Joris,Calculus 2,w1,B0.201,Wed,15
+Gerritjan Joris,Calculus 2,h1,C0.110,Thu,9
+Gerritjan Joris,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Gerritjan Joris,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Gerritjan Joris,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Maïssae Joseph,Lineaire Algebra,h2,C1.112,Fri,11
+Maïssae Joseph,Software engineering,p1,A1.04,Fri,13
+Maïssae Joseph,Software engineering,h1,B0.201,Mon,11
+Maïssae Joseph,Software engineering,w1,C1.112,Mon,9
+Maïssae Joseph,Lineaire Algebra,h1,B0.201,Tue,11
+Miko Kalpoe,Programmeren in Java 2,p1,A1.06,Thu,9
+Chrystel Kalshoven,Kansrekenen 2,h1,A1.04,Thu,9
+Chrystel Kalshoven,Lineaire Algebra,h2,C1.112,Fri,11
+Chrystel Kalshoven,Kansrekenen 2,h2,C0.110,Fri,11
+Chrystel Kalshoven,Compilerbouw (practicum),p1,B0.201,Tue,9
+Chrystel Kalshoven,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Chrystel Kalshoven,Programmeren in Java 2,p1,C0.110,Wed,11
+Chrystel Kalshoven,Lineaire Algebra,h1,B0.201,Tue,11
+Yaro Kamp,Webprogrammeren en databases,p1,C1.112,Wed,9
+Yaro Kamp,Technology for games,w1,B0.201,Mon,15
+Yaro Kamp,Technology for games,h1,A1.04,Wed,15
+Yaro Kamp,Webprogrammeren en databases,w1,C0.110,Tue,11
+Yaro Kamp,Technology for games,h2,C0.110,Tue,17
+Yaro Kamp,Webprogrammeren en databases,h1,A1.06,Tue,9
+Yaro Kamp,Webprogrammeren en databases,h2,A1.10,Thu,13
+Riana Kampers,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Riana Kampers,Programmeren in Java 2,p1,C0.110,Mon,11
+Riana Kampers,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Riana Kampers,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Riana Kampers,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Juliëtte Kant,Databases 2,w1,A1.10,Tue,13
+Juliëtte Kant,Lineaire Algebra,h2,C1.112,Fri,11
+Juliëtte Kant,Databases 2,h1,C0.110,Wed,15
+Juliëtte Kant,Lineaire Algebra,h1,B0.201,Tue,11
+Juliëtte Kant,Project Numerical Recipes,p1,A1.06,Mon,9
+Esmé Karim,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Esmé Karim,Kansrekenen 2,h1,A1.04,Thu,9
+Esmé Karim,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Esmé Karim,Machine Learning,h2,B0.201,Fri,15
+Esmé Karim,Kansrekenen 2,h2,C0.110,Fri,11
+Esmé Karim,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Esmé Karim,Project Numerical Recipes,p1,A1.06,Mon,9
+Esmé Karim,Machine Learning,h1,A1.06,Mon,13
+Devon Keijser,Interactie-ontwerp,h1,A1.10,Tue,9
+Devon Keijser,Interactie-ontwerp,h2,C0.110,Mon,9
+Enya Kemps,Databases 2,h1,C0.110,Wed,15
+Enya Kemps,Databases 2,w1,A1.10,Tue,13
+Ceciel Kentie,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Ceciel Kentie,Programmeren in Java 2,p1,C0.110,Mon,11
+Ceciel Kentie,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Ceciel Kentie,Moderne Databases,w1,A1.10,Tue,11
+Ceciel Kentie,Moderne Databases,p1,C1.112,Fri,15
+Ceciel Kentie,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Ceciel Kentie,Moderne Databases,h1,A1.10,Fri,13
+Thys Kersten,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Thys Kersten,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Thys Kersten,Compilerbouw (practicum),p1,B0.201,Tue,9
+Thys Kersten,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Thys Kersten,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Kimmy Kesteloo,Collectieve Intelligentie,p1,A1.10,Thu,15
+Kimmy Kesteloo,Project Genetic Algorithms,p1,A1.06,Fri,15
+Kimmy Kesteloo,Collectieve Intelligentie,h1,C1.112,Mon,11
+Kimmy Kesteloo,Collectieve Intelligentie,w1,A1.04,Fri,15
+Kimmy Kesteloo,Collectieve Intelligentie,h3,B0.201,Tue,13
+Kimmy Kesteloo,Collectieve Intelligentie,h2,C1.112,Tue,11
+Lysbeth Keuken,Moderne Databases,w1,A1.04,Mon,11
+Lysbeth Keuken,Compilerbouw,h2,C0.110,Thu,13
+Lysbeth Keuken,Project Numerical Recipes,p1,C0.110,Fri,17
+Lysbeth Keuken,Moderne Databases,p1,C1.112,Fri,15
+Lysbeth Keuken,Compilerbouw,h1,C0.110,Thu,11
+Lysbeth Keuken,Compilerbouw,w1,C0.110,Wed,13
+Lysbeth Keuken,Moderne Databases,h1,A1.10,Fri,13
+Lysbeth Keuken,Compilerbouw,p1,A1.06,Wed,11
+Rahim Kienhuis,Compilerbouw (practicum),p1,C1.112,Thu,13
+Rahim Kienhuis,Kansrekenen 2,h1,A1.04,Thu,9
+Rahim Kienhuis,Kansrekenen 2,h2,C0.110,Fri,11
+Rahim Kienhuis,Programmeren in Java 2,p1,C0.110,Wed,11
+Sezen Kivits,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Sezen Kivits,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Ylse Klarenbeek,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Ylse Klarenbeek,Collectieve Intelligentie,p1,A1.10,Thu,15
+Ylse Klarenbeek,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Ylse Klarenbeek,Collectieve Intelligentie,h1,C1.112,Mon,11
+Ylse Klarenbeek,Collectieve Intelligentie,w1,A1.04,Fri,15
+Ylse Klarenbeek,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Ylse Klarenbeek,Collectieve Intelligentie,h3,B0.201,Tue,13
+Ylse Klarenbeek,Collectieve Intelligentie,h2,C1.112,Tue,11
+Ylse Klarenbeek,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Ylse Klarenbeek,Programmeren in Java 2,p1,A1.08,Fri,15
+Adil Klop,Calculus 2,h1,C0.110,Thu,9
+Adil Klop,Heuristieken 2,w1,A1.04,Wed,13
+Adil Klop,Calculus 2,w1,A1.10,Wed,15
+Adil Klop,Heuristieken 2,h1,C1.112,Thu,9
+Adil Klop,Programmeren in Java 2,p1,C0.110,Wed,11
+Danique Knibbe,Calculus 2,h1,C0.110,Thu,9
+Danique Knibbe,Autonomous Agents 2,h1,A1.04,Thu,15
+Danique Knibbe,Lineaire Algebra,h2,C1.112,Fri,11
+Danique Knibbe,Lineaire Algebra,h1,B0.201,Tue,11
+Danique Knibbe,Heuristieken 2,w1,A1.08,Mon,15
+Danique Knibbe,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Danique Knibbe,Autonomous Agents 2,w1,A1.04,Mon,9
+Danique Knibbe,Calculus 2,w1,B0.201,Thu,11
+Danique Knibbe,Autonomous Agents 2,p1,B0.201,Thu,15
+Danique Knibbe,Autonomous Agents 2,h2,A1.04,Tue,11
+Danique Knibbe,Heuristieken 2,h1,C1.112,Thu,9
+George Knuiman,Compilerbouw,h1,C0.110,Thu,11
+George Knuiman,Compilerbouw,h2,C0.110,Thu,13
+George Knuiman,Compilerbouw,w1,C0.110,Wed,13
+George Knuiman,Compilerbouw,p1,A1.06,Wed,11
+Evelyn Koelemij,Calculus 2,w1,B0.201,Wed,15
+Evelyn Koelemij,Kansrekenen 2,h1,A1.04,Thu,9
+Evelyn Koelemij,Calculus 2,h1,C0.110,Thu,9
+Evelyn Koelemij,Compilerbouw,h2,C0.110,Thu,13
+Evelyn Koelemij,Kansrekenen 2,h2,C0.110,Fri,11
+Evelyn Koelemij,Compilerbouw,p1,A1.04,Wed,11
+Evelyn Koelemij,Compilerbouw,h1,C0.110,Thu,11
+Evelyn Koelemij,Compilerbouw,w1,B0.201,Wed,13
+Djura Kol,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Djura Kol,Bioinformatica,h3,B0.201,Tue,15
+Djura Kol,Bioinformatica,w1,A1.08,Wed,11
+Djura Kol,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Djura Kol,Bioinformatica,h1,C1.112,Wed,13
+Djura Kol,Technology for games,w1,B0.201,Mon,15
+Djura Kol,Technology for games,h1,A1.04,Wed,15
+Djura Kol,Moderne Databases,w1,A1.10,Tue,11
+Djura Kol,Moderne Databases,p1,C1.112,Fri,15
+Djura Kol,Bioinformatica,h2,B0.201,Fri,13
+Djura Kol,Technology for games,h2,C0.110,Tue,17
+Djura Kol,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Djura Kol,Bioinformatica,p1,A1.10,Wed,11
+Djura Kol,Moderne Databases,h1,A1.10,Fri,13
+Matz Koning,Collectieve Intelligentie,p1,C0.110,Mon,13
+Matz Koning,Software engineering,w1,C1.112,Tue,13
+Matz Koning,Collectieve Intelligentie,w1,A1.10,Mon,11
+Matz Koning,Software engineering,p1,A1.04,Fri,13
+Matz Koning,Software engineering,h1,B0.201,Mon,11
+Matz Koning,Collectieve Intelligentie,h1,C1.112,Mon,11
+Matz Koning,Collectieve Intelligentie,h3,B0.201,Tue,13
+Matz Koning,Collectieve Intelligentie,h2,C1.112,Tue,11
+Nuriye Kooijmans,Heuristieken 1,h1,B0.201,Wed,11
+Nuriye Kooijmans,Calculus 2,w1,B0.201,Wed,15
+Nuriye Kooijmans,Advanced Heuristics,h1,C0.110,Tue,13
+Nuriye Kooijmans,Calculus 2,h1,C0.110,Thu,9
+Nuriye Kooijmans,Heuristieken 1,w1,C1.112,Mon,13
+Nuriye Kooijmans,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Nuriye Kooijmans,Moderne Databases,w1,A1.10,Tue,11
+Nuriye Kooijmans,Moderne Databases,p1,C1.112,Fri,15
+Nuriye Kooijmans,Advanced Heuristics,p1,A1.06,Tue,15
+Nuriye Kooijmans,Moderne Databases,h1,A1.10,Fri,13
+Thijn Kooyman,Calculus 2,h1,C0.110,Thu,9
+Thijn Kooyman,Compilerbouw,h2,C0.110,Thu,13
+Thijn Kooyman,Compilerbouw,h1,C0.110,Thu,11
+Thijn Kooyman,Compilerbouw,w1,C0.110,Wed,13
+Thijn Kooyman,Calculus 2,w1,A1.10,Wed,15
+Thijn Kooyman,Compilerbouw,p1,A1.06,Wed,11
+Yee Koppers,Calculus 2,w1,A1.10,Wed,15
+Yee Koppers,Calculus 2,h1,C0.110,Thu,9
+Yee Koppers,Interactie-ontwerp,h1,A1.10,Tue,9
+Yee Koppers,Interactie-ontwerp,h2,C0.110,Mon,9
+Eveline Kops,Compilerbouw (practicum),p1,B0.201,Tue,9
+Titia Korbee,Collectieve Intelligentie,w1,C0.110,Tue,9
+Titia Korbee,Compilerbouw,h2,C0.110,Thu,13
+Titia Korbee,Project Numerical Recipes,p1,C1.112,Wed,15
+Titia Korbee,Compilerbouw,p1,A1.04,Wed,11
+Titia Korbee,Collectieve Intelligentie,h1,C1.112,Mon,11
+Titia Korbee,Collectieve Intelligentie,p1,A1.08,Tue,9
+Titia Korbee,Compilerbouw,h1,C0.110,Thu,11
+Titia Korbee,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Titia Korbee,Compilerbouw,w1,C0.110,Wed,13
+Titia Korbee,Collectieve Intelligentie,h3,B0.201,Tue,13
+Titia Korbee,Collectieve Intelligentie,h2,C1.112,Tue,11
+Titia Korbee,Programmeren in Java 2,p1,A1.08,Thu,11
+Djuri Korpershoek,Moderne Databases,p1,C1.112,Fri,15
+Djuri Korpershoek,Moderne Databases,w1,A1.04,Mon,11
+Djuri Korpershoek,Moderne Databases,h1,A1.10,Fri,13
+Gineke Korte,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Gineke Korte,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Sharen Kortlever,Kansrekenen 2,h1,A1.04,Thu,9
+Sharen Kortlever,Databases 2,w1,A1.10,Tue,13
+Sharen Kortlever,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Sharen Kortlever,Kansrekenen 2,h2,C0.110,Fri,11
+Sharen Kortlever,Databases 2,h1,C0.110,Wed,15
+Remon Kost,Calculus 2,h1,C0.110,Thu,9
+Remon Kost,Data Mining,h2,A1.06,Fri,11
+Remon Kost,Data Mining,w1,A1.04,Thu,13
+Remon Kost,Data Mining,p1,A1.10,Thu,11
+Remon Kost,Calculus 2,w1,A1.10,Wed,15
+Remon Kost,Data Mining,h1,A1.04,Tue,15
+Cherissa Koudijs,Lineaire Algebra,h2,C1.112,Fri,11
+Cherissa Koudijs,Lineaire Algebra,h1,B0.201,Tue,11
+Fynn Krabbe,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Fynn Krabbe,Interactie-ontwerp,h1,A1.10,Tue,9
+Fynn Krabbe,Interactie-ontwerp,h2,C0.110,Mon,9
+Nikie Kreijkes,Lineaire Algebra,h2,C1.112,Fri,11
+Nikie Kreijkes,Lineaire Algebra,h1,B0.201,Tue,11
+Do?ukan Krikke,Compilerbouw (practicum),p1,B0.201,Tue,9
+Corry Kroonen,Bioinformatica,h3,B0.201,Tue,15
+Corry Kroonen,Bioinformatica,h1,C1.112,Wed,13
+Corry Kroonen,Bioinformatica,h2,B0.201,Fri,13
+Corry Kroonen,Databases 2,w1,C1.112,Fri,13
+Corry Kroonen,Bioinformatica,p1,A1.10,Wed,11
+Corry Kroonen,Databases 2,h1,C0.110,Wed,15
+Corry Kroonen,Bioinformatica,w1,A1.08,Thu,9
+Ngoc Kropman,Kansrekenen 2,h1,A1.04,Thu,9
+Ngoc Kropman,Kansrekenen 2,h2,C0.110,Fri,11
+Vincent Kros,Collectieve Intelligentie,h1,C1.112,Mon,11
+Vincent Kros,Collectieve Intelligentie,p1,A1.08,Tue,9
+Vincent Kros,Collectieve Intelligentie,h3,B0.201,Tue,13
+Vincent Kros,Collectieve Intelligentie,w1,A1.10,Fri,15
+Vincent Kros,Collectieve Intelligentie,h2,C1.112,Tue,11
+Resul Kuijpers,Software engineering,w1,C1.112,Tue,13
+Resul Kuijpers,Bioinformatica,h3,B0.201,Tue,15
+Resul Kuijpers,Autonomous Agents 2,w1,C1.112,Wed,11
+Resul Kuijpers,Autonomous Agents 2,h1,A1.04,Thu,15
+Resul Kuijpers,Bioinformatica,h1,C1.112,Wed,13
+Resul Kuijpers,Bioinformatica,p1,A1.08,Tue,13
+Resul Kuijpers,Autonomous Agents 2,p1,B0.201,Thu,15
+Resul Kuijpers,Software engineering,h1,B0.201,Mon,11
+Resul Kuijpers,Software engineering,p1,A1.10,Fri,9
+Resul Kuijpers,Autonomous Agents 2,h2,A1.04,Tue,11
+Resul Kuijpers,Bioinformatica,w1,A1.04,Tue,13
+Resul Kuijpers,Bioinformatica,h2,B0.201,Fri,13
+Machteld Kwantes,Heuristieken 1,h1,B0.201,Wed,11
+Machteld Kwantes,Heuristieken 1,w1,C1.112,Mon,13
+Esperanza Kwee,Kansrekenen 2,h1,A1.04,Thu,9
+Esperanza Kwee,Kansrekenen 2,h2,C0.110,Fri,11
+Nadeem Lagendijk,Kansrekenen 2,h1,A1.04,Thu,9
+Nadeem Lagendijk,Calculus 2,w1,B0.201,Thu,11
+Nadeem Lagendijk,Kansrekenen 2,h2,C0.110,Fri,11
+Nadeem Lagendijk,Calculus 2,h1,C0.110,Thu,9
+Christianus Laman,Calculus 2,h1,C0.110,Thu,9
+Christianus Laman,Compilerbouw (practicum),p1,C1.112,Thu,15
+Christianus Laman,Webprogrammeren en databases,p1,C1.112,Wed,9
+Christianus Laman,Webprogrammeren en databases,w1,A1.08,Thu,13
+Christianus Laman,Calculus 2,w1,B0.201,Thu,11
+Christianus Laman,Webprogrammeren en databases,h1,A1.06,Tue,9
+Christianus Laman,Webprogrammeren en databases,h2,A1.10,Thu,13
+Mathyn Lamme,Heuristieken 1,h1,B0.201,Wed,11
+Mathyn Lamme,Heuristieken 2,h1,C1.112,Thu,9
+Mathyn Lamme,Heuristieken 1,w1,A1.04,Wed,9
+Mathyn Lamme,Heuristieken 2,w1,A1.04,Wed,13
+Buck Lantinga,Collectieve Intelligentie,p1,A1.10,Thu,15
+Buck Lantinga,Advanced Heuristics,h1,C0.110,Tue,13
+Buck Lantinga,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Buck Lantinga,Technology for games,h1,A1.04,Wed,15
+Buck Lantinga,Interactie-ontwerp,h1,A1.10,Tue,9
+Buck Lantinga,Collectieve Intelligentie,h1,C1.112,Mon,11
+Buck Lantinga,Collectieve Intelligentie,w1,A1.04,Fri,15
+Buck Lantinga,Technology for games,w1,A1.08,Tue,11
+Buck Lantinga,Technology for games,h2,C0.110,Tue,17
+Buck Lantinga,Interactie-ontwerp,h2,C0.110,Mon,9
+Buck Lantinga,Collectieve Intelligentie,h3,B0.201,Tue,13
+Buck Lantinga,Collectieve Intelligentie,h2,C1.112,Tue,11
+Buck Lantinga,Advanced Heuristics,p1,A1.06,Tue,15
+Hanan Lathouwers,Software engineering,w1,C1.112,Tue,13
+Hanan Lathouwers,Bioinformatica,h3,B0.201,Tue,15
+Hanan Lathouwers,Bioinformatica,h1,C1.112,Wed,13
+Hanan Lathouwers,Compilerbouw (practicum),p1,C1.112,Thu,13
+Hanan Lathouwers,Bioinformatica,p1,A1.08,Tue,13
+Hanan Lathouwers,Software engineering,p1,A1.04,Fri,13
+Hanan Lathouwers,Software engineering,h1,B0.201,Mon,11
+Hanan Lathouwers,Bioinformatica,h2,B0.201,Fri,13
+Hanan Lathouwers,Project Numerical Recipes,p1,A1.06,Mon,9
+Hanan Lathouwers,Bioinformatica,w1,A1.08,Thu,9
+Mouna Lathouwers,Bioinformatica,h3,B0.201,Tue,15
+Mouna Lathouwers,Bioinformatica,h1,C1.112,Wed,13
+Mouna Lathouwers,Moderne Databases,p1,A1.10,Mon,13
+Mouna Lathouwers,Bioinformatica,p1,A1.08,Tue,13
+Mouna Lathouwers,Moderne Databases,w1,A1.10,Tue,11
+Mouna Lathouwers,Bioinformatica,h2,B0.201,Fri,13
+Mouna Lathouwers,Databases 2,w1,C1.112,Fri,13
+Mouna Lathouwers,Databases 2,h1,C0.110,Wed,15
+Mouna Lathouwers,Moderne Databases,h1,A1.10,Fri,13
+Mouna Lathouwers,Bioinformatica,w1,A1.08,Thu,9
+Yvan Lau,Lineaire Algebra,h2,C1.112,Fri,11
+Yvan Lau,Lineaire Algebra,h1,B0.201,Tue,11
+Seyed Laurijssen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Seyed Laurijssen,Advanced Heuristics,h1,C0.110,Tue,13
+Seyed Laurijssen,Advanced Heuristics,p1,A1.06,Tue,15
+Mellisa Leemburg,Calculus 2,w1,B0.201,Wed,15
+Mellisa Leemburg,Advanced Heuristics,h1,C0.110,Tue,13
+Mellisa Leemburg,Calculus 2,h1,C0.110,Thu,9
+Mellisa Leemburg,Databases 2,w1,C1.112,Fri,13
+Mellisa Leemburg,Advanced Heuristics,p1,A1.06,Tue,15
+Mellisa Leemburg,Databases 2,h1,C0.110,Wed,15
+Mellisa Leemburg,Programmeren in Java 2,p1,A1.08,Thu,11
+Rein Leidelmeijer,Moderne Databases,w1,A1.06,Fri,13
+Rein Leidelmeijer,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Rein Leidelmeijer,Lineaire Algebra,h2,C1.112,Fri,11
+Rein Leidelmeijer,Moderne Databases,p1,C0.110,Tue,15
+Rein Leidelmeijer,Lineaire Algebra,h1,B0.201,Tue,11
+Rein Leidelmeijer,Moderne Databases,h1,A1.10,Fri,13
+Björn Leijen,Collectieve Intelligentie,p1,C0.110,Mon,13
+Björn Leijen,Collectieve Intelligentie,w1,C0.110,Tue,9
+Björn Leijen,Software engineering,p1,A1.04,Fri,13
+Björn Leijen,Software engineering,h1,B0.201,Mon,11
+Björn Leijen,Collectieve Intelligentie,h1,C1.112,Mon,11
+Björn Leijen,Software engineering,w1,C1.112,Mon,9
+Björn Leijen,Collectieve Intelligentie,h3,B0.201,Tue,13
+Björn Leijen,Collectieve Intelligentie,h2,C1.112,Tue,11
+Jory Leijenaar,Compilerbouw (practicum),p1,B0.201,Tue,9
+Jory Leijenaar,Project Genetic Algorithms,p1,A1.06,Fri,15
+Haroun Lemaire,Software engineering,w1,C1.112,Tue,13
+Haroun Lemaire,Bioinformatica,h3,B0.201,Tue,15
+Haroun Lemaire,Calculus 2,h1,C0.110,Thu,9
+Haroun Lemaire,Bioinformatica,h1,C1.112,Wed,13
+Haroun Lemaire,Software engineering,h1,B0.201,Mon,11
+Haroun Lemaire,Software engineering,p1,A1.10,Fri,9
+Haroun Lemaire,Bioinformatica,h2,B0.201,Fri,13
+Haroun Lemaire,Bioinformatica,p1,A1.10,Wed,11
+Haroun Lemaire,Calculus 2,w1,A1.10,Wed,15
+Haroun Lemaire,Bioinformatica,w1,A1.08,Thu,9
+Nadège Lems,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Nadège Lems,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Nadège Lems,Databases 2,w1,C1.112,Fri,13
+Nadège Lems,Databases 2,h1,C0.110,Wed,15
+Nadège Lems,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Nadège Lems,Programmeren in Java 2,p1,C1.112,Mon,15
+Sanne Lentz,Databases 2,w1,A1.10,Tue,13
+Sanne Lentz,Webprogrammeren en databases,p1,C1.112,Wed,9
+Sanne Lentz,Technology for games,w1,B0.201,Mon,15
+Sanne Lentz,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Sanne Lentz,Technology for games,h1,A1.04,Wed,15
+Sanne Lentz,Webprogrammeren en databases,w1,C0.110,Tue,11
+Sanne Lentz,Technology for games,h2,C0.110,Tue,17
+Sanne Lentz,Webprogrammeren en databases,h1,A1.06,Tue,9
+Sanne Lentz,Databases 2,h1,C0.110,Wed,15
+Sanne Lentz,Webprogrammeren en databases,h2,A1.10,Thu,13
+Sanne Lentz,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Federico Levels,Compilerbouw,h2,C0.110,Thu,13
+Federico Levels,Compilerbouw (practicum),p1,C1.112,Thu,13
+Federico Levels,Moderne Databases,p1,A1.10,Mon,13
+Federico Levels,Compilerbouw,p1,A1.04,Wed,11
+Federico Levels,Moderne Databases,w1,A1.10,Tue,11
+Federico Levels,Compilerbouw,h1,C0.110,Thu,11
+Federico Levels,Moderne Databases,h1,A1.10,Fri,13
+Federico Levels,Compilerbouw,w1,B0.201,Wed,13
+Chi Liebregts,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Chi Liebregts,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Chi Liebregts,Compilerbouw (practicum),p1,C1.112,Thu,15
+Chi Liebregts,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Maurice Lima,Compilerbouw (practicum),p1,C1.112,Thu,13
+Maurice Lima,Project Genetic Algorithms,p1,A1.06,Fri,15
+Hetty Lindhout,Collectieve Intelligentie,p1,C0.110,Mon,13
+Hetty Lindhout,Heuristieken 1,h1,B0.201,Wed,11
+Hetty Lindhout,Collectieve Intelligentie,w1,C0.110,Tue,9
+Hetty Lindhout,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Hetty Lindhout,Heuristieken 1,w1,A1.04,Wed,9
+Hetty Lindhout,Collectieve Intelligentie,h1,C1.112,Mon,11
+Hetty Lindhout,Collectieve Intelligentie,h3,B0.201,Tue,13
+Hetty Lindhout,Collectieve Intelligentie,h2,C1.112,Tue,11
+Dingenus Loeffen,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Wannes Lohuis,Compilerbouw,w1,C0.110,Wed,13
+Wannes Lohuis,Compilerbouw,h1,C0.110,Thu,11
+Wannes Lohuis,Compilerbouw,h2,C0.110,Thu,13
+Wannes Lohuis,Compilerbouw,p1,A1.04,Wed,11
+Malcolm Looij,Calculus 2,h1,C0.110,Thu,9
+Malcolm Looij,Lineaire Algebra,h2,C1.112,Fri,11
+Malcolm Looij,Calculus 2,w1,B0.201,Thu,11
+Malcolm Looij,Databases 2,w1,C1.112,Fri,13
+Malcolm Looij,Databases 2,h1,C0.110,Wed,15
+Malcolm Looij,Lineaire Algebra,h1,B0.201,Tue,11
+Fredrika Lopez,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Fredrika Lopez,Software engineering,p1,A1.04,Fri,13
+Fredrika Lopez,Software engineering,h1,B0.201,Mon,11
+Fredrika Lopez,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Fredrika Lopez,Software engineering,w1,C1.112,Mon,9
+Fredrika Lopez,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Sherwin Lugthart,Calculus 2,w1,B0.201,Thu,11
+Sherwin Lugthart,Calculus 2,h1,C0.110,Thu,9
+Yi Luten,Kansrekenen 2,h1,A1.04,Thu,9
+Yi Luten,Calculus 2,h1,C0.110,Thu,9
+Yi Luten,Heuristieken 2,w1,A1.08,Mon,15
+Yi Luten,Calculus 2,w1,B0.201,Thu,11
+Yi Luten,Kansrekenen 2,h2,C0.110,Fri,11
+Yi Luten,Compilerbouw (practicum),p1,B0.201,Tue,9
+Yi Luten,Programmeren in Java 2,p1,A1.06,Thu,9
+Yi Luten,Heuristieken 2,h1,C1.112,Thu,9
+Mathé Luth,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Mathé Luth,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Pim Machielsen,Kansrekenen 2,h1,A1.04,Thu,9
+Pim Machielsen,Kansrekenen 2,h2,C0.110,Fri,11
+Valéry Majoor,Collectieve Intelligentie,w1,C0.110,Tue,9
+Valéry Majoor,Collectieve Intelligentie,p1,A1.06,Wed,15
+Valéry Majoor,Bioinformatica,h3,B0.201,Tue,15
+Valéry Majoor,Kansrekenen 2,h1,A1.04,Thu,9
+Valéry Majoor,Compilerbouw,h2,C0.110,Thu,13
+Valéry Majoor,Bioinformatica,h1,C1.112,Wed,13
+Valéry Majoor,Compilerbouw,w1,B0.201,Wed,13
+Valéry Majoor,Bioinformatica,p1,A1.08,Tue,13
+Valéry Majoor,Kansrekenen 2,h2,C0.110,Fri,11
+Valéry Majoor,Collectieve Intelligentie,h1,C1.112,Mon,11
+Valéry Majoor,Compilerbouw,p1,A1.06,Wed,11
+Valéry Majoor,Compilerbouw,h1,C0.110,Thu,11
+Valéry Majoor,Bioinformatica,h2,B0.201,Fri,13
+Valéry Majoor,Collectieve Intelligentie,h3,B0.201,Tue,13
+Valéry Majoor,Collectieve Intelligentie,h2,C1.112,Tue,11
+Valéry Majoor,Bioinformatica,w1,A1.08,Thu,9
+Dorenda Malestein,Kansrekenen 2,h1,A1.04,Thu,9
+Dorenda Malestein,Software engineering,w1,C1.112,Tue,13
+Dorenda Malestein,Lineaire Algebra,h2,C1.112,Fri,11
+Dorenda Malestein,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Dorenda Malestein,Kansrekenen 2,h2,C0.110,Fri,11
+Dorenda Malestein,Software engineering,h1,B0.201,Mon,11
+Dorenda Malestein,Software engineering,p1,A1.10,Fri,9
+Dorenda Malestein,Lineaire Algebra,h1,B0.201,Tue,11
+Noelle Melis,Project Genetic Algorithms,p1,C0.110,Wed,9
+Noud Menke,Programmeren in Java 2,p1,C0.110,Mon,11
+Noud Menke,Compilerbouw,h2,C0.110,Thu,13
+Noud Menke,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Noud Menke,Compilerbouw,h1,C0.110,Thu,11
+Noud Menke,Compilerbouw,w1,C0.110,Wed,13
+Noud Menke,Compilerbouw,p1,A1.06,Wed,11
+Bodie Metselaar,Bioinformatica,h3,B0.201,Tue,15
+Bodie Metselaar,Bioinformatica,w1,A1.08,Wed,11
+Bodie Metselaar,Compilerbouw,h2,C0.110,Thu,13
+Bodie Metselaar,Bioinformatica,h1,C1.112,Wed,13
+Bodie Metselaar,Bioinformatica,p1,A1.08,Tue,13
+Bodie Metselaar,Project Genetic Algorithms,p1,A1.06,Fri,15
+Bodie Metselaar,Bioinformatica,h2,B0.201,Fri,13
+Bodie Metselaar,Compilerbouw,h1,C0.110,Thu,11
+Bodie Metselaar,Compilerbouw,w1,C0.110,Wed,13
+Bodie Metselaar,Compilerbouw,p1,A1.06,Wed,11
+Miquel Metzelaar,Collectieve Intelligentie,p1,C0.110,Mon,13
+Miquel Metzelaar,Calculus 2,h1,C0.110,Thu,9
+Miquel Metzelaar,Collectieve Intelligentie,h2,C1.112,Tue,11
+Miquel Metzelaar,Collectieve Intelligentie,h1,C1.112,Mon,11
+Miquel Metzelaar,Collectieve Intelligentie,w1,A1.04,Fri,15
+Miquel Metzelaar,Calculus 2,w1,A1.10,Wed,15
+Miquel Metzelaar,Collectieve Intelligentie,h3,B0.201,Tue,13
+Miquel Metzelaar,Programmeren in Java 2,p1,C1.112,Mon,15
+Roan Meulmeester,Software engineering,w1,C1.112,Tue,13
+Roan Meulmeester,Autonomous Agents 2,w1,C1.112,Wed,11
+Roan Meulmeester,Autonomous Agents 2,h1,A1.04,Thu,15
+Roan Meulmeester,Lineaire Algebra,h2,C1.112,Fri,11
+Roan Meulmeester,Project Genetic Algorithms,p1,C0.110,Wed,9
+Roan Meulmeester,Software engineering,h1,B0.201,Mon,11
+Roan Meulmeester,Software engineering,p1,A1.10,Fri,9
+Roan Meulmeester,Autonomous Agents 2,h2,A1.04,Tue,11
+Roan Meulmeester,Lineaire Algebra,h1,B0.201,Tue,11
+Roan Meulmeester,Autonomous Agents 2,p1,A1.10,Thu,9
+Myron Middel,Advanced Heuristics,p1,A1.10,Fri,11
+Myron Middel,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Myron Middel,Advanced Heuristics,h1,C0.110,Tue,13
+Myron Middel,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Maron Miedema,Software engineering,w1,C1.112,Tue,13
+Maron Miedema,Moderne Databases,p1,C0.110,Tue,15
+Maron Miedema,Moderne Databases,w1,A1.10,Tue,11
+Maron Miedema,Software engineering,p1,A1.10,Fri,9
+Maron Miedema,Software engineering,h1,B0.201,Mon,11
+Maron Miedema,Project Genetic Algorithms,p1,B0.201,Mon,9
+Maron Miedema,Moderne Databases,h1,A1.10,Fri,13
+Marcellus Mijnheer,Collectieve Intelligentie,p1,C0.110,Mon,13
+Marcellus Mijnheer,Heuristieken 1,h1,B0.201,Wed,11
+Marcellus Mijnheer,Calculus 2,w1,B0.201,Wed,15
+Marcellus Mijnheer,Calculus 2,h1,C0.110,Thu,9
+Marcellus Mijnheer,Software engineering,p1,A1.04,Fri,13
+Marcellus Mijnheer,Heuristieken 1,w1,A1.04,Wed,9
+Marcellus Mijnheer,Software engineering,h1,B0.201,Mon,11
+Marcellus Mijnheer,Collectieve Intelligentie,h1,C1.112,Mon,11
+Marcellus Mijnheer,Collectieve Intelligentie,w1,A1.04,Fri,15
+Marcellus Mijnheer,Software engineering,w1,C1.112,Mon,9
+Marcellus Mijnheer,Collectieve Intelligentie,h3,B0.201,Tue,13
+Marcellus Mijnheer,Collectieve Intelligentie,h2,C1.112,Tue,11
+Eyup Milder,Calculus 2,w1,A1.10,Wed,15
+Eyup Milder,Calculus 2,h1,C0.110,Thu,9
+Oliver Milder,Calculus 2,h1,C0.110,Thu,9
+Oliver Milder,Heuristieken 2,w1,A1.04,Wed,13
+Oliver Milder,Project Genetic Algorithms,p1,C0.110,Wed,9
+Oliver Milder,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Oliver Milder,Calculus 2,w1,A1.10,Wed,15
+Oliver Milder,Heuristieken 2,h1,C1.112,Thu,9
+Oliver Milder,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Jo-Anne Modderkolk,Heuristieken 1,h1,B0.201,Wed,11
+Jo-Anne Modderkolk,Kansrekenen 2,h1,A1.04,Thu,9
+Jo-Anne Modderkolk,Bioinformatica,h3,B0.201,Tue,15
+Jo-Anne Modderkolk,Heuristieken 1,w1,C1.112,Mon,13
+Jo-Anne Modderkolk,Bioinformatica,h1,C1.112,Wed,13
+Jo-Anne Modderkolk,Bioinformatica,w1,A1.08,Thu,9
+Jo-Anne Modderkolk,Kansrekenen 2,h2,C0.110,Fri,11
+Jo-Anne Modderkolk,Bioinformatica,h2,B0.201,Fri,13
+Jo-Anne Modderkolk,Databases 2,w1,C1.112,Fri,13
+Jo-Anne Modderkolk,Bioinformatica,p1,A1.10,Wed,11
+Jo-Anne Modderkolk,Databases 2,h1,C0.110,Wed,15
+Jo-Anne Modderkolk,Programmeren in Java 2,p1,A1.08,Fri,15
+Jorren Modderkolk,Collectieve Intelligentie,p1,C0.110,Mon,13
+Jorren Modderkolk,Advanced Heuristics,h1,C0.110,Tue,13
+Jorren Modderkolk,Webprogrammeren en databases,p1,C1.112,Wed,9
+Jorren Modderkolk,Collectieve Intelligentie,w1,A1.10,Mon,11
+Jorren Modderkolk,Webprogrammeren en databases,w1,A1.08,Thu,13
+Jorren Modderkolk,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Jorren Modderkolk,Advanced Heuristics,p1,A1.10,Fri,11
+Jorren Modderkolk,Collectieve Intelligentie,h1,C1.112,Mon,11
+Jorren Modderkolk,Webprogrammeren en databases,h1,A1.06,Tue,9
+Jorren Modderkolk,Collectieve Intelligentie,h3,B0.201,Tue,13
+Jorren Modderkolk,Collectieve Intelligentie,h2,C1.112,Tue,11
+Jorren Modderkolk,Webprogrammeren en databases,h2,A1.10,Thu,13
+Jorren Modderkolk,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Lisse Moes,Calculus 2,h1,C0.110,Thu,9
+Lisse Moes,Compilerbouw (practicum),p1,C1.112,Thu,13
+Lisse Moes,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Lisse Moes,Calculus 2,w1,B0.201,Thu,11
+Lisse Moes,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Lisse Moes,Programmeren in Java 2,p1,A1.06,Thu,9
+Lisse Moes,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Antonetta Moeskops,Machine Learning,h1,A1.06,Mon,13
+Antonetta Moeskops,Machine Learning,h2,B0.201,Fri,15
+Antonetta Moeskops,Programmeren in Java 2,p1,A1.08,Fri,15
+Lamia Mok,Kansrekenen 2,h1,A1.04,Thu,9
+Lamia Mok,Project Numerical Recipes,p1,C0.110,Fri,17
+Lamia Mok,Software engineering,p1,A1.04,Fri,13
+Lamia Mok,Kansrekenen 2,h2,C0.110,Fri,11
+Lamia Mok,Software engineering,h1,B0.201,Mon,11
+Lamia Mok,Software engineering,w1,C1.112,Mon,9
+Sonny Mol,Software engineering,w1,C1.112,Mon,9
+Sonny Mol,Programmeren in Java 2,p1,C0.110,Wed,11
+Sonny Mol,Software engineering,p1,A1.04,Fri,13
+Sonny Mol,Software engineering,h1,B0.201,Mon,11
+Shannon Mullenders,Kansrekenen 2,h1,A1.04,Thu,9
+Shannon Mullenders,Collectieve Intelligentie,w1,A1.10,Mon,11
+Shannon Mullenders,Kansrekenen 2,h2,C0.110,Fri,11
+Shannon Mullenders,Collectieve Intelligentie,h1,C1.112,Mon,11
+Shannon Mullenders,Collectieve Intelligentie,p1,A1.08,Tue,9
+Shannon Mullenders,Collectieve Intelligentie,h3,B0.201,Tue,13
+Shannon Mullenders,Collectieve Intelligentie,h2,C1.112,Tue,11
+Doetje Munsters,Kansrekenen 2,h1,A1.04,Thu,9
+Doetje Munsters,Kansrekenen 2,h2,C0.110,Fri,11
+Callista Mutsaers,Compilerbouw (practicum),p1,C1.112,Thu,13
+Claudine Nagel,Programmeren in Java 2,p1,C0.110,Wed,11
+Fauve Neve,Technology for games,h1,A1.04,Wed,15
+Fauve Neve,Technology for games,w1,A1.08,Tue,11
+Fauve Neve,Technology for games,h2,C0.110,Tue,17
+Randell Nieman,Technology for games,h1,A1.04,Wed,15
+Randell Nieman,Technology for games,w1,A1.08,Tue,11
+Randell Nieman,Technology for games,h2,C0.110,Tue,17
+Jurrit Nieuwenhuizen,Webprogrammeren en databases,h2,A1.10,Thu,13
+Jurrit Nieuwenhuizen,Webprogrammeren en databases,h1,A1.06,Tue,9
+Jurrit Nieuwenhuizen,Webprogrammeren en databases,w1,C0.110,Tue,11
+Jurrit Nieuwenhuizen,Webprogrammeren en databases,p1,C1.112,Wed,9
+Inas Niezen,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Inas Niezen,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Inas Niezen,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Vesna Nijs,Moderne Databases,p1,A1.10,Mon,13
+Vesna Nijs,Moderne Databases,w1,A1.04,Mon,11
+Vesna Nijs,Moderne Databases,h1,A1.10,Fri,13
+Harry Noordhuis,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Harry Noordhuis,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Juliët Noordzij,Calculus 2,w1,B0.201,Wed,15
+Juliët Noordzij,Kansrekenen 2,h1,A1.04,Thu,9
+Juliët Noordzij,Calculus 2,h1,C0.110,Thu,9
+Juliët Noordzij,Kansrekenen 2,h2,C0.110,Fri,11
+Juliët Noordzij,Moderne Databases,w1,A1.10,Tue,11
+Juliët Noordzij,Moderne Databases,p1,C1.112,Fri,15
+Juliët Noordzij,Moderne Databases,h1,A1.10,Fri,13
+Henricus Noot,Programmeren in Java 2,p1,C0.110,Wed,11
+Inger Notermans,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Inger Notermans,Collectieve Intelligentie,p1,C0.110,Mon,13
+Inger Notermans,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Inger Notermans,Collectieve Intelligentie,w1,A1.10,Mon,11
+Inger Notermans,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Inger Notermans,Collectieve Intelligentie,h1,C1.112,Mon,11
+Inger Notermans,Databases 2,w1,C1.112,Fri,13
+Inger Notermans,Databases 2,h1,C0.110,Wed,15
+Inger Notermans,Collectieve Intelligentie,h3,B0.201,Tue,13
+Inger Notermans,Collectieve Intelligentie,h2,C1.112,Tue,11
+Inger Notermans,Project Numerical Recipes,p1,A1.06,Mon,9
+Geurt Nuiten,Heuristieken 1,h1,B0.201,Wed,11
+Geurt Nuiten,Lineaire Algebra,h2,C1.112,Fri,11
+Geurt Nuiten,Software engineering,h1,B0.201,Mon,11
+Geurt Nuiten,Software engineering,p1,A1.10,Fri,9
+Geurt Nuiten,Software engineering,w1,C1.112,Mon,9
+Geurt Nuiten,Lineaire Algebra,h1,B0.201,Tue,11
+Geurt Nuiten,Heuristieken 1,w1,A1.04,Wed,9
+Lee Numan,Databases 2,h1,C0.110,Wed,15
+Lee Numan,Calculus 2,w1,B0.201,Wed,15
+Lee Numan,Databases 2,w1,A1.10,Tue,13
+Lee Numan,Calculus 2,h1,C0.110,Thu,9
+Rieke Odijk,Compilerbouw,h2,C0.110,Thu,13
+Rieke Odijk,Moderne Databases,w1,A1.06,Fri,13
+Rieke Odijk,Moderne Databases,p1,A1.10,Mon,13
+Rieke Odijk,Compilerbouw,p1,A1.06,Wed,11
+Rieke Odijk,Compilerbouw,h1,C0.110,Thu,11
+Rieke Odijk,Moderne Databases,h1,A1.10,Fri,13
+Rieke Odijk,Compilerbouw,w1,B0.201,Wed,13
+Seb Okkerse,Machine Learning,h2,B0.201,Fri,15
+Seb Okkerse,Machine Learning,h1,A1.06,Mon,13
+Steijn Ooijen,Databases 2,w1,A1.10,Tue,13
+Steijn Ooijen,Calculus 2,h1,C0.110,Thu,9
+Steijn Ooijen,Calculus 2,w1,B0.201,Thu,11
+Steijn Ooijen,Project Genetic Algorithms,p1,B0.201,Mon,9
+Steijn Ooijen,Databases 2,h1,C0.110,Wed,15
+Rins Oosterbeek,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Rins Oosterbeek,Data Mining,w1,A1.08,Wed,15
+Rins Oosterbeek,Data Mining,h2,A1.06,Fri,11
+Rins Oosterbeek,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Rins Oosterbeek,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Rins Oosterbeek,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Rins Oosterbeek,Data Mining,h1,A1.04,Tue,15
+Rins Oosterbeek,Data Mining,p1,A1.06,Mon,11
+Rins Oosterbeek,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Lilly Oosterbroek,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Romaisa Oostvogels,Kansrekenen 2,h1,A1.04,Thu,9
+Romaisa Oostvogels,Bioinformatica,h3,B0.201,Tue,15
+Romaisa Oostvogels,Bioinformatica,w1,A1.08,Wed,11
+Romaisa Oostvogels,Heuristieken 2,w1,A1.04,Wed,13
+Romaisa Oostvogels,Bioinformatica,h1,C1.112,Wed,13
+Romaisa Oostvogels,Bioinformatica,p1,A1.08,Fri,9
+Romaisa Oostvogels,Kansrekenen 2,h2,C0.110,Fri,11
+Romaisa Oostvogels,Project Numerical Recipes,p1,C1.112,Wed,15
+Romaisa Oostvogels,Bioinformatica,h2,B0.201,Fri,13
+Romaisa Oostvogels,Heuristieken 2,h1,C1.112,Thu,9
+Casimir Overbeeke,Collectieve Intelligentie,p1,A1.10,Thu,15
+Casimir Overbeeke,Collectieve Intelligentie,h1,C1.112,Mon,11
+Casimir Overbeeke,Collectieve Intelligentie,w1,A1.04,Fri,15
+Casimir Overbeeke,Collectieve Intelligentie,h3,B0.201,Tue,13
+Casimir Overbeeke,Collectieve Intelligentie,h2,C1.112,Tue,11
+Shakir Paauwe,Bioinformatica,h3,B0.201,Tue,15
+Shakir Paauwe,Bioinformatica,h1,C1.112,Wed,13
+Shakir Paauwe,Bioinformatica,p1,A1.08,Fri,9
+Shakir Paauwe,Bioinformatica,w1,A1.04,Tue,13
+Shakir Paauwe,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Shakir Paauwe,Bioinformatica,h2,B0.201,Fri,13
+Redouane Paijmans,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Redouane Paijmans,Compilerbouw,h2,C0.110,Thu,13
+Redouane Paijmans,Technology for games,h1,A1.04,Wed,15
+Redouane Paijmans,Technology for games,w1,A1.08,Tue,11
+Redouane Paijmans,Compilerbouw,h1,C0.110,Thu,11
+Redouane Paijmans,Technology for games,h2,C0.110,Tue,17
+Redouane Paijmans,Compilerbouw,w1,C0.110,Wed,13
+Redouane Paijmans,Compilerbouw,p1,A1.06,Wed,11
+Loulou Panman,Calculus 2,w1,B0.201,Wed,15
+Loulou Panman,Calculus 2,h1,C0.110,Thu,9
+Farah Pastoor,Compilerbouw,h2,C0.110,Thu,13
+Farah Pastoor,Compilerbouw (practicum),p1,C1.112,Thu,15
+Farah Pastoor,Compilerbouw,p1,A1.04,Wed,11
+Farah Pastoor,Compilerbouw,h1,C0.110,Thu,11
+Farah Pastoor,Compilerbouw,w1,C0.110,Wed,13
+Vincentius Pater,Heuristieken 2,w1,A1.04,Wed,13
+Vincentius Pater,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Vincentius Pater,Interactie-ontwerp,h1,A1.10,Tue,9
+Vincentius Pater,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Vincentius Pater,Interactie-ontwerp,h2,C0.110,Mon,9
+Vincentius Pater,Heuristieken 2,h1,C1.112,Thu,9
+Vincentius Pater,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Solane Paulissen,Collectieve Intelligentie,p1,A1.10,Thu,15
+Solane Paulissen,Collectieve Intelligentie,w1,A1.10,Mon,11
+Solane Paulissen,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Solane Paulissen,Compilerbouw (practicum),p1,B0.201,Tue,9
+Solane Paulissen,Collectieve Intelligentie,h1,C1.112,Mon,11
+Solane Paulissen,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Solane Paulissen,Collectieve Intelligentie,h3,B0.201,Tue,13
+Solane Paulissen,Collectieve Intelligentie,h2,C1.112,Tue,11
+Solane Paulissen,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Xander Peijs,Collectieve Intelligentie,p1,A1.10,Thu,15
+Xander Peijs,Collectieve Intelligentie,h1,C1.112,Mon,11
+Xander Peijs,Collectieve Intelligentie,h3,B0.201,Tue,13
+Xander Peijs,Collectieve Intelligentie,w1,A1.10,Fri,15
+Xander Peijs,Collectieve Intelligentie,h2,C1.112,Tue,11
+Heba Pelders,Project Genetic Algorithms,p1,B0.201,Mon,9
+Luca Pereira,Kansrekenen 2,h1,A1.04,Thu,9
+Luca Pereira,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Luca Pereira,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Luca Pereira,Machine Learning,h2,B0.201,Fri,15
+Luca Pereira,Kansrekenen 2,h2,C0.110,Fri,11
+Luca Pereira,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Luca Pereira,Machine Learning,h1,A1.06,Mon,13
+Ilana Philippi,Lineaire Algebra,h2,C1.112,Fri,11
+Ilana Philippi,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Ilana Philippi,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Ilana Philippi,Lineaire Algebra,h1,B0.201,Tue,11
+Kaoutar Philips,Kansrekenen 2,h1,A1.04,Thu,9
+Kaoutar Philips,Bioinformatica,h3,B0.201,Tue,15
+Kaoutar Philips,Advanced Heuristics,h1,C0.110,Tue,13
+Kaoutar Philips,Bioinformatica,h1,C1.112,Wed,13
+Kaoutar Philips,Bioinformatica,p1,A1.08,Fri,9
+Kaoutar Philips,Kansrekenen 2,h2,C0.110,Fri,11
+Kaoutar Philips,Bioinformatica,w1,A1.04,Tue,13
+Kaoutar Philips,Bioinformatica,h2,B0.201,Fri,13
+Kaoutar Philips,Advanced Heuristics,p1,A1.06,Tue,15
+Rémy Piek,Heuristieken 2,w1,A1.08,Mon,15
+Rémy Piek,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Rémy Piek,Machine Learning,h2,B0.201,Fri,15
+Rémy Piek,Software engineering,p1,A1.04,Fri,13
+Rémy Piek,Software engineering,h1,B0.201,Mon,11
+Rémy Piek,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Rémy Piek,Software engineering,w1,C1.112,Mon,9
+Rémy Piek,Machine Learning,h1,A1.06,Mon,13
+Rémy Piek,Heuristieken 2,h1,C1.112,Thu,9
+Rémy Piek,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Wijntje Plaizier,Programmeren in Java 2,p1,C1.112,Mon,15
+Wijntje Plaizier,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Giedo Planken,Kansrekenen 2,h1,A1.04,Thu,9
+Giedo Planken,Kansrekenen 2,h2,C0.110,Fri,11
+Nathanaël Plasman,Webprogrammeren en databases,p1,B0.201,Fri,11
+Nathanaël Plasman,Webprogrammeren en databases,w1,A1.08,Thu,13
+Nathanaël Plasman,Webprogrammeren en databases,h1,A1.06,Tue,9
+Nathanaël Plasman,Programmeren in Java 2,p1,C0.110,Wed,11
+Nathanaël Plasman,Webprogrammeren en databases,h2,A1.10,Thu,13
+Matthijs Pleiter,Collectieve Intelligentie,p1,A1.06,Wed,15
+Matthijs Pleiter,Kansrekenen 2,h1,A1.04,Thu,9
+Matthijs Pleiter,Machine Learning,h2,B0.201,Fri,15
+Matthijs Pleiter,Kansrekenen 2,h2,C0.110,Fri,11
+Matthijs Pleiter,Collectieve Intelligentie,h1,C1.112,Mon,11
+Matthijs Pleiter,Collectieve Intelligentie,w1,A1.04,Fri,15
+Matthijs Pleiter,Collectieve Intelligentie,h3,B0.201,Tue,13
+Matthijs Pleiter,Collectieve Intelligentie,h2,C1.112,Tue,11
+Matthijs Pleiter,Machine Learning,h1,A1.06,Mon,13
+Zahir Poepjes,Kansrekenen 2,h1,A1.04,Thu,9
+Zahir Poepjes,Software engineering,w1,C1.112,Tue,13
+Zahir Poepjes,Software engineering,p1,A1.04,Fri,13
+Zahir Poepjes,Kansrekenen 2,h2,C0.110,Fri,11
+Zahir Poepjes,Software engineering,h1,B0.201,Mon,11
+Zahir Poepjes,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Gustaaf Poldervaart,Calculus 2,w1,A1.10,Wed,15
+Gustaaf Poldervaart,Project Genetic Algorithms,p1,A1.06,Fri,15
+Gustaaf Poldervaart,Calculus 2,h1,C0.110,Thu,9
+Gustaaf Poldervaart,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Rafaela Polfliet,Advanced Heuristics,h1,C0.110,Tue,13
+Rafaela Polfliet,Calculus 2,h1,C0.110,Thu,9
+Rafaela Polfliet,Advanced Heuristics,p1,A1.10,Fri,11
+Rafaela Polfliet,Compilerbouw (practicum),p1,B0.201,Tue,9
+Rafaela Polfliet,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Rafaela Polfliet,Calculus 2,w1,A1.10,Wed,15
+Stephano Popma,Compilerbouw,h2,C0.110,Thu,13
+Stephano Popma,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Stephano Popma,Compilerbouw,h1,C0.110,Thu,11
+Stephano Popma,Databases 2,w1,C1.112,Fri,13
+Stephano Popma,Compilerbouw,w1,C0.110,Wed,13
+Stephano Popma,Databases 2,h1,C0.110,Wed,15
+Stephano Popma,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Stephano Popma,Compilerbouw,p1,A1.06,Wed,11
+Timo Postuma,Heuristieken 1,h1,B0.201,Wed,11
+Timo Postuma,Kansrekenen 2,h1,A1.04,Thu,9
+Timo Postuma,Programmeren in Java 2,p1,C0.110,Mon,11
+Timo Postuma,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Timo Postuma,Kansrekenen 2,h2,C0.110,Fri,11
+Timo Postuma,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Timo Postuma,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Timo Postuma,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Timo Postuma,Heuristieken 1,w1,A1.04,Wed,9
+Desireé Potgieter,Databases 2,w1,A1.10,Tue,13
+Desireé Potgieter,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Desireé Potgieter,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Desireé Potgieter,Programmeren in Java 2,p1,C1.112,Mon,15
+Desireé Potgieter,Databases 2,h1,C0.110,Wed,15
+Desireé Potgieter,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Aart Pothuizen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Aart Pothuizen,Compilerbouw,h2,C0.110,Thu,13
+Aart Pothuizen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Aart Pothuizen,Compilerbouw,p1,A1.04,Wed,11
+Aart Pothuizen,Software engineering,h1,B0.201,Mon,11
+Aart Pothuizen,Software engineering,p1,A1.10,Fri,9
+Aart Pothuizen,Project Genetic Algorithms,p1,B0.201,Mon,9
+Aart Pothuizen,Compilerbouw,h1,C0.110,Thu,11
+Aart Pothuizen,Compilerbouw,w1,C0.110,Wed,13
+Aart Pothuizen,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Aart Pothuizen,Software engineering,w1,C1.112,Mon,9
+Mink Pothuizen,Programmeren in Java 2,p1,A1.08,Fri,15
+Mink Pothuizen,Heuristieken 2,w1,A1.08,Mon,15
+Mink Pothuizen,Machine Learning,h2,B0.201,Fri,15
+Mink Pothuizen,Heuristieken 2,h1,C1.112,Thu,9
+Mink Pothuizen,Machine Learning,h1,A1.06,Mon,13
+Genesis Potman,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Hendrik-Jan Prevoo,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Hendrik-Jan Prevoo,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Hendrik-Jan Prevoo,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Annigje Prinssen,Moderne Databases,p1,A1.10,Mon,13
+Annigje Prinssen,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Annigje Prinssen,Moderne Databases,h1,A1.10,Fri,13
+Annigje Prinssen,Moderne Databases,w1,A1.06,Fri,13
+Javier Pruijmboom,Calculus 2,w1,B0.201,Thu,11
+Javier Pruijmboom,Calculus 2,h1,C0.110,Thu,9
+André Putters,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+André Putters,Heuristieken 1,h1,B0.201,Wed,11
+André Putters,Heuristieken 1,w1,C1.112,Mon,13
+André Putters,Data Mining,h2,A1.06,Fri,11
+André Putters,Data Mining,w1,A1.08,Wed,9
+André Putters,Autonomous Agents 2,h1,A1.04,Thu,15
+André Putters,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+André Putters,Technology for games,h1,A1.04,Wed,15
+André Putters,Autonomous Agents 2,p1,B0.201,Thu,15
+André Putters,Autonomous Agents 2,h2,A1.04,Tue,11
+André Putters,Technology for games,w1,A1.08,Tue,11
+André Putters,Technology for games,h2,C0.110,Tue,17
+André Putters,Autonomous Agents 2,w1,A1.06,Fri,9
+André Putters,Data Mining,p1,A1.10,Thu,11
+André Putters,Data Mining,h1,A1.04,Tue,15
+André Putters,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Luciana Putters,Autonomous Agents 2,h2,A1.04,Tue,11
+Luciana Putters,Autonomous Agents 2,w1,A1.06,Fri,9
+Luciana Putters,Autonomous Agents 2,p1,C1.112,Tue,9
+Luciana Putters,Autonomous Agents 2,h1,A1.04,Thu,15
+Semiha Quik,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Semiha Quik,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Semiha Quik,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Semiha Quik,Project Numerical Recipes,p1,C1.112,Wed,15
+Haiko Raaijmakers,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Haiko Raaijmakers,Calculus 2,w1,B0.201,Wed,15
+Haiko Raaijmakers,Calculus 2,h1,C0.110,Thu,9
+Haiko Raaijmakers,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Haiko Raaijmakers,Machine Learning,h2,B0.201,Fri,15
+Haiko Raaijmakers,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Haiko Raaijmakers,Machine Learning,h1,A1.06,Mon,13
+Erdal Ramcharan,Databases 2,h1,C0.110,Wed,15
+Erdal Ramcharan,Project Genetic Algorithms,p1,B0.201,Mon,9
+Erdal Ramcharan,Databases 2,w1,C1.112,Fri,13
+Adisa Reek,Webprogrammeren en databases,p1,C1.112,Wed,9
+Adisa Reek,Webprogrammeren en databases,w1,A1.08,Thu,13
+Adisa Reek,Webprogrammeren en databases,h1,A1.06,Tue,9
+Adisa Reek,Webprogrammeren en databases,h2,A1.10,Thu,13
+Adisa Reek,Programmeren in Java 2,p1,A1.08,Fri,15
+Jarik Regeling,Heuristieken 1,h1,B0.201,Wed,11
+Jarik Regeling,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Jarik Regeling,Heuristieken 1,w1,A1.04,Wed,9
+Romello Reintjes,Collectieve Intelligentie,p1,C0.110,Mon,13
+Romello Reintjes,Collectieve Intelligentie,w1,C0.110,Tue,9
+Romello Reintjes,Collectieve Intelligentie,h1,C1.112,Mon,11
+Romello Reintjes,Collectieve Intelligentie,h3,B0.201,Tue,13
+Romello Reintjes,Collectieve Intelligentie,h2,C1.112,Tue,11
+Nadir Remijn,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Taeke Renes,Programmeren in Java 2,p1,C1.112,Mon,15
+Taeke Renes,Compilerbouw (practicum),p1,C1.112,Thu,15
+Cheyenna Reuvekamp,Webprogrammeren en databases,p1,C1.112,Wed,9
+Cheyenna Reuvekamp,Lineaire Algebra,h2,C1.112,Fri,11
+Cheyenna Reuvekamp,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Cheyenna Reuvekamp,Webprogrammeren en databases,w1,C0.110,Tue,11
+Cheyenna Reuvekamp,Webprogrammeren en databases,h1,A1.06,Tue,9
+Cheyenna Reuvekamp,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Cheyenna Reuvekamp,Lineaire Algebra,h1,B0.201,Tue,11
+Cheyenna Reuvekamp,Webprogrammeren en databases,h2,A1.10,Thu,13
+Cheyenna Reuvekamp,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Léonie Richardson,Calculus 2,h1,C0.110,Thu,9
+Léonie Richardson,Moderne Databases,w1,A1.06,Fri,13
+Léonie Richardson,Moderne Databases,p1,A1.10,Mon,13
+Léonie Richardson,Calculus 2,w1,A1.10,Wed,15
+Léonie Richardson,Moderne Databases,h1,A1.10,Fri,13
+Abdeslam Ridderhof,Calculus 2,w1,A1.10,Wed,15
+Abdeslam Ridderhof,Calculus 2,h1,C0.110,Thu,9
+Abdeslam Ridderhof,Programmeren in Java 2,p1,C0.110,Wed,11
+Kimm Rienks,Calculus 2,w1,B0.201,Wed,15
+Kimm Rienks,Calculus 2,h1,C0.110,Thu,9
+Kimm Rienks,Software engineering,h1,B0.201,Mon,11
+Kimm Rienks,Software engineering,p1,A1.10,Fri,9
+Kimm Rienks,Software engineering,w1,C1.112,Mon,9
+Kimm Rienks,Programmeren in Java 2,p1,C0.110,Wed,11
+Lorraine Rijkens,Databases 2,h1,C0.110,Wed,15
+Lorraine Rijkens,Databases 2,w1,C1.112,Fri,13
+Karam Rinkel,Kansrekenen 2,h1,A1.04,Thu,9
+Karam Rinkel,Software engineering,w1,C1.112,Mon,9
+Karam Rinkel,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Karam Rinkel,Software engineering,p1,A1.04,Fri,13
+Karam Rinkel,Kansrekenen 2,h2,C0.110,Fri,11
+Karam Rinkel,Software engineering,h1,B0.201,Mon,11
+Karam Rinkel,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Karam Rinkel,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Fatime Rodenburg,Collectieve Intelligentie,w1,C0.110,Tue,9
+Fatime Rodenburg,Collectieve Intelligentie,p1,A1.06,Wed,15
+Fatime Rodenburg,Bioinformatica,h3,B0.201,Tue,15
+Fatime Rodenburg,Bioinformatica,w1,A1.08,Wed,11
+Fatime Rodenburg,Bioinformatica,h1,C1.112,Wed,13
+Fatime Rodenburg,Bioinformatica,p1,A1.08,Fri,9
+Fatime Rodenburg,Project Numerical Recipes,p1,C1.112,Wed,15
+Fatime Rodenburg,Collectieve Intelligentie,h1,C1.112,Mon,11
+Fatime Rodenburg,Bioinformatica,h2,B0.201,Fri,13
+Fatime Rodenburg,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Fatime Rodenburg,Collectieve Intelligentie,h3,B0.201,Tue,13
+Fatime Rodenburg,Collectieve Intelligentie,h2,C1.112,Tue,11
+Yarah Roest,Moderne Databases,p1,A1.10,Mon,13
+Yarah Roest,Moderne Databases,h1,A1.10,Fri,13
+Yarah Roest,Moderne Databases,w1,A1.10,Tue,11
+Tori Roeterdink,Calculus 2,w1,A1.10,Wed,15
+Tori Roeterdink,Calculus 2,h1,C0.110,Thu,9
+Shan Rokx,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Shan Rokx,Advanced Heuristics,h1,C0.110,Tue,13
+Shan Rokx,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Shan Rokx,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Shan Rokx,Databases 2,w1,C1.112,Fri,13
+Shan Rokx,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Shan Rokx,Advanced Heuristics,p1,A1.06,Tue,15
+Shan Rokx,Databases 2,h1,C0.110,Wed,15
+Shan Rokx,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Krijntje Rombout,Software engineering,w1,C1.112,Tue,13
+Krijntje Rombout,Calculus 2,h1,C0.110,Thu,9
+Krijntje Rombout,Software engineering,p1,A1.04,Fri,13
+Krijntje Rombout,Calculus 2,w1,B0.201,Thu,11
+Krijntje Rombout,Software engineering,h1,B0.201,Mon,11
+Karolina Roodbeen,Collectieve Intelligentie,p1,A1.06,Wed,15
+Karolina Roodbeen,Webprogrammeren en databases,p1,B0.201,Fri,11
+Karolina Roodbeen,Webprogrammeren en databases,w1,A1.08,Thu,13
+Karolina Roodbeen,Collectieve Intelligentie,w1,A1.04,Fri,15
+Karolina Roodbeen,Collectieve Intelligentie,h1,C1.112,Mon,11
+Karolina Roodbeen,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Karolina Roodbeen,Databases 2,w1,C1.112,Fri,13
+Karolina Roodbeen,Webprogrammeren en databases,h1,A1.06,Tue,9
+Karolina Roodbeen,Databases 2,h1,C0.110,Wed,15
+Karolina Roodbeen,Collectieve Intelligentie,h3,B0.201,Tue,13
+Karolina Roodbeen,Collectieve Intelligentie,h2,C1.112,Tue,11
+Karolina Roodbeen,Webprogrammeren en databases,h2,A1.10,Thu,13
+Ziya Rooijmans,Databases 2,w1,A1.10,Tue,13
+Ziya Rooijmans,Webprogrammeren en databases,p1,C1.112,Wed,9
+Ziya Rooijmans,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Ziya Rooijmans,Webprogrammeren en databases,w1,C0.110,Tue,11
+Ziya Rooijmans,Webprogrammeren en databases,h1,A1.06,Tue,9
+Ziya Rooijmans,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Ziya Rooijmans,Databases 2,h1,C0.110,Wed,15
+Ziya Rooijmans,Webprogrammeren en databases,h2,A1.10,Thu,13
+Ziya Rooijmans,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Jennie Roozendaal,Kansrekenen 2,h1,A1.04,Thu,9
+Jennie Roozendaal,Kansrekenen 2,h2,C0.110,Fri,11
+Jake Rosenbrand,Calculus 2,w1,B0.201,Thu,11
+Jake Rosenbrand,Calculus 2,h1,C0.110,Thu,9
+Roma Rotgans,Software engineering,w1,C1.112,Tue,13
+Roma Rotgans,Bioinformatica,h3,B0.201,Tue,15
+Roma Rotgans,Bioinformatica,h1,C1.112,Wed,13
+Roma Rotgans,Software engineering,p1,A1.04,Fri,13
+Roma Rotgans,Software engineering,h1,B0.201,Mon,11
+Roma Rotgans,Bioinformatica,w1,A1.04,Tue,13
+Roma Rotgans,Bioinformatica,h2,B0.201,Fri,13
+Roma Rotgans,Bioinformatica,p1,A1.10,Wed,11
+Tevfik Rothuizen,Software engineering,w1,C1.112,Mon,9
+Tevfik Rothuizen,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Tevfik Rothuizen,Software engineering,h1,B0.201,Mon,11
+Tevfik Rothuizen,Software engineering,p1,A1.10,Fri,9
+Tevfik Rothuizen,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Tevfik Rothuizen,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Tevfik Rothuizen,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Sivar Rottier,Collectieve Intelligentie,w1,C0.110,Tue,9
+Sivar Rottier,Collectieve Intelligentie,p1,A1.06,Wed,15
+Sivar Rottier,Databases 2,w1,A1.10,Tue,13
+Sivar Rottier,Moderne Databases,w1,A1.04,Mon,11
+Sivar Rottier,Moderne Databases,p1,A1.10,Mon,13
+Sivar Rottier,Collectieve Intelligentie,h1,C1.112,Mon,11
+Sivar Rottier,Databases 2,h1,C0.110,Wed,15
+Sivar Rottier,Collectieve Intelligentie,h3,B0.201,Tue,13
+Sivar Rottier,Collectieve Intelligentie,h2,C1.112,Tue,11
+Sivar Rottier,Moderne Databases,h1,A1.10,Fri,13
+Eleanora Rovers,Advanced Heuristics,h1,C0.110,Tue,13
+Eleanora Rovers,Compilerbouw,h2,C0.110,Thu,13
+Eleanora Rovers,Compilerbouw,p1,A1.04,Wed,11
+Eleanora Rovers,Compilerbouw,h1,C0.110,Thu,11
+Eleanora Rovers,Advanced Heuristics,p1,A1.06,Tue,15
+Eleanora Rovers,Compilerbouw,w1,B0.201,Wed,13
+Jannette Rust,Project Numerical Recipes,p1,C0.110,Fri,17
+Tea Rutte,Heuristieken 1,h1,B0.201,Wed,11
+Tea Rutte,Heuristieken 1,w1,A1.04,Wed,9
+Angelica Sarikaya,Autonomous Agents 2,h1,A1.04,Thu,15
+Angelica Sarikaya,Autonomous Agents 2,p1,B0.201,Thu,15
+Angelica Sarikaya,Software engineering,h1,B0.201,Mon,11
+Angelica Sarikaya,Software engineering,p1,A1.10,Fri,9
+Angelica Sarikaya,Autonomous Agents 2,h2,A1.04,Tue,11
+Angelica Sarikaya,Autonomous Agents 2,w1,A1.06,Fri,9
+Angelica Sarikaya,Databases 2,w1,C1.112,Fri,13
+Angelica Sarikaya,Software engineering,w1,C1.112,Mon,9
+Angelica Sarikaya,Databases 2,h1,C0.110,Wed,15
+Imran Scheffers,Heuristieken 1,h1,B0.201,Wed,11
+Imran Scheffers,Calculus 2,h1,C0.110,Thu,9
+Imran Scheffers,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Imran Scheffers,Software engineering,p1,A1.04,Fri,13
+Imran Scheffers,Software engineering,h1,B0.201,Mon,11
+Imran Scheffers,Software engineering,w1,C1.112,Mon,9
+Imran Scheffers,Calculus 2,w1,A1.10,Wed,15
+Imran Scheffers,Heuristieken 1,w1,A1.04,Wed,9
+Albertine Schellevis,Calculus 2,w1,B0.201,Wed,15
+Albertine Schellevis,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Albertine Schellevis,Calculus 2,h1,C0.110,Thu,9
+Minoesch Scheltema,Software engineering,w1,C1.112,Tue,13
+Minoesch Scheltema,Calculus 2,h1,C0.110,Thu,9
+Minoesch Scheltema,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Minoesch Scheltema,Software engineering,h1,B0.201,Mon,11
+Minoesch Scheltema,Software engineering,p1,A1.10,Fri,9
+Minoesch Scheltema,Calculus 2,w1,A1.10,Wed,15
+Jackson Scherpenzeel,Kansrekenen 2,h1,A1.04,Thu,9
+Jackson Scherpenzeel,Lineaire Algebra,h2,C1.112,Fri,11
+Jackson Scherpenzeel,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Jackson Scherpenzeel,Kansrekenen 2,h2,C0.110,Fri,11
+Jackson Scherpenzeel,Programmeren in Java 2,p1,C0.110,Wed,11
+Jackson Scherpenzeel,Lineaire Algebra,h1,B0.201,Tue,11
+Xiao Schijvenaars,Machine Learning,h2,B0.201,Fri,15
+Xiao Schijvenaars,Machine Learning,h1,A1.06,Mon,13
+Elbertha Schoneveld,Databases 2,h1,C0.110,Wed,15
+Elbertha Schoneveld,Calculus 2,w1,A1.10,Wed,15
+Elbertha Schoneveld,Databases 2,w1,A1.10,Tue,13
+Elbertha Schoneveld,Calculus 2,h1,C0.110,Thu,9
+Jaiden Schoonderwoerd,Heuristieken 2,h1,C1.112,Thu,9
+Jaiden Schoonderwoerd,Heuristieken 2,w1,A1.08,Mon,15
+Nassira Schoutens,Programmeren in Java 2,p1,C1.112,Mon,15
+Arif Schrader,Project Genetic Algorithms,p1,B0.201,Mon,9
+Arif Schrader,Calculus 2,w1,B0.201,Thu,11
+Arif Schrader,Calculus 2,h1,C0.110,Thu,9
+Emrah Schrama,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Emrah Schrama,Heuristieken 1,h1,B0.201,Wed,11
+Emrah Schrama,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Emrah Schrama,Autonomous Agents 2,h1,A1.04,Thu,15
+Emrah Schrama,Technology for games,h1,A1.04,Wed,15
+Emrah Schrama,Autonomous Agents 2,w1,A1.04,Mon,9
+Emrah Schrama,Autonomous Agents 2,p1,B0.201,Thu,15
+Emrah Schrama,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Emrah Schrama,Autonomous Agents 2,h2,A1.04,Tue,11
+Emrah Schrama,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Emrah Schrama,Technology for games,w1,A1.08,Tue,11
+Emrah Schrama,Technology for games,h2,C0.110,Tue,17
+Emrah Schrama,Heuristieken 1,w1,A1.04,Wed,9
+Emrah Schrama,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Silvy Schrauwen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Silvy Schrauwen,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Silvy Schrauwen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Silvy Schrauwen,Moderne Databases,w1,A1.06,Fri,13
+Silvy Schrauwen,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Silvy Schrauwen,Moderne Databases,p1,C1.112,Fri,15
+Silvy Schrauwen,Programmeren in Java 2,p1,A1.06,Thu,9
+Silvy Schrauwen,Moderne Databases,h1,A1.10,Fri,13
+Thom Schuiling,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Levien Selten,Calculus 2,w1,B0.201,Wed,15
+Levien Selten,Kansrekenen 2,h1,A1.04,Thu,9
+Levien Selten,Calculus 2,h1,C0.110,Thu,9
+Levien Selten,Kansrekenen 2,h2,C0.110,Fri,11
+Levien Selten,Programmeren in Java 2,p1,A1.08,Thu,11
+Marianka Selten,Calculus 2,w1,B0.201,Wed,15
+Marianka Selten,Calculus 2,h1,C0.110,Thu,9
+Michèl Sieben,Heuristieken 1,h1,B0.201,Wed,11
+Michèl Sieben,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Michèl Sieben,Heuristieken 1,w1,A1.04,Wed,9
+Enes Siemonsma,Lineaire Algebra,h2,C1.112,Fri,11
+Enes Siemonsma,Collectieve Intelligentie,h1,C1.112,Mon,11
+Enes Siemonsma,Collectieve Intelligentie,w1,A1.04,Fri,15
+Enes Siemonsma,Collectieve Intelligentie,p1,A1.08,Tue,9
+Enes Siemonsma,Collectieve Intelligentie,h3,B0.201,Tue,13
+Enes Siemonsma,Lineaire Algebra,h1,B0.201,Tue,11
+Enes Siemonsma,Collectieve Intelligentie,h2,C1.112,Tue,11
+Patricia Sier,Software engineering,w1,C1.112,Tue,13
+Patricia Sier,Bioinformatica,h3,B0.201,Tue,15
+Patricia Sier,Compilerbouw,h2,C0.110,Thu,13
+Patricia Sier,Project Numerical Recipes,p1,C0.110,Fri,17
+Patricia Sier,Bioinformatica,h1,C1.112,Wed,13
+Patricia Sier,Bioinformatica,p1,A1.08,Tue,13
+Patricia Sier,Software engineering,p1,A1.04,Fri,13
+Patricia Sier,Software engineering,h1,B0.201,Mon,11
+Patricia Sier,Bioinformatica,w1,A1.04,Tue,13
+Patricia Sier,Bioinformatica,h2,B0.201,Fri,13
+Patricia Sier,Compilerbouw,h1,C0.110,Thu,11
+Patricia Sier,Compilerbouw,w1,C0.110,Wed,13
+Patricia Sier,Compilerbouw,p1,A1.06,Wed,11
+Christiana Siero,Collectieve Intelligentie,h1,C1.112,Mon,11
+Christiana Siero,Collectieve Intelligentie,w1,A1.04,Fri,15
+Christiana Siero,Collectieve Intelligentie,p1,A1.08,Tue,9
+Christiana Siero,Programmeren in Java 2,p1,A1.06,Thu,9
+Christiana Siero,Collectieve Intelligentie,h3,B0.201,Tue,13
+Christiana Siero,Collectieve Intelligentie,h2,C1.112,Tue,11
+Servet Sijmons,Advanced Heuristics,p1,A1.10,Fri,11
+Servet Sijmons,Project Genetic Algorithms,p1,B0.201,Mon,9
+Servet Sijmons,Advanced Heuristics,h1,C0.110,Tue,13
+Saif Sikking,Software engineering,w1,C1.112,Tue,13
+Saif Sikking,Software engineering,p1,A1.04,Fri,13
+Saif Sikking,Software engineering,h1,B0.201,Mon,11
+Jimi Sips,Collectieve Intelligentie,p1,A1.10,Thu,15
+Jimi Sips,Calculus 2,h1,C0.110,Thu,9
+Jimi Sips,Webprogrammeren en databases,p1,B0.201,Fri,11
+Jimi Sips,Webprogrammeren en databases,w1,A1.08,Thu,13
+Jimi Sips,Collectieve Intelligentie,h1,C1.112,Mon,11
+Jimi Sips,Collectieve Intelligentie,w1,A1.04,Fri,15
+Jimi Sips,Webprogrammeren en databases,h1,A1.06,Tue,9
+Jimi Sips,Calculus 2,w1,A1.10,Wed,15
+Jimi Sips,Collectieve Intelligentie,h3,B0.201,Tue,13
+Jimi Sips,Collectieve Intelligentie,h2,C1.112,Tue,11
+Jimi Sips,Webprogrammeren en databases,h2,A1.10,Thu,13
+Noë Slangen,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Noë Slangen,Heuristieken 1,h1,B0.201,Wed,11
+Noë Slangen,Heuristieken 1,w1,C1.112,Mon,13
+Noë Slangen,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Noë Slangen,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Noë Slangen,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Noë Slangen,Programmeren in Java 2,p1,A1.08,Fri,15
+Xanne Slob,Lineaire Algebra,h2,C1.112,Fri,11
+Xanne Slob,Lineaire Algebra,h1,B0.201,Tue,11
+Rachell Smallegange,Software engineering,w1,C1.112,Mon,9
+Rachell Smallegange,Software engineering,p1,A1.10,Fri,9
+Rachell Smallegange,Software engineering,h1,B0.201,Mon,11
+Shaya Snelder,Heuristieken 1,h1,B0.201,Wed,11
+Shaya Snelder,Autonomous Agents 2,h1,A1.04,Thu,15
+Shaya Snelder,Autonomous Agents 2,w1,A1.04,Mon,9
+Shaya Snelder,Heuristieken 1,w1,A1.04,Wed,9
+Shaya Snelder,Autonomous Agents 2,h2,A1.04,Tue,11
+Shaya Snelder,Autonomous Agents 2,p1,A1.10,Thu,9
+Dolf Snippe,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Marck Soekhai,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Marck Soekhai,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Marck Soekhai,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Marck Soekhai,Webprogrammeren en databases,p1,C1.112,Wed,9
+Marck Soekhai,Webprogrammeren en databases,w1,C0.110,Tue,11
+Marck Soekhai,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Marck Soekhai,Webprogrammeren en databases,h1,A1.06,Tue,9
+Marck Soekhai,Webprogrammeren en databases,h2,A1.10,Thu,13
+Logan Sonnemans,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Logan Sonnemans,Databases 2,w1,C1.112,Fri,13
+Logan Sonnemans,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Logan Sonnemans,Databases 2,h1,C0.110,Wed,15
+Logan Sonnemans,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Marrit Speelman,Kansrekenen 2,h1,A1.04,Thu,9
+Marrit Speelman,Project Genetic Algorithms,p1,A1.06,Fri,15
+Marrit Speelman,Kansrekenen 2,h2,C0.110,Fri,11
+Marrit Speelman,Interactie-ontwerp,h1,A1.10,Tue,9
+Marrit Speelman,Interactie-ontwerp,h2,C0.110,Mon,9
+Kenan Spronck,Compilerbouw (practicum),p1,C1.112,Thu,15
+Ya Steeman,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Sharief Stegink,Databases 2,h1,C0.110,Wed,15
+Sharief Stegink,Databases 2,w1,A1.10,Tue,13
+Sharief Stegink,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Orçun Sterenberg,Calculus 2,w1,B0.201,Wed,15
+Orçun Sterenberg,Calculus 2,h1,C0.110,Thu,9
+Orçun Sterenberg,Compilerbouw,h2,C0.110,Thu,13
+Orçun Sterenberg,Compilerbouw,w1,B0.201,Wed,13
+Orçun Sterenberg,Compilerbouw,h1,C0.110,Thu,11
+Orçun Sterenberg,Programmeren in Java 2,p1,A1.06,Thu,9
+Orçun Sterenberg,Compilerbouw,p1,A1.06,Wed,11
+Wichard Stienen,Lineaire Algebra,h2,C1.112,Fri,11
+Wichard Stienen,Calculus 2,w1,A1.10,Wed,15
+Wichard Stienen,Calculus 2,h1,C0.110,Thu,9
+Wichard Stienen,Lineaire Algebra,h1,B0.201,Tue,11
+Tom Stokkel,Kansrekenen 2,h1,A1.04,Thu,9
+Tom Stokkel,Calculus 2,h1,C0.110,Thu,9
+Tom Stokkel,Lineaire Algebra,h2,C1.112,Fri,11
+Tom Stokkel,Calculus 2,w1,B0.201,Thu,11
+Tom Stokkel,Kansrekenen 2,h2,C0.110,Fri,11
+Tom Stokkel,Lineaire Algebra,h1,B0.201,Tue,11
+Tom Stokkel,Project Numerical Recipes,p1,A1.06,Mon,9
+Franke Stoppels,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Franke Stoppels,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Franke Stoppels,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Kamil Streefland,Programmeren in Java 2,p1,C0.110,Mon,11
+Kamil Streefland,Kansrekenen 2,h1,A1.04,Thu,9
+Kamil Streefland,Data Mining,w1,A1.08,Wed,15
+Kamil Streefland,Data Mining,h2,A1.06,Fri,11
+Kamil Streefland,Kansrekenen 2,h2,C0.110,Fri,11
+Kamil Streefland,Data Mining,h1,A1.04,Tue,15
+Kamil Streefland,Data Mining,p1,A1.06,Mon,11
+Gonca Stroo,Programmeren in Java 2,p1,C1.112,Mon,15
+Franklin Stuurman,Databases 2,h1,C0.110,Wed,15
+Franklin Stuurman,Databases 2,w1,C1.112,Fri,13
+Franklin Stuurman,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Chaimae Swiers,Databases 2,w1,A1.10,Tue,13
+Chaimae Swiers,Lineaire Algebra,h2,C1.112,Fri,11
+Chaimae Swiers,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Chaimae Swiers,Programmeren in Java 2,p1,A1.06,Thu,9
+Chaimae Swiers,Databases 2,h1,C0.110,Wed,15
+Chaimae Swiers,Lineaire Algebra,h1,B0.201,Tue,11
+Christoffel 't Jong,Calculus 2,h1,C0.110,Thu,9
+Christoffel 't Jong,Moderne Databases,w1,A1.06,Fri,13
+Christoffel 't Jong,Calculus 2,w1,B0.201,Thu,11
+Christoffel 't Jong,Moderne Databases,p1,C0.110,Tue,15
+Christoffel 't Jong,Programmeren in Java 2,p1,C0.110,Wed,11
+Christoffel 't Jong,Moderne Databases,h1,A1.10,Fri,13
+Jorg 't Lam,Programmeren in Java 2,p1,C0.110,Wed,11
+Jorg 't Lam,Technology for games,h1,A1.04,Wed,15
+Jorg 't Lam,Technology for games,w1,A1.08,Tue,11
+Jorg 't Lam,Technology for games,h2,C0.110,Tue,17
+Nermin Talhaoui,Bioinformatica,h3,B0.201,Tue,15
+Nermin Talhaoui,Bioinformatica,w1,A1.08,Wed,11
+Nermin Talhaoui,Bioinformatica,h1,C1.112,Wed,13
+Nermin Talhaoui,Bioinformatica,p1,A1.08,Tue,13
+Nermin Talhaoui,Software engineering,h1,B0.201,Mon,11
+Nermin Talhaoui,Software engineering,p1,A1.10,Fri,9
+Nermin Talhaoui,Compilerbouw (practicum),p1,B0.201,Tue,9
+Nermin Talhaoui,Bioinformatica,h2,B0.201,Fri,13
+Nermin Talhaoui,Software engineering,w1,C1.112,Mon,9
+Elbertus Tamis,Kansrekenen 2,h1,A1.04,Thu,9
+Elbertus Tamis,Kansrekenen 2,h2,C0.110,Fri,11
+Olof Tap,Programmeren in Java 2,p1,C0.110,Wed,11
+Sanja Tas,Compilerbouw,h2,C0.110,Thu,13
+Sanja Tas,Software engineering,p1,A1.04,Fri,13
+Sanja Tas,Software engineering,h1,B0.201,Mon,11
+Sanja Tas,Compilerbouw,h1,C0.110,Thu,11
+Sanja Tas,Compilerbouw,w1,C0.110,Wed,13
+Sanja Tas,Software engineering,w1,C1.112,Mon,9
+Sanja Tas,Compilerbouw,p1,A1.06,Wed,11
+Skye Tas,Kansrekenen 2,h1,A1.04,Thu,9
+Skye Tas,Databases 2,w1,A1.10,Tue,13
+Skye Tas,Moderne Databases,w1,A1.06,Fri,13
+Skye Tas,Moderne Databases,p1,A1.10,Mon,13
+Skye Tas,Kansrekenen 2,h2,C0.110,Fri,11
+Skye Tas,Databases 2,h1,C0.110,Wed,15
+Skye Tas,Moderne Databases,h1,A1.10,Fri,13
+Nanette te Braak,Calculus 2,h1,C0.110,Thu,9
+Nanette te Braak,Compilerbouw,h2,C0.110,Thu,13
+Nanette te Braak,Moderne Databases,h1,A1.10,Fri,13
+Nanette te Braak,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Nanette te Braak,Compilerbouw,p1,A1.04,Wed,11
+Nanette te Braak,Moderne Databases,w1,A1.10,Tue,11
+Nanette te Braak,Moderne Databases,p1,C1.112,Fri,15
+Nanette te Braak,Compilerbouw,h1,C0.110,Thu,11
+Nanette te Braak,Compilerbouw,w1,C0.110,Wed,13
+Nanette te Braak,Calculus 2,w1,A1.10,Wed,15
+Nanette te Braak,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Xiao Teekens,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Xiao Teekens,Programmeren in Java 2,p1,C0.110,Mon,11
+Xiao Teekens,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Xiao Teekens,Lineaire Algebra,h2,C1.112,Fri,11
+Xiao Teekens,Interactie-ontwerp,h1,A1.10,Tue,9
+Xiao Teekens,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Xiao Teekens,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Xiao Teekens,Interactie-ontwerp,h2,C0.110,Mon,9
+Xiao Teekens,Lineaire Algebra,h1,B0.201,Tue,11
+Maan ten Pas,Heuristieken 1,h1,B0.201,Wed,11
+Maan ten Pas,Kansrekenen 2,h1,A1.04,Thu,9
+Maan ten Pas,Heuristieken 1,w1,C1.112,Mon,13
+Maan ten Pas,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Maan ten Pas,Kansrekenen 2,h2,C0.110,Fri,11
+Maan ten Pas,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Tjalle ten Pas,Databases 2,w1,A1.10,Tue,13
+Tjalle ten Pas,Calculus 2,h1,C0.110,Thu,9
+Tjalle ten Pas,Lineaire Algebra,h2,C1.112,Fri,11
+Tjalle ten Pas,Calculus 2,w1,B0.201,Thu,11
+Tjalle ten Pas,Databases 2,h1,C0.110,Wed,15
+Tjalle ten Pas,Lineaire Algebra,h1,B0.201,Tue,11
+Pleun ter Heide,Heuristieken 1,h1,B0.201,Wed,11
+Pleun ter Heide,Bioinformatica,h3,B0.201,Tue,15
+Pleun ter Heide,Software engineering,w1,C1.112,Tue,13
+Pleun ter Heide,Bioinformatica,h1,C1.112,Wed,13
+Pleun ter Heide,Bioinformatica,p1,A1.08,Fri,9
+Pleun ter Heide,Compilerbouw (practicum),p1,C1.112,Thu,13
+Pleun ter Heide,Software engineering,p1,A1.04,Fri,13
+Pleun ter Heide,Software engineering,h1,B0.201,Mon,11
+Pleun ter Heide,Bioinformatica,w1,A1.04,Tue,13
+Pleun ter Heide,Bioinformatica,h2,B0.201,Fri,13
+Pleun ter Heide,Heuristieken 1,w1,A1.04,Wed,9
+Aboubakr Terpstra,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Arianna Tettero,Programmeren in Java 2,p1,A1.08,Fri,15
+Jonah Teuben,Bioinformatica,h3,B0.201,Tue,15
+Jonah Teuben,Compilerbouw,h2,C0.110,Thu,13
+Jonah Teuben,Bioinformatica,h1,C1.112,Wed,13
+Jonah Teuben,Bioinformatica,p1,A1.08,Fri,9
+Jonah Teuben,Webprogrammeren en databases,p1,B0.201,Fri,11
+Jonah Teuben,Webprogrammeren en databases,w1,C0.110,Tue,11
+Jonah Teuben,Compilerbouw,p1,A1.04,Wed,11
+Jonah Teuben,Bioinformatica,w1,A1.04,Tue,13
+Jonah Teuben,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Jonah Teuben,Bioinformatica,h2,B0.201,Fri,13
+Jonah Teuben,Compilerbouw,h1,C0.110,Thu,11
+Jonah Teuben,Webprogrammeren en databases,h1,A1.06,Tue,9
+Jonah Teuben,Compilerbouw,w1,C0.110,Wed,13
+Jonah Teuben,Webprogrammeren en databases,h2,A1.10,Thu,13
+Rochelle Thielen,Programmeren in Java 2,p1,C0.110,Mon,11
+Rochelle Thielen,Kansrekenen 2,h1,A1.04,Thu,9
+Rochelle Thielen,Kansrekenen 2,h2,C0.110,Fri,11
+Silvie Thoma,Collectieve Intelligentie,p1,C0.110,Mon,13
+Silvie Thoma,Compilerbouw (practicum),p1,C1.112,Thu,15
+Silvie Thoma,Collectieve Intelligentie,h1,C1.112,Mon,11
+Silvie Thoma,Collectieve Intelligentie,w1,A1.04,Fri,15
+Silvie Thoma,Collectieve Intelligentie,h3,B0.201,Tue,13
+Silvie Thoma,Collectieve Intelligentie,h2,C1.112,Tue,11
+Ard Tielemans,Collectieve Intelligentie,p1,A1.06,Wed,15
+Ard Tielemans,Bioinformatica,h3,B0.201,Tue,15
+Ard Tielemans,Bioinformatica,w1,A1.08,Wed,11
+Ard Tielemans,Data Mining,h2,A1.06,Fri,11
+Ard Tielemans,Bioinformatica,h1,C1.112,Wed,13
+Ard Tielemans,Bioinformatica,p1,A1.08,Fri,9
+Ard Tielemans,Collectieve Intelligentie,w1,A1.10,Mon,11
+Ard Tielemans,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Ard Tielemans,Programmeren in Java 2,p1,C1.112,Mon,15
+Ard Tielemans,Data Mining,w1,A1.04,Thu,13
+Ard Tielemans,Collectieve Intelligentie,h1,C1.112,Mon,11
+Ard Tielemans,Bioinformatica,h2,B0.201,Fri,13
+Ard Tielemans,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Ard Tielemans,Data Mining,p1,A1.10,Thu,11
+Ard Tielemans,Data Mining,h1,A1.04,Tue,15
+Ard Tielemans,Collectieve Intelligentie,h3,B0.201,Tue,13
+Ard Tielemans,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Ard Tielemans,Collectieve Intelligentie,h2,C1.112,Tue,11
+Raja Tijhof,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Raja Tijhof,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Raja Tijhof,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Bilal Tip,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Sarena Tjeerdsma,Heuristieken 1,h1,B0.201,Wed,11
+Sarena Tjeerdsma,Kansrekenen 2,h1,A1.04,Thu,9
+Sarena Tjeerdsma,Bioinformatica,h3,B0.201,Tue,15
+Sarena Tjeerdsma,Calculus 2,h1,C0.110,Thu,9
+Sarena Tjeerdsma,Bioinformatica,w1,A1.08,Wed,11
+Sarena Tjeerdsma,Bioinformatica,h1,C1.112,Wed,13
+Sarena Tjeerdsma,Lineaire Algebra,h2,C1.112,Fri,11
+Sarena Tjeerdsma,Bioinformatica,p1,A1.08,Tue,13
+Sarena Tjeerdsma,Calculus 2,w1,B0.201,Thu,11
+Sarena Tjeerdsma,Kansrekenen 2,h2,C0.110,Fri,11
+Sarena Tjeerdsma,Bioinformatica,h2,B0.201,Fri,13
+Sarena Tjeerdsma,Lineaire Algebra,h1,B0.201,Tue,11
+Sarena Tjeerdsma,Heuristieken 1,w1,A1.04,Wed,9
+Hedwich Toetenel,Webprogrammeren en databases,p1,B0.201,Fri,11
+Hedwich Toetenel,Interactie-ontwerp,h1,A1.10,Tue,9
+Hedwich Toetenel,Webprogrammeren en databases,w1,C0.110,Tue,11
+Hedwich Toetenel,Webprogrammeren en databases,h1,A1.06,Tue,9
+Hedwich Toetenel,Interactie-ontwerp,h2,C0.110,Mon,9
+Hedwich Toetenel,Webprogrammeren en databases,h2,A1.10,Thu,13
+Samentha Toren,Kansrekenen 2,h1,A1.04,Thu,9
+Samentha Toren,Calculus 2,w1,B0.201,Thu,11
+Samentha Toren,Kansrekenen 2,h2,C0.110,Fri,11
+Samentha Toren,Calculus 2,h1,C0.110,Thu,9
+Liza Traa,Databases 2,h1,C0.110,Wed,15
+Liza Traa,Heuristieken 2,h1,C1.112,Thu,9
+Liza Traa,Databases 2,w1,A1.10,Tue,13
+Liza Traa,Heuristieken 2,w1,A1.08,Mon,15
+Tom Truijen,Compilerbouw,h2,C0.110,Thu,13
+Tom Truijen,Compilerbouw,p1,A1.04,Wed,11
+Tom Truijen,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Tom Truijen,Compilerbouw,h1,C0.110,Thu,11
+Tom Truijen,Compilerbouw,w1,C0.110,Wed,13
+Jacey Tunç,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Jacey Tunç,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Jacey Tunç,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Annamaria Twigt,Calculus 2,w1,B0.201,Wed,15
+Annamaria Twigt,Moderne Databases,w1,A1.04,Mon,11
+Annamaria Twigt,Calculus 2,h1,C0.110,Thu,9
+Annamaria Twigt,Moderne Databases,p1,C0.110,Tue,15
+Annamaria Twigt,Moderne Databases,h1,A1.10,Fri,13
+Arina Ubbink,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Emme Udo,Collectieve Intelligentie,p1,C0.110,Mon,13
+Emme Udo,Heuristieken 1,h1,B0.201,Wed,11
+Emme Udo,Moderne Databases,w1,A1.04,Mon,11
+Emme Udo,Heuristieken 1,w1,C1.112,Mon,13
+Emme Udo,Collectieve Intelligentie,w1,A1.10,Mon,11
+Emme Udo,Moderne Databases,p1,C0.110,Tue,15
+Emme Udo,Collectieve Intelligentie,h1,C1.112,Mon,11
+Emme Udo,Zoeken sturen en bewegen,p1,C0.110,Fri,9
+Emme Udo,Collectieve Intelligentie,h3,B0.201,Tue,13
+Emme Udo,Collectieve Intelligentie,h2,C1.112,Tue,11
+Emme Udo,Moderne Databases,h1,A1.10,Fri,13
+Felien Uitslag,Databases 2,w1,A1.10,Tue,13
+Felien Uitslag,Heuristieken 2,w1,A1.08,Mon,15
+Felien Uitslag,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Felien Uitslag,Collectieve Intelligentie,h1,C1.112,Mon,11
+Felien Uitslag,Collectieve Intelligentie,w1,A1.04,Fri,15
+Felien Uitslag,Collectieve Intelligentie,p1,A1.08,Tue,9
+Felien Uitslag,Heuristieken 2,h1,C1.112,Thu,9
+Felien Uitslag,Databases 2,h1,C0.110,Wed,15
+Felien Uitslag,Collectieve Intelligentie,h3,B0.201,Tue,13
+Felien Uitslag,Collectieve Intelligentie,h2,C1.112,Tue,11
+Keely Ursem,Heuristieken 1,h1,B0.201,Wed,11
+Keely Ursem,Calculus 2,w1,B0.201,Wed,15
+Keely Ursem,Bioinformatica,h3,B0.201,Tue,15
+Keely Ursem,Calculus 2,h1,C0.110,Thu,9
+Keely Ursem,Heuristieken 1,w1,C1.112,Mon,13
+Keely Ursem,Bioinformatica,h1,C1.112,Wed,13
+Keely Ursem,Bioinformatica,p1,A1.08,Fri,9
+Keely Ursem,Bioinformatica,h2,B0.201,Fri,13
+Keely Ursem,Databases 2,w1,C1.112,Fri,13
+Keely Ursem,Databases 2,h1,C0.110,Wed,15
+Keely Ursem,Bioinformatica,w1,A1.08,Thu,9
+Nygel Vaatstra,Compilerbouw,h2,C0.110,Thu,13
+Nygel Vaatstra,Technology for games,h1,A1.04,Wed,15
+Nygel Vaatstra,Moderne Databases,p1,C0.110,Tue,15
+Nygel Vaatstra,Compilerbouw,p1,A1.04,Wed,11
+Nygel Vaatstra,Software engineering,h1,B0.201,Mon,11
+Nygel Vaatstra,Software engineering,p1,A1.10,Fri,9
+Nygel Vaatstra,Moderne Databases,w1,A1.10,Tue,11
+Nygel Vaatstra,Compilerbouw,h1,C0.110,Thu,11
+Nygel Vaatstra,Technology for games,w1,A1.08,Tue,11
+Nygel Vaatstra,Technology for games,h2,C0.110,Tue,17
+Nygel Vaatstra,Compilerbouw,w1,C0.110,Wed,13
+Nygel Vaatstra,Software engineering,w1,C1.112,Mon,9
+Nygel Vaatstra,Moderne Databases,h1,A1.10,Fri,13
+Dineke Valster,Heuristieken 1,h1,B0.201,Wed,11
+Dineke Valster,Heuristieken 1,w1,C1.112,Mon,13
+Dineke Valster,Programmeren in Java 2,p1,A1.08,Fri,15
+Shairon van Aaken,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Saïd van Aalderen,Kansrekenen 2,h1,A1.04,Thu,9
+Saïd van Aalderen,Kansrekenen 2,h2,C0.110,Fri,11
+Cherilyn van Amelsvoort,Heuristieken 1,h1,B0.201,Wed,11
+Cherilyn van Amelsvoort,Kansrekenen 2,h1,A1.04,Thu,9
+Cherilyn van Amelsvoort,Heuristieken 1,w1,C1.112,Mon,13
+Cherilyn van Amelsvoort,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Cherilyn van Amelsvoort,Kansrekenen 2,h2,C0.110,Fri,11
+Cherilyn van Amelsvoort,Programmeren in Java 2,p1,A1.06,Thu,9
+Leo van Amerongen,Programmeren in Java 2,p1,A1.08,Thu,11
+Peter-Jan van Amersfoort,Software engineering,w1,C1.112,Mon,9
+Peter-Jan van Amersfoort,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Peter-Jan van Amersfoort,Software engineering,p1,A1.10,Fri,9
+Peter-Jan van Amersfoort,Software engineering,h1,B0.201,Mon,11
+Jacky van Apeldoorn,Interactie-ontwerp,h1,A1.10,Tue,9
+Jacky van Apeldoorn,Interactie-ontwerp,h2,C0.110,Mon,9
+Nika van Baaren,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Nika van Baaren,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Nika van Baaren,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Nika van Baaren,Project Genetic Algorithms,p1,A1.06,Fri,15
+Nika van Baaren,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Nika van Baaren,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Cemil van Barneveld,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Cemil van Barneveld,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Cemil van Barneveld,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Cemil van Barneveld,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Cemil van Barneveld,Databases 2,w1,C1.112,Fri,13
+Cemil van Barneveld,Databases 2,h1,C0.110,Wed,15
+Johannus van Bavel,Heuristieken 2,w1,A1.04,Wed,13
+Johannus van Bavel,Data Mining,h2,A1.06,Fri,11
+Johannus van Bavel,Project Numerical Recipes,p1,C0.110,Fri,17
+Johannus van Bavel,Data Mining,w1,A1.04,Thu,13
+Johannus van Bavel,Data Mining,p1,A1.10,Thu,11
+Johannus van Bavel,Data Mining,h1,A1.04,Tue,15
+Johannus van Bavel,Heuristieken 2,h1,C1.112,Thu,9
+Johannus van Bavel,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Lody van Bentem,Project Numerical Recipes,p1,C1.112,Wed,15
+Ynte van Berkom,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Ynte van Berkom,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Ynte van Berkom,Heuristieken 2,w1,A1.08,Mon,15
+Ynte van Berkom,Heuristieken 2,h1,C1.112,Thu,9
+Ynte van Berkom,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Liedeke van Bezooijen,Collectieve Intelligentie,w1,C0.110,Tue,9
+Liedeke van Bezooijen,Collectieve Intelligentie,p1,A1.10,Thu,15
+Liedeke van Bezooijen,Software engineering,w1,C1.112,Tue,13
+Liedeke van Bezooijen,Software engineering,h1,B0.201,Mon,11
+Liedeke van Bezooijen,Software engineering,p1,A1.10,Fri,9
+Liedeke van Bezooijen,Collectieve Intelligentie,h1,C1.112,Mon,11
+Liedeke van Bezooijen,Collectieve Intelligentie,h3,B0.201,Tue,13
+Liedeke van Bezooijen,Collectieve Intelligentie,h2,C1.112,Tue,11
+Emircan van de Bunt,Compilerbouw,w1,C0.110,Wed,13
+Emircan van de Bunt,Compilerbouw,h1,C0.110,Thu,11
+Emircan van de Bunt,Compilerbouw,h2,C0.110,Thu,13
+Emircan van de Bunt,Compilerbouw,p1,A1.04,Wed,11
+Robbie van de Geijn,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Robbie van de Geijn,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Robbie van de Geijn,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Robbie van de Geijn,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Patryk van de Kraats,Moderne Databases,w1,A1.04,Mon,11
+Patryk van de Kraats,Machine Learning,h2,B0.201,Fri,15
+Patryk van de Kraats,Moderne Databases,p1,C1.112,Fri,15
+Patryk van de Kraats,Programmeren in Java 2,p1,C0.110,Wed,11
+Patryk van de Kraats,Moderne Databases,h1,A1.10,Fri,13
+Patryk van de Kraats,Machine Learning,h1,A1.06,Mon,13
+Kamila van de Kruijs,Project Numerical Recipes,p1,C0.110,Fri,17
+Rayen van de Kruijs,Kansrekenen 2,h1,A1.04,Thu,9
+Rayen van de Kruijs,Calculus 2,h1,C0.110,Thu,9
+Rayen van de Kruijs,Compilerbouw,h2,C0.110,Thu,13
+Rayen van de Kruijs,Machine Learning,h2,B0.201,Fri,15
+Rayen van de Kruijs,Kansrekenen 2,h2,C0.110,Fri,11
+Rayen van de Kruijs,Compilerbouw,p1,A1.04,Wed,11
+Rayen van de Kruijs,Compilerbouw,h1,C0.110,Thu,11
+Rayen van de Kruijs,Compilerbouw,w1,C0.110,Wed,13
+Rayen van de Kruijs,Calculus 2,w1,A1.10,Wed,15
+Rayen van de Kruijs,Machine Learning,h1,A1.06,Mon,13
+Rayen van de Kruijs,Programmeren in Java 2,p1,A1.08,Fri,15
+Roswitha van de Kuilen,Project Numerical Recipes,p1,A1.06,Mon,9
+Rudy van de Pavert,Calculus 2,w1,B0.201,Wed,15
+Rudy van de Pavert,Calculus 2,h1,C0.110,Thu,9
+Shawny van de Pol,Collectieve Intelligentie,w1,C0.110,Tue,9
+Shawny van de Pol,Bioinformatica,h3,B0.201,Tue,15
+Shawny van de Pol,Bioinformatica,w1,A1.08,Wed,11
+Shawny van de Pol,Lineaire Algebra,h1,B0.201,Tue,11
+Shawny van de Pol,Lineaire Algebra,h2,C1.112,Fri,11
+Shawny van de Pol,Bioinformatica,h1,C1.112,Wed,13
+Shawny van de Pol,Bioinformatica,p1,A1.08,Tue,13
+Shawny van de Pol,Collectieve Intelligentie,h1,C1.112,Mon,11
+Shawny van de Pol,Collectieve Intelligentie,p1,A1.08,Tue,9
+Shawny van de Pol,Bioinformatica,h2,B0.201,Fri,13
+Shawny van de Pol,Databases 2,w1,C1.112,Fri,13
+Shawny van de Pol,Databases 2,h1,C0.110,Wed,15
+Shawny van de Pol,Collectieve Intelligentie,h3,B0.201,Tue,13
+Shawny van de Pol,Collectieve Intelligentie,h2,C1.112,Tue,11
+Leida van de Ridder,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Leida van de Ridder,Bioinformatica,h3,B0.201,Tue,15
+Leida van de Ridder,Calculus 2,h1,C0.110,Thu,9
+Leida van de Ridder,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Leida van de Ridder,Bioinformatica,h1,C1.112,Wed,13
+Leida van de Ridder,Bioinformatica,w1,A1.04,Tue,13
+Leida van de Ridder,Bioinformatica,h2,B0.201,Fri,13
+Leida van de Ridder,Bioinformatica,p1,A1.10,Wed,11
+Leida van de Ridder,Calculus 2,w1,A1.10,Wed,15
+Leida van de Ridder,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Leida van de Ridder,Programmeren in Java 2,p1,C0.110,Wed,11
+Jurre van de Sanden,Bioinformatica,h3,B0.201,Tue,15
+Jurre van de Sanden,Bioinformatica,h1,C1.112,Wed,13
+Jurre van de Sanden,Bioinformatica,w1,A1.04,Tue,13
+Jurre van de Sanden,Bioinformatica,h2,B0.201,Fri,13
+Jurre van de Sanden,Bioinformatica,p1,A1.10,Wed,11
+Jurre van de Sanden,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Paulette van de Wardt,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Paulette van de Wardt,Kansrekenen 2,h1,A1.04,Thu,9
+Paulette van de Wardt,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Paulette van de Wardt,Machine Learning,h2,B0.201,Fri,15
+Paulette van de Wardt,Kansrekenen 2,h2,C0.110,Fri,11
+Paulette van de Wardt,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Paulette van de Wardt,Machine Learning,h1,A1.06,Mon,13
+Nanke van den Berg,Machine Learning,h2,B0.201,Fri,15
+Nanke van den Berg,Machine Learning,h1,A1.06,Mon,13
+Btissam van den Boer,Kansrekenen 2,h1,A1.04,Thu,9
+Btissam van den Boer,Technology for games,w1,B0.201,Mon,15
+Btissam van den Boer,Technology for games,h1,A1.04,Wed,15
+Btissam van den Boer,Kansrekenen 2,h2,C0.110,Fri,11
+Btissam van den Boer,Technology for games,h2,C0.110,Tue,17
+Enrique van den Born,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Enrique van den Born,Compilerbouw (practicum),p1,C1.112,Thu,13
+Enrique van den Born,Technology for games,w1,B0.201,Mon,15
+Enrique van den Born,Technology for games,h1,A1.04,Wed,15
+Enrique van den Born,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Enrique van den Born,Technology for games,h2,C0.110,Tue,17
+Enrique van den Born,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Enrique van den Born,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Cyrano van den Eijnde,Heuristieken 1,h1,B0.201,Wed,11
+Cyrano van den Eijnde,Kansrekenen 2,h1,A1.04,Thu,9
+Cyrano van den Eijnde,Heuristieken 1,w1,C1.112,Mon,13
+Cyrano van den Eijnde,Lineaire Algebra,h2,C1.112,Fri,11
+Cyrano van den Eijnde,Kansrekenen 2,h2,C0.110,Fri,11
+Cyrano van den Eijnde,Lineaire Algebra,h1,B0.201,Tue,11
+Ceren van den Engel,Compilerbouw,h2,C0.110,Thu,13
+Ceren van den Engel,Compilerbouw,p1,A1.04,Wed,11
+Ceren van den Engel,Compilerbouw,h1,C0.110,Thu,11
+Ceren van den Engel,Programmeren in Java 2,p1,C1.112,Mon,15
+Ceren van den Engel,Compilerbouw,w1,B0.201,Wed,13
+Cyrille van den Ham,Programmeren in Java 2,p1,A1.06,Thu,9
+Léon van den Hoogen,Calculus 2,w1,B0.201,Wed,15
+Léon van den Hoogen,Calculus 2,h1,C0.110,Thu,9
+Amos van den Oord,Kansrekenen 2,h1,A1.04,Thu,9
+Amos van den Oord,Kansrekenen 2,h2,C0.110,Fri,11
+Chelly van der Doelen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Chelly van der Doelen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Chelly van der Doelen,Webprogrammeren en databases,p1,C1.112,Wed,9
+Chelly van der Doelen,Webprogrammeren en databases,w1,A1.08,Thu,13
+Chelly van der Doelen,Heuristieken 2,w1,A1.08,Mon,15
+Chelly van der Doelen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Chelly van der Doelen,Webprogrammeren en databases,h1,A1.06,Tue,9
+Chelly van der Doelen,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Chelly van der Doelen,Heuristieken 2,h1,C1.112,Thu,9
+Chelly van der Doelen,Webprogrammeren en databases,h2,A1.10,Thu,13
+Tamar van der Drift,Compilerbouw (practicum),p1,B0.201,Tue,9
+Lakshmi van der Gaag,Databases 2,h1,C0.110,Wed,15
+Lakshmi van der Gaag,Databases 2,w1,C1.112,Fri,13
+Deejay van der Geer,Data Mining,h2,A1.06,Fri,11
+Deejay van der Geer,Autonomous Agents 2,h1,A1.04,Thu,15
+Deejay van der Geer,Heuristieken 2,w1,A1.08,Mon,15
+Deejay van der Geer,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Deejay van der Geer,Data Mining,w1,A1.04,Thu,13
+Deejay van der Geer,Autonomous Agents 2,h2,A1.04,Tue,11
+Deejay van der Geer,Autonomous Agents 2,w1,A1.06,Fri,9
+Deejay van der Geer,Databases 2,w1,C1.112,Fri,13
+Deejay van der Geer,Data Mining,p1,B0.201,Fri,9
+Deejay van der Geer,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Deejay van der Geer,Data Mining,h1,A1.04,Tue,15
+Deejay van der Geer,Heuristieken 2,h1,C1.112,Thu,9
+Deejay van der Geer,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Deejay van der Geer,Autonomous Agents 2,p1,A1.10,Thu,9
+Deejay van der Geer,Databases 2,h1,C0.110,Wed,15
+Ferhan van der Gulik,Moderne Databases,p1,A1.10,Mon,13
+Ferhan van der Gulik,Moderne Databases,w1,A1.04,Mon,11
+Ferhan van der Gulik,Moderne Databases,h1,A1.10,Fri,13
+Daisy van der Klei,Collectieve Intelligentie,p1,A1.10,Thu,15
+Daisy van der Klei,Databases 2,w1,A1.10,Tue,13
+Daisy van der Klei,Compilerbouw,h2,C0.110,Thu,13
+Daisy van der Klei,Lineaire Algebra,h1,B0.201,Tue,11
+Daisy van der Klei,Lineaire Algebra,h2,C1.112,Fri,11
+Daisy van der Klei,Compilerbouw,w1,B0.201,Wed,13
+Daisy van der Klei,Collectieve Intelligentie,h1,C1.112,Mon,11
+Daisy van der Klei,Collectieve Intelligentie,w1,A1.04,Fri,15
+Daisy van der Klei,Compilerbouw,h1,C0.110,Thu,11
+Daisy van der Klei,Programmeren in Java 2,p1,C0.110,Wed,11
+Daisy van der Klei,Collectieve Intelligentie,h3,B0.201,Tue,13
+Daisy van der Klei,Collectieve Intelligentie,h2,C1.112,Tue,11
+Daisy van der Klei,Databases 2,h1,C0.110,Wed,15
+Daisy van der Klei,Compilerbouw,p1,A1.06,Wed,11
+Pearl van der Leek,Moderne Databases,h1,A1.10,Fri,13
+Pearl van der Leek,Moderne Databases,p1,C0.110,Tue,15
+Pearl van der Leek,Moderne Databases,w1,A1.06,Fri,13
+Ay?egül van der Marel,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Ay?egül van der Marel,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Ay?egül van der Marel,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Aïcha van der Meer,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Aïcha van der Meer,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Aïcha van der Meer,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Aïcha van der Meer,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Aïcha van der Meer,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Aïcha van der Meer,Programmeren in Java 2,p1,C0.110,Wed,11
+Aïcha van der Meer,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Aïcha van der Meer,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Abdul van der Meeren,Calculus 2,w1,B0.201,Wed,15
+Abdul van der Meeren,Bioinformatica,h3,B0.201,Tue,15
+Abdul van der Meeren,Calculus 2,h1,C0.110,Thu,9
+Abdul van der Meeren,Moderne Databases,w1,A1.04,Mon,11
+Abdul van der Meeren,Bioinformatica,h1,C1.112,Wed,13
+Abdul van der Meeren,Moderne Databases,p1,C1.112,Fri,15
+Abdul van der Meeren,Bioinformatica,h2,B0.201,Fri,13
+Abdul van der Meeren,Bioinformatica,p1,A1.10,Wed,11
+Abdul van der Meeren,Programmeren in Java 2,p1,C1.112,Mon,15
+Abdul van der Meeren,Moderne Databases,h1,A1.10,Fri,13
+Abdul van der Meeren,Bioinformatica,w1,A1.08,Thu,9
+Geerte van der Meij,Collectieve Intelligentie,p1,A1.10,Thu,15
+Geerte van der Meij,Software engineering,w1,C1.112,Tue,13
+Geerte van der Meij,Compilerbouw,h2,C0.110,Thu,13
+Geerte van der Meij,Collectieve Intelligentie,w1,A1.10,Mon,11
+Geerte van der Meij,Software engineering,p1,A1.04,Fri,13
+Geerte van der Meij,Compilerbouw,p1,A1.04,Wed,11
+Geerte van der Meij,Software engineering,h1,B0.201,Mon,11
+Geerte van der Meij,Project Numerical Recipes,p1,C1.112,Wed,15
+Geerte van der Meij,Collectieve Intelligentie,h1,C1.112,Mon,11
+Geerte van der Meij,Compilerbouw,h1,C0.110,Thu,11
+Geerte van der Meij,Compilerbouw,w1,C0.110,Wed,13
+Geerte van der Meij,Collectieve Intelligentie,h3,B0.201,Tue,13
+Geerte van der Meij,Collectieve Intelligentie,h2,C1.112,Tue,11
+Maritha van der Niet,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Maritha van der Niet,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Maritha van der Niet,Lineaire Algebra,h2,C1.112,Fri,11
+Maritha van der Niet,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Maritha van der Niet,Technology for games,h1,A1.04,Wed,15
+Maritha van der Niet,Project Genetic Algorithms,p1,A1.06,Fri,15
+Maritha van der Niet,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Maritha van der Niet,Technology for games,w1,A1.08,Tue,11
+Maritha van der Niet,Technology for games,h2,C0.110,Tue,17
+Maritha van der Niet,Lineaire Algebra,h1,B0.201,Tue,11
+Johannes van der Plaats,Programmeren in Java 2,p1,C0.110,Mon,11
+Johannes van der Plaats,Webprogrammeren en databases,p1,C1.112,Wed,9
+Johannes van der Plaats,Webprogrammeren en databases,w1,A1.08,Thu,13
+Johannes van der Plaats,Webprogrammeren en databases,h1,A1.06,Tue,9
+Johannes van der Plaats,Webprogrammeren en databases,h2,A1.10,Thu,13
+Graciella van der Plas,Kansrekenen 2,h1,A1.04,Thu,9
+Graciella van der Plas,Calculus 2,w1,B0.201,Thu,11
+Graciella van der Plas,Kansrekenen 2,h2,C0.110,Fri,11
+Graciella van der Plas,Calculus 2,h1,C0.110,Thu,9
+Darian van der Steege,Programmeren in Java 2,p1,C0.110,Wed,11
+Darian van der Steege,Kansrekenen 2,h1,A1.04,Thu,9
+Darian van der Steege,Kansrekenen 2,h2,C0.110,Fri,11
+Tos van der Ster,Calculus 2,w1,B0.201,Wed,15
+Tos van der Ster,Calculus 2,h1,C0.110,Thu,9
+Scotty van der Stoel,Programmeren in Java 2,p1,C0.110,Mon,11
+Scotty van der Stoel,Compilerbouw,h2,C0.110,Thu,13
+Scotty van der Stoel,Compilerbouw,p1,A1.04,Wed,11
+Scotty van der Stoel,Compilerbouw,h1,C0.110,Thu,11
+Scotty van der Stoel,Compilerbouw,w1,B0.201,Wed,13
+Yun van der Vleuten,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Yun van der Vleuten,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Yun van der Vleuten,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Yun van der Vleuten,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Josef van der Wiel,Heuristieken 2,w1,A1.04,Wed,13
+Josef van der Wiel,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Josef van der Wiel,Project Genetic Algorithms,p1,A1.06,Fri,15
+Josef van der Wiel,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Josef van der Wiel,Heuristieken 2,h1,C1.112,Thu,9
+Jos van der Zwet,Bioinformatica,w1,A1.08,Wed,11
+Jos van der Zwet,Bioinformatica,h3,B0.201,Tue,15
+Jos van der Zwet,Calculus 2,h1,C0.110,Thu,9
+Jos van der Zwet,Compilerbouw,h2,C0.110,Thu,13
+Jos van der Zwet,Bioinformatica,h1,C1.112,Wed,13
+Jos van der Zwet,Bioinformatica,p1,A1.08,Fri,9
+Jos van der Zwet,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Jos van der Zwet,Bioinformatica,h2,B0.201,Fri,13
+Jos van der Zwet,Compilerbouw,h1,C0.110,Thu,11
+Jos van der Zwet,Compilerbouw,w1,C0.110,Wed,13
+Jos van der Zwet,Calculus 2,w1,A1.10,Wed,15
+Jos van der Zwet,Programmeren in Java 2,p1,A1.08,Thu,11
+Jos van der Zwet,Compilerbouw,p1,A1.06,Wed,11
+George van Dieten,Heuristieken 2,h1,C1.112,Thu,9
+George van Dieten,Heuristieken 2,w1,A1.04,Wed,13
+Ilayda van Dinther,Calculus 2,w1,B0.201,Thu,11
+Ilayda van Dinther,Calculus 2,h1,C0.110,Thu,9
+Naciye van Eert,Kansrekenen 2,h1,A1.04,Thu,9
+Naciye van Eert,Software engineering,w1,C1.112,Tue,13
+Naciye van Eert,Lineaire Algebra,h2,C1.112,Fri,11
+Naciye van Eert,Kansrekenen 2,h2,C0.110,Fri,11
+Naciye van Eert,Software engineering,h1,B0.201,Mon,11
+Naciye van Eert,Software engineering,p1,A1.10,Fri,9
+Naciye van Eert,Lineaire Algebra,h1,B0.201,Tue,11
+Naciye van Eert,Programmeren in Java 2,p1,A1.08,Thu,11
+Jayme van Eeuwijk,Programmeren in Java 2,p1,C0.110,Mon,11
+Jayme van Eeuwijk,Data Mining,w1,A1.08,Wed,15
+Jayme van Eeuwijk,Data Mining,h2,A1.06,Fri,11
+Jayme van Eeuwijk,Project Numerical Recipes,p1,C0.110,Fri,17
+Jayme van Eeuwijk,Data Mining,h1,A1.04,Tue,15
+Jayme van Eeuwijk,Data Mining,p1,B0.201,Fri,9
+Juan van Eijndhoven,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Juan van Eijndhoven,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Juan van Eijndhoven,Project Numerical Recipes,p1,C1.112,Wed,15
+Juan van Eijndhoven,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Wytse van Geest,Kansrekenen 2,h1,A1.04,Thu,9
+Wytse van Geest,Kansrekenen 2,h2,C0.110,Fri,11
+Carmela van Gerwen,Calculus 2,h1,C0.110,Thu,9
+Carmela van Gerwen,Compilerbouw,h2,C0.110,Thu,13
+Carmela van Gerwen,Compilerbouw,w1,B0.201,Wed,13
+Carmela van Gerwen,Calculus 2,w1,B0.201,Thu,11
+Carmela van Gerwen,Interactie-ontwerp,h1,A1.10,Tue,9
+Carmela van Gerwen,Project Genetic Algorithms,p1,B0.201,Mon,9
+Carmela van Gerwen,Compilerbouw,h1,C0.110,Thu,11
+Carmela van Gerwen,Interactie-ontwerp,h2,C0.110,Mon,9
+Carmela van Gerwen,Compilerbouw,p1,A1.06,Wed,11
+Joshi van Groeningen,Compilerbouw,h2,C0.110,Thu,13
+Joshi van Groeningen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Joshi van Groeningen,Compilerbouw,h1,C0.110,Thu,11
+Joshi van Groeningen,Compilerbouw,w1,C0.110,Wed,13
+Joshi van Groeningen,Compilerbouw,p1,A1.06,Wed,11
+Ouidad van Hall,Programmeren in Java 2,p1,C0.110,Mon,11
+Ouidad van Hall,Software engineering,w1,C1.112,Tue,13
+Ouidad van Hall,Data Mining,h2,A1.06,Fri,11
+Ouidad van Hall,Machine Learning,h2,B0.201,Fri,15
+Ouidad van Hall,Software engineering,p1,A1.04,Fri,13
+Ouidad van Hall,Software engineering,h1,B0.201,Mon,11
+Ouidad van Hall,Data Mining,w1,A1.04,Thu,13
+Ouidad van Hall,Data Mining,h1,A1.04,Tue,15
+Ouidad van Hall,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Ouidad van Hall,Data Mining,p1,B0.201,Fri,9
+Ouidad van Hall,Machine Learning,h1,A1.06,Mon,13
+Walther van Halteren,Kansrekenen 2,h1,A1.04,Thu,9
+Walther van Halteren,Technology for games,h1,A1.04,Wed,15
+Walther van Halteren,Kansrekenen 2,h2,C0.110,Fri,11
+Walther van Halteren,Technology for games,w1,A1.08,Tue,11
+Walther van Halteren,Technology for games,h2,C0.110,Tue,17
+Tamimount van Herten,Autonomous Agents 2,h1,A1.04,Thu,15
+Tamimount van Herten,Autonomous Agents 2,w1,A1.04,Mon,9
+Tamimount van Herten,Autonomous Agents 2,p1,B0.201,Thu,15
+Tamimount van Herten,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Tamimount van Herten,Autonomous Agents 2,h2,A1.04,Tue,11
+Shauny van Hezik,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Shauny van Hezik,Kansrekenen 2,h1,A1.04,Thu,9
+Shauny van Hezik,Kansrekenen 2,h2,C0.110,Fri,11
+Nalinie van Ierland,Webprogrammeren en databases,h2,A1.10,Thu,13
+Nalinie van Ierland,Webprogrammeren en databases,h1,A1.06,Tue,9
+Nalinie van Ierland,Webprogrammeren en databases,w1,C0.110,Tue,11
+Nalinie van Ierland,Webprogrammeren en databases,p1,C1.112,Wed,9
+Berit van Ingen,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Berit van Ingen,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Berit van Ingen,Interactie-ontwerp,h1,A1.10,Tue,9
+Berit van Ingen,Algoritmen en complexiteit,w1,C1.112,Thu,11
+Berit van Ingen,Interactie-ontwerp,h2,C0.110,Mon,9
+Berit van Ingen,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Aidan van Iwaarden,Compilerbouw,h2,C0.110,Thu,13
+Aidan van Iwaarden,Compilerbouw,p1,A1.04,Wed,11
+Aidan van Iwaarden,Compilerbouw,h1,C0.110,Thu,11
+Aidan van Iwaarden,Compilerbouw,w1,C0.110,Wed,13
+Aidan van Iwaarden,Programmeren in Java 2,p1,C1.112,Mon,15
+Ciske van Kalsbeek,Data Mining,h2,A1.06,Fri,11
+Ciske van Kalsbeek,Data Mining,w1,A1.08,Wed,9
+Ciske van Kalsbeek,Data Mining,p1,A1.10,Thu,11
+Ciske van Kalsbeek,Data Mining,h1,A1.04,Tue,15
+Ciske van Kalsbeek,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Yücel van Kasteel,Calculus 2,w1,B0.201,Wed,15
+Yücel van Kasteel,Calculus 2,h1,C0.110,Thu,9
+Yücel van Kasteel,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Yücel van Kasteel,Software engineering,p1,A1.04,Fri,13
+Yücel van Kasteel,Software engineering,h1,B0.201,Mon,11
+Yücel van Kasteel,Software engineering,w1,C1.112,Mon,9
+Romany van Kessel,Calculus 2,w1,B0.201,Wed,15
+Romany van Kessel,Calculus 2,h1,C0.110,Thu,9
+Demelza van Kommer,Bioinformatica,h3,B0.201,Tue,15
+Demelza van Kommer,Calculus 2,h1,C0.110,Thu,9
+Demelza van Kommer,Bioinformatica,h1,C1.112,Wed,13
+Demelza van Kommer,Lineaire Algebra,h2,C1.112,Fri,11
+Demelza van Kommer,Bioinformatica,w1,A1.04,Tue,13
+Demelza van Kommer,Bioinformatica,h2,B0.201,Fri,13
+Demelza van Kommer,Bioinformatica,p1,A1.10,Wed,11
+Demelza van Kommer,Calculus 2,w1,A1.10,Wed,15
+Demelza van Kommer,Lineaire Algebra,h1,B0.201,Tue,11
+Seval van Leussen,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Seval van Leussen,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Seval van Leussen,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Ruveyda van Lingen,Advanced Heuristics,h1,C0.110,Tue,13
+Ruveyda van Lingen,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Ruveyda van Lingen,Project Numerical Recipes,p1,C1.112,Wed,15
+Ruveyda van Lingen,Advanced Heuristics,p1,A1.10,Fri,11
+Ruveyda van Lingen,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Ruveyda van Lingen,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Touraya van Lingen,Data Mining,w1,A1.04,Thu,13
+Touraya van Lingen,Data Mining,h1,A1.04,Tue,15
+Touraya van Lingen,Data Mining,p1,A1.06,Mon,11
+Touraya van Lingen,Data Mining,h2,A1.06,Fri,11
+Harwin van Loon,Collectieve Intelligentie,w1,C0.110,Tue,9
+Harwin van Loon,Collectieve Intelligentie,p1,A1.10,Thu,15
+Harwin van Loon,Compilerbouw (practicum),p1,C1.112,Thu,15
+Harwin van Loon,Technology for games,w1,B0.201,Mon,15
+Harwin van Loon,Technology for games,h1,A1.04,Wed,15
+Harwin van Loon,Collectieve Intelligentie,h1,C1.112,Mon,11
+Harwin van Loon,Technology for games,h2,C0.110,Tue,17
+Harwin van Loon,Databases 2,w1,C1.112,Fri,13
+Harwin van Loon,Databases 2,h1,C0.110,Wed,15
+Harwin van Loon,Collectieve Intelligentie,h3,B0.201,Tue,13
+Harwin van Loon,Collectieve Intelligentie,h2,C1.112,Tue,11
+Lammigje van Loveren,Compilerbouw,h2,C0.110,Thu,13
+Lammigje van Loveren,Autonomous Agents 2,h1,A1.04,Thu,15
+Lammigje van Loveren,Compilerbouw,w1,B0.201,Wed,13
+Lammigje van Loveren,Machine Learning,h2,B0.201,Fri,15
+Lammigje van Loveren,Autonomous Agents 2,w1,A1.04,Mon,9
+Lammigje van Loveren,Autonomous Agents 2,p1,C1.112,Tue,9
+Lammigje van Loveren,Autonomous Agents 2,h2,A1.04,Tue,11
+Lammigje van Loveren,Compilerbouw,h1,C0.110,Thu,11
+Lammigje van Loveren,Databases 2,w1,C1.112,Fri,13
+Lammigje van Loveren,Databases 2,h1,C0.110,Wed,15
+Lammigje van Loveren,Machine Learning,h1,A1.06,Mon,13
+Lammigje van Loveren,Programmeren in Java 2,p1,C1.112,Mon,15
+Lammigje van Loveren,Compilerbouw,p1,A1.06,Wed,11
+Fae van Luttikhuizen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Fae van Luttikhuizen,Calculus 2,w1,B0.201,Thu,11
+Fae van Luttikhuizen,Calculus 2,h1,C0.110,Thu,9
+Micha van Maarseveen,Databases 2,w1,A1.10,Tue,13
+Micha van Maarseveen,Moderne Databases,w1,A1.06,Fri,13
+Micha van Maarseveen,Moderne Databases,p1,A1.10,Mon,13
+Micha van Maarseveen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Micha van Maarseveen,Project Genetic Algorithms,p1,B0.201,Mon,9
+Micha van Maarseveen,Databases 2,h1,C0.110,Wed,15
+Micha van Maarseveen,Moderne Databases,h1,A1.10,Fri,13
+Meta van Marle,Kansrekenen 2,h1,A1.04,Thu,9
+Meta van Marle,Compilerbouw,h2,C0.110,Thu,13
+Meta van Marle,Lineaire Algebra,h2,C1.112,Fri,11
+Meta van Marle,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Meta van Marle,Kansrekenen 2,h2,C0.110,Fri,11
+Meta van Marle,Compilerbouw,p1,A1.04,Wed,11
+Meta van Marle,Compilerbouw,h1,C0.110,Thu,11
+Meta van Marle,Compilerbouw,w1,C0.110,Wed,13
+Meta van Marle,Lineaire Algebra,h1,B0.201,Tue,11
+Meta van Marle,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Léon van Maurik,Calculus 2,h1,C0.110,Thu,9
+Léon van Maurik,Compilerbouw,h2,C0.110,Thu,13
+Léon van Maurik,Compilerbouw,p1,A1.04,Wed,11
+Léon van Maurik,Compilerbouw,h1,C0.110,Thu,11
+Léon van Maurik,Databases 2,w1,C1.112,Fri,13
+Léon van Maurik,Databases 2,h1,C0.110,Wed,15
+Léon van Maurik,Calculus 2,w1,A1.10,Wed,15
+Léon van Maurik,Project Numerical Recipes,p1,A1.06,Mon,9
+Léon van Maurik,Compilerbouw,w1,B0.201,Wed,13
+Abram van Mierlo,Software engineering,w1,C1.112,Tue,13
+Abram van Mierlo,Moderne Databases,w1,A1.04,Mon,11
+Abram van Mierlo,Webprogrammeren en databases,p1,B0.201,Fri,11
+Abram van Mierlo,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Abram van Mierlo,Software engineering,p1,A1.04,Fri,13
+Abram van Mierlo,Webprogrammeren en databases,w1,A1.08,Thu,13
+Abram van Mierlo,Moderne Databases,p1,C0.110,Tue,15
+Abram van Mierlo,Software engineering,h1,B0.201,Mon,11
+Abram van Mierlo,Webprogrammeren en databases,h1,A1.06,Tue,9
+Abram van Mierlo,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Abram van Mierlo,Webprogrammeren en databases,h2,A1.10,Thu,13
+Abram van Mierlo,Moderne Databases,h1,A1.10,Fri,13
+Ans van Montfort,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Ans van Montfort,Data Mining,h2,A1.06,Fri,11
+Ans van Montfort,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Ans van Montfort,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Ans van Montfort,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Ans van Montfort,Data Mining,w1,A1.04,Thu,13
+Ans van Montfort,Data Mining,h1,A1.04,Tue,15
+Ans van Montfort,Data Mining,p1,B0.201,Fri,9
+Yuri van Mourik,Software engineering,w1,C1.112,Tue,13
+Yuri van Mourik,Bioinformatica,h3,B0.201,Tue,15
+Yuri van Mourik,Bioinformatica,w1,A1.08,Wed,11
+Yuri van Mourik,Bioinformatica,h1,C1.112,Wed,13
+Yuri van Mourik,Webprogrammeren en databases,p1,B0.201,Fri,11
+Yuri van Mourik,Webprogrammeren en databases,w1,C0.110,Tue,11
+Yuri van Mourik,Software engineering,h1,B0.201,Mon,11
+Yuri van Mourik,Software engineering,p1,A1.10,Fri,9
+Yuri van Mourik,Bioinformatica,h2,B0.201,Fri,13
+Yuri van Mourik,Webprogrammeren en databases,h1,A1.06,Tue,9
+Yuri van Mourik,Bioinformatica,p1,A1.10,Wed,11
+Yuri van Mourik,Webprogrammeren en databases,h2,A1.10,Thu,13
+Yang van Munster,Project Numerical Recipes,p1,C1.112,Wed,15
+Miguel van Oss,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Nanet van Osta,Programmeren in Java 2,p1,A1.08,Fri,15
+Nanet van Osta,Interactie-ontwerp,h2,C0.110,Mon,9
+Nanet van Osta,Interactie-ontwerp,h1,A1.10,Tue,9
+Nanet van Osta,Project Numerical Recipes,p1,C0.110,Fri,17
+Sien van Plateringen,Moderne Databases,w1,A1.04,Mon,11
+Sien van Plateringen,Compilerbouw,h2,C0.110,Thu,13
+Sien van Plateringen,Moderne Databases,p1,C0.110,Tue,15
+Sien van Plateringen,Compilerbouw,p1,A1.06,Wed,11
+Sien van Plateringen,Compilerbouw,h1,C0.110,Thu,11
+Sien van Plateringen,Moderne Databases,h1,A1.10,Fri,13
+Sien van Plateringen,Compilerbouw,w1,B0.201,Wed,13
+Fedoua van Poorten,Calculus 2,w1,B0.201,Wed,15
+Fedoua van Poorten,Bioinformatica,h3,B0.201,Tue,15
+Fedoua van Poorten,Calculus 2,h1,C0.110,Thu,9
+Fedoua van Poorten,Bioinformatica,w1,A1.08,Wed,11
+Fedoua van Poorten,Bioinformatica,h1,C1.112,Wed,13
+Fedoua van Poorten,Bioinformatica,p1,A1.08,Fri,9
+Fedoua van Poorten,Bioinformatica,h2,B0.201,Fri,13
+Jetty van Putten,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Jetty van Putten,Bioinformatica,h3,B0.201,Tue,15
+Jetty van Putten,Data Mining,w1,A1.08,Wed,15
+Jetty van Putten,Data Mining,h2,A1.06,Fri,11
+Jetty van Putten,Bioinformatica,h1,C1.112,Wed,13
+Jetty van Putten,Bioinformatica,p1,A1.08,Fri,9
+Jetty van Putten,Informatie- en organisatieontwerp,w1,C0.110,Thu,15
+Jetty van Putten,Informatie- en organisatieontwerp,p1,A1.06,Mon,15
+Jetty van Putten,Bioinformatica,h2,B0.201,Fri,13
+Jetty van Putten,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Jetty van Putten,Data Mining,h1,A1.04,Tue,15
+Jetty van Putten,Data Mining,p1,A1.06,Mon,11
+Jetty van Putten,Bioinformatica,w1,A1.08,Thu,9
+Jersey van Ravesteijn,Interactie-ontwerp,h1,A1.10,Tue,9
+Jersey van Ravesteijn,Interactie-ontwerp,h2,C0.110,Mon,9
+Jodi van Riel,Databases 2,w1,A1.10,Tue,13
+Jodi van Riel,Calculus 2,h1,C0.110,Thu,9
+Jodi van Riel,Moderne Databases,w1,A1.06,Fri,13
+Jodi van Riel,Moderne Databases,p1,A1.10,Mon,13
+Jodi van Riel,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Jodi van Riel,Calculus 2,w1,B0.201,Thu,11
+Jodi van Riel,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Jodi van Riel,Databases 2,h1,C0.110,Wed,15
+Jodi van Riel,Moderne Databases,h1,A1.10,Fri,13
+Jodi van Riel,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Cleo van Rietschoten,Heuristieken 1,h1,B0.201,Wed,11
+Cleo van Rietschoten,Heuristieken 1,w1,C1.112,Mon,13
+Cleo van Rietschoten,Programmeren in Java 2,p1,C1.112,Mon,15
+Caressa van Roemburg,Programmeren in Java 2,p1,A1.08,Thu,11
+El van Rosmalen,Lineaire Algebra,h2,C1.112,Fri,11
+El van Rosmalen,Lineaire Algebra,h1,B0.201,Tue,11
+Georgia van Rossem,Heuristieken 1,h1,B0.201,Wed,11
+Georgia van Rossem,Heuristieken 2,w1,A1.08,Mon,15
+Georgia van Rossem,Heuristieken 1,w1,C1.112,Mon,13
+Georgia van Rossem,Heuristieken 2,h1,C1.112,Thu,9
+Dragana van Ruitenbeek,Compilerbouw,w1,B0.201,Wed,13
+Dragana van Ruitenbeek,Compilerbouw,h1,C0.110,Thu,11
+Dragana van Ruitenbeek,Compilerbouw,h2,C0.110,Thu,13
+Dragana van Ruitenbeek,Compilerbouw,p1,A1.06,Wed,11
+Borre van Ruler,Kansrekenen 2,h1,A1.04,Thu,9
+Borre van Ruler,Kansrekenen 2,h2,C0.110,Fri,11
+Marilène van Santen,Webprogrammeren en databases,p1,C1.112,Wed,9
+Marilène van Santen,Lineaire Algebra,h2,C1.112,Fri,11
+Marilène van Santen,Webprogrammeren en databases,w1,A1.08,Thu,13
+Marilène van Santen,Webprogrammeren en databases,h1,A1.06,Tue,9
+Marilène van Santen,Lineaire Algebra,h1,B0.201,Tue,11
+Marilène van Santen,Webprogrammeren en databases,h2,A1.10,Thu,13
+Sanne van Sleeuwen,Collectieve Intelligentie,p1,A1.06,Wed,15
+Sanne van Sleeuwen,Technology for games,h1,A1.04,Wed,15
+Sanne van Sleeuwen,Collectieve Intelligentie,h1,C1.112,Mon,11
+Sanne van Sleeuwen,Collectieve Intelligentie,w1,A1.04,Fri,15
+Sanne van Sleeuwen,Technology for games,w1,A1.08,Tue,11
+Sanne van Sleeuwen,Technology for games,h2,C0.110,Tue,17
+Sanne van Sleeuwen,Programmeren in Java 2,p1,A1.06,Thu,9
+Sanne van Sleeuwen,Collectieve Intelligentie,h3,B0.201,Tue,13
+Sanne van Sleeuwen,Collectieve Intelligentie,h2,C1.112,Tue,11
+Dalila van Sommeren,Webprogrammeren en databases,p1,B0.201,Fri,11
+Dalila van Sommeren,Webprogrammeren en databases,w1,C0.110,Tue,11
+Dalila van Sommeren,Webprogrammeren en databases,h1,A1.06,Tue,9
+Dalila van Sommeren,Webprogrammeren en databases,h2,A1.10,Thu,13
+Dalila van Sommeren,Programmeren in Java 2,p1,A1.08,Thu,11
+Elske van Suijlekom,Heuristieken 1,h1,B0.201,Wed,11
+Elske van Suijlekom,Moderne Databases,w1,A1.04,Mon,11
+Elske van Suijlekom,Technology for games,w1,B0.201,Mon,15
+Elske van Suijlekom,Technology for games,h1,A1.04,Wed,15
+Elske van Suijlekom,Moderne Databases,p1,C0.110,Tue,15
+Elske van Suijlekom,Technology for games,h2,C0.110,Tue,17
+Elske van Suijlekom,Databases 2,w1,C1.112,Fri,13
+Elske van Suijlekom,Databases 2,h1,C0.110,Wed,15
+Elske van Suijlekom,Heuristieken 1,w1,A1.04,Wed,9
+Elske van Suijlekom,Moderne Databases,h1,A1.10,Fri,13
+Samah van 't Oever,Kansrekenen 2,h1,A1.04,Thu,9
+Samah van 't Oever,Moderne Databases,w1,A1.06,Fri,13
+Samah van 't Oever,Moderne Databases,p1,C0.110,Tue,15
+Samah van 't Oever,Kansrekenen 2,h2,C0.110,Fri,11
+Samah van 't Oever,Moderne Databases,h1,A1.10,Fri,13
+Julot van Teeffelen,Bioinformatica,h3,B0.201,Tue,15
+Julot van Teeffelen,Bioinformatica,h1,C1.112,Wed,13
+Julot van Teeffelen,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Julot van Teeffelen,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Julot van Teeffelen,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Julot van Teeffelen,Bioinformatica,h2,B0.201,Fri,13
+Julot van Teeffelen,Bioinformatica,p1,A1.10,Wed,11
+Julot van Teeffelen,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Julot van Teeffelen,Bioinformatica,w1,A1.08,Thu,9
+Enrico van Triest,Compilerbouw,h2,C0.110,Thu,13
+Enrico van Triest,Compilerbouw,p1,A1.06,Wed,11
+Enrico van Triest,Compilerbouw,h1,C0.110,Thu,11
+Enrico van Triest,Databases 2,w1,C1.112,Fri,13
+Enrico van Triest,Databases 2,h1,C0.110,Wed,15
+Enrico van Triest,Compilerbouw,w1,B0.201,Wed,13
+Tarik van Vloten,Software engineering,w1,C1.112,Tue,13
+Tarik van Vloten,Lineaire Algebra,h2,C1.112,Fri,11
+Tarik van Vloten,Software engineering,p1,A1.04,Fri,13
+Tarik van Vloten,Software engineering,h1,B0.201,Mon,11
+Tarik van Vloten,Lineaire Algebra,h1,B0.201,Tue,11
+Priscillia van Voorden,Collectieve Intelligentie,w1,C0.110,Tue,9
+Priscillia van Voorden,Programmeren in Java 2,p1,C0.110,Mon,11
+Priscillia van Voorden,Databases 2,w1,A1.10,Tue,13
+Priscillia van Voorden,Software engineering,p1,A1.04,Fri,13
+Priscillia van Voorden,Software engineering,h1,B0.201,Mon,11
+Priscillia van Voorden,Collectieve Intelligentie,h1,C1.112,Mon,11
+Priscillia van Voorden,Collectieve Intelligentie,p1,A1.08,Tue,9
+Priscillia van Voorden,Software engineering,w1,C1.112,Mon,9
+Priscillia van Voorden,Collectieve Intelligentie,h3,B0.201,Tue,13
+Priscillia van Voorden,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Priscillia van Voorden,Collectieve Intelligentie,h2,C1.112,Tue,11
+Priscillia van Voorden,Databases 2,h1,C0.110,Wed,15
+Anne-Jan van Waardenburg,Databases 2,h1,C0.110,Wed,15
+Anne-Jan van Waardenburg,Databases 2,w1,A1.10,Tue,13
+Anne-Jan van Waardenburg,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Maggy van Walsum,Databases 2,h1,C0.110,Wed,15
+Maggy van Walsum,Databases 2,w1,A1.10,Tue,13
+Maggy van Walsum,Interactie-ontwerp,h1,A1.10,Tue,9
+Maggy van Walsum,Interactie-ontwerp,h2,C0.110,Mon,9
+Maran van Wanrooij,Compilerbouw (practicum),p1,C1.112,Thu,13
+Maran van Wanrooij,Interactie-ontwerp,h1,A1.10,Tue,9
+Maran van Wanrooij,Interactie-ontwerp,h2,C0.110,Mon,9
+Renco van Weel,Kansrekenen 2,h1,A1.04,Thu,9
+Renco van Weel,Software engineering,w1,C1.112,Tue,13
+Renco van Weel,Software engineering,p1,A1.04,Fri,13
+Renco van Weel,Technology for games,h1,A1.04,Wed,15
+Renco van Weel,Kansrekenen 2,h2,C0.110,Fri,11
+Renco van Weel,Software engineering,h1,B0.201,Mon,11
+Renco van Weel,Technology for games,w1,A1.08,Tue,11
+Renco van Weel,Technology for games,h2,C0.110,Tue,17
+Renco van Weel,Project Numerical Recipes,p1,A1.06,Mon,9
+Hazel van Wensen,Heuristieken 2,h1,C1.112,Thu,9
+Hazel van Wensen,Heuristieken 2,w1,A1.08,Mon,15
+Sanna van Wiggen,Lineaire Algebra,h2,C1.112,Fri,11
+Sanna van Wiggen,Lineaire Algebra,h1,B0.201,Tue,11
+Hui van Zeijl,Heuristieken 1,h1,B0.201,Wed,11
+Hui van Zeijl,Heuristieken 1,w1,C1.112,Mon,13
+Hui van Zeijl,Compilerbouw (practicum),p1,C1.112,Thu,13
+Hui van Zeijl,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Hui van Zeijl,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Jorian van Zijderveld,Software engineering,p1,A1.10,Fri,9
+Jorian van Zijderveld,Programmeren in Java 2,p1,C0.110,Mon,11
+Jorian van Zijderveld,Software engineering,w1,C1.112,Tue,13
+Jorian van Zijderveld,Software engineering,h1,B0.201,Mon,11
+Anthonius van Zoelen,Interactie-ontwerp,h1,A1.10,Tue,9
+Anthonius van Zoelen,Interactie-ontwerp,h2,C0.110,Mon,9
+Christiaan van Zon,Lineaire Algebra,h2,C1.112,Fri,11
+Christiaan van Zon,Lineaire Algebra,h1,B0.201,Tue,11
+Neele Veeke,Moderne Databases,p1,C1.112,Fri,15
+Neele Veeke,Moderne Databases,h1,A1.10,Fri,13
+Neele Veeke,Moderne Databases,w1,A1.06,Fri,13
+Bobby Veldhuis,Collectieve Intelligentie,p1,A1.06,Wed,15
+Bobby Veldhuis,Heuristieken 2,w1,A1.04,Wed,13
+Bobby Veldhuis,Webprogrammeren en databases,p1,C1.112,Wed,9
+Bobby Veldhuis,Webprogrammeren en databases,w1,A1.08,Thu,13
+Bobby Veldhuis,Collectieve Intelligentie,h1,C1.112,Mon,11
+Bobby Veldhuis,Collectieve Intelligentie,w1,A1.04,Fri,15
+Bobby Veldhuis,Heuristieken 2,h1,C1.112,Thu,9
+Bobby Veldhuis,Webprogrammeren en databases,h1,A1.06,Tue,9
+Bobby Veldhuis,Collectieve Intelligentie,h3,B0.201,Tue,13
+Bobby Veldhuis,Collectieve Intelligentie,h2,C1.112,Tue,11
+Bobby Veldhuis,Webprogrammeren en databases,h2,A1.10,Thu,13
+Bobby Veldhuis,Programmeren in Java 2,p1,A1.08,Thu,11
+Vinod Velt,Webprogrammeren en databases,p1,B0.201,Fri,11
+Vinod Velt,Webprogrammeren en databases,w1,A1.08,Thu,13
+Vinod Velt,Databases 2,w1,C1.112,Fri,13
+Vinod Velt,Webprogrammeren en databases,h1,A1.06,Tue,9
+Vinod Velt,Databases 2,h1,C0.110,Wed,15
+Vinod Velt,Webprogrammeren en databases,h2,A1.10,Thu,13
+Nadja Vendel,Compilerbouw (practicum),p1,C1.112,Thu,13
+Solomon Verhorst,Compilerbouw,w1,B0.201,Wed,13
+Solomon Verhorst,Compilerbouw,h1,C0.110,Thu,11
+Solomon Verhorst,Compilerbouw,h2,C0.110,Thu,13
+Solomon Verhorst,Compilerbouw,p1,A1.06,Wed,11
+Yuki Verkuijl,Databases 2,h1,C0.110,Wed,15
+Yuki Verkuijl,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Yuki Verkuijl,Databases 2,w1,C1.112,Fri,13
+Yuki Verkuijl,Compilerbouw (practicum),p1,C1.112,Thu,15
+Chloe Vermanen,Calculus 2,h1,C0.110,Thu,9
+Chloe Vermanen,Lineaire Algebra,h2,C1.112,Fri,11
+Chloe Vermanen,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Chloe Vermanen,Calculus 2,w1,B0.201,Thu,11
+Chloe Vermanen,Lineaire Algebra,h1,B0.201,Tue,11
+Talha Vermeeren,Data Mining,h2,A1.06,Fri,11
+Talha Vermeeren,Data Mining,w1,A1.08,Wed,9
+Talha Vermeeren,Data Mining,h1,A1.04,Tue,15
+Talha Vermeeren,Netwerken en systeembeveiliging,p1,B0.201,Thu,9
+Talha Vermeeren,Data Mining,p1,B0.201,Fri,9
+Maureen Versantvoort,Moderne Databases,w1,A1.10,Tue,11
+Maureen Versantvoort,Moderne Databases,p1,C1.112,Fri,15
+Maureen Versantvoort,Databases 2,w1,C1.112,Fri,13
+Maureen Versantvoort,Databases 2,h1,C0.110,Wed,15
+Maureen Versantvoort,Programmeren in Java 2,p1,C1.112,Mon,15
+Maureen Versantvoort,Moderne Databases,h1,A1.10,Fri,13
+Kavish Versteeg,Heuristieken 1,h1,B0.201,Wed,11
+Kavish Versteeg,Heuristieken 1,w1,C1.112,Mon,13
+Kavish Versteeg,Data Mining,w1,A1.08,Wed,15
+Kavish Versteeg,Data Mining,h2,A1.06,Fri,11
+Kavish Versteeg,Technology for games,h1,A1.04,Wed,15
+Kavish Versteeg,Software engineering,h1,B0.201,Mon,11
+Kavish Versteeg,Software engineering,p1,A1.10,Fri,9
+Kavish Versteeg,Technology for games,w1,A1.08,Tue,11
+Kavish Versteeg,Technology for games,h2,C0.110,Tue,17
+Kavish Versteeg,Software engineering,w1,C1.112,Mon,9
+Kavish Versteeg,Data Mining,h1,A1.04,Tue,15
+Kavish Versteeg,Data Mining,p1,A1.06,Mon,11
+Sherman Vervaart,Technology for games,w1,B0.201,Mon,15
+Sherman Vervaart,Technology for games,h1,A1.04,Wed,15
+Sherman Vervaart,Technology for games,h2,C0.110,Tue,17
+Sherman Vervaart,Project Numerical Recipes,p1,A1.06,Mon,9
+Karim Vingerhoets,Heuristieken 1,h1,B0.201,Wed,11
+Karim Vingerhoets,Heuristieken 1,w1,C1.112,Mon,13
+Karim Vingerhoets,Compilerbouw,h2,C0.110,Thu,13
+Karim Vingerhoets,Compilerbouw,p1,A1.04,Wed,11
+Karim Vingerhoets,Compilerbouw,h1,C0.110,Thu,11
+Karim Vingerhoets,Compilerbouw,w1,C0.110,Wed,13
+Jiri Vinke,Collectieve Intelligentie,p1,C0.110,Mon,13
+Jiri Vinke,Collectieve Intelligentie,h1,C1.112,Mon,11
+Jiri Vinke,Collectieve Intelligentie,h3,B0.201,Tue,13
+Jiri Vinke,Collectieve Intelligentie,w1,A1.10,Fri,15
+Jiri Vinke,Collectieve Intelligentie,h2,C1.112,Tue,11
+Kamiel Vinken,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Arnela Visch,Compilerbouw,w1,C0.110,Wed,13
+Arnela Visch,Compilerbouw,h1,C0.110,Thu,11
+Arnela Visch,Compilerbouw,h2,C0.110,Thu,13
+Arnela Visch,Compilerbouw,p1,A1.04,Wed,11
+Tjesse Voesten,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Tjesse Voesten,Heuristieken 1,h1,B0.201,Wed,11
+Tjesse Voesten,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Tjesse Voesten,Heuristieken 1,w1,C1.112,Mon,13
+Tjesse Voesten,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Tjesse Voesten,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Tjesse Voesten,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Tjesse Voesten,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Tjesse Voesten,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Tjesse Voesten,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Edwinus Voigt,Calculus 2,w1,B0.201,Wed,15
+Edwinus Voigt,Netwerken en systeembeveiliging,p1,A1.08,Fri,13
+Edwinus Voigt,Calculus 2,h1,C0.110,Thu,9
+Nadien Volman,Compilerbouw,h2,C0.110,Thu,13
+Nadien Volman,Technology for games,w1,B0.201,Mon,15
+Nadien Volman,Technology for games,h1,A1.04,Wed,15
+Nadien Volman,Compilerbouw,p1,A1.04,Wed,11
+Nadien Volman,Compilerbouw,h1,C0.110,Thu,11
+Nadien Volman,Technology for games,h2,C0.110,Tue,17
+Nadien Volman,Compilerbouw,w1,C0.110,Wed,13
+Annemarie Vooijs,Compilerbouw (practicum),p1,C1.112,Thu,15
+Dax Voskuilen,Calculus 2,h1,C0.110,Thu,9
+Dax Voskuilen,Moderne Databases,p1,A1.10,Mon,13
+Dax Voskuilen,Moderne Databases,w1,A1.10,Tue,11
+Dax Voskuilen,Software engineering,p1,A1.10,Fri,9
+Dax Voskuilen,Software engineering,h1,B0.201,Mon,11
+Dax Voskuilen,Software engineering,w1,C1.112,Mon,9
+Dax Voskuilen,Calculus 2,w1,A1.10,Wed,15
+Dax Voskuilen,Moderne Databases,h1,A1.10,Fri,13
+Jort Vries,Netwerken en systeembeveiliging,p1,A1.08,Wed,13
+Jort Vries,Kansrekenen 2,h1,A1.04,Thu,9
+Jort Vries,Calculus 2,h1,C0.110,Thu,9
+Jort Vries,Calculus 2,w1,B0.201,Thu,11
+Jort Vries,Kansrekenen 2,h2,C0.110,Fri,11
+Jort Vries,Programmeren in Java 2,p1,A1.08,Thu,11
+Rhona Vromans,Autonomous Agents 2,p1,B0.201,Thu,15
+Rhona Vromans,Autonomous Agents 2,h2,A1.04,Tue,11
+Rhona Vromans,Autonomous Agents 2,w1,C1.112,Wed,11
+Rhona Vromans,Autonomous Agents 2,h1,A1.04,Thu,15
+Zhen Vullings,Heuristieken 1,h1,B0.201,Wed,11
+Zhen Vullings,Heuristieken 1,w1,C1.112,Mon,13
+Laurent Wallenburg,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Laurent Wallenburg,Interactie-ontwerp,h1,A1.10,Tue,9
+Laurent Wallenburg,Interactie-ontwerp,h2,C0.110,Mon,9
+Laurent Wallenburg,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Laurent Wallenburg,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Vasco Waninge,Bioinformatica,h3,B0.201,Tue,15
+Vasco Waninge,Moderne Databases,w1,A1.06,Fri,13
+Vasco Waninge,Zoeken sturen en bewegen,p1,C0.110,Wed,17
+Vasco Waninge,Bioinformatica,h1,C1.112,Wed,13
+Vasco Waninge,Machine Learning,h2,B0.201,Fri,15
+Vasco Waninge,Moderne Databases,p1,C0.110,Tue,15
+Vasco Waninge,Bioinformatica,h2,B0.201,Fri,13
+Vasco Waninge,Bioinformatica,p1,A1.10,Wed,11
+Vasco Waninge,Machine Learning,h1,A1.06,Mon,13
+Vasco Waninge,Moderne Databases,h1,A1.10,Fri,13
+Vasco Waninge,Bioinformatica,w1,A1.08,Thu,9
+Reduan Warsame,Compilerbouw,h2,C0.110,Thu,13
+Reduan Warsame,Collectieve Intelligentie,w1,A1.10,Mon,11
+Reduan Warsame,Compilerbouw,p1,A1.04,Wed,11
+Reduan Warsame,Collectieve Intelligentie,h1,C1.112,Mon,11
+Reduan Warsame,Collectieve Intelligentie,p1,A1.08,Tue,9
+Reduan Warsame,Compilerbouw,h1,C0.110,Thu,11
+Reduan Warsame,Compilerbouw,w1,C0.110,Wed,13
+Reduan Warsame,Collectieve Intelligentie,h3,B0.201,Tue,13
+Reduan Warsame,Collectieve Intelligentie,h2,C1.112,Tue,11
+Matisse Weij,Collectieve Intelligentie,w1,C0.110,Tue,9
+Matisse Weij,Compilerbouw,h2,C0.110,Thu,13
+Matisse Weij,Project Genetic Algorithms,p1,C0.110,Wed,9
+Matisse Weij,Compilerbouw,p1,A1.04,Wed,11
+Matisse Weij,Collectieve Intelligentie,h1,C1.112,Mon,11
+Matisse Weij,Collectieve Intelligentie,p1,A1.08,Tue,9
+Matisse Weij,Compilerbouw,h1,C0.110,Thu,11
+Matisse Weij,Collectieve Intelligentie,h3,B0.201,Tue,13
+Matisse Weij,Collectieve Intelligentie,h2,C1.112,Tue,11
+Matisse Weij,Compilerbouw,w1,B0.201,Wed,13
+Jos Welling,Collectieve Intelligentie,p1,A1.10,Thu,15
+Jos Welling,Project Genetic Algorithms,p1,C0.110,Wed,9
+Jos Welling,Software engineering,p1,A1.04,Fri,13
+Jos Welling,Software engineering,h1,B0.201,Mon,11
+Jos Welling,Collectieve Intelligentie,h1,C1.112,Mon,11
+Jos Welling,Software engineering,w1,C1.112,Mon,9
+Jos Welling,Collectieve Intelligentie,h3,B0.201,Tue,13
+Jos Welling,Collectieve Intelligentie,w1,A1.10,Fri,15
+Jos Welling,Collectieve Intelligentie,h2,C1.112,Tue,11
+Evelina Wensing,Kansrekenen 2,h1,A1.04,Thu,9
+Evelina Wensing,Kansrekenen 2,h2,C0.110,Fri,11
+Evelina Wensing,Machine Learning,h2,B0.201,Fri,15
+Evelina Wensing,Machine Learning,h1,A1.06,Mon,13
+Djamilla Wesselink,Kansrekenen 2,h1,A1.04,Thu,9
+Djamilla Wesselink,Calculus 2,h1,C0.110,Thu,9
+Djamilla Wesselink,Kansrekenen 2,h2,C0.110,Fri,11
+Djamilla Wesselink,Zoeken sturen en bewegen,p1,A1.06,Thu,13
+Djamilla Wesselink,Calculus 2,w1,A1.10,Wed,15
+Eyup Wesselman,Software engineering,w1,C1.112,Mon,9
+Eyup Wesselman,Software engineering,p1,A1.04,Fri,13
+Eyup Wesselman,Software engineering,h1,B0.201,Mon,11
+Harke Wester,Heuristieken 1,h1,B0.201,Wed,11
+Harke Wester,Collectieve Intelligentie,p1,A1.06,Wed,15
+Harke Wester,Heuristieken 1,w1,A1.04,Wed,9
+Harke Wester,Collectieve Intelligentie,h1,C1.112,Mon,11
+Harke Wester,Collectieve Intelligentie,h3,B0.201,Tue,13
+Harke Wester,Collectieve Intelligentie,w1,A1.10,Fri,15
+Harke Wester,Collectieve Intelligentie,h2,C1.112,Tue,11
+Yunus Westera,Compilerbouw,h2,C0.110,Thu,13
+Yunus Westera,Compilerbouw,w1,B0.201,Wed,13
+Yunus Westera,Machine Learning,h2,B0.201,Fri,15
+Yunus Westera,Compilerbouw,h1,C0.110,Thu,11
+Yunus Westera,Machine Learning,h1,A1.06,Mon,13
+Yunus Westera,Compilerbouw,p1,A1.06,Wed,11
+Keshia Westgeest,Calculus 2,w1,B0.201,Thu,11
+Keshia Westgeest,Calculus 2,h1,C0.110,Thu,9
+Mies Westra,Programmeren in Java 2,p1,A1.06,Thu,9
+Maryam Wiegmans,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Maryam Wiegmans,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Maryam Wiegmans,Project Genetic Algorithms,p1,A1.06,Fri,15
+Maryam Wiegmans,Moderne Databases,p1,C0.110,Tue,15
+Maryam Wiegmans,Moderne Databases,w1,A1.10,Tue,11
+Maryam Wiegmans,Reflectie op de digitale cultuur,w1,A1.08,Fri,11
+Maryam Wiegmans,Moderne Databases,h1,A1.10,Fri,13
+Maris Wielenga,Calculus 2,w1,B0.201,Wed,15
+Maris Wielenga,Calculus 2,h1,C0.110,Thu,9
+Filipe Wiersema,Databases 2,w1,A1.10,Tue,13
+Filipe Wiersema,Compilerbouw,h2,C0.110,Thu,13
+Filipe Wiersema,Autonomous Agents 2,h1,A1.04,Thu,15
+Filipe Wiersema,Autonomous Agents 2,p1,C1.112,Tue,9
+Filipe Wiersema,Autonomous Agents 2,h2,A1.04,Tue,11
+Filipe Wiersema,Compilerbouw,h1,C0.110,Thu,11
+Filipe Wiersema,Autonomous Agents 2,w1,A1.06,Fri,9
+Filipe Wiersema,Compilerbouw,w1,C0.110,Wed,13
+Filipe Wiersema,Databases 2,h1,C0.110,Wed,15
+Filipe Wiersema,Compilerbouw,p1,A1.06,Wed,11
+Vigo Wijers,Advanced Heuristics,h1,C0.110,Tue,13
+Vigo Wijers,Advanced Heuristics,p1,A1.06,Tue,15
+Heiltje Wijnands,Compilerbouw,h2,C0.110,Thu,13
+Heiltje Wijnands,Project Numerical Recipes,p1,C0.110,Fri,17
+Heiltje Wijnands,Compilerbouw,p1,A1.04,Wed,11
+Heiltje Wijnands,Compilerbouw,h1,C0.110,Thu,11
+Heiltje Wijnands,Programmeren in Java 2,p1,A1.06,Thu,9
+Heiltje Wijnands,Compilerbouw,w1,B0.201,Wed,13
+Marck Wijngaarden,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Marck Wijngaarden,Databases 2,w1,A1.10,Tue,13
+Marck Wijngaarden,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Marck Wijngaarden,Moderne Databases,w1,A1.06,Fri,13
+Marck Wijngaarden,Collectieve Intelligentie,w1,A1.10,Mon,11
+Marck Wijngaarden,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Marck Wijngaarden,Moderne Databases,p1,C1.112,Fri,15
+Marck Wijngaarden,Collectieve Intelligentie,h1,C1.112,Mon,11
+Marck Wijngaarden,Collectieve Intelligentie,p1,A1.08,Tue,9
+Marck Wijngaarden,Databases 2,h1,C0.110,Wed,15
+Marck Wijngaarden,Collectieve Intelligentie,h3,B0.201,Tue,13
+Marck Wijngaarden,Collectieve Intelligentie,h2,C1.112,Tue,11
+Marck Wijngaarden,Moderne Databases,h1,A1.10,Fri,13
+Alexandra Wijnsma,Databases 2,h1,C0.110,Wed,15
+Alexandra Wijnsma,Databases 2,w1,A1.10,Tue,13
+Alexandra Wijnsma,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Alexandra Wijnsma,Netwerken en systeembeveiliging,p1,A1.08,Mon,9
+Ihsane Wind,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Ihsane Wind,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Ihsane Wind,Reflectie op de digitale cultuur,w1,A1.06,Tue,13
+Yuna Winkelaar,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Yuna Winkelaar,Algoritmen en complexiteit,p1,C1.112,Fri,9
+Yuna Winkelaar,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Jacko Wobbes,Bioinformatica,h3,B0.201,Tue,15
+Jacko Wobbes,Bioinformatica,w1,A1.08,Wed,11
+Jacko Wobbes,Bioinformatica,h1,C1.112,Wed,13
+Jacko Wobbes,Bioinformatica,p1,A1.08,Fri,9
+Jacko Wobbes,Bioinformatica,h2,B0.201,Fri,13
+Ayça Woertman,Informatie- en organisatieontwerp,h2,A1.06,Wed,13
+Ayça Woertman,Heuristieken 1,h1,B0.201,Wed,11
+Ayça Woertman,Collectieve Intelligentie,p1,C0.110,Mon,13
+Ayça Woertman,Moderne Databases,w1,A1.06,Fri,13
+Ayça Woertman,Technology for games,w1,B0.201,Mon,15
+Ayça Woertman,Technology for games,h1,A1.04,Wed,15
+Ayça Woertman,Informatie- en organisatieontwerp,w1,A1.04,Mon,13
+Ayça Woertman,Moderne Databases,p1,C0.110,Tue,15
+Ayça Woertman,Heuristieken 1,w1,A1.04,Wed,9
+Ayça Woertman,Collectieve Intelligentie,h1,C1.112,Mon,11
+Ayça Woertman,Technology for games,h2,C0.110,Tue,17
+Ayça Woertman,Collectieve Intelligentie,h3,B0.201,Tue,13
+Ayça Woertman,Collectieve Intelligentie,w1,A1.10,Fri,15
+Ayça Woertman,Collectieve Intelligentie,h2,C1.112,Tue,11
+Ayça Woertman,Informatie- en organisatieontwerp,p1,C0.110,Mon,15
+Ayça Woertman,Moderne Databases,h1,A1.10,Fri,13
+Ayça Woertman,Informatie- en organisatieontwerp,h1,A1.06,Thu,15
+Sayfeddine Wolswijk,Webprogrammeren en databases,h1,A1.06,Tue,9
+Sayfeddine Wolswijk,Webprogrammeren en databases,p1,B0.201,Fri,11
+Sayfeddine Wolswijk,Webprogrammeren en databases,h2,A1.10,Thu,13
+Sayfeddine Wolswijk,Webprogrammeren en databases,w1,C0.110,Tue,11
+Frederikus Wullink,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Frederikus Wullink,Calculus 2,w1,B0.201,Thu,11
+Frederikus Wullink,Calculus 2,h1,C0.110,Thu,9
+Gabriëlla Yazici,Reflectie op de digitale cultuur,h2,A1.08,Mon,13
+Gabriëlla Yazici,Software engineering,w1,C1.112,Tue,13
+Gabriëlla Yazici,Reflectie op de digitale cultuur,h1,A1.04,Thu,11
+Gabriëlla Yazici,Compilerbouw (practicum),p1,C1.112,Thu,15
+Gabriëlla Yazici,Algoritmen en complexiteit,h1,A1.04,Fri,11
+Gabriëlla Yazici,Software engineering,h1,B0.201,Mon,11
+Gabriëlla Yazici,Software engineering,p1,A1.10,Fri,9
+Gabriëlla Yazici,Algoritmen en complexiteit,w1,B0.201,Thu,13
+Gabriëlla Yazici,Reflectie op de digitale cultuur,w1,A1.08,Mon,11
+Gabriëlla Yazici,Algoritmen en complexiteit,p1,A1.08,Tue,15
+Vanita Yusuf,Calculus 2,w1,A1.10,Wed,15
+Vanita Yusuf,Calculus 2,h1,C0.110,Thu,9
+Juno Zaaijer,Heuristieken 1,h1,B0.201,Wed,11
+Juno Zaaijer,Heuristieken 1,w1,C1.112,Mon,13
+Juno Zaaijer,Webprogrammeren en databases,p1,B0.201,Fri,11
+Juno Zaaijer,Webprogrammeren en databases,w1,A1.08,Thu,13
+Juno Zaaijer,Webprogrammeren en databases,h1,A1.06,Tue,9
+Juno Zaaijer,Webprogrammeren en databases,h2,A1.10,Thu,13
+Fransiscus Zagers,Kansrekenen 2,h1,A1.04,Thu,9
+Fransiscus Zagers,Webprogrammeren en databases,p1,B0.201,Fri,11
+Fransiscus Zagers,Kansrekenen 2,h2,C0.110,Fri,11
+Fransiscus Zagers,Webprogrammeren en databases,w1,C0.110,Tue,11
+Fransiscus Zagers,Webprogrammeren en databases,h1,A1.06,Tue,9
+Fransiscus Zagers,Webprogrammeren en databases,h2,A1.10,Thu,13
+Mellanie Zhang,Databases 2,w1,A1.10,Tue,13
+Mellanie Zhang,Calculus 2,h1,C0.110,Thu,9
+Mellanie Zhang,Analysemethoden en -technieken,h1,A1.10,Mon,15
+Mellanie Zhang,Databases 2,h1,C0.110,Wed,15
+Mellanie Zhang,Calculus 2,w1,A1.10,Wed,15
+Mellanie Zhang,Programmeren in Java 2,p1,A1.08,Fri,15
+Malte Zondag,Advanced Heuristics,h1,C0.110,Tue,13
+Malte Zondag,Webprogrammeren en databases,p1,B0.201,Fri,11
+Malte Zondag,Webprogrammeren en databases,w1,A1.08,Thu,13
+Malte Zondag,Interactie-ontwerp,h1,A1.10,Tue,9
+Malte Zondag,Interactie-ontwerp,h2,C0.110,Mon,9
+Malte Zondag,Webprogrammeren en databases,h1,A1.06,Tue,9
+Malte Zondag,Advanced Heuristics,p1,A1.06,Tue,15
+Malte Zondag,Webprogrammeren en databases,h2,A1.10,Thu,13
+Marise Zonneveld,Data Mining,w1,A1.04,Thu,13
+Marise Zonneveld,Data Mining,h1,A1.04,Tue,15
+Marise Zonneveld,Data Mining,p1,A1.06,Mon,11
+Marise Zonneveld,Data Mining,h2,A1.06,Fri,11
+Chico Zwarts,Architectuur en computerorganisatie,h1,A1.06,Tue,11
+Chico Zwarts,Architectuur en computerorganisatie,h2,A1.04,Tue,9
+Stein Zweekhorst,Lineaire Algebra,h2,C1.112,Fri,11
+Stein Zweekhorst,Lineaire Algebra,h1,B0.201,Tue,11
