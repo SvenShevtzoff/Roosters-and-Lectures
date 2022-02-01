@@ -19,6 +19,7 @@ Before the program can be excecuted make sure to install the right packages usin
 To run the program, the following command can be used
 
     python3 main.py [algorithm_name]
+    options: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]
 
 When no algorithm is specified a list of possibilities is printed.
 
