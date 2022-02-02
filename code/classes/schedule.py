@@ -82,29 +82,6 @@ class Schedule:
 
         return [activity for activity in dictionary.values() if len(activity) > 1]
 
-    def merge(self, activity_to_merge):
-        """Merges an activity with other activities, if any"""
-        all_activities = self.activities()
-        activities_to_merge = []
-
-        # find all activities to merge
-        for activity in all_activities.list():
-            if activity.kind() == activity_to_merge.kind() and activity.name() == activity_to_merge.name():
-                activities_to_merge.append(activity)
-
-        if len(activities_to_merge) > 1:
-            # if more than one group, find all students in these groups
-            students_keys = []
-            for activity in activities_to_merge:
-                students_keys.extend(activity.students())
-            activity_to_keep = activities_to_merge[0]
-            activity_to_keep.set_students(students_keys, self.students())
-            activity_to_keep.set_id_to_1()
-            activities_to_remove = activities_to_merge[:1]
-
-        for activity in activities_to_remove:
-            all_activities.remove_activity(activity)
-
     def fitness(self):
         """Calculates the fitness of the schedule"""
         gapdict, malus_points = self.empty_roomslot_and_conflict_check()
@@ -187,7 +164,8 @@ class Schedule:
             vis.visualize_room(self, room)
 
     def output(self, alg):
-        with open(f'alg_data/{alg}_schedule.csv', 'w') as file:
+        """Creates an ouput of the schedule in csv form"""
+        with open(f'{alg}_schedule.csv', 'w') as file:
             writer = csv.writer(file)
 
             # write the header

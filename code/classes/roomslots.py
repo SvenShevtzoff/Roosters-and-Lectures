@@ -16,12 +16,15 @@ class Roomslot:
         return self._day
 
     def set_day(self, day):
+        """Sets the day of the roomslot"""
         self._day = day
 
     def set_time(self, time):
+        """Sets the time of the roomslot"""
         self._time = time
 
     def set_room(self, room):
+        """Sets the room of a roomslot"""
         self._room = room
 
     def time(self):

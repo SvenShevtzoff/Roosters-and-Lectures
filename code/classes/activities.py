@@ -34,10 +34,12 @@ class Activity:
         self._roomslot = slot
 
     def remove_roomslot(self, slot):
+        """Disconnects a roomslot object from an activity object"""
         slot.remove_activity()
         self._roomslot = None
 
     def set_id_to_1(self):
+        """Sets the unique id to 1"""
         self._unique_id = 1
 
     def max_stud(self):

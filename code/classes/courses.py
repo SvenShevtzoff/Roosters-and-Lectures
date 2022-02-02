@@ -10,6 +10,7 @@ class Course:
         self._students = set()
 
     def name(self):
+        """Returns the name of the course"""
         return self._name
 
     def add_activity(self, activity):
@@ -17,6 +18,7 @@ class Course:
         self._activities.add(str(activity))
 
     def activities(self, all_activities):
+        """Returns all the activities in the course"""
         activities = []
         for activity_key in self._activities:
             activities.append(all_activities.single(activity_key))
