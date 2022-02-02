@@ -3,6 +3,7 @@
 # =============================================================================
 from code.algorithms.baseline import improve_once
 
+
 def greedy(schedule):
     """This greedy algorithm sorts activities by number of enrolled students and roomslots by capacity"""
     schedule.divide_students()

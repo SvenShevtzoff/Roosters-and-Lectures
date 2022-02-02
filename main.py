@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # loading data
     print()
     print("Loading data and making datastructure")
-    
+
     activities, roomslots, students, courses, rooms = load(
         "data/rooms.csv",
         "data/courses.csv",
