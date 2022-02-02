@@ -11,7 +11,4 @@
 - tweede_algoritme.MD aanpassen (Marc)
 - Resultaten in presentatie plakken (Iedereen!)
 
-
-- comments bij visualize.py (Sven)
 - main perfectioneren (Sven)
-- visualize.py aanpassen (Sven)
