@@ -1,7 +1,6 @@
 # =============================================================================
 # simulatedannealing.py with random algorithm functions
 # =============================================================================
-from http.client import TEMPORARY_REDIRECT
 from code.algorithms.randomise import randomise
 from code.algorithms.hillclimber import mutate, swap_activities, move_student
 import copy
@@ -27,7 +26,7 @@ def check_solution(new_fitness, current_fitness, temperature):
     else:
         if delta > 0:
             probability = 0
-        else :
+        else:
             probability = 2
 
     # check if the mutation is accepted according to a random number

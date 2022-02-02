@@ -69,14 +69,19 @@ def mutate(schedule):
         if all_activities.single(from_activity_key).kind() != "Lecture":
             activities_to_choose = []
             for activity_key in activities_keys:
-                if all_activities.single(activity_key).course() == all_activities.single(from_activity_key).course():
+                course_to = all_activities.single(activity_key).course()
+                course_from = all_activities.single(from_activity_key).course()
+                if course_to == course_from:
                     if all_activities.single(activity_key).kind() == all_activities.single(from_activity_key).kind():
                         activities_to_choose.append(activity_key)
             to_activity_key = random.choice(activities_to_choose)
 
             # when the two activities are not the same move the student
             if from_activity_key != to_activity_key:
-                move_student(schedule, student.std_number(), from_activity_key, to_activity_key)
+                move_student(
+                    schedule,
+                    student.std_number(),
+                    from_activity_key, to_activity_key)
 
                 # the mutation kind and parameters are returned for undo
                 return 2, [student, from_activity_key, to_activity_key]
@@ -102,7 +107,10 @@ def hill_climber_alg(schedule, iterations=100, no_change_count_max=1000):
             choice2, mutation_parameters2 = mutate(current_schedule)
             choice3, mutation_parameters3 = mutate(current_schedule)
             choice_list = [choice1, choice2, choice3]
-            mutation_parameters_list = [mutation_parameters1, mutation_parameters2, mutation_parameters3]
+            mutation_parameters_list = [
+                mutation_parameters1,
+                mutation_parameters2,
+                mutation_parameters3]
 
             # calculate the fitness after mutating
             new_fitness = current_schedule.fitness()
@@ -118,9 +126,15 @@ def hill_climber_alg(schedule, iterations=100, no_change_count_max=1000):
                     choice = choice_list[i]
                     mutation_parameters = mutation_parameters_list[i]
                     if choice == 1:
-                        swap_activities(mutation_parameters[0], mutation_parameters[1])
+                        swap_activities(
+                            mutation_parameters[0],
+                            mutation_parameters[1])
                     elif choice == 2:
-                        move_student(schedule, mutation_parameters[0].std_number(), mutation_parameters[2], mutation_parameters[1])
+                        move_student(
+                            schedule,
+                            mutation_parameters[0].std_number(),
+                            mutation_parameters[2],
+                            mutation_parameters[1])
                 no_change_count += 1
 
         # saving the best schedule

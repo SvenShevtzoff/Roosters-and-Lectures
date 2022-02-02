@@ -2,6 +2,7 @@
 # visualize.py for visualizing the schedule
 # =============================================================================
 import matplotlib.pyplot as plt
+from os import mkdir
 
 # defining dictionaries to calculate the coordinates from day/time
 day_to_xcoord = {
@@ -19,6 +20,7 @@ time_to_ycoord = {
 
 
 def visualize_room(schedule, room):
+    """Visualizing the schedule for one room"""
     plot = plot_setup()
     schedule = schedule.room_schedule(room)
 
@@ -32,11 +34,11 @@ def visualize_room(schedule, room):
 
     # plotting and saving plot
     plot.grid(True)
-    plt.savefig(f"doc/output/schedule_{str(room)}.png")
+    plt.savefig(f"schedule_{str(room)}.png")
 
 
 def visualize_course(schedule, course):
-    '''Visualizing the schedule for one student'''
+    """Visualizing the schedule for one course"""
     plot = plot_setup()
 
     # plotting all activity conflicts
@@ -47,62 +49,31 @@ def visualize_course(schedule, course):
         xcoord = day_to_xcoord[conflicts[0].day()]
         ycoord = time_to_ycoord[conflicts[0].time()]
         plot.broken_barh([(xcoord, 40)], (ycoord, 10), facecolors=('tab:red'))
+
         if len(conflicts) == 2:
             # plot left activity
-            # plot_half(plot, xcoord, ycoord, conflicts[0])
-            plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[0].room(), (xcoord + 3, ycoord + 7))
-            plot.annotate(str(conflicts[0].course())[:12], (xcoord + 3, ycoord + 5))
-            plot.annotate(str(conflicts[0].course())[11:24], (xcoord + 3, ycoord + 3))
+            plot_half(plot, xcoord, ycoord, conflicts[0])
 
             # plot right activity
-            # plot_half(plot, xcoord + 18, ycoord, conflicts[1])
-            plot.broken_barh([(xcoord + 20, 18)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[1].room(), (xcoord + 21, ycoord + 7))
-            plot.annotate(str(conflicts[1].course())[:12], (xcoord + 21, ycoord + 5))
-            plot.annotate(str(conflicts[1].course())[11:24], (xcoord + 21, ycoord + 3))
+            plot_half(plot, xcoord + 18, ycoord, conflicts[1])
 
             # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
         elif len(conflicts) == 3:
             # plot left activity
-            plot.broken_barh([(xcoord + 2, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[0].room(), (xcoord + 3, ycoord + 7))
-            plot.annotate(str(conflicts[0].course())[:8], (xcoord + 3, ycoord + 5))
-            plot.annotate(str(conflicts[0].course())[7:15], (xcoord + 3, ycoord + 3))
+            plot_half(plot, xcoord, ycoord, conflicts[0])
             # plot middle activity
-            plot.broken_barh([(xcoord + 14, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[1].room(), (xcoord + 15, ycoord + 7))
-            plot.annotate(str(conflicts[1].course())[:8], (xcoord + 15, ycoord + 5))
-            plot.annotate(str(conflicts[1].course())[7:15], (xcoord + 15, ycoord + 3))
+            plot_half(plot, xcoord + 12, ycoord, conflicts[0])
             # plot right activity
-            plot.broken_barh([(xcoord + 26, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[2])}'))
-            plot.annotate(conflicts[2].room(), (xcoord + 27, ycoord + 7))
-            plot.annotate(str(conflicts[2].course())[:8], (xcoord + 27, ycoord + 5))
-            plot.annotate(str(conflicts[2].course())[7:15], (xcoord + 27, ycoord + 3))
+            plot_half(plot, xcoord + 24, ycoord, conflicts[0])
 
             # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
         elif len(conflicts) == 4:
             # plot left top activity
-            plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 4), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[0].room(), (xcoord + 3, ycoord + 7))
-            # plot left bottom activity
-            plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 4), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[1].room(), (xcoord + 3, ycoord + 3))
-            # plot right `top activity
-            plot.broken_barh([(xcoord + 20, 18)], (ycoord + 5, 4), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[2].room(), (xcoord + 21, ycoord + 7))
-            plot.annotate(str(conflicts[2].course())[:13], (xcoord + 21, ycoord + 5))
-            plot.annotate(str(conflicts[2].course())[12:25], (xcoord + 21, ycoord + 3))
-            # plot right bottom activity
-            plot.broken_barh([(xcoord + 20, 18)], (ycoord + 5, 4), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[3].room(), (xcoord + 21, ycoord + 3))
-            plot.annotate(str(conflicts[3].course())[:13], (xcoord + 21, ycoord + 5))
-            plot.annotate(str(conflicts[3].course())[12:25], (xcoord + 21, ycoord + 3))
-
+            plot.annotate("4 activities", (xcoord + 3, ycoord + 7))
             # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
@@ -120,11 +91,12 @@ def visualize_course(schedule, course):
 
     # plotting and saving plot
     plot.grid(True)
-    plt.savefig(f"doc/output/schedule_{course}.png")
+    mkdir()
+    plt.savefig(f"output/schedule_{course}.png")
 
 
 def visualize_student(schedule, student_number):
-    '''Visualizing the schedule for one student, WARNING: make sure to enter student number'''
+    """Visualizing the schedule for one student, WARNING: make sure to enter student number"""
     plot = plot_setup()
 
     # plotting all activity conflicts
@@ -135,59 +107,31 @@ def visualize_student(schedule, student_number):
         xcoord = day_to_xcoord[conflicts[0].day()]
         ycoord = time_to_ycoord[conflicts[0].time()]
         plot.broken_barh([(xcoord, 40)], (ycoord, 10), facecolors=('tab:red'))
+
         if len(conflicts) == 2:
             # plot left activity
-            plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[0].room(), (xcoord + 3, ycoord + 7))
-            plot.annotate(str(conflicts[0].course())[:12], (xcoord + 3, ycoord + 5))
-            plot.annotate(str(conflicts[0].course())[11:24], (xcoord + 3, ycoord + 3))
+            plot_half(plot, xcoord, ycoord, conflicts[0])
+
             # plot right activity
-            plot.broken_barh([(xcoord + 20, 18)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[1].room(), (xcoord + 21, ycoord + 7))
-            plot.annotate(str(conflicts[1].course())[:12], (xcoord + 21, ycoord + 5))
-            plot.annotate(str(conflicts[1].course())[11:24], (xcoord + 21, ycoord + 3))
+            plot_half(plot, xcoord + 18, ycoord, conflicts[1])
 
             # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
         elif len(conflicts) == 3:
             # plot left activity
-            plot.broken_barh([(xcoord + 2, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[0].room(), (xcoord + 3, ycoord + 7))
-            plot.annotate(str(conflicts[0].course())[:8], (xcoord + 3, ycoord + 5))
-            plot.annotate(str(conflicts[0].course())[7:15], (xcoord + 3, ycoord + 3))
+            plot_half(plot, xcoord, ycoord, conflicts[0])
             # plot middle activity
-            plot.broken_barh([(xcoord + 14, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[1].room(), (xcoord + 15, ycoord + 7))
-            plot.annotate(str(conflicts[1].course())[:8], (xcoord + 15, ycoord + 5))
-            plot.annotate(str(conflicts[1].course())[7:15], (xcoord + 15, ycoord + 3))
+            plot_half(plot, xcoord + 12, ycoord, conflicts[0])
             # plot right activity
-            plot.broken_barh([(xcoord + 26, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(conflicts[2])}'))
-            plot.annotate(conflicts[2].room(), (xcoord + 27, ycoord + 7))
-            plot.annotate(str(conflicts[2].course())[:8], (xcoord + 27, ycoord + 5))
-            plot.annotate(str(conflicts[2].course())[7:15], (xcoord + 27, ycoord + 3))
+            plot_half(plot, xcoord + 24, ycoord, conflicts[0])
 
             # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
         elif len(conflicts) == 4:
             # plot left top activity
-            plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 4), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[0].room(), (xcoord + 3, ycoord + 7))
-            # plot left bottom activity
-            plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 4), facecolors=(f'tab:{element_color(conflicts[0])}'))
-            plot.annotate(conflicts[1].room(), (xcoord + 3, ycoord + 3))
-            # plot right `top activity
-            plot.broken_barh([(xcoord + 20, 18)], (ycoord + 5, 4), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[2].room(), (xcoord + 21, ycoord + 7))
-            plot.annotate(str(conflicts[2].course())[:13], (xcoord + 21, ycoord + 5))
-            plot.annotate(str(conflicts[2].course())[12:25], (xcoord + 21, ycoord + 3))
-            # plot right bottom activity
-            plot.broken_barh([(xcoord + 20, 18)], (ycoord + 5, 4), facecolors=(f'tab:{element_color(conflicts[1])}'))
-            plot.annotate(conflicts[3].room(), (xcoord + 21, ycoord + 3))
-            plot.annotate(str(conflicts[3].course())[:13], (xcoord + 21, ycoord + 5))
-            plot.annotate(str(conflicts[3].course())[12:25], (xcoord + 21, ycoord + 3))
-
+            plot.annotate("4 activities", (xcoord + 3, ycoord + 7))
             # setting the activity value to visualized, so it is not drawn twice
             for conflict in conflicts:
                 conflict.set_visualized()
@@ -205,11 +149,11 @@ def visualize_student(schedule, student_number):
 
     # saving plot
     plot.grid(True)
-    plt.savefig(f"doc/output/schedule_{student_number}.png")
+    plt.savefig(f"schedule_{student_number}.png")
 
 
 def plot_full(plot, xcoord, ycoord, slot):
-    # plotting the element and annotating it
+    """Plot a full size block with an activity and annotate"""
     plot.broken_barh([(xcoord, 36)], (ycoord, 8), facecolors=(f'tab:{element_color(slot)}'))
     plot.annotate(f"{slot.activity().kind()} {slot.room()}", (xcoord + 1, ycoord + 6))
 
@@ -222,15 +166,23 @@ def plot_full(plot, xcoord, ycoord, slot):
 
 
 def plot_half(plot, xcoord, ycoord, slot):
-    # plotting the element and annotating it
+    """Plot a half size block with an activity and annotate"""
     plot.broken_barh([(xcoord + 2, 18)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(slot)}'))
     plot.annotate(slot.room(), (xcoord + 3, ycoord + 7))
     plot.annotate(str(slot.course())[:12], (xcoord + 3, ycoord + 5))
     plot.annotate(str(slot.course())[11:24], (xcoord + 3, ycoord + 3))
 
 
+def plot_third(plot, xcoord, ycoord, slot):
+    """Plot a third size block with an activity and annotate"""
+    plot.broken_barh([(xcoord + 2, 12)], (ycoord + 1, 8), facecolors=(f'tab:{element_color(slot)}'))
+    plot.annotate(slot.room(), (xcoord + 3, ycoord + 7))
+    plot.annotate(str(slot.course())[:8], (xcoord + 3, ycoord + 5))
+    plot.annotate(str(slot.course())[7:15], (xcoord + 3, ycoord + 3))
+
+
 def plot_setup():
-    '''Defining the starting settings for the schedule plot'''
+    """Defining the starting settings for the schedule plot"""
     # setting up plot
     plt.rcParams["figure.figsize"] = (15, 7.5)
     fig, gnt = plt.subplots()
@@ -251,7 +203,7 @@ def plot_setup():
 
 
 def element_color(slot):
-    '''Getting the kind of the activity in the roomslot to set the element_color'''
+    """Getting the kind of the activity in the roomslot to set the element_color"""
     if slot.activity().kind() == 'Lecture':
         element_color = "blue"
     elif slot.activity().kind() == 'Tutorial':
