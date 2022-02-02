@@ -1,5 +1,5 @@
 # =============================================================================
-# greedy_alg.py with greedy algorithm function
+# greedy.py with greedy algorithm function
 # =============================================================================
 from code.algorithms.baseline import improve_once
 

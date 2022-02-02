@@ -1,3 +1,6 @@
+# =============================================================================
+# generic.py with generic algoritm functions
+# =============================================================================
 from code.algorithms.randomise import randomise
 from code.algorithms.hillclimber import swap_activities, move_student
 from collections import Counter
