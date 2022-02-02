@@ -18,7 +18,6 @@ def sex(parent1, parent2, child, schedule):
 
         roomslot = random.choice([genome1, genome2])
 
-        
         if str(roomslot) in available_roomslots:
             activity.set_roomslot(roomslot)
             available_roomslots.remove(str(roomslot))
@@ -44,21 +43,19 @@ def sex(parent1, parent2, child, schedule):
             activity.set_roomslot(roomslot)
             available_roomslots.remove(str(roomslot))
             roomslots_used.append(str(roomslot))
-    
+
     return child
+
 
 def mutations(child):
     mutation = random.choice([1, 2])
 
-    # if mutation == 0:
-    #     pass
-    
     if mutation == 1:
         all_activities = child.activities()
         swap = random.sample(all_activities.list(), 2)
         swap = [_.roomslot() for _ in swap]
         swap_activities(swap[0], swap[1])
-    
+
     elif mutation == 3:
         all_activities = child.activities()
         all_students = child.students()
@@ -80,35 +77,30 @@ def mutations(child):
     return child
 
 
+def genetic(schedule, number_of_childeren=10, number_of_bests=5, iterations=1000):
+    parents = [randomise(copy.deepcopy(schedule)) for _ in range(number_of_childeren)]
 
-
-def genetic(schedule, number_of_childeren=10, i=1000):
-    parents = [randomise(copy.deepcopy(schedule)) for _ in range (number_of_childeren)]
-    
-    for i in range(i):
-        parents = {parent:parent.fitness() for parent in parents}
-        parents = list(dict(sorted(parents.items(), key = operator.itemgetter(1), reverse = False)[:5]))
-        print([p.fitness() for p in parents])
-        # number_of_mutations = Counter([p.fitness() for p in parents])
-        # number_of_mutations = max(number_of_mutations.values())
+    for i in range(iterations):
+        parents = {parent: parent.fitness() for parent in parents}
+        parents = list(dict(sorted(parents.items(), key=operator.itemgetter(1), reverse=False)[:number_of_bests]))
+        number_of_mutations = Counter([p.fitness() for p in parents])
+        number_of_mutations = max(number_of_mutations.values())
         childs = []
 
-        for _ in range(10):
+        for _ in range(number_of_childeren):
             child = copy.deepcopy(schedule)
             child.divide_students()
 
             parents_choice = random.sample(parents, 2)
             child = sex(parents_choice[0], parents_choice[1], child, schedule)
 
-            # for _ in range(number_of_mutations):
-            child = mutations(child)
-            
+            for _ in range(number_of_mutations):
+                child = mutations(child)
+
             childs.append(child)
 
         parents = copy.deepcopy(childs)
 
-
-
-
-
-            
+    child = {parent: parent.fitness() for parent in parents}
+    best_child = list(dict(sorted(child.items(), key=operator.itemgetter(1), reverse=False)[:1]))[0]
+    return best_child

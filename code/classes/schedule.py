@@ -145,12 +145,12 @@ class Schedule:
         for student in self._students.list():
             student_activities = student.activities()
             weekdays = {"Mon": [], "Tue": [], "Wed": [], "Thu": [], "Fri": []}
-            
+
             # loop through all activities of a student and add it in the appropriate list in the dictionary
             for activity_key in student_activities:
                 activity = self._activities.single(activity_key)
                 weekdays[activity.roomslot().day()].append(activity.roomslot())
-            
+
             # loop through the dictionary and count the doubles and gaps
             for day_roomslots in weekdays.values():
                 times = set()
