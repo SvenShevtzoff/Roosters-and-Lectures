@@ -59,8 +59,3 @@ To run the program, the following command can be used
     algorithm options: ["randomise", "randomise_baseline", "greedy", "greedy_baseline", "hillclimber", "genetic"]
 
 When no algorithm is specified this list of possibilities is printed.
-
-
-## Output
-
-For the output a seperate folder is specified, all files in this folder will be ignored by the repository, but the folder is used by the algorithms. At the bottom of the main, some example schedules will be visualized and the best schedule is outputted to csv, this can be changed there. Also the method 'visualize_rooms()' is called on the best_schedule. This creates 7 schedule visualizations of the 7 rooms to get an overview of the entire schedule.

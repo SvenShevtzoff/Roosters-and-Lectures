@@ -2,6 +2,7 @@
 # visualize.py for visualizing the schedule
 # =============================================================================
 import matplotlib.pyplot as plt
+import os
 
 # defining dictionaries to calculate the coordinates from day/time
 day_to_xcoord = {
@@ -32,8 +33,7 @@ def visualize_room(schedule, room):
         plot_full(plot, xcoord, ycoord, slot)
 
     # plotting and saving plot
-    plot.grid(True)
-    plt.savefig(f"output/schedule_{str(room)}.png")
+    plot_savefig(plot, room)
 
 
 def visualize_course(schedule, course):
@@ -89,8 +89,7 @@ def visualize_course(schedule, course):
             plot_full(plot, xcoord, ycoord, slot)
 
     # plotting and saving plot
-    plot.grid(True)
-    plt.savefig(f"output/schedule_{course}.png")
+    plot_savefig(plot, course)
 
 
 def visualize_student(schedule, student_number):
@@ -146,8 +145,7 @@ def visualize_student(schedule, student_number):
             plot_full(plot, xcoord, ycoord, slot)
 
     # saving plot
-    plot.grid(True)
-    plt.savefig(f"output/schedule_{student_number}.png")
+    plot_savefig(plot, student_number)
 
 
 def plot_full(plot, xcoord, ycoord, slot):
@@ -198,6 +196,12 @@ def plot_setup():
     gnt.set_xticklabels(["Mon", "Tue", "Wed", "Thu", "Fri"], ha='left')
 
     return gnt
+
+
+def plot_savefig(plot, name):
+    plot.grid(True)
+    os.makedirs("output", exist_ok=True)
+    plt.savefig(f"output/schedule_{name}.png")
 
 
 def element_color(slot):

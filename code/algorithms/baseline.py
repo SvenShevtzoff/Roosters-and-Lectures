@@ -1,6 +1,5 @@
 
 from code.algorithms.randomise import randomise
-from code.algorithms.greedy import greedy
 from code.algorithms.hillclimber import mutate, swap_activities, move_student
 
 

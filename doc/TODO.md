@@ -6,5 +6,3 @@
 - readme updaten met case ()
 - baseline plot maken (Marc)
 - Resultaten in presentatie plakken (Iedereen!)
-
-- main perfectioneren (Sven)

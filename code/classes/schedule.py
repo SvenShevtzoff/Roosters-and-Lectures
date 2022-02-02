@@ -5,6 +5,7 @@ from collections import defaultdict
 from code.visualize import visualize as vis
 from math import ceil
 import csv
+import os
 
 
 class Schedule:
@@ -185,6 +186,7 @@ class Schedule:
 
     def output(self, alg):
         """Creates an ouput of the schedule in csv form"""
+        os.makedirs("output", exist_ok=True)
         with open(f'output/{alg}_schedule.csv', 'w') as file:
             writer = csv.writer(file)
 
