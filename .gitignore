@@ -134,7 +134,6 @@ schedule.csv
 students.csv
 output.csv
 testing.py
-plot.py
 schedule.png
 
 *.png

@@ -58,11 +58,13 @@ if __name__ == "__main__":
     elif sys.argv[1] == "hillclimber":
         if len(sys.argv) == 3:
             best_schedule = hc(schedule, int(sys.argv[2]))
-        best_schedule = hc(schedule)
+        else:
+            best_schedule = hc(schedule)
     elif sys.argv[1] == "simulatedannealing":
         if len(sys.argv) == 3:
             best_schedule = sa(schedule, int(sys.argv[2]))
-        best_schedule = sa(schedule)
+        else:
+            best_schedule = sa(schedule)
     elif sys.argv[1] == "genetic":
         best_schedule = gen(schedule)
     else:
@@ -70,4 +72,4 @@ if __name__ == "__main__":
         sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
 
     print(f"Pandapunten: {best_schedule.fitness()}")
-    best_schedule.output()
+    best_schedule.output('hillclimber')

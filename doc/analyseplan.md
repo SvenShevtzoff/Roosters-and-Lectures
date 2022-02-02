@@ -14,11 +14,11 @@
 
 ### Hillclimber: Sven
 - 1000 keer runnen per parameter
-- parameters: mutations = [1,3] max_change_count = [100, 250, 1000]
+- parameters: mutations = [1, 3] max_change_count = [100, 250, 1000]
 
 ### Simulated annealing: Sven
 - 1000 keer runnen per parameter
-- parameters:  mutations = [1,3] max_change_count = [100, 250, 1000], temperature interval = [1/1000, 1/10000]
+- parameters:  mutations = [1, 3] max_change_count = [100, 250, 1000], temperature interval = [1/1000, 1/10000]
 
 ### Genetic: Marc
 - 1000 keer runnen per parameter

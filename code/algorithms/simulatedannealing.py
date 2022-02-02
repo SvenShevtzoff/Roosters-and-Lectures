@@ -1,6 +1,7 @@
 # =============================================================================
 # simulatedannealing.py with random algorithm functions
 # =============================================================================
+from http.client import TEMPORARY_REDIRECT
 from code.algorithms.randomise import randomise
 from code.algorithms.hillclimber import mutate, swap_activities, move_student
 import copy
@@ -17,30 +18,34 @@ def check_solution(new_fitness, current_fitness, temperature):
     delta = new_fitness - current_fitness
 
     # calculate a probability of accepting the mutation
-    if delta > 0:
-        probability = math.exp(-delta / temperature)
-    elif temperature < TEMPERATURE_INTERVAL:
-        probability = 0
+    if temperature > TEMPERATURE_INTERVAL:
+        if delta > 0:
+            probability = math.exp(-delta / temperature)
+        else:
+            probability = 2
+        temperature = update_temperature(temperature)
     else:
-        probability = 2
+        if delta > 0:
+            probability = 0
+        else :
+            probability = 2
 
     # check if the mutation is accepted according to a random number
     if random.random() < probability:
-        return True
+        return True, temperature
     else:
         # keep track of the amount of iterations without change
-        return False
+        return False, temperature
 
 
 def update_temperature(temperature):
     "Updates the temperature after each iteration"
-    if temperature > 0.001:
-        temperature -= TEMPERATURE_INTERVAL
+    temperature -= TEMPERATURE_INTERVAL
 
     return temperature
 
 
-def simulated_annealing(schedule, iterations=100, no_change_count_max=100):
+def simulated_annealing(schedule, iterations=100, no_change_count_max=1000):
     """The simulated annealing algorithm"""
     best_schedule = None
     best_schedule_fitness = None
@@ -58,11 +63,10 @@ def simulated_annealing(schedule, iterations=100, no_change_count_max=100):
 
             # calculate the fitness after mutating
             new_fitness = current_schedule.fitness()
-            boolean = check_solution(new_fitness, current_fitness, temperature)
+            boolean, temperature = check_solution(new_fitness, current_fitness, temperature)
 
             # new schedule accepted
             if boolean:
-                print(new_fitness)
                 current_fitness = new_fitness
                 no_change_count = 0
             # new schedule rejected
@@ -82,5 +86,4 @@ def simulated_annealing(schedule, iterations=100, no_change_count_max=100):
             best_schedule = current_schedule
             best_schedule_fitness = current_fitness
         no_change_count = 0
-
     return best_schedule
