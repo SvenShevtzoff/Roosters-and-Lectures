@@ -1,3 +1,4 @@
+
 from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy
 from code.algorithms.hillclimber import mutate, swap_activities, move_student
@@ -24,18 +25,6 @@ def improve_once(schedule, current_fitness):
 def randomise_baseline(schedule):
     """Create a random schedule and change it using a hillclimber until it is valid"""
     schedule = randomise(schedule)
-
-    # keep improving by one step until there are no students with three gap hours, which makes the schedule valid
-    while schedule.empty_roomslot_and_conflict_check()[0][3] > 0:
-        fitness = schedule.fitness()
-        improve_once(schedule, fitness)
-
-    return schedule
-
-
-def greedy_baseline(schedule):
-    """Create a greedy schedule and change it using a hillclimber until it is valid"""
-    schedule = greedy(schedule)
 
     # keep improving by one step until there are no students with three gap hours, which makes the schedule valid
     while schedule.empty_roomslot_and_conflict_check()[0][3] > 0:

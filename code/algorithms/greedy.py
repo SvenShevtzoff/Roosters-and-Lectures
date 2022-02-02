@@ -1,6 +1,7 @@
 # =============================================================================
 # greedy.py with greedy algorithm function
 # =============================================================================
+from code.algorithms.baseline import improve_once
 
 def greedy(schedule):
     """This greedy algorithm sorts activities by number of enrolled students and roomslots by capacity"""
@@ -18,5 +19,10 @@ def greedy(schedule):
             if not slot.activity() and slot.room().capacity() >= activity.num_of_enrolled_students():
                 activity.set_roomslot(slot)
                 break
+
+    # keep improving by one step until there are no students with three gap hours, which makes the schedule valid
+    while schedule.empty_roomslot_and_conflict_check()[0][3] > 0:
+        fitness = schedule.fitness()
+        improve_once(schedule, fitness)
 
     return schedule
