@@ -76,11 +76,7 @@ def genetic(schedule, population_size=100):
         scores[child] = child.fitness()
         if hundred_in_a_row == 4:
             scores.pop(child)
-<<<<<<< HEAD
     return child
 
 
 
-=======
-        print(list(scores.values()))
->>>>>>> d329823c05997e487344e686b860655ae07300e1

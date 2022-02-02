@@ -11,6 +11,7 @@ from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.classes.schedule import Schedule
 from code.visualize.visualize import visualize_student, visualize_course
 from code.algorithms.genetic_twee import genetic
+from code.algorithms.baseline import baseline
 
 
 if __name__ == "__main__":
@@ -50,6 +51,8 @@ if __name__ == "__main__":
     # checking which algorithm is selected and making a schedule accordingly
     if sys.argv[1] == "randomise":
         best_schedule = randomise(schedule)
+    elif sys.argv[1] == "baseline":
+        best_schedule = baseline(schedule)
     elif sys.argv[1] == "greedy":
         best_schedule = gr(schedule)
     elif sys.argv[1] == "hillclimber":

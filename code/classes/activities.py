@@ -33,6 +33,10 @@ class Activity:
         slot.set_activity(self)
         self._roomslot = slot
 
+    def remove_roomslot(self, slot):
+        slot.remove_activity()
+        self._roomslot = None
+
     def set_id_to_1(self):
         self._unique_id = 1
 

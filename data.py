@@ -3,6 +3,7 @@ import sys
 from collections import Counter
 from code.load import load
 from code.algorithms.randomise import randomise
+from code.algorithms.baseline import baseline
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.algorithms.genetic import genetic as gen
@@ -23,15 +24,17 @@ schedule_head = Schedule(roomslots, activities, students, courses)
 
 dictionary = []
 
-if sys.argv[1] == "randomise":
-    for x in range(10000):
+if sys.argv[1] == "baseline":
+    for x in range(1000):
         print(x)
         schedule = copy.deepcopy(schedule_head)
         schedule.divide_students()
-        schedule = randomise(schedule)
-        dictionary.append(schedule.fitness())
+        schedule = baseline(schedule)
+        print(schedule.fitness())
+        fitness = schedule.fitness()
+        dictionary.append(fitness)
     dictionary = Counter(dictionary)
-    with open('alg_data/randomise_data.txt', 'w') as f:
+    with open('alg_data/baseline_data.txt', 'w') as f:
         print(dictionary, file=f)
 #   best_schedule.output("randomise")
 
