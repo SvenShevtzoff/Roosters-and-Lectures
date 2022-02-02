@@ -6,7 +6,7 @@ import operator
 import random
 
 
-def sex(parent1, parent2, child, schedule):
+def make_childeren(parent1, parent2, child, schedule):
     available_roomslots = []
     roomslots_used = []
     for slot in schedule.roomslots().list():
@@ -77,10 +77,10 @@ def mutations(child):
     return child
 
 
-def genetic(schedule, number_of_childeren=10, number_of_bests=5, iterations=1000):
+def genetic(schedule, number_of_childeren=10, number_of_bests=5, i=1000):
     parents = [randomise(copy.deepcopy(schedule)) for _ in range(number_of_childeren)]
 
-    for i in range(iterations):
+    for i in range(i):
         parents = {parent: parent.fitness() for parent in parents}
         parents = list(dict(sorted(parents.items(), key=operator.itemgetter(1), reverse=False)[:number_of_bests]))
         number_of_mutations = Counter([p.fitness() for p in parents])
@@ -92,7 +92,7 @@ def genetic(schedule, number_of_childeren=10, number_of_bests=5, iterations=1000
             child.divide_students()
 
             parents_choice = random.sample(parents, 2)
-            child = sex(parents_choice[0], parents_choice[1], child, schedule)
+            child = make_childeren(parents_choice[0], parents_choice[1], child, schedule)
 
             for _ in range(number_of_mutations):
                 child = mutations(child)
