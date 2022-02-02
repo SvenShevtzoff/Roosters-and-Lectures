@@ -1,7 +1,8 @@
 # Algorithms
 
-The following algorithms are present in this folder
+The following algorithms are present in this folder:
 
+- baseline.py: Generates a random schedule and improves it using a hillclimber algorithm until valid (iterative)
 - genetic.py: Makes a population and by changing the worst schedules, improves the population (iterative)
 - greedy.py: Makes a schedule with activities and roomslots sorted by max students (constructive)
 - hillclimber.py: Starts with a single random start state and continously improves on that (iterative)

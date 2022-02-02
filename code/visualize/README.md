@@ -1,3 +1,3 @@
 # Visualize
 
-In this folder a schedule can be visualized using matplotlib
+In this folder a schedule can be visualized using matplotlib.
