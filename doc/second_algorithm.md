@@ -2,7 +2,7 @@
 
 ### Genetic Algorithm
 
-For our second algorithm we decided to make a Genetic algorithm. This algorithm starts with a'random' start state containing N random schedules (the population) and tries to improve on this. When a random population is made, the algorithm enters a loop. In this loop the Genetic algorithm will start by taking the weakest two schedules (the mother and the father). When it has done this, it tries to make a better child (more on this later). The mother is removed from the population while the child takes her place in the population. By doing this the individuals in the population will get stronger every iterration.
+For our second algorithm we decided to make a Genetic algorithm. This algorithm starts with a start state containing N random schedules (the population) and tries to improve on this. When a random population is made, the algorithm enters a loop and the best P schedules are chosen (where P < N). In this loop the Genetic algorithm will start by taking two schedules from the P schedules and then recombine these schedules into a new schedule. It does this N times and this will create a new (and hopefully better) population. The algorithm does this for X times and then takes the best schedule in the last pupulation
 
 ### Constraint relaxation
 
@@ -10,14 +10,8 @@ Like the hillclimber this algorithm also uses constraint relexation, this is no 
 
 ### The Child
 
-The algorithm makes a child by combining the roomslots of the father and the mother. Every iteration, a roomslot of the father and a roomslot of the mother are chosen. By chance it is determent which roomslot will be given to the child. Near the end of an iteration almost all different roomslots are given to the child, the activities of roomslots that are left will be randomly given to the child in this way the child gets mutations.
-
-### Technicalities
-
-When making a child the algorithm tries 100 times to make a better child. When there is no better child the algorithm makes a child by making a random schedule.
-
-We run one iteration of the Generetic Algoritme until all schedules in the population have the same fitness.
+A recombined schedule C is called a child of schedule M and F (or just child). By chance the child gets for every avalible roomslot an activity form M or F. When all activities are given a roomslot the child will mutate (and it will always mutate) where the number of mutations depents on the number of parents in the population P with the same fitness. 
 
 ### Results
 
-We had no time to run this algoritm properly we will address this later
+The best result we had was a schedule with a fitness of 324 and it seems that how bigger you chose N the better result you get

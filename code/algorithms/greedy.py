@@ -1,5 +1,5 @@
 # =============================================================================
-# greedy_alg.py with greedy algoritm functions
+# greedy.py with greedy algoritm functions
 # =============================================================================
 
 def greedy(schedule):

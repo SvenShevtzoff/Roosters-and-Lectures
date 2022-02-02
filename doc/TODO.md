@@ -8,7 +8,6 @@
 - readme updaten met case ()
 - readme's updaten (Vera)
 - baseline plot maken (Marc)
-- tweede_algoritme.MD aanpassen (Marc)
 - Resultaten in presentatie plakken (Iedereen!)
 
 - main perfectioneren (Sven)

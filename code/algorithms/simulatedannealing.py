@@ -1,5 +1,5 @@
 # =============================================================================
-# simulatedannealing.py with random algorithm functions
+# simulatedannealing.py with simulated annealing algorithm functions
 # =============================================================================
 from code.algorithms.randomise import randomise
 from code.algorithms.hillclimber import mutate, swap_activities, move_student

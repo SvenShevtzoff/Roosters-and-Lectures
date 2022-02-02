@@ -1,7 +1,6 @@
 # =============================================================================
 # activities.py with classes activity and activities
 # =============================================================================
-
 import random
 from math import ceil
 
