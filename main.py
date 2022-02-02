@@ -7,7 +7,6 @@ from code.algorithms.randomise import randomise
 from code.algorithms.greedy import greedy as gr
 from code.algorithms.hillclimber import hill_climber_alg as hc
 from code.algorithms.genetic import genetic as gen
-from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.algorithms.baseline import baseline
 from code.classes.schedule import Schedule
 from code.visualize.visualize import visualize_student, visualize_course
@@ -41,27 +40,22 @@ if __name__ == "__main__":
     print()
     if algorithm == "randomise":
         best_schedule = randomise(schedule)
-    elif sys.argv[1] == "randomise_baseline":
+    elif algorithm == "randomise_baseline":
         best_schedule = randomise_baseline(schedule)
-    elif sys.argv[2] == "greedy_baseline":
-        best_schedule = greedy_baseline(schedule)
-    elif sys.argv[1] == "greedy":
+    elif algorithm == "greedy":
         best_schedule = gr(schedule)
+    elif algorithm == "greedy_baseline":
+        best_schedule = greedy_baseline(schedule)
     elif algorithm == "hillclimber":
         if len(sys.argv) == 3:
             best_schedule = hc(schedule, int(sys.argv[2]))
         else:
             best_schedule = hc(schedule)
-    elif algorithm == "simulatedannealing":
-        if len(sys.argv) == 3:
-            best_schedule = sa(schedule, int(sys.argv[2]))
-        else:
-            best_schedule = sa(schedule)
     elif algorithm == "genetic":
         best_schedule = gen(schedule)
     else:
         # when no matching algorithm is found exit
-        sys.exit('This algorithm does not exist, try: ["randomise", "randomise_baseline", "greedy", "greedy_baseline", "hillclimber", "simulatedannealing", "genetic"]')
+        sys.exit('This algorithm does not exist, try: ["randomise", "randomise_baseline", "greedy", "greedy_baseline", "hillclimber", "genetic"]')
 
     print(f"Pandapunten: {best_schedule.fitness()}")
     # best_schedule.output('hillclimber')
