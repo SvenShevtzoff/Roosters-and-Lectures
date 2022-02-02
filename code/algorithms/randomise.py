@@ -10,7 +10,7 @@ def randomise(schedule):
     roomslots = schedule.roomslots()
 
     # give every activity a random roomslot, if this roomslot does not have an activity yet
-    for activity in activities:
+    for activity in activities.list():
         while not activity.roomslot():
             slot = random.choice(roomslots.list())
             if slot.activity():

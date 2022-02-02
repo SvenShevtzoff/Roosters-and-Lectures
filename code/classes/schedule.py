@@ -185,7 +185,7 @@ class Schedule:
 
     def output(self, alg):
         """Creates an ouput of the schedule in csv form"""
-        with open(f'{alg}_schedule.csv', 'w') as file:
+        with open(f'output/{alg}_schedule.csv', 'w') as file:
             writer = csv.writer(file)
 
             # write the header

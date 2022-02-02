@@ -2,7 +2,6 @@
 # visualize.py for visualizing the schedule
 # =============================================================================
 import matplotlib.pyplot as plt
-from os import mkdir
 
 # defining dictionaries to calculate the coordinates from day/time
 day_to_xcoord = {
@@ -34,7 +33,7 @@ def visualize_room(schedule, room):
 
     # plotting and saving plot
     plot.grid(True)
-    plt.savefig(f"schedule_{str(room)}.png")
+    plt.savefig(f"output/schedule_{str(room)}.png")
 
 
 def visualize_course(schedule, course):
@@ -91,7 +90,6 @@ def visualize_course(schedule, course):
 
     # plotting and saving plot
     plot.grid(True)
-    mkdir()
     plt.savefig(f"output/schedule_{course}.png")
 
 
@@ -149,7 +147,7 @@ def visualize_student(schedule, student_number):
 
     # saving plot
     plot.grid(True)
-    plt.savefig(f"schedule_{student_number}.png")
+    plt.savefig(f"output/schedule_{student_number}.png")
 
 
 def plot_full(plot, xcoord, ycoord, slot):
