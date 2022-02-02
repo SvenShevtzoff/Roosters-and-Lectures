@@ -31,4 +31,3 @@ def randomise_baseline(schedule):
         improve_once(schedule, fitness)
 
     return schedule
-
