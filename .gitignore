@@ -135,6 +135,7 @@ students.csv
 output.csv
 testing.py
 schedule.png
+plot.py
 
 *.png
 *.prof
