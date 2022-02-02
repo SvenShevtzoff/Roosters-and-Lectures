@@ -140,3 +140,5 @@ schedule.png
 *.prof
 *.txt
 *.DS_Store
+
+output/
