@@ -56,6 +56,6 @@ Before the program can be excecuted make sure to install the right packages usin
 To run the program, the following command can be used
 
     python3 main.py [algorithm_name]
-    algorithm options: ["randomise", "randomise_baseline", "greedy", "greedy_baseline", "hillclimber", "genetic"]
+    algorithm options: ["randomise", "randomise_baseline", "greedy", "hillclimber", "genetic"]
 
 When no algorithm is specified this list of possibilities is printed.
