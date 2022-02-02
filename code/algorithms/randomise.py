@@ -1,5 +1,5 @@
 # =============================================================================
-# random_alg.py with random algoritm functions
+# randomise.py with random algoritm functions
 # =============================================================================
 import random
 
