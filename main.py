@@ -11,6 +11,9 @@ from code.algorithms.simulatedannealing import simulated_annealing as sa
 from code.algorithms.baseline import baseline
 from code.classes.schedule import Schedule
 from code.visualize.visualize import visualize_student, visualize_course
+from code.algorithms.baseline import randomise_baseline, greedy_baseline
+import copy
+from collections import Counter
 
 
 if __name__ == "__main__":
@@ -38,9 +41,11 @@ if __name__ == "__main__":
     print()
     if algorithm == "randomise":
         best_schedule = randomise(schedule)
-    elif algorithm == "baseline":
-        best_schedule = baseline(schedule)
-    elif algorithm == "greedy":
+    elif sys.argv[1] == "randomise_baseline":
+        best_schedule = randomise_baseline(schedule)
+    elif sys.argv[2] == "greedy_baseline":
+        best_schedule = greedy_baseline(schedule)
+    elif sys.argv[1] == "greedy":
         best_schedule = gr(schedule)
     elif algorithm == "hillclimber":
         if len(sys.argv) == 3:
@@ -56,21 +61,7 @@ if __name__ == "__main__":
         best_schedule = gen(schedule)
     else:
         # when no matching algorithm is found exit
-        sys.exit('This algorithm does not exist, try: ["randomise", "greedy", "hillclimber", "simulatedannealing", "genetic"]')
+        sys.exit('This algorithm does not exist, try: ["randomise", "randomise_baseline", "greedy", "greedy_baseline", "hillclimber", "simulatedannealing", "genetic"]')
 
-    print("Solution found, making output and visualizations")
-    print()
-
-    print(f"Maluspoints: {best_schedule.fitness()}")
-    print()
-
-    visualize_course(best_schedule, "Bioinformatica")
-    print("Course 'Bioinformatica' visualized, see .png in main folder")
-    print()
-
-    visualize_student(best_schedule, "52311353")
-    print("Student '52311353' visualized, see .png in main folder")
-    print()
-
-    best_schedule.output(algorithm)
-    print("Solution outputted to csv, see .csv in main folder")
+    print(f"Pandapunten: {best_schedule.fitness()}")
+    # best_schedule.output('hillclimber')
